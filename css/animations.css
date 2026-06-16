@@ -1,0 +1,336 @@
+/* ============================================
+   CREEPIPASTA HOLLOWMIND — ANIMATIONS
+   Fenómenos analogicos / Web corrupta
+   ============================================ */
+
+/* === VHS SCANLINE DRIFT === */
+@keyframes vhs-scanline-drift {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100vh; }
+}
+
+/* === VHS TRACKING (línea que sube y baja) === */
+@keyframes vhs-tracking {
+  0%, 100% { transform: translateY(-100vh); }
+  50% { transform: translateY(100vh); }
+}
+
+/* === GLITCH BLEED (tinta sangrando) === */
+@keyframes glitch-bleed-1 {
+  0%, 85% { transform: translate(0); opacity: 0.5; }
+  86% { transform: translate(-2px, 1px); opacity: 0.7; }
+  88% { transform: translate(1px, -1px); opacity: 0.4; }
+  90% { transform: translate(-1px, 0); opacity: 0.6; }
+  92%, 100% { transform: translate(0); opacity: 0.5; }
+}
+
+@keyframes glitch-bleed-2 {
+  0%, 80% { transform: translate(0); opacity: 0.3; }
+  81% { transform: translate(1px, -1px); opacity: 0.5; }
+  83% { transform: translate(-2px, 0); opacity: 0.2; }
+  85% { transform: translate(0, 1px); opacity: 0.4; }
+  87%, 100% { transform: translate(0); opacity: 0.3; }
+}
+
+/* === INK CORRUPT (hover) === */
+@keyframes ink-corrupt {
+  0% { transform: translate(0); filter: none; }
+  33% { transform: translate(-1px, 0.5px); filter: hue-rotate(90deg); }
+  66% { transform: translate(1px, -0.5px); filter: hue-rotate(180deg); }
+  100% { transform: translate(0); filter: none; }
+}
+
+/* === BLOOD DRIP (goteo orgánico) === */
+@keyframes blood-drip {
+  0%, 100% {
+    transform: scaleY(1);
+    opacity: 0.8;
+  }
+  30% {
+    transform: scaleY(1.15);
+    opacity: 1;
+  }
+  60% {
+    transform: scaleY(0.95);
+    opacity: 0.7;
+  }
+}
+
+/* === FOG BREATHE (niebla respirando) === */
+@keyframes fog-breathe {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.7;
+  }
+  40% {
+    transform: translate(15px, -10px) scale(1.02);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-10px, 5px) scale(0.99);
+    opacity: 0.8;
+  }
+}
+
+/* === VHS INTERFERENCE SWEEP === */
+@keyframes vhs-interference-sweep {
+  0% { background-position: 0 -100vh; }
+  100% { background-position: 0 100vh; }
+}
+
+/* === TEXT SHIFT (texto que se reescribe) === */
+@keyframes text-shift {
+  0%, 90%, 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  92% {
+    opacity: 0.7;
+    transform: translateX(-2px);
+  }
+  94% {
+    opacity: 0.9;
+    transform: translateX(1px);
+  }
+  96% {
+    opacity: 0.6;
+    transform: translateX(-1px);
+  }
+  98% {
+    opacity: 0.85;
+    transform: translateX(0.5px);
+  }
+}
+
+/* === PAPER FLUTTER (páginas que se mueven) === */
+@keyframes paper-flutter {
+  0%, 100% { transform: rotateY(0deg) rotateX(0deg); }
+  25% { transform: rotateY(0.3deg) rotateX(-0.2deg); }
+  50% { transform: rotateY(-0.2deg) rotateX(0.3deg); }
+  75% { transform: rotateY(0.15deg) rotateX(-0.1deg); }
+}
+
+/* === INK SPREAD (tinta expandiéndose) === */
+@keyframes ink-spread {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    clip-path: circle(75% at 50% 50%);
+    opacity: 1;
+  }
+}
+
+/* === BURN SPREAD (quemadura expandiéndose) === */
+@keyframes burn-spread {
+  0% {
+    box-shadow: inset 0 0 0 0 rgba(90,21,21,0);
+  }
+  100% {
+    box-shadow: inset 0 0 40px 10px rgba(90,21,21,0.15);
+  }
+}
+
+/* === RUNE GLOW (resplandor de runa) === */
+@keyframes rune-pulse {
+  0%, 100% {
+    text-shadow: 0 0 4px rgba(138,106,58,0.2);
+    opacity: 0.7;
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(196,154,74,0.5), 0 0 25px rgba(138,106,58,0.2);
+    opacity: 1;
+  }
+}
+
+/* === MANUSCRIPT BREATHE (manuscrito respirando) === */
+@keyframes manuscript-breathe {
+  0%, 100% {
+    filter: brightness(1) contrast(1);
+  }
+  50% {
+    filter: brightness(0.97) contrast(1.02);
+  }
+}
+
+/* === CORRUPT DATA (datos corruptos) === */
+@keyframes corrupt-data {
+  0%, 88%, 100% {
+    clip-path: inset(0);
+    transform: translate(0);
+  }
+  89% {
+    clip-path: inset(15% 0 40% 0);
+    transform: translate(-3px, 0);
+  }
+  91% {
+    clip-path: inset(55% 0 10% 0);
+    transform: translate(2px, 0);
+  }
+  93% {
+    clip-path: inset(25% 0 50% 0);
+    transform: translate(-1px, 0);
+  }
+  95% {
+    clip-path: inset(45% 0 15% 0);
+    transform: translate(3px, 0);
+  }
+}
+
+/* === BLOOD WRITE (sangre escribiendo) === */
+@keyframes blood-write {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+/* === FADE IN UP === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === FADE IN === */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* === SLIDE FROM PAPER (deslizar desde papel) === */
+@keyframes slideFromPaper {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) rotateX(-2deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+}
+
+/* === MICRO SHAKE (temblor sutil) === */
+@keyframes micro-shake {
+  0%, 100% { transform: translate(0); }
+  25% { transform: translate(0.5px, -0.5px); }
+  50% { transform: translate(-0.5px, 0.5px); }
+  75% { transform: translate(0.5px, 0.5px); }
+}
+
+/* === PULSE BLOOD === */
+@keyframes pulse-blood {
+  0%, 100% {
+    box-shadow: 0 0 4px rgba(90,21,21,0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(139,42,42,0.5), 0 0 30px rgba(90,21,21,0.2);
+  }
+}
+
+/* === CURSOR BLINK (cursor de terminal) === */
+@keyframes cursor-blink {
+  0%, 50% { border-right-color: var(--sick-green-text); }
+  51%, 100% { border-right-color: transparent; }
+}
+
+/* === LOADING INK (tinta cargando) === */
+@keyframes loading-ink {
+  0% {
+    width: 0%;
+    background: var(--sick-green-dim);
+  }
+  25% {
+    width: 30%;
+    background: var(--sick-green);
+  }
+  27% {
+    width: 28%;
+    background: var(--sick-green-text);
+  }
+  50% {
+    width: 55%;
+    background: var(--sick-green);
+  }
+  52% {
+    width: 53%;
+    background: var(--sick-green-text);
+  }
+  75% {
+    width: 80%;
+    background: var(--sick-green);
+  }
+  100% {
+    width: 100%;
+    background: var(--sick-green-text);
+  }
+}
+
+/* === SKELETON (carga orgánica) === */
+@keyframes skeleton-organic {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* === FLICKER IRREGULAR === */
+@keyframes flicker-irregular {
+  0%, 95%, 100% { opacity: 1; filter: none; }
+  96% { opacity: 0.8; filter: brightness(1.1); }
+  97% { opacity: 1; filter: none; }
+  98% { opacity: 0.7; filter: brightness(0.9); }
+  99% { opacity: 1; filter: none; }
+}
+
+/* === SIGNAL LOST === */
+@keyframes signal-lost-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* === MARQUEE SCROLL === */
+@keyframes marquee-scroll {
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-100%); }
+}
+
+/* === WIN95 PROGRESS STRIPE === */
+@keyframes win95-progress-stripe {
+  0% { background-position: 0 0; }
+  100% { background-position: 12px 0; }
+}
+
+/* === CORRUPTED BORDER FLASH === */
+@keyframes corrupted-border-flash {
+  0%, 90%, 100% { opacity: 0; }
+  92% { opacity: 0.6; }
+  94% { opacity: 0; }
+  96% { opacity: 0.4; }
+}
+
+/* === POPUP APPEAR === */
+@keyframes popup-appear {
+  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+/* === BANNER BLINK === */
+@keyframes banner-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}

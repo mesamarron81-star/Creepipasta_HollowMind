@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sección — SYSTEM_ARCHIVE_01</title>
+  <meta name="description" content="Explora las secciones del archivo HollowMind.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/retro.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/story.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="fx-vhs fx-vignette fx-fog fx-blood-stains fx-crt">
+
+  <div class="loading-screen" role="dialog" aria-modal="true">
+    <div class="loading-scanlines"></div>
+    <div class="boot-container">
+      <h1 class="font-pixel" style="font-size:18px; margin-bottom:18px; letter-spacing:3px; color: var(--sick-green-text); text-shadow: 0 0 8px rgba(0,255,0,0.4);">> SYSTEM_ARCHIVE_01</h1>
+      <div id="boot-terminal" class="boot-terminal-log"></div>
+      <div class="boot-enter-prompt font-pixel" style="opacity:0; cursor:pointer; text-align:center; margin-top:35px; font-size:12px; letter-spacing:2px; color: var(--sick-green-text);">[ TOQUE LA PANTALLA PARA ABRIR EL ARCHIVO ]</div>
+    </div>
+  </div>
+
+  <div class="hm-app">
+    <header class="hm-header">
+      <div class="header-container container">
+        <a href="index.html" class="hm-logo-link"><div class="hm-logo font-manuscript glitch" data-text="HOLLOWMIND">HOLLOWMIND</div></a>
+        <nav class="hm-navbar" aria-label="Navegación principal">
+          <button id="nav-mobile-toggle" class="nav-toggle font-manuscript" aria-label="Abrir menú" aria-expanded="false"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+          <ul id="nav-mobile-menu" class="nav-links font-manuscript">
+            <li class="menu-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="menu-item"><a href="section.html?id=archivo" class="nav-link">Archivo</a></li>
+            <li class="menu-item"><a href="section.html?id=lecturas" class="nav-link">Recomendados</a></li>
+            <li class="menu-item"><a href="genre-listing.html" class="nav-link">Géneros</a></li>
+            <li class="menu-item" id="categories-menu-trigger">
+              <a href="categories.html" class="nav-link">Categorías ▾</a>
+              <div class="mega-menu-panel" id="mega-menu-container">
+                <div class="mega-menu-grid">
+                  <div class="mega-column"><h4>Entidades</h4><ul><li><a href="section.html?tag=seres">Seres</a></li><li><a href="section.html?tag=criptido">Críptidos</a></li><li><a href="section.html?tag=monstruos">Monstruos</a></li></ul></div>
+                  <div class="mega-column"><h4>Temáticas</h4><ul><li><a href="section.html?tag=videojuegos">Videojuegos</a></li><li><a href="section.html?tag=internet">Internet</a></li><li><a href="section.html?tag=crimen">Crimen</a></li><li><a href="section.html?tag=hospital">Hospitales</a></li></ul></div>
+                  <div class="mega-column"><h4>Formatos</h4><ul><li><a href="section.html?tag=longpasta">Longpasta</a></li><li><a href="section.html?tag=micropasta">Micropasta</a></li><li><a href="section.html?tag=diario">Diario</a></li></ul></div>
+                  <div class="mega-column"><h4>Especiales</h4><ul><li><a href="section.html?tag=rituales">Rituales</a></li><li><a href="section.html?tag=lost-episodes">Lost Episodes</a></li><li><a href="categories.html" style="color:var(--blood-fresh); font-weight:bold;">> Ver todos</a></li></ul></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-controls">
+          <button id="immersive-toggle-btn" class="hm-btn btn-xs font-manuscript immersive-toggle"><span class="btn-text">PROFUNDIDAD: OFF</span></button>
+          <div class="audio-control-widget">
+            <button id="audio-toggle-btn" class="hm-btn btn-icon"><span class="audio-icon">🔇</span></button>
+            <div class="volume-slider-wrapper"><input type="range" id="volume-slider" class="volume-slider-input" min="0" max="1" step="0.05"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="section-container"></main>
+
+    <footer class="hm-footer">
+      <div class="footer-container container font-manuscript">
+        <div class="footer-text">
+          <p style="letter-spacing:1.5px;">> HOLLOWMIND NO ALMACENA LAS HISTORIAS... LAS RECUERDA CONTIGO.</p>
+          <p style="color:var(--paper-ash); font-size:10px; margin-top:4px;">Manuscrito desclasificado. Sesión indexada bajo encriptación espectral.</p>
+        </div>
+        <div class="footer-status"><span class="mark-blood breathe"></span><span style="letter-spacing:1px;">ESTADO: CONECTADO</span></div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/story-data.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/hollow-sound.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/system-messages.js"></script>
+  <script src="js/immersive-mode.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/story-renderer.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const sectionId = params.get('id');
+      const tag = params.get('tag');
+      const container = document.getElementById('section-container');
+      if (!container) return;
+
+      let stories = [];
+      let sectionName = '';
+
+      if (tag) {
+        stories = getStoriesByTag(tag);
+        sectionName = tag.charAt(0).toUpperCase() + tag.slice(1).replace(/-/g, ' ');
+        document.title = '#' + sectionName + ' — HollowMind';
+      } else if (sectionId) {
+        stories = getStoriesBySection(sectionId);
+        const section = HM_SECTIONS[sectionId];
+        sectionName = section ? section.name : sectionId;
+        document.title = sectionName + ' — HollowMind';
+      } else {
+        stories = HM_STORIES;
+        sectionName = 'Archivo Histórico';
+        document.title = sectionName + ' — HollowMind';
+      }
+
+      // Build section page
+      let html = `
+        <div class="section-page-layout container">
+          <nav class="breadcrumbs">
+            <a href="index.html">HollowMind</a>
+            <span class="separator">/</span>
+            ${tag ? '<a href="categories.html">Categorías</a><span class="separator">/</span>' : ''}
+            <span class="current">${sectionName}</span>
+          </nav>
+
+          <div class="section-banner" style="background: linear-gradient(135deg, var(--void-surface) 0%, var(--void) 100%);">
+            <div class="section-banner-content">
+              <h1 class="font-manuscript glitch" data-text="${tag ? '#' + sectionName : sectionName}" style="font-size:var(--text-2xl); color:var(--blood-fresh); margin-bottom:var(--space-sm); letter-spacing:3px;">${tag ? '#' + sectionName : sectionName}</h1>
+              <p class="font-handwritten" style="color:var(--paper-burnt); max-width:550px; line-height:1.6;">${tag ? 'Entradas clasificadas con la etiqueta "' + sectionName + '" en el manuscrito HollowMind.' : (HM_SECTIONS[sectionId] ? HM_SECTIONS[sectionId].description : 'Fragmentos del archivo.')}</p>
+            </div>
+          </div>
+
+          <div class="filter-bar">
+            <button class="filter-btn active" data-sort="recent">Recientes</button>
+            <button class="filter-btn" data-sort="popular">Populares</button>
+            <button class="filter-btn" data-sort="terror">Peligro ↓</button>
+            <button class="filter-btn" data-sort="short">Cortos</button>
+          </div>
+
+          <div class="cards-grid" id="section-stories-grid">
+            ${stories.length > 0 ? stories.map(s => HMStoryRenderer.renderStoryCard(s)).join('') : '<p class="font-manuscript" style="color:var(--paper-ash); text-align:center; padding:var(--space-2xl); grid-column:1/-1; letter-spacing:1px;">> NO SE ENCONTRARON FRAGMENTOS CON ESTA FIRMA</p>'}
+          </div>
+
+          ${stories.length > 0 ? `
+          <div class="pagination">
+            <button class="pagination-btn">← Anterior</button>
+            <button class="pagination-btn active">I</button>
+            <button class="pagination-btn">II</button>
+            <button class="pagination-btn">III</button>
+            <button class="pagination-btn">Siguiente →</button>
+          </div>` : ''}
+        </div>`;
+
+      container.innerHTML = html;
+
+      // Filter functionality
+      const filterBtns = container.querySelectorAll('.filter-btn');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const sort = btn.dataset.sort;
+          let sorted = [...stories];
+          if (sort === 'terror') sorted.sort((a, b) => b.terror - a.terror);
+          else if (sort === 'popular') sorted.sort((a, b) => b.terror - a.terror);
+          else if (sort === 'short') sorted.sort((a, b) => parseInt(a.readTime) - parseInt(b.readTime));
+          else sorted.sort((a, b) => new Date(b.date) - new Date(a.date));
+          const grid = document.getElementById('section-stories-grid');
+          if (grid) grid.innerHTML = sorted.map(s => HMStoryRenderer.renderStoryCard(s)).join('');
+        });
+      });
+
+      // Repeating title corruption on revisit
+      const visitKey = 'hm-section-' + (tag || sectionId || 'all');
+      const sectionVisits = parseInt(localStorage.getItem(visitKey) || '0') + 1;
+      localStorage.setItem(visitKey, sectionVisits.toString());
+      if (sectionVisits > 1) {
+        const titleEl = container.querySelector('.section-banner h1');
+        if (titleEl) {
+          setTimeout(() => {
+            const originals = [titleEl.textContent];
+            const mutations = [
+              titleEl.textContent.split('').map((c,i) => i % 7 === 0 && c !== ' ' ? String.fromCharCode(c.charCodeAt(0) + (Math.random() > 0.5 ? 1 : -1)) : c).join(''),
+              titleEl.textContent + ' [MODIFICADO]',
+              titleEl.textContent.replace(/./g, (c) => Math.random() > 0.92 ? '█' : c)
+            ];
+            titleEl.textContent = mutations[Math.floor(Math.random() * mutations.length)];
+            titleEl.style.color = 'var(--blood-bright)';
+            setTimeout(() => { titleEl.textContent = originals[0]; titleEl.style.color = ''; }, 2000);
+          }, 4000 + Math.random() * 6000);
+        }
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genre Listing — SYSTEM_ARCHIVE_01</title>
+  <meta name="description" content="Índice completo de categorías y géneros del archivo HollowMind.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/retro.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/genre-listing.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="fx-vhs fx-vignette fx-fog fx-blood-stains fx-crt">
+
+  <div class="loading-screen" role="dialog" aria-modal="true">
+    <div class="loading-scanlines"></div>
+    <div class="boot-container">
+      <h1 class="font-pixel" style="font-size:18px; margin-bottom:18px; letter-spacing:3px; color: var(--sick-green-text); text-shadow: 0 0 8px rgba(0,255,0,0.4);">> SYSTEM_ARCHIVE_01</h1>
+      <div id="boot-terminal" class="boot-terminal-log"></div>
+      <div class="boot-enter-prompt font-pixel" style="opacity:0; cursor:pointer; text-align:center; margin-top:35px; font-size:12px; letter-spacing:2px; color: var(--sick-green-text);">[ TOQUE LA PANTALLA PARA ABRIR EL ARCHIVO ]</div>
+    </div>
+  </div>
+
+  <div class="hm-app">
+    <header class="hm-header">
+      <div class="header-container container">
+        <a href="index.html" class="hm-logo-link"><div class="hm-logo font-manuscript glitch" data-text="HOLLOWMIND">HOLLOWMIND</div></a>
+        <nav class="hm-navbar" aria-label="Navegación principal">
+          <button id="nav-mobile-toggle" class="nav-toggle font-manuscript" aria-label="Abrir menú" aria-expanded="false"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+          <ul id="nav-mobile-menu" class="nav-links font-manuscript">
+            <li class="menu-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="menu-item"><a href="section.html?id=archivo" class="nav-link">Archivo</a></li>
+            <li class="menu-item"><a href="genre-listing.html" class="nav-link" style="color:var(--blood-fresh);">Géneros</a></li>
+            <li class="menu-item"><a href="categories.html" class="nav-link">Categorías</a></li>
+          </ul>
+        </nav>
+        <div class="header-controls">
+          <button id="immersive-toggle-btn" class="hm-btn btn-xs font-manuscript immersive-toggle"><span class="btn-text">PROFUNDIDAD: OFF</span></button>
+          <div class="audio-control-widget">
+            <button id="audio-toggle-btn" class="hm-btn btn-icon"><span class="audio-icon">🔇</span></button>
+            <div class="volume-slider-wrapper"><input type="range" id="volume-slider" class="volume-slider-input" min="0" max="1" step="0.05"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="genre-page container">
+
+      <!-- Header -->
+      <div class="genre-header">
+        <nav class="breadcrumbs">
+          <a href="index.html">HollowMind</a>
+          <span class="separator">/</span>
+          <span class="current">Genre Listing</span>
+        </nav>
+        <h1 class="genre-title glitch" data-text="Genre Listing">Genre Listing</h1>
+        <p class="genre-subtitle">Índice completo de categorías y géneros del manuscrito HollowMind. Cada entrada ha sido verificada y catalogada.</p>
+        <div class="genre-stats">
+          <span class="genre-stat"><span class="num" id="stat-historical">—</span> Historical</span>
+          <span class="genre-stat"><span class="num" id="stat-genres">—</span> Genre Categories</span>
+          <span class="genre-stat"><span class="num" id="stat-other">—</span> Other</span>
+          <span class="genre-stat">Total: <span class="num" id="stat-total">—</span></span>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div class="genre-search-wrapper">
+        <span class="genre-search-icon">></span>
+        <input type="text" class="genre-search-input font-manuscript" id="genre-search" placeholder="buscar categoría..." aria-label="Buscar categoría">
+      </div>
+
+      <!-- Tabs -->
+      <div class="genre-tabs" role="tablist">
+        <button class="genre-tab active" data-tab="historical" role="tab">Historical Archive <span class="tab-count" id="tab-count-historical"></span></button>
+        <button class="genre-tab" data-tab="genres" role="tab">Genre Categories <span class="tab-count" id="tab-count-genres"></span></button>
+        <button class="genre-tab" data-tab="other" role="tab">Other Categories <span class="tab-count" id="tab-count-other"></span></button>
+      </div>
+
+      <!-- Sections -->
+      <div id="genre-section-historical" class="genre-section active">
+        <div class="genre-section-header">
+          <h2 class="genre-section-title">Historical Archive</h2>
+          <p class="genre-section-desc">Pastas posted on /x/ and elsewhere before 2013. Core stories of the creepypasta canon.</p>
+        </div>
+        <div class="genre-grid" id="grid-historical"></div>
+      </div>
+
+      <div id="genre-section-genres" class="genre-section">
+        <div class="genre-section-header">
+          <h2 class="genre-section-title">Genre Categories</h2>
+          <p class="genre-section-desc">These categories list stories by topic. Be sure to read the rules before applying them.</p>
+        </div>
+        <div class="genre-grid" id="grid-genres"></div>
+      </div>
+
+      <div id="genre-section-other" class="genre-section">
+        <div class="genre-section-header">
+          <h2 class="genre-section-title">Other Categories</h2>
+          <p class="genre-section-desc">These categories are more miscellaneous and generally less applicable than those listed above.</p>
+        </div>
+        <div class="genre-grid" id="grid-other"></div>
+      </div>
+
+    </main>
+
+    <footer class="hm-footer">
+      <div class="footer-container container font-manuscript">
+        <div class="footer-text">
+          <p style="letter-spacing:1.5px;">> HOLLOWMIND NO ALMACENA LAS HISTORIAS... LAS RECUERDA CONTIGO.</p>
+          <p style="color:var(--paper-ash); font-size:10px; margin-top:4px;">Manuscrito desclasificado. Sesión indexada bajo encriptación espectral.</p>
+        </div>
+        <div class="footer-status"><span class="mark-blood breathe"></span><span style="letter-spacing:1px;">ESTADO: CONECTADO</span></div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="genre-toast font-manuscript" id="genre-toast"></div>
+
+  <script src="js/story-data.js"></script>
+  <script src="js/genre-data.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/hollow-sound.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/system-messages.js"></script>
+  <script src="js/immersive-mode.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/story-renderer.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      /* === STATE === */
+      const state = {
+        activeTab: localStorage.getItem('hm-genre-tab') || 'historical',
+        viewedSections: JSON.parse(localStorage.getItem('hm-genre-viewed') || '[]'),
+        loadedImages: new Set(),
+        searchQuery: ''
+      };
+
+      /* === STATS === */
+      document.getElementById('stat-historical').textContent = HM_GENRES.totalHistorical.toLocaleString();
+      document.getElementById('stat-genres').textContent = HM_GENRES.totalGenres.toLocaleString();
+      document.getElementById('stat-other').textContent = HM_GENRES.totalOther.toLocaleString();
+      document.getElementById('stat-total').textContent = HM_GENRES.totalAll.toLocaleString();
+
+      document.getElementById('tab-count-historical').textContent = '(' + HM_GENRES.historical.length + ')';
+      document.getElementById('tab-count-genres').textContent = '(' + HM_GENRES.genres.length + ')';
+      document.getElementById('tab-count-other').textContent = '(' + HM_GENRES.other.length + ')';
+
+      /* === RENDER CARDS === */
+      function renderGenreCard(genre) {
+        const isViewed = state.viewedSections.includes(genre.id);
+        return `
+          <div class="genre-card" data-genre-id="${genre.id}" data-name="${genre.name.toLowerCase()}" data-desc="${genre.description.toLowerCase()}" style="--card-color:${genre.color};">
+            <div class="genre-card-image">
+              <div class="img-placeholder">${genre.icon}</div>
+              <img data-src="${genre.image}" alt="${genre.name}" loading="lazy">
+            </div>
+            <div class="genre-card-body">
+              <div class="genre-card-top">
+                <span class="genre-card-name">${genre.name}</span>
+                <span class="genre-card-count">${genre.count.toLocaleString()}</span>
+              </div>
+              <p class="genre-card-desc">${genre.description}</p>
+              ${genre.subcategory ? '<span class="genre-card-subcategory">Subcategoría</span>' : ''}
+            </div>
+          </div>
+        `;
+      }
+
+      function renderGrid(containerId, data) {
+        const grid = document.getElementById(containerId);
+        if (!grid) return;
+        grid.innerHTML = data.map(g => renderGenreCard(g)).join('');
+      }
+
+      renderGrid('grid-historical', HM_GENRES.historical);
+      renderGrid('grid-genres', HM_GENRES.genres);
+      renderGrid('grid-other', HM_GENRES.other);
+
+      /* === LAZY LOADING (Intersection Observer) === */
+      const imageObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            const src = img.dataset.src;
+            if (src && !state.loadedImages.has(src)) {
+              img.src = src;
+              img.onload = () => {
+                img.classList.add('loaded');
+                const placeholder = img.parentElement.querySelector('.img-placeholder');
+                if (placeholder) placeholder.classList.add('hidden');
+                state.loadedImages.add(src);
+              };
+              img.onerror = () => {
+                img.style.display = 'none';
+              };
+            }
+            imageObserver.unobserve(img);
+          }
+        });
+      }, { rootMargin: '100px' });
+
+      function observeImages() {
+        document.querySelectorAll('.genre-card-image img[data-src]').forEach(img => {
+          imageObserver.observe(img);
+        });
+      }
+      observeImages();
+
+      /* === TAB NAVIGATION (SPA) === */
+      const tabs = document.querySelectorAll('.genre-tab');
+      const sections = document.querySelectorAll('.genre-section');
+
+      function switchTab(tabId) {
+        state.activeTab = tabId;
+        localStorage.setItem('hm-genre-tab', tabId);
+
+        tabs.forEach(t => t.classList.toggle('active', t.dataset.tab === tabId));
+        sections.forEach(s => {
+          const isTarget = s.id === 'genre-section-' + tabId;
+          s.classList.toggle('active', isTarget);
+        });
+
+        if (!state.viewedSections.includes(tabId)) {
+          state.viewedSections.push(tabId);
+          localStorage.setItem('hm-genre-viewed', JSON.stringify(state.viewedSections));
+        }
+
+        observeImages();
+      }
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => switchTab(tab.dataset.tab));
+      });
+
+      switchTab(state.activeTab);
+
+      /* === SEARCH FILTER === */
+      const searchInput = document.getElementById('genre-search');
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        state.searchQuery = query;
+
+        document.querySelectorAll('.genre-card').forEach(card => {
+          const name = card.dataset.name;
+          const desc = card.dataset.desc;
+          const match = !query || name.includes(query) || desc.includes(query);
+          card.style.display = match ? '' : 'none';
+        });
+
+        if (query) {
+          tabs.forEach(t => t.classList.remove('active'));
+          sections.forEach(s => s.classList.add('active'));
+        } else {
+          switchTab(state.activeTab);
+        }
+      });
+
+      /* === CARD CLICK === */
+      document.addEventListener('click', (e) => {
+        const card = e.target.closest('.genre-card');
+        if (!card) return;
+        const genreId = card.dataset.genreId;
+        const genre = [...HM_GENRES.historical, ...HM_GENRES.genres, ...HM_GENRES.other].find(g => g.id === genreId);
+        if (genre) {
+          showToast(`${genre.icon} ${genre.name}: ${genre.count.toLocaleString()} registros — Redirigiendo a section.html?tag=${genre.id}`);
+          setTimeout(() => {
+            window.location.href = `section.html?tag=${genre.id}`;
+          }, 1200);
+        }
+      });
+
+      /* === TOAST === */
+      function showToast(msg) {
+        const toast = document.getElementById('genre-toast');
+        toast.textContent = '> ' + msg;
+        toast.classList.add('visible');
+        setTimeout(() => toast.classList.remove('visible'), 3500);
+      }
+
+      /* === TITLE MUTATION === */
+      const titleEl = document.querySelector('.genre-title');
+      if (titleEl) {
+        setInterval(() => {
+          if (Math.random() < 0.3) {
+            const original = titleEl.textContent;
+            titleEl.textContent = original + ' [actualizado]';
+            titleEl.style.color = 'var(--blood-bright)';
+            setTimeout(() => {
+              titleEl.textContent = original;
+              titleEl.style.color = '';
+            }, 1500);
+          }
+        }, 20000);
+      }
+    });
+  </script>
+</body>
+</html>

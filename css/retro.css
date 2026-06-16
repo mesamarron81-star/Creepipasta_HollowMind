@@ -1,0 +1,568 @@
+/* ============================================
+   CREEPIPASTA HOLLOWMIND — RETRO WEB
+   Windows 95 / GeoCities / Web 1.0
+   ============================================ */
+
+/* === WINDOWS 95 PANEL === */
+.win95-panel {
+  background: var(--win95-bg);
+  border: 2px solid;
+  border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
+  box-shadow: inset 1px 1px 0 var(--win95-light), inset -1px -1px 0 var(--win95-dark);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  color: #000;
+}
+
+.win95-titlebar {
+  background: linear-gradient(90deg, var(--win95-blue), #1084d0);
+  color: var(--win95-white);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.win95-titlebar.inactive {
+  background: var(--win95-title-inactive);
+}
+
+.win95-titlebar-text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.win95-titlebar-icon {
+  width: 16px;
+  height: 16px;
+  background: var(--win95-blue);
+  border: 1px solid var(--win95-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+}
+
+.win95-titlebar-buttons {
+  display: flex;
+  gap: 2px;
+}
+
+.win95-btn-minimize,
+.win95-btn-maximize,
+.win95-btn-close {
+  width: 16px;
+  height: 14px;
+  background: var(--win95-bg);
+  border: 1px solid;
+  border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
+  box-shadow: inset 1px 1px 0 var(--win95-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.win95-btn-close {
+  margin-left: 2px;
+}
+
+.win95-body {
+  padding: 8px;
+}
+
+/* === WIN95 BEVELED BORDER === */
+.win95-border {
+  border: 2px solid;
+  border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
+  box-shadow: inset 1px 1px 0 var(--win95-darker), inset -1px -1px 0 var(--win95-light);
+}
+
+.win95-border-inset {
+  border: 2px solid;
+  border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
+  box-shadow: inset 1px 1px 0 var(--win95-dark);
+}
+
+/* === WIN95 BUTTON === */
+.win95-button {
+  background: var(--win95-bg);
+  border: 2px solid;
+  border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
+  box-shadow: inset 1px 1px 0 var(--win95-light), inset -1px -1px 0 var(--win95-dark);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  color: #000;
+  padding: 4px 16px;
+  cursor: pointer;
+  text-align: center;
+  min-width: 75px;
+}
+
+.win95-button:active {
+  border-color: var(--win95-darker) var(--win95-white) var(--win95-white) var(--win95-darker);
+  box-shadow: inset 1px 1px 0 var(--win95-dark), inset -1px -1px 0 var(--win95-light);
+  padding: 5px 15px 3px 17px;
+}
+
+.win95-button:focus {
+  outline: 1px dotted #000;
+  outline-offset: -4px;
+}
+
+/* === WIN95 TEXT INPUT === */
+.win95-input {
+  background: var(--win95-white);
+  border: 2px solid;
+  border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
+  box-shadow: inset 1px 1px 0 var(--win95-darker);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  color: #000;
+  padding: 2px 4px;
+}
+
+/* === WIN95 TEXTAREA === */
+.win95-textarea {
+  background: var(--win95-white);
+  border: 2px solid;
+  border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
+  box-shadow: inset 1px 1px 0 var(--win95-darker);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  color: #000;
+  padding: 2px 4px;
+  resize: none;
+}
+
+/* === WIN95 SELECT === */
+.win95-select {
+  background: var(--win95-white);
+  border: 2px solid;
+  border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  color: #000;
+  padding: 2px;
+}
+
+/* === WIN95 GROUP BOX === */
+.win95-groupbox {
+  border: 1px solid var(--win95-dark);
+  box-shadow: 1px 1px 0 var(--win95-white);
+  padding: 12px 8px 8px;
+  position: relative;
+}
+
+.win95-groupbox-label {
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  background: var(--win95-bg);
+  padding: 0 4px;
+  font-family: var(--font-pixel);
+  font-size: 12px;
+}
+
+/* === WIN95 CHECKBOX / RADIO === */
+.win95-checkbox,
+.win95-radio {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.win95-checkbox-box,
+.win95-radio-box {
+  width: 13px;
+  height: 13px;
+  background: var(--win95-white);
+  border: 2px solid;
+  border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
+  box-shadow: inset 1px 1px 0 var(--win95-darker);
+}
+
+.win95-radio-box {
+  border-radius: 50%;
+}
+
+/* === WIN95 PROGRESS BAR === */
+.win95-progress {
+  width: 100%;
+  height: 16px;
+  background: var(--win95-white);
+  border: 2px solid;
+  border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
+  box-shadow: inset 1px 1px 0 var(--win95-darker);
+  overflow: hidden;
+}
+
+.win95-progress-bar {
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--win95-blue) 0px,
+    var(--win95-blue) 10px,
+    transparent 10px,
+    transparent 12px
+  );
+  animation: win95-progress-stripe 1s linear infinite;
+}
+
+@keyframes win95-progress-stripe {
+  0% { background-position: 0 0; }
+  100% { background-position: 12px 0; }
+}
+
+/* === WIN95 SCROLLBAR === */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: repeating-conic-gradient(var(--win95-bg) 0% 25%, var(--win95-white) 0% 50%) 50% / 2px 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--win95-bg);
+  border: 2px solid;
+  border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
+}
+
+::-webkit-scrollbar-button {
+  background: var(--win95-bg);
+  border: 2px solid;
+  border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+
+/* === GEOCITIES BAR === */
+.geocities-bar {
+  background: linear-gradient(180deg, #c0c0c0 0%, #a0a0a0 100%);
+  border-bottom: 2px solid;
+  border-color: var(--win95-white) transparent var(--win95-darker) transparent;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  color: #000;
+  position: relative;
+  z-index: var(--z-sticky);
+}
+
+.geocities-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.geocities-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.geocities-counter {
+  background: #000;
+  color: var(--sick-green-text);
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  padding: 2px 8px;
+  border: 1px inset var(--win95-dark);
+}
+
+.geocities-badge {
+  border: 1px solid #000;
+  padding: 1px 4px;
+  font-size: 9px;
+  background: var(--win95-bg);
+}
+
+/* === GEOCITIES MARQUEE === */
+.geocities-marquee {
+  background: #000080;
+  color: #ffff00;
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  padding: 3px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid var(--win95-white);
+  border-bottom: 1px solid var(--win95-dark);
+}
+
+.geocities-marquee-text {
+  display: inline-block;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-100%); }
+}
+
+/* === BLUE LINKS (Web 1.0 style) === */
+.web-link {
+  color: var(--web-link);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.1s;
+}
+
+.web-link:visited {
+  color: var(--web-link-visited);
+}
+
+.web-link:hover {
+  color: var(--web-link-hover);
+  text-shadow: 0 0 4px rgba(255,0,0,0.3);
+}
+
+.web-link:active {
+  color: #ff0000;
+}
+
+/* === TABLE LAYOUT (HTML antiguo) === */
+.retro-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--win95-dark);
+}
+
+.retro-table td,
+.retro-table th {
+  border: 1px solid var(--win95-dark);
+  padding: 4px 8px;
+  vertical-align: top;
+}
+
+.retro-table th {
+  background: var(--win95-blue);
+  color: var(--win95-white);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  text-align: left;
+}
+
+.retro-table td {
+  background: var(--win95-bg);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+}
+
+/* === HR TAG (retro) === */
+.retro-hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent,
+    var(--win95-dark) 10%,
+    var(--win95-dark) 90%,
+    transparent
+  );
+  margin: 12px 0;
+}
+
+.retro-hr-thick {
+  border: none;
+  height: 3px;
+  background: linear-gradient(90deg,
+    var(--win95-dark),
+    var(--win95-white) 50%,
+    var(--win95-dark)
+  );
+}
+
+/* === POPUP WINDOW === */
+.retro-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: var(--z-modal);
+  min-width: 350px;
+  max-width: 450px;
+  animation: popup-appear 0.15s ease-out;
+}
+
+@keyframes popup-appear {
+  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+
+.retro-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: calc(var(--z-modal) - 1);
+}
+
+/* === CURSOR (pixelado) === */
+.cursor-pixel {
+  cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><rect x="0" y="0" width="2" height="2" fill="%2300ff00"/><rect x="2" y="2" width="2" height="2" fill="%2300ff00"/><rect x="4" y="4" width="2" height="2" fill="%2300ff00"/><rect x="6" y="6" width="2" height="2" fill="%2300ff00"/><rect x="8" y="8" width="2" height="2" fill="%2300ff00"/></svg>') 0 0, auto;
+}
+
+/* === SYSTEM LOG === */
+.system-log {
+  background: #000;
+  border: 2px solid;
+  border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
+  padding: 8px;
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  color: var(--sick-green-text);
+  max-height: 200px;
+  overflow-y: auto;
+  line-height: 1.6;
+}
+
+.system-log-entry {
+  margin-bottom: 2px;
+}
+
+.system-log-entry .timestamp {
+  color: var(--sick-green-dim);
+}
+
+.system-log-entry .level-warn {
+  color: #ffff00;
+}
+
+.system-log-entry .level-error {
+  color: #ff0000;
+}
+
+.system-log-entry .level-info {
+  color: var(--sick-green-text);
+}
+
+/* === BANNER AD (GeoCities style) === */
+.retro-banner-ad {
+  background: var(--win95-bg);
+  border: 2px solid;
+  border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
+  padding: 8px;
+  text-align: center;
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  animation: banner-blink 1.5s step-end infinite;
+}
+
+@keyframes banner-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* === VISITOR COUNTER === */
+.visitor-counter {
+  display: inline-flex;
+  gap: 2px;
+}
+
+.visitor-counter-digit {
+  background: #000;
+  color: var(--sick-green-text);
+  font-family: var(--font-pixel);
+  font-size: 14px;
+  padding: 2px 4px;
+  border: 1px inset var(--win95-dark);
+  min-width: 14px;
+  text-align: center;
+}
+
+/* === GUESTBOOK === */
+.guestbook-entry {
+  border: 1px solid var(--win95-dark);
+  padding: 8px;
+  margin-bottom: 8px;
+  background: var(--win95-white);
+  font-family: var(--font-pixel);
+  font-size: 12px;
+}
+
+.guestbook-author {
+  font-weight: bold;
+  color: var(--win95-blue);
+}
+
+.guestbook-date {
+  color: var(--win95-dark);
+  font-size: 10px;
+}
+
+/* === ANGELFIRE / GEOCITIES BADGE === */
+.retro-badge {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 2px 6px;
+  font-family: var(--font-pixel);
+  font-size: 9px;
+  background: var(--win95-bg);
+  text-transform: uppercase;
+}
+
+/* === MARQUEE WRAPPER === */
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* === SLOW HOVER DELAY (sistema lento) === */
+.slow-hover {
+  transition: all 0.3s ease 0.15s;
+}
+
+.slow-hover:hover {
+  transition-delay: 0s;
+}
+
+/* === MICRO GLITCH HOVER === */
+.micro-glitch-hover:hover {
+  animation: micro-glitch-text 0.2s steps(2) 1;
+}
+
+@keyframes micro-glitch-text {
+  0% { transform: translate(0); filter: none; }
+  25% { transform: translate(-1px, 0.5px); filter: hue-rotate(90deg); }
+  50% { transform: translate(1px, -0.5px); filter: hue-rotate(180deg); }
+  75% { transform: translate(-0.5px, 0); filter: hue-rotate(270deg); }
+  100% { transform: translate(0); filter: none; }
+}
+
+/* === CORRUPTED BORDER === */
+.corrupted-border {
+  position: relative;
+}
+
+.corrupted-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border: 2px solid var(--blood-fresh);
+  opacity: 0;
+  animation: corrupted-border-flash 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes corrupted-border-flash {
+  0%, 90%, 100% { opacity: 0; }
+  92% { opacity: 0.6; }
+  94% { opacity: 0; }
+  96% { opacity: 0.4; }
+}

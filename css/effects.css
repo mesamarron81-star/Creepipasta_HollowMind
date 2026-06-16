@@ -1,0 +1,568 @@
+/* ============================================
+   CREEPIPASTA HOLLOWMIND — VISUAL EFFECTS
+   Capas de realidad deteriorada / Web corrupta
+   ============================================ */
+
+/* === CRT MONITOR TEXTURE (fondo global) === */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 1px,
+      rgba(0,255,0,0.003) 1px,
+      rgba(0,255,0,0.003) 2px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(0,0,0,0.01) 2px,
+      rgba(0,0,0,0.01) 3px
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* === VHS SCANLINES (señal analógica corrupta) === */
+.fx-vhs::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 1px,
+    rgba(0,0,0,0.15) 1px,
+    rgba(0,0,0,0.15) 3px
+  );
+  pointer-events: none;
+  z-index: var(--z-overlay);
+  animation: vhs-scanline-drift 8s linear infinite;
+  opacity: 0.8;
+}
+
+/* === VHS TRACKING (líneas de interferencia) === */
+.fx-vhs::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 45%,
+      rgba(255,255,255,0.015) 46%,
+      rgba(255,255,255,0.025) 48%,
+      rgba(255,255,255,0.015) 50%,
+      transparent 52%,
+      transparent 100%
+    );
+  pointer-events: none;
+  z-index: calc(var(--z-overlay) - 1);
+  animation: vhs-tracking 15s ease-in-out infinite;
+}
+
+/* === VIÑETEADO PROFUNDO === */
+.fx-vignette::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 20%,
+    rgba(0,0,0,0.3) 50%,
+    rgba(0,0,0,0.85) 100%
+  );
+  pointer-events: none;
+  z-index: calc(var(--z-overlay) - 2);
+}
+
+/* === MANCHAS DE SANGRE (goteo orgánico) === */
+.fx-blood-stains {
+  position: relative;
+}
+
+.fx-blood-stains::after {
+  content: '';
+  position: fixed;
+  top: -5%;
+  right: 10%;
+  width: 180px;
+  height: 350px;
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(90,21,21,0.12) 0%,
+    rgba(58,10,10,0.06) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: calc(var(--z-overlay) - 3);
+  animation: blood-drip 15s ease-in-out infinite;
+  filter: blur(1px);
+}
+
+/* === NIEBLA ORGÁNICA === */
+.fx-fog {
+  position: relative;
+}
+
+.fx-fog::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 15% 85%, rgba(0,40,0,0.06) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 15%, rgba(0,20,40,0.05) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 50%, rgba(0,15,0,0.03) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: calc(var(--z-overlay) - 4);
+  animation: fog-breathe 25s ease-in-out infinite alternate;
+}
+
+/* === RUIDO DIGITAL (canvas overlay) === */
+.hm-noise-canvas {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: calc(var(--z-overlay) - 5);
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+}
+
+/* === INTERFERENCIA VHS === */
+.vhs-interference {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: calc(var(--z-overlay) - 6);
+  opacity: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(255,255,255,0.03) 45%,
+    rgba(255,0,0,0.02) 50%,
+    rgba(255,255,255,0.03) 55%,
+    transparent 100%
+  );
+  transition: opacity 0.3s;
+}
+
+.vhs-interference.active {
+  opacity: 1;
+  animation: vhs-interference-sweep 0.12s steps(4) 1;
+}
+
+/* === GLITCH TEXT (distorsión de tinta) === */
+.glitch {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.glitch::before {
+  color: var(--sick-green-text);
+  z-index: -1;
+  animation: glitch-bleed-1 3s infinite linear alternate-reverse;
+  clip-path: inset(0 0 75% 0);
+  opacity: 0.5;
+}
+
+.glitch::after {
+  color: var(--electric-text);
+  z-index: -1;
+  animation: glitch-bleed-2 2.5s infinite linear alternate-reverse;
+  clip-path: inset(75% 0 0 0);
+  opacity: 0.3;
+}
+
+/* === GLITCH HOVER (tinta que se borra) === */
+.glitch-hover {
+  position: relative;
+  transition: all 0.3s ease 0.1s;
+}
+
+.glitch-hover:hover {
+  animation: ink-corrupt 0.3s steps(3, jump-none);
+  text-shadow:
+    1px 0 var(--sick-green-text),
+    -1px 0 var(--electric-text);
+}
+
+/* === CURSOR LANTERN (linterna de papel) === */
+.hm-cursor-lantern {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0,255,0,0.015) 0%,
+    rgba(0,170,0,0.008) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: calc(var(--z-cursor) - 1);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s;
+  mix-blend-mode: screen;
+}
+
+/* === BLOOD INK (tinta de sangre que se escribe) === */
+.blood-ink-text {
+  position: relative;
+  display: inline;
+}
+
+.blood-ink-text::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--blood-fresh), transparent);
+  transition: width 0.8s ease;
+}
+
+.blood-ink-text:hover::after {
+  width: 100%;
+}
+
+/* === SELLO RITUAL === */
+.ritual-seal {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--blood-stain);
+  border-radius: 50%;
+  color: var(--blood-fresh);
+  font-family: var(--font-inscription);
+  font-size: 1.4rem;
+}
+
+.ritual-seal::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border: 1px solid var(--blood-dry);
+  border-radius: 50%;
+}
+
+.ritual-seal::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border: 1px solid rgba(58,10,10,0.3);
+  border-radius: 50%;
+}
+
+/* === TOAST MANUSCRIPT === */
+.hm-toast {
+  position: fixed;
+  bottom: var(--space-lg);
+  right: var(--space-lg);
+  background: var(--void-elevated);
+  border: 1px solid #333;
+  border-left: 3px solid var(--sick-green-text);
+  padding: var(--space-md) var(--space-lg);
+  font-family: var(--font-pixel);
+  font-size: var(--text-xs);
+  color: var(--sick-green-text);
+  z-index: var(--z-modal);
+  max-width: 320px;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.5s ease;
+  line-height: 1.5;
+}
+
+.hm-toast.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === BORDES RASGADOS === */
+.torn-edge-top {
+  position: relative;
+}
+
+.torn-edge-top::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background:
+    linear-gradient(135deg, var(--void) 33.33%, transparent 33.33%) 0 0,
+    linear-gradient(225deg, var(--void) 33.33%, transparent 33.33%) 0 0;
+  background-size: 12px 8px;
+  background-repeat: repeat-x;
+  opacity: 0.6;
+}
+
+.torn-edge-bottom {
+  position: relative;
+}
+
+.torn-edge-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background:
+    linear-gradient(315deg, var(--void) 33.33%, transparent 33.33%) 0 0,
+    linear-gradient(45deg, var(--void) 33.33%, transparent 33.33%) 0 0;
+  background-size: 12px 8px;
+  background-repeat: repeat-x;
+  opacity: 0.6;
+}
+
+/* === MANCHA DE HUMEDAD === */
+.water-stain {
+  position: relative;
+}
+
+.water-stain::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(
+    ellipse,
+    rgba(138,106,58,0.06) 0%,
+    rgba(90,74,53,0.03) 40%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  transform: rotate(-15deg);
+}
+
+/* === CORRUPTED IMAGE PLACEHOLDER === */
+.corrupted-img-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-pixel);
+  font-size: 9px;
+  color: var(--sick-green-text);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,40,0,0.08) 3px, rgba(0,40,0,0.08) 4px),
+    repeating-linear-gradient(90deg, transparent, transparent 5px, rgba(0,40,0,0.05) 5px, rgba(0,40,0,0.05) 6px);
+  animation: manuscript-breathe 8s ease-in-out infinite;
+}
+
+/* === WIKI ARTICLE STYLE === */
+.wiki-article-text {
+  font-family: var(--font-inscription);
+  line-height: 2;
+  color: var(--paper-stained);
+  letter-spacing: 0.3px;
+}
+
+.wiki-article-text p {
+  margin-bottom: 1.5em;
+  text-indent: 1.5em;
+}
+
+.wiki-infobox {
+  float: right;
+  width: 250px;
+  border: 2px solid;
+  border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
+  background: var(--win95-bg);
+  margin: 0 0 var(--space-lg) var(--space-lg);
+  font-family: var(--font-pixel);
+  font-size: var(--text-xs);
+}
+
+.wiki-infobox-header {
+  background: var(--win95-blue);
+  color: var(--win95-white);
+  padding: 4px 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.wiki-infobox-row {
+  display: flex;
+  border-bottom: 1px solid var(--win95-dark);
+  padding: 4px 8px;
+}
+
+.wiki-infobox-label {
+  color: #000;
+  min-width: 80px;
+  font-weight: bold;
+}
+
+.wiki-infobox-value {
+  color: #333;
+  flex: 1;
+}
+
+/* === BLOOD DRIP ON HOVER === */
+.story-card:hover .story-card-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 3px;
+  height: 0;
+  background: linear-gradient(to bottom, var(--blood-fresh), transparent);
+  z-index: 2;
+  animation: blood-drip-card 1.5s ease-in forwards;
+}
+
+@keyframes blood-drip-card {
+  0% { height: 0; opacity: 0; }
+  20% { opacity: 0.8; }
+  100% { height: 60px; opacity: 0; }
+}
+
+/* === RUNE GLOW ON SCROLL === */
+.rune-scroll-glow {
+  animation: rune-pulse 3s ease-in-out infinite;
+}
+
+/* === SIGNAL LOST OVERLAY === */
+.signal-lost-overlay {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-pixel);
+  color: var(--sick-green-text);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.signal-lost-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.signal-lost-text {
+  font-size: 18px;
+  letter-spacing: 4px;
+  animation: signal-lost-blink 1s step-end infinite;
+}
+
+@keyframes signal-lost-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* === FLICKER EFFECT === */
+.fx-flicker {
+  animation: flicker-irregular 6s ease-in-out infinite;
+}
+
+@keyframes flicker-irregular {
+  0%, 95%, 100% { opacity: 1; filter: none; }
+  96% { opacity: 0.8; filter: brightness(1.1); }
+  97% { opacity: 1; filter: none; }
+  98% { opacity: 0.7; filter: brightness(0.9); }
+  99% { opacity: 1; filter: none; }
+}
+
+/* === CRT CURVATURE (subtle) === */
+.fx-crt {
+  position: relative;
+}
+
+.fx-crt::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 60%,
+    rgba(0,0,0,0.15) 100%
+  );
+  pointer-events: none;
+  z-index: calc(var(--z-overlay) - 7);
+}
+
+/* === PHOSPHOR GLOW (monitor glow) === */
+.phosphor-glow {
+  text-shadow:
+    0 0 2px currentColor,
+    0 0 8px currentColor,
+    0 0 16px currentColor;
+}
+
+/* === NOISE TEXTURE (background) === */
+.noise-bg {
+  position: relative;
+}
+
+.noise-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* === REDUCED MOTION === */
+@media (prefers-reduced-motion: reduce) {
+  .fx-vhs::after,
+  .fx-vhs::before,
+  .fx-fog::after,
+  .glitch::before,
+  .glitch::after {
+    animation: none;
+  }
+
+  .hm-cursor-lantern {
+    display: none;
+  }
+
+  .corrupted-img-placeholder {
+    animation: none;
+  }
+
+  .geocities-marquee-text {
+    animation: none;
+  }
+
+  .fx-flicker {
+    animation: none;
+  }
+}

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SYSTEM_ARCHIVE_01 — Creepipasta HollowMind</title>
+  <meta name="description" content="Archivo prohibido de creepypastas y leyendas urbanas en español. Un manuscrito maldito que reacciona a tu presencia.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/retro.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="fx-vhs fx-vignette fx-fog fx-blood-stains fx-crt">
+
+  <!-- Boot Sequence -->
+  <div class="loading-screen" role="dialog" aria-modal="true" aria-labelledby="boot-title">
+    <div class="loading-scanlines"></div>
+    <div class="boot-container">
+      <h1 id="boot-title" class="font-pixel" style="font-size:18px; margin-bottom:18px; letter-spacing:3px; color: var(--sick-green-text); text-shadow: 0 0 8px rgba(0,255,0,0.4);">> SYSTEM_ARCHIVE_01</h1>
+      <div id="boot-terminal" class="boot-terminal-log"></div>
+      <div class="boot-enter-prompt font-pixel" style="opacity:0; cursor:pointer; text-align:center; margin-top:35px; font-size:12px; letter-spacing:2px; color: var(--sick-green-text);">
+        [ TOQUE LA PANTALLA PARA ABRIR EL ARCHIVO ]
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Application -->
+  <div class="hm-app">
+
+    <!-- GeoCities Bar (barra superior estilo Web 1.0) -->
+    <div class="geocities-bar">
+      <div class="geocities-bar-left">
+        <span class="geocities-badge">FREE SPEECH ONLINE</span>
+        <span style="font-size:10px; color:#333;">|</span>
+        <span style="font-size:10px;">ECHO / NODE / ERROR</span>
+      </div>
+      <div class="geocities-bar-right">
+        <span class="geocities-counter" id="visitor-counter">000000</span>
+        <span class="geocities-badge" style="background: var(--blood-dry); color: var(--paper-aged); border-color: var(--blood-stain);">⚠ ARCHIVO COMPROMETIDO</span>
+      </div>
+    </div>
+
+    <!-- Header — Barra de Sistema Corrupta -->
+    <header class="hm-header">
+      <div class="header-container container">
+        <a href="index.html" class="hm-logo-link">
+          <div class="hm-logo font-pixel glitch" data-text="HOLLOWMIND">HOLLOWMIND</div>
+        </a>
+
+        <nav class="hm-navbar" aria-label="Navegación principal">
+          <button id="nav-mobile-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+          </button>
+
+          <ul id="nav-mobile-menu" class="nav-links">
+            <li class="menu-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="menu-item"><a href="section.html?id=archivo" class="nav-link">Archivo</a></li>
+            <li class="menu-item"><a href="section.html?id=lecturas" class="nav-link">Recomendados</a></li>
+            <li class="menu-item"><a href="genre-listing.html" class="nav-link">Géneros</a></li>
+            <li class="menu-item" id="categories-menu-trigger">
+              <a href="categories.html" class="nav-link">Categorías ▾</a>
+              <div class="mega-menu-panel" id="mega-menu-container">
+                <div class="mega-menu-grid">
+                  <div class="mega-column">
+                    <h4>Entidades</h4>
+                    <ul>
+                      <li><a href="section.html?tag=seres">Seres</a></li>
+                      <li><a href="section.html?tag=criptido">Críptidos</a></li>
+                      <li><a href="section.html?tag=monstruos">Monstruos</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-column">
+                    <h4>Temáticas</h4>
+                    <ul>
+                      <li><a href="section.html?tag=videojuegos">Videojuegos</a></li>
+                      <li><a href="section.html?tag=internet">Internet</a></li>
+                      <li><a href="section.html?tag=crimen">Crimen</a></li>
+                      <li><a href="section.html?tag=hospital">Hospitales</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-column">
+                    <h4>Formatos</h4>
+                    <ul>
+                      <li><a href="section.html?tag=longpasta">Longpasta</a></li>
+                      <li><a href="section.html?tag=micropasta">Micropasta</a></li>
+                      <li><a href="section.html?tag=diario">Diario</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-column">
+                    <h4>Especiales</h4>
+                    <ul>
+                      <li><a href="section.html?tag=rituales">Rituales</a></li>
+                      <li><a href="section.html?tag=lost-episodes">Lost Episodes</a></li>
+                      <li><a href="categories.html" style="color:var(--web-link-hover); font-weight:bold;">> Ver todos</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-controls">
+          <button id="immersive-toggle-btn" class="hm-btn btn-xs immersive-toggle" aria-label="Alternar Modo Profundidad">
+            <span class="btn-text">PROFUNDIDAD: OFF</span>
+          </button>
+          <div class="audio-control-widget">
+            <button id="audio-toggle-btn" class="hm-btn btn-icon" aria-label="Silenciar sonido ambiental">
+              <span class="audio-icon">🔇</span>
+            </button>
+            <div class="volume-slider-wrapper">
+              <input type="range" id="volume-slider" class="volume-slider-input" min="0" max="1" step="0.05" aria-label="Volumen">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Marquee (GeoCities style) -->
+    <div class="geocities-marquee">
+      <span class="geocities-marquee-text">
+        ★ BIENVENIDO AL ARCHIVO PROHIBIDO ★ ADVERTENCIA: EL CONTENIDO PUEDE ALTERAR SU ESTADO MENTAL ★ NODO DE CONEXIÓN: 19.4 kHz ★ EL ARCHIVO ESTÁ SIENDO EDITADO EN TIEMPO REAL ★ NO CIERRE ESTA VENTANA ★ SIGNAL LOST... RECONECTANDO... ★
+      </span>
+    </div>
+
+    <!-- Welcome Portal — Panel Win95 -->
+    <section class="wiki-welcome-section container" style="margin-top: 20px;">
+      <div class="win95-panel" style="max-width: 100%;">
+        <div class="win95-titlebar">
+          <div class="win95-titlebar-text">
+            <div class="win95-titlebar-icon">📁</div>
+            <span>SISTEMA_ARCHIVO — BIENVENIDA.txt</span>
+          </div>
+          <div class="win95-titlebar-buttons">
+            <button class="win95-btn-minimize">_</button>
+            <button class="win95-btn-maximize">□</button>
+            <button class="win95-btn-close">×</button>
+          </div>
+        </div>
+        <div class="win95-body">
+          <div style="display: flex; gap: 16px;">
+            <!-- System Log -->
+            <div style="flex: 1;">
+              <div class="system-log" style="height: 120px;">
+                <div class="system-log-entry"><span class="timestamp">[00:00:01]</span> <span class="level-info">SISTEMA INICIADO</span></div>
+                <div class="system-log-entry"><span class="timestamp">[00:00:02]</span> <span class="level-warn">INTEGRIDAD: 67%</span></div>
+                <div class="system-log-entry"><span class="timestamp">[00:00:03]</span> <span class="level-info">CARGANDO ARCHIVOS...</span></div>
+              </div>
+            </div>
+            <!-- Welcome Text -->
+            <div style="flex: 2;">
+              <p style="font-family: var(--font-pixel); font-size: 12px; color: #000; line-height: 1.6; margin-bottom: 8px;">
+                <b>SYSTEM_ARCHIVE_01</b> — Archivo prohibido de creepypastas y leyendas urbanas en español.
+              </p>
+              <p style="font-family: var(--font-pixel); font-size: 11px; color: #333; line-height: 1.5; margin-bottom: 12px;">
+                HollowMind funciona como un gran manuscrito colaborativo parcialmente comprometido. Aquí encontrarás documentos clasificados, transcripciones de radiofrecuencias y bitácoras de fenómenos anómalos.
+              </p>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <a href="section.html?id=archivo" class="web-link" style="font-family: var(--font-pixel); font-size: 11px;">> EXPLORAR ARCHIVO</a>
+                <a href="genre-listing.html" class="web-link" style="font-family: var(--font-pixel); font-size: 11px;">> ÍNDICE DE GÉNEROS</a>
+                <a href="categories.html" class="web-link" style="font-family: var(--font-pixel); font-size: 11px;">> TAXONOMÍA DE AMENAZAS</a>
+                <a href="story.html?id=protocolo-errante" class="web-link" style="font-family: var(--font-pixel); font-size: 11px;">> AUDITAR NÚCLEO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Layout -->
+    <main class="layout-with-sidebar container" style="margin-top: 20px; margin-bottom: 70px;">
+
+      <!-- Left Column: Main Content -->
+      <section class="main-portal-content">
+
+        <!-- Search -->
+        <div class="terminal-search-wrapper" style="margin-bottom: 30px;">
+          <h2 class="font-pixel" style="color: var(--sick-green-text); font-size: 11px; margin-bottom: 8px; letter-spacing: 2px;">[ BUSCADOR DEL ARCHIVO ]</h2>
+          <div class="terminal-search-bar">
+            <span class="terminal-prompt font-pixel">></span>
+            <input type="text" id="search-input" class="terminal-search-input" placeholder="busque en el archivo..." aria-label="Buscar en el archivo">
+          </div>
+          <div id="search-results" class="terminal-results-container" style="display: none;"></div>
+        </div>
+
+        <!-- Featured Panels (Win95 style) -->
+        <div class="wiki-highlights-grid" style="margin-bottom: 30px;">
+
+          <div class="win95-panel">
+            <div class="win95-titlebar" style="background: linear-gradient(90deg, #800000, #a00000);">
+              <div class="win95-titlebar-text">
+                <span>⚠ FRAGMENTO DESTACADO</span>
+              </div>
+            </div>
+            <div class="win95-body">
+              <h3 style="font-family: var(--font-pixel); font-size: 13px; margin-bottom: 6px; color: #000; font-weight: bold;">El Hombre Sin Rostro</h3>
+              <p style="font-family: var(--font-pixel); font-size: 11px; color: #333; line-height: 1.5; margin-bottom: 10px;">
+                Reportes policiales desclasificados del Condado de Oakhaven documentan la presencia de una entidad anormalmente alta en el bosque.
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-family: var(--font-pixel); font-size: 10px; color: var(--blood-fresh); letter-spacing: 1px;">T-9/10 [Extremo]</span>
+                <a href="story.html?id=el-hombre-sin-rostro" class="win95-button" style="font-size: 10px; padding: 2px 8px; min-width: auto;">ACCEDER</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="win95-panel">
+            <div class="win95-titlebar" style="background: linear-gradient(90deg, #000080, #0066cc);">
+              <div class="win95-titlebar-text">
+                <span>★ MANUSCRITO DEL MES</span>
+              </div>
+            </div>
+            <div class="win95-body">
+              <h3 style="font-family: var(--font-pixel); font-size: 13px; margin-bottom: 6px; color: #000; font-weight: bold;">La Sonrisa Eterna</h3>
+              <p style="font-family: var(--font-pixel); font-size: 11px; color: #333; line-height: 1.5; margin-bottom: 10px;">
+                El historial clínico del Sujeto 4802 documenta su automutilación facial tras un brote psicótico inducido por insomnio.
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-family: var(--font-pixel); font-size: 10px; color: var(--electric-text); letter-spacing: 1px;">T-8/10 [Psicológico]</span>
+                <a href="story.html?id=la-sonrisa-eterna" class="win95-button" style="font-size: 10px; padding: 2px 8px; min-width: auto;">ACCEDER</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard Modules -->
+        <div class="dashboard-hub-section" style="margin-bottom: 35px;">
+          <h2 class="section-title font-pixel" style="margin-bottom: 15px; letter-spacing: 2px; color: var(--sick-green-text); font-size: 12px;">[ SELLOS DE ACCESO ]</h2>
+
+          <div class="quick-dashboard-grid">
+            <a href="section.html?id=archivo" class="dashboard-hub-card">
+              <h4 class="font-pixel" style="font-size: 12px; margin-bottom: 5px; color: var(--web-link); letter-spacing: 1px; text-decoration: underline;">Historical Archive</h4>
+              <p style="font-family: var(--font-pixel); font-size: 10px; color: #333; line-height: 1.5;">
+                Índice completo de todos los manuscritos y leyendas del sistema.
+              </p>
+            </a>
+            <a href="section.html?id=lecturas" class="dashboard-hub-card">
+              <h4 class="font-pixel" style="font-size: 12px; margin-bottom: 5px; color: var(--web-link); letter-spacing: 1px; text-decoration: underline;">Suggested Reading</h4>
+              <p style="font-family: var(--font-pixel); font-size: 10px; color: #333; line-height: 1.5;">
+                Selección inmersiva para leer en completa oscuridad.
+              </p>
+            </a>
+            <a href="story.html?id=la-sonrisa-eterna" class="dashboard-hub-card">
+              <h4 class="font-pixel" style="font-size: 12px; margin-bottom: 5px; color: var(--web-link); letter-spacing: 1px; text-decoration: underline;">PotM (Month Story)</h4>
+              <p style="font-family: var(--font-pixel); font-size: 10px; color: #333; line-height: 1.5;">
+                El manuscrito más votado por el comité HollowMind.
+              </p>
+            </a>
+            <a href="story.html?id=la-bestia-que-rasguna" class="dashboard-hub-card">
+              <h4 class="font-pixel" style="font-size: 12px; margin-bottom: 5px; color: var(--web-link); letter-spacing: 1px; text-decoration: underline;">Spotlighted Pastas</h4>
+              <p style="font-family: var(--font-pixel); font-size: 10px; color: #333; line-height: 1.5;">
+                Fragmentos que destacan por su atmósfera sonora y visual.
+              </p>
+            </a>
+            <a href="story.html?id=ahogado-exe" class="dashboard-hub-card">
+              <h4 class="font-pixel" style="font-size: 12px; margin-bottom: 5px; color: var(--web-link); letter-spacing: 1px; text-decoration: underline;">Contest Winner</h4>
+              <p style="font-family: var(--font-pixel); font-size: 10px; color: #333; line-height: 1.5;">
+                Registro ganador de la competencia de horror del sistema.
+              </p>
+            </a>
+            <a href="section.html?tag=internet" class="dashboard-hub-card">
+              <h4 class="font-pixel" style="font-size: 12px; margin-bottom: 5px; color: var(--web-link); letter-spacing: 1px; text-decoration: underline;">User Stories</h4>
+              <p style="font-family: var(--font-pixel); font-size: 10px; color: #333; line-height: 1.5;">
+                Relatos enviados y editados por la comunidad.
+              </p>
+            </a>
+            <a href="section.html?tag=retro" class="dashboard-hub-card">
+              <h4 class="font-pixel" style="font-size: 12px; margin-bottom: 5px; color: var(--web-link); letter-spacing: 1px; text-decoration: underline;">Memes</h4>
+              <p style="font-family: var(--font-pixel); font-size: 10px; color: #333; line-height: 1.5;">
+                Archivos humorísticos de la red profunda.
+              </p>
+            </a>
+            <a href="section.html?tag=glitch" class="dashboard-hub-card">
+              <h4 class="font-pixel" style="font-size: 12px; margin-bottom: 5px; color: var(--web-link); letter-spacing: 1px; text-decoration: underline;">Trollpasta</h4>
+              <p style="font-family: var(--font-pixel); font-size: 10px; color: #333; line-height: 1.5;">
+                Archivos catalogados como parodias o códigos corruptos.
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Recent Records -->
+        <div class="recent-records-wrapper" style="margin-bottom: 35px;">
+          <h2 class="section-title font-pixel" style="margin-bottom: 15px; letter-spacing: 2px; color: var(--sick-green-text); font-size: 12px;">[ ÚLTIMOS FRAGMENTOS RECUPERADOS ]</h2>
+          <div id="recent-stories-grid" class="cards-grid"></div>
+        </div>
+
+      </section>
+
+      <!-- Right Column: Sidebar -->
+      <aside class="sidebar section-filters-sidebar">
+
+        <!-- System Monitor -->
+        <div class="wiki-sidebar-widget" style="margin-bottom: 15px;">
+          <h3 class="font-pixel" style="color: var(--sick-green-text); font-size: 10px; margin-bottom: 10px; border-bottom: 1px solid var(--win95-dark); padding-bottom: 5px; letter-spacing: 2px;">
+            [ SYSTEM MONITOR ]
+          </h3>
+          <div class="system-log" style="height: 100px;">
+            <div class="system-log-entry"><span class="level-info">NODO: ACTIVO</span></div>
+            <div class="system-log-entry"><span class="level-warn">INTEGRIDAD: 67%</span></div>
+            <div class="system-log-entry"><span class="level-info">FREQ: 19.4 kHz</span></div>
+            <div class="system-log-entry"><span class="level-error">ARCHIVOS CORROMPIDOS: 3</span></div>
+          </div>
+        </div>
+
+        <!-- Activity Log -->
+        <div class="wiki-sidebar-widget" style="margin-bottom: 15px;">
+          <h3 class="font-pixel" style="color: var(--sick-green-text); font-size: 10px; margin-bottom: 10px; border-bottom: 1px solid var(--win95-dark); padding-bottom: 5px; letter-spacing: 2px;">
+            [ ACTIVIDAD RECIENTE ]
+          </h3>
+          <div class="recent-activities" style="font-family: var(--font-pixel); font-size: 10px; display: flex; flex-direction: column; gap: 8px; line-height: 1.5;">
+            <div>
+              <span style="color: var(--web-link);">Sysop_Hollow</span> selló <a href="story.html?id=protocolo-errante" class="web-link">Protocolo ERRANTE</a>.
+              <div style="color: var(--win95-dark); font-size: 9px; margin-top: 2px;">Hace 5 min</div>
+            </div>
+            <div>
+              <span style="color: var(--web-link);">Investigador_99</span> reportó anomalía en <a href="story.html?id=el-hombre-sin-rostro" class="web-link">El Hombre Sin Rostro</a>.
+              <div style="color: var(--win95-dark); font-size: 9px; margin-top: 2px;">Hace 22 min</div>
+            </div>
+            <div>
+              <span style="color: var(--web-link);">Anonimo_83</span> abrió hilo en <a href="story.html?id=frecuencia-19-4" class="web-link">Frecuencia 19.4</a>.
+              <div style="color: var(--win95-dark); font-size: 9px; margin-top: 2px;">Hace 1 hora</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tags Cloud -->
+        <div class="wiki-sidebar-widget" style="margin-bottom: 15px;">
+          <h3 class="font-pixel" style="color: var(--sick-green-text); font-size: 10px; margin-bottom: 10px; border-bottom: 1px solid var(--win95-dark); padding-bottom: 5px; letter-spacing: 2px;">
+            [ FIRMAS DE ANOMALÍAS ]
+          </h3>
+          <div id="popular-tags-container" class="tags-cloud-wrapper"></div>
+        </div>
+
+        <!-- Quick Access -->
+        <div class="wiki-sidebar-widget">
+          <h3 class="font-pixel" style="color: var(--sick-green-text); font-size: 10px; margin-bottom: 10px; border-bottom: 1px solid var(--win95-dark); padding-bottom: 5px; letter-spacing: 2px;">
+            [ ACCESO RÁPIDO ]
+          </h3>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <a href="section.html?id=archivo" class="web-link" style="font-family: var(--font-pixel); font-size: 10px;">> Historical Archive</a>
+            <a href="section.html?id=lecturas" class="web-link" style="font-family: var(--font-pixel); font-size: 10px;">> Suggested Reading</a>
+            <a href="story.html?id=la-sonrisa-eterna" class="web-link" style="font-family: var(--font-pixel); font-size: 10px;">> Story of the Month</a>
+            <a href="genre-listing.html" class="web-link" style="font-family: var(--font-pixel); font-size: 10px;">> Índice de Géneros</a>
+            <a href="categories.html" class="web-link" style="font-family: var(--font-pixel); font-size: 10px;">> Taxonomía Completa</a>
+          </div>
+        </div>
+
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="hm-footer">
+      <div class="footer-container container">
+        <div class="footer-text">
+          <p style="letter-spacing: 1.5px; font-family: var(--font-pixel); font-size: 11px;">> HOLLOWMIND NO ALMACENA LAS HISTORIAS... LAS RECUERDA CONTIGO.</p>
+          <p style="color: var(--win95-dark); font-size: 10px; margin-top: 4px; letter-spacing: 0.5px; font-family: var(--font-pixel);">
+            Manuscrito desclasificado. Sesión indexada bajo encriptación espectral.
+          </p>
+        </div>
+        <div class="footer-status">
+          <span class="mark-sick breathe"></span>
+          <span style="letter-spacing: 1px; font-family: var(--font-pixel); font-size: 11px;">ESTADO: CONECTADO</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/story-data.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/retro-effects.js"></script>
+  <script src="js/hollow-sound.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/system-messages.js"></script>
+  <script src="js/immersive-mode.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/story-renderer.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // Visitor counter
+    document.addEventListener('DOMContentLoaded', () => {
+      const visits = parseInt(localStorage.getItem('hm-total-visits') || '1');
+      const counter = document.getElementById('visitor-counter');
+      if (counter) {
+        counter.textContent = String(visits).padStart(6, '0');
+      }
+    });
+  </script>
+</body>
+</html>

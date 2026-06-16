@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taxonomía — SYSTEM_ARCHIVE_01</title>
+  <meta name="description" content="Taxonomía completa de categorías del archivo HollowMind.">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/retro.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/effects.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/story.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Share+Tech+Mono&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="fx-vhs fx-vignette fx-fog fx-blood-stains fx-crt">
+
+  <div class="loading-screen" role="dialog" aria-modal="true">
+    <div class="loading-scanlines"></div>
+    <div class="boot-container">
+      <h1 class="font-pixel" style="font-size:18px; margin-bottom:18px; letter-spacing:3px; color: var(--sick-green-text); text-shadow: 0 0 8px rgba(0,255,0,0.4);">> SYSTEM_ARCHIVE_01</h1>
+      <div id="boot-terminal" class="boot-terminal-log"></div>
+      <div class="boot-enter-prompt font-pixel" style="opacity:0; cursor:pointer; text-align:center; margin-top:35px; font-size:12px; letter-spacing:2px; color: var(--sick-green-text);">[ TOQUE LA PANTALLA PARA ABRIR EL ARCHIVO ]</div>
+    </div>
+  </div>
+
+  <div class="hm-app">
+    <header class="hm-header">
+      <div class="header-container container">
+        <a href="index.html" class="hm-logo-link"><div class="hm-logo font-manuscript glitch" data-text="HOLLOWMIND">HOLLOWMIND</div></a>
+        <nav class="hm-navbar" aria-label="Navegación principal">
+          <button id="nav-mobile-toggle" class="nav-toggle font-manuscript" aria-label="Abrir menú" aria-expanded="false"><span class="toggle-bar"></span><span class="toggle-bar"></span><span class="toggle-bar"></span></button>
+          <ul id="nav-mobile-menu" class="nav-links font-manuscript">
+            <li class="menu-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="menu-item"><a href="section.html?id=archivo" class="nav-link">Archivo</a></li>
+            <li class="menu-item"><a href="section.html?id=lecturas" class="nav-link">Recomendados</a></li>
+            <li class="menu-item"><a href="genre-listing.html" class="nav-link">Géneros</a></li>
+            <li class="menu-item" id="categories-menu-trigger">
+              <a href="categories.html" class="nav-link">Categorías ▾</a>
+              <div class="mega-menu-panel" id="mega-menu-container">
+                <div class="mega-menu-grid">
+                  <div class="mega-column"><h4>Entidades</h4><ul><li><a href="section.html?tag=seres">Seres</a></li><li><a href="section.html?tag=criptido">Críptidos</a></li><li><a href="section.html?tag=monstruos">Monstruos</a></li></ul></div>
+                  <div class="mega-column"><h4>Temáticas</h4><ul><li><a href="section.html?tag=videojuegos">Videojuegos</a></li><li><a href="section.html?tag=internet">Internet</a></li><li><a href="section.html?tag=crimen">Crimen</a></li><li><a href="section.html?tag=hospital">Hospitales</a></li></ul></div>
+                  <div class="mega-column"><h4>Formatos</h4><ul><li><a href="section.html?tag=longpasta">Longpasta</a></li><li><a href="section.html?tag=micropasta">Micropasta</a></li><li><a href="section.html?tag=diario">Diario</a></li></ul></div>
+                  <div class="mega-column"><h4>Especiales</h4><ul><li><a href="section.html?tag=rituales">Rituales</a></li><li><a href="section.html?tag=lost-episodes">Lost Episodes</a></li><li><a href="categories.html" style="color:var(--blood-fresh); font-weight:bold;">> Ver todos</a></li></ul></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-controls">
+          <button id="immersive-toggle-btn" class="hm-btn btn-xs font-manuscript immersive-toggle"><span class="btn-text">PROFUNDIDAD: OFF</span></button>
+          <div class="audio-control-widget">
+            <button id="audio-toggle-btn" class="hm-btn btn-icon"><span class="audio-icon">🔇</span></button>
+            <div class="volume-slider-wrapper"><input type="range" id="volume-slider" class="volume-slider-input" min="0" max="1" step="0.05"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="section-page-layout container" id="categories-container"></main>
+
+    <footer class="hm-footer">
+      <div class="footer-container container font-manuscript">
+        <div class="footer-text">
+          <p style="letter-spacing:1.5px;">> HOLLOWMIND NO ALMACENA LAS HISTORIAS... LAS RECUERDA CONTIGO.</p>
+          <p style="color:var(--paper-ash); font-size:10px; margin-top:4px;">Manuscrito desclasificado. Sesión indexada bajo encriptación espectral.</p>
+        </div>
+        <div class="footer-status"><span class="mark-blood breathe"></span><span style="letter-spacing:1px;">ESTADO: CONECTADO</span></div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/story-data.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/hollow-sound.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/system-messages.js"></script>
+  <script src="js/immersive-mode.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/story-renderer.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('categories-container');
+      if (!container) return;
+
+      const groupColors = {
+        'Entidades': 'var(--blood-bright)',
+        'Temáticas': 'var(--blood-fresh)',
+        'Objetos': 'var(--rune-glow)',
+        'Formatos': 'var(--paper-dark)',
+        'Psicología y Abstracción': 'var(--blood-arterial)',
+        'Estilo': 'var(--rune-dim)',
+        'Categorías Especiales': 'var(--paper-burnt)'
+      };
+
+      const groupIcons = {
+        'Entidades': '👁',
+        'Temáticas': '◉',
+        'Objetos': '⚗',
+        'Formatos': '📜',
+        'Psicología y Abstracción': '🧠',
+        'Estilo': '⚗',
+        'Categorías Especiales': '⚠'
+      };
+
+      const allTags = {};
+      HM_STORIES.forEach(story => {
+        story.tags.forEach(tag => { allTags[tag] = (allTags[tag] || 0) + 1; });
+        story.categories.forEach(cat => { allTags[cat] = (allTags[cat] || 0) + 1; });
+      });
+
+      let html = `
+        <nav class="breadcrumbs">
+          <a href="index.html">HollowMind</a>
+          <span class="separator">/</span>
+          <span class="current">Taxonomía de Amenazas</span>
+        </nav>
+
+        <div style="margin-bottom:var(--space-xl);">
+          <h1 class="font-manuscript glitch" data-text="TAXONOMÍA DE AMENAZAS" style="font-size:var(--text-2xl); color:var(--blood-fresh); margin-bottom:var(--space-sm); letter-spacing:3px;">TAXONOMÍA DE AMENAZAS</h1>
+          <p class="font-handwritten" style="color:var(--paper-burnt); line-height:1.6;">Sistema de clasificación del manuscrito. Cada categoría contiene entradas verificadas y catalogadas bajo protocolos de seguridad HollowMind.</p>
+        </div>
+
+        <div class="categories-grid">`;
+
+      Object.entries(HM_CATEGORIES).forEach(([groupName, group]) => {
+        const color = groupColors[groupName] || 'var(--paper-dark)';
+        const icon = groupIcons[groupName] || '◉';
+        html += `
+          <div class="category-group">
+            <h3 style="color:${color};"><span style="margin-right:6px;">${icon}</span>${groupName}</h3>
+            <div class="category-list">`;
+
+        group.items.forEach(item => {
+          const slug = item.toLowerCase()
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-|-$/g, '');
+          const count = allTags[slug] || 0;
+          html += `
+            <a href="section.html?tag=${slug}" class="category-item" style="text-decoration:none;">
+              <span>${item}</span>
+              <span class="count">${count} registro${count !== 1 ? 's' : ''}</span>
+            </a>`;
+        });
+
+        html += `</div></div>`;
+      });
+
+      html += `</div>
+
+        <div style="margin-top:var(--space-2xl); padding:var(--space-lg); border:1px solid #1a0e08; background:var(--void-elevated); position:relative;">
+          <div style="position:absolute; top:0; left:0; right:0; height:1px; background:linear-gradient(90deg, transparent, var(--blood-dry), transparent);"></div>
+          <h3 class="font-manuscript" style="color:var(--blood-fresh); font-size:var(--text-sm); margin-bottom:var(--space-md); letter-spacing:2px;">> Nube de Firmas Activa</h3>
+          <div class="tags-cloud-wrapper" style="gap:7px;">`;
+
+      Object.entries(allTags)
+        .sort((a, b) => b[1] - a[1])
+        .forEach(([tag, count]) => {
+          html += `<a href="section.html?tag=${tag}" class="tag">${tag} <span style="color:var(--paper-ash);">(${count})</span></a>`;
+        });
+
+      html += `</div></div>
+
+        <div style="margin-top:var(--space-xl); padding:var(--space-lg); border:1px solid #1a0e08; background:rgba(58,10,10,0.05); text-align:center;">
+          <p class="font-manuscript" style="color:var(--paper-burnt); font-size:var(--text-xs); letter-spacing:1px; line-height:1.8;">
+            > ADVERTENCIA: Algunas categorías pueden contener entradas que auto-modifican su contenido.<br>
+            > Si nota inconsistencias en las clasificaciones, no intente corregirlas.<br>
+            > El manuscrito se corrige a sí mismo.
+          </p>
+        </div>`;
+
+      container.innerHTML = html;
+
+      // Animate categories appearing
+      const groups = container.querySelectorAll('.category-group');
+      groups.forEach((group, i) => {
+        group.style.opacity = '0';
+        group.style.transform = 'translateY(10px)';
+        group.style.transition = 'all 0.5s ease';
+        setTimeout(() => {
+          group.style.opacity = '1';
+          group.style.transform = 'translateY(0)';
+        }, 200 + i * 100);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+/* ============================================
+   CREEPIPASTA HOLLOWMIND — GENRE LISTING
+   Wiki index card layout
+   ============================================ */
+
+/* === GENRE PAGE LAYOUT === */
+.genre-page {
+  padding-top: calc(var(--header-height) + var(--space-xl));
+  padding-bottom: var(--space-2xl);
+}
+
+/* === GENRE HEADER === */
+.genre-header {
+  margin-bottom: var(--space-xl);
+}
+
+.genre-title {
+  font-family: var(--font-inscription);
+  font-size: var(--text-2xl);
+  color: var(--paper-aged);
+  font-weight: 400;
+  margin-bottom: var(--space-sm);
+  letter-spacing: 1px;
+}
+
+.genre-subtitle {
+  font-family: var(--font-handwritten);
+  font-size: var(--text-sm);
+  color: var(--paper-burnt);
+  line-height: 1.6;
+}
+
+.genre-stats {
+  display: flex;
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+  font-family: var(--font-manuscript);
+  font-size: var(--text-xs);
+  letter-spacing: 1px;
+}
+
+.genre-stat {
+  color: var(--paper-burnt);
+}
+
+.genre-stat .num {
+  color: var(--blood-fresh);
+  font-weight: bold;
+}
+
+/* === SECTION TABS (SPA navigation) === */
+.genre-tabs {
+  display: flex;
+  gap: 2px;
+  margin-bottom: var(--space-xl);
+  border-bottom: 1px solid #1a0e08;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.genre-tab {
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-manuscript);
+  font-size: var(--text-xs);
+  color: var(--paper-burnt);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: 1px solid transparent;
+  border-bottom: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  position: relative;
+  top: 1px;
+}
+
+.genre-tab:hover {
+  color: var(--paper-aged);
+  background: rgba(26,14,8,0.3);
+}
+
+.genre-tab.active {
+  color: var(--blood-fresh);
+  border-color: #1a0e08;
+  background: var(--void-elevated);
+}
+
+.genre-tab .tab-count {
+  margin-left: 6px;
+  color: var(--paper-ash);
+  font-size: 9px;
+}
+
+/* === GENRE SECTION CONTENT === */
+.genre-section {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.genre-section.active {
+  display: block;
+}
+
+.genre-section-header {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid #1a0e08;
+}
+
+.genre-section-title {
+  font-family: var(--font-manuscript);
+  font-size: var(--text-sm);
+  color: var(--blood-fresh);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.genre-section-desc {
+  font-family: var(--font-handwritten);
+  font-size: var(--text-xs);
+  color: var(--paper-burnt);
+  font-style: italic;
+}
+
+/* === GENRE CARD GRID === */
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+}
+
+/* === GENRE CARD === */
+.genre-card {
+  border: 1px solid #1a0e08;
+  background: var(--void-elevated);
+  overflow: hidden;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  display: block;
+}
+
+.genre-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--card-color, var(--blood-dry));
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.genre-card:hover {
+  border-color: var(--blood-stain);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-deep);
+}
+
+.genre-card:hover::before {
+  opacity: 1;
+}
+
+/* Card Image */
+.genre-card-image {
+  width: 100%;
+  height: 120px;
+  background: var(--void-surface);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.genre-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease, filter 0.6s ease;
+  filter: grayscale(0.5) contrast(1.1) brightness(0.8);
+}
+
+.genre-card-image img.loaded {
+  opacity: 1;
+}
+
+.genre-card-image .img-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(26,14,8,0.1) 3px, rgba(26,14,8,0.1) 4px);
+  transition: opacity 0.4s;
+}
+
+.genre-card-image .img-placeholder.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.genre-card-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, var(--void-elevated), transparent);
+}
+
+/* Card Body */
+.genre-card-body {
+  padding: var(--space-md);
+}
+
+.genre-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-sm);
+}
+
+.genre-card-name {
+  font-family: var(--font-manuscript);
+  font-size: var(--text-sm);
+  color: var(--paper-aged);
+  letter-spacing: 0.5px;
+  flex: 1;
+}
+
+.genre-card-count {
+  font-family: var(--font-manuscript);
+  font-size: var(--text-xs);
+  color: var(--blood-fresh);
+  background: rgba(58,10,10,0.15);
+  padding: 2px 8px;
+  border: 1px solid var(--blood-dry);
+  letter-spacing: 1px;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.genre-card-desc {
+  font-family: var(--font-handwritten);
+  font-size: var(--text-xs);
+  color: var(--paper-burnt);
+  line-height: 1.6;
+}
+
+/* Subcategory indicator */
+.genre-card-subcategory {
+  display: inline-block;
+  font-family: var(--font-manuscript);
+  font-size: 8px;
+  color: var(--paper-ash);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: var(--space-sm);
+  padding: 2px 6px;
+  border: 1px solid #1a0e08;
+}
+
+/* === SUBCATEGORY GROUPS === */
+.subcategory-group {
+  margin-left: var(--space-lg);
+  padding-left: var(--space-md);
+  border-left: 1px solid #1a0e08;
+  margin-top: var(--space-sm);
+}
+
+/* === SEARCH FILTER === */
+.genre-search-wrapper {
+  margin-bottom: var(--space-lg);
+  position: relative;
+}
+
+.genre-search-input {
+  width: 100%;
+  background: var(--void);
+  border: 1px solid #1a0e08;
+  color: var(--paper-aged);
+  font-family: var(--font-manuscript);
+  font-size: var(--text-sm);
+  padding: var(--space-sm) var(--space-md);
+  padding-left: 35px;
+  letter-spacing: 0.5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.genre-search-input:focus {
+  border-color: var(--blood-stain);
+}
+
+.genre-search-input::placeholder {
+  color: var(--paper-ash);
+  opacity: 0.5;
+}
+
+.genre-search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--paper-ash);
+  font-size: var(--text-sm);
+}
+
+/* === GENRE TOAST === */
+.genre-toast {
+  position: fixed;
+  bottom: var(--space-lg);
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--void-elevated);
+  border: 1px solid #1a0e08;
+  border-left: 3px solid var(--blood-stain);
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-manuscript);
+  font-size: var(--text-xs);
+  color: var(--paper-dark);
+  z-index: var(--z-modal);
+  opacity: 0;
+  transition: all 0.4s ease;
+  letter-spacing: 0.5px;
+}
+
+.genre-toast.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .genre-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .genre-tabs {
+    gap: 0;
+  }
+
+  .genre-tab {
+    padding: var(--space-sm) var(--space-md);
+    font-size: 9px;
+  }
+
+  .genre-stats {
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .genre-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .genre-card-image {
+    height: 100px;
+  }
+}

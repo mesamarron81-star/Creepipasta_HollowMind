@@ -1,0 +1,135 @@
+/* ============================================
+   CREEPIPASTA HOLLOWMIND — LOADING
+   Terminal de sistema corrupto
+   ============================================ */
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: var(--z-loading);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 1.2s ease, visibility 1.2s ease;
+}
+
+.loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loading-scanlines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 1px,
+    rgba(0,255,0,0.02) 1px,
+    rgba(0,255,0,0.02) 2px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.boot-container {
+  position: relative;
+  z-index: 2;
+  max-width: 550px;
+  width: 90%;
+  padding: var(--space-xl);
+}
+
+.boot-terminal-log {
+  font-family: var(--font-pixel);
+  font-size: var(--text-sm);
+  color: var(--sick-green-text);
+  line-height: 2;
+  min-height: 180px;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 4px rgba(0,255,0,0.3);
+}
+
+.boot-terminal-log .boot-line {
+  opacity: 0;
+  animation: fadeIn 0.4s ease forwards;
+  margin-bottom: 2px;
+}
+
+.boot-line.line-ok {
+  color: var(--sick-green-text);
+}
+
+.boot-line.line-warn {
+  color: #ffff00;
+}
+
+.boot-line.line-error {
+  color: #ff0000;
+  text-shadow: 0 0 6px rgba(255,0,0,0.4);
+}
+
+.boot-line.line-system {
+  color: var(--sick-green-dim);
+}
+
+.boot-line.line-highlight {
+  color: var(--sick-green-pulse);
+  font-weight: bold;
+}
+
+/* Barra de carga estilo Win95 */
+.boot-progress {
+  width: 100%;
+  height: 16px;
+  background: var(--win95-white);
+  border: 2px solid;
+  border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
+  box-shadow: inset 1px 1px 0 var(--win95-darker);
+  margin-top: var(--space-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.boot-progress-bar {
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--sick-green-text) 0px,
+    var(--sick-green-text) 10px,
+    transparent 10px,
+    transparent 12px
+  );
+  width: 0%;
+  animation: loading-ink 3.5s ease-in-out forwards;
+  animation-name: win95-progress-fill;
+}
+
+@keyframes win95-progress-fill {
+  0% { width: 0%; }
+  15% { width: 15%; }
+  25% { width: 22%; }
+  35% { width: 35%; }
+  50% { width: 50%; }
+  65% { width: 65%; }
+  80% { width: 80%; }
+  100% { width: 100%; }
+}
+
+/* Prompt de entrada */
+.boot-enter-prompt {
+  transition: opacity 0.6s ease;
+}
+
+.boot-enter-prompt.visible {
+  opacity: 1 !important;
+  cursor: pointer;
+}
+
+.boot-enter-prompt.visible:hover {
+  color: var(--sick-green-pulse);
+  text-shadow: 0 0 10px rgba(0,255,0,0.5);
+}

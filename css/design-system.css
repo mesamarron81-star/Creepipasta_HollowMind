@@ -1,0 +1,294 @@
+/* ============================================
+   CREEPIPASTA HOLLOWMIND — DESIGN SYSTEM
+   Sitio web perdido en internet antiguo
+   ============================================ */
+
+:root {
+  /* === VOID (negro absoluto) === */
+  --void: #0a0a0a;
+  --void-deep: #000000;
+  --void-surface: #111111;
+  --void-elevated: #1a1a1a;
+
+  /* === BLOOD (rojos quemados) === */
+  --blood-dry: #3a0a0a;
+  --blood-stain: #5a1515;
+  --blood-fresh: #7a2020;
+  --blood-bright: #8b2a2a;
+  --blood-glow: #a03030;
+  --blood-arterial: #b83838;
+
+  /* === SICKLY GREEN (verdes enfermizos) === */
+  --sick-green-dim: #1a2a1a;
+  --sick-green: #2a4a2a;
+  --sick-green-bright: #3a6a3a;
+  --sick-green-glow: #4a8a4a;
+  --sick-green-text: #5aaa5a;
+  --sick-green-pulse: #6acc6a;
+
+  /* === ELECTRIC BLUE (azules eléctricos) === */
+  --electric-dim: #0a1a3a;
+  --electric: #1a3a7a;
+  --electric-bright: #2a5aaa;
+  --electric-glow: #3a7acc;
+  --electric-text: #4a9aee;
+  --electric-pulse: #6abbff;
+
+  /* === PAPER (papel envejecido) === */
+  --paper-aged: #d4c5a9;
+  --paper-stained: #b8a882;
+  --paper-dark: #8a7e6b;
+  --paper-burnt: #5a4a35;
+  --paper-ash: #3a3228;
+
+  /* === PARCHMENT === */
+  --parchment: #c4b594;
+  --parchment-shadow: #9a8a6a;
+  --parchment-dark: #6a5a45;
+
+  /* === INK === */
+  --ink-black: #1a1008;
+  --ink-faded: #4a3a28;
+  --ink-bleed: #2a1a0a;
+
+  /* === BLOOD INK === */
+  --blood-ink: #4a0e0e;
+  --blood-ink-light: #6a1a1a;
+
+  /* === RUNES === */
+  --rune-dim: #3a2a18;
+  --rune-glow: #8a6a3a;
+  --rune-active: #c49a4a;
+
+  /* === ASH === */
+  --ash-cold: #2a2520;
+  --ash-warm: #3a3228;
+
+  /* === ANOMALY === */
+  --anomaly: #4a1a3a;
+  --anomaly-glow: #7a2a5a;
+
+  /* === WIN95 PALETTE === */
+  --win95-bg: #c0c0c0;
+  --win95-dark: #808080;
+  --win95-darker: #404040;
+  --win95-light: #dfdfdf;
+  --win95-white: #ffffff;
+  --win95-blue: #000080;
+  --win95-title-active: #000080;
+  --win95-title-inactive: #808080;
+
+  /* === GEocities / Web 1.0 === */
+  --web-link: #0000ff;
+  --web-link-visited: #800080;
+  --web-link-hover: #ff0000;
+  --web-bg: #000000;
+  --web-text: #00ff00;
+
+  /* === TYPOGRAPHY === */
+  --font-manuscript: 'Share Tech Mono', 'Courier New', monospace;
+  --font-inscription: 'Playfair Display', Georgia, serif;
+  --font-handwritten: 'Work Sans', sans-serif;
+  --font-pixel: 'Share Tech Mono', monospace;
+  --font-system: 'Courier Prime', 'Courier New', monospace;
+
+  /* === SIZES === */
+  --text-xs: 0.65rem;
+  --text-sm: 0.78rem;
+  --text-base: 0.92rem;
+  --text-md: 1.05rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.9rem;
+  --text-3xl: 2.4rem;
+  --text-ritual: 3rem;
+
+  /* === SPACING === */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+  --space-ritual: 80px;
+
+  /* === BORDERS === */
+  --border-hairline: 1px solid #333;
+  --border-blood: 1px solid #3a0a0a;
+  --border-torn: 2px solid #2a1510;
+  --border-ritual: 1px solid #4a3a28;
+  --border-win95: 2px solid;
+  --border-win95-outer: #dfdfdf;
+  --border-win95-inner: #404040;
+
+  /* === SHADOWS === */
+  --shadow-deep: 0 4px 20px rgba(0,0,0,0.8);
+  --shadow-blood: 0 0 15px rgba(90,21,21,0.3);
+  --shadow-rune: 0 0 12px rgba(138,106,58,0.2);
+  --shadow-void: 0 8px 40px rgba(0,0,0,0.95);
+  --shadow-win95: 2px 2px 0 #000;
+  --shadow-win95-inset: inset 1px 1px 0 #dfdfdf, inset -1px -1px 0 #404040;
+
+  /* === Z-INDEX === */
+  --z-base: 1;
+  --z-paper: 10;
+  --z-stain: 20;
+  --z-blood: 30;
+  --z-overlay: 100;
+  --z-modal: 200;
+  --z-loading: 500;
+  --z-cursor: 9999;
+
+  /* === LAYOUT === */
+  --container-max: 1100px;
+  --sidebar-width: 280px;
+  --header-height: 56px;
+}
+
+/* === TEXT CLASSES === */
+.font-manuscript {
+  font-family: var(--font-manuscript);
+}
+
+.font-inscription {
+  font-family: var(--font-inscription);
+}
+
+.font-handwritten {
+  font-family: var(--font-handwritten);
+}
+
+.font-pixel {
+  font-family: var(--font-pixel);
+}
+
+.text-blood {
+  color: var(--blood-fresh);
+}
+
+.text-blood-glow {
+  color: var(--blood-bright);
+  text-shadow: 0 0 8px rgba(139,42,42,0.4);
+}
+
+.text-parchment {
+  color: var(--paper-aged);
+}
+
+.text-ash {
+  color: var(--paper-dark);
+}
+
+.text-rune {
+  color: var(--rune-glow);
+  text-shadow: 0 0 6px rgba(138,106,58,0.3);
+}
+
+.text-ink {
+  color: var(--ink-faded);
+}
+
+.text-sick {
+  color: var(--sick-green-text);
+  text-shadow: 0 0 6px rgba(90,170,90,0.3);
+}
+
+.text-electric {
+  color: var(--electric-text);
+  text-shadow: 0 0 6px rgba(74,154,238,0.3);
+}
+
+/* === GLOW EFFECTS === */
+.glow-blood {
+  text-shadow: 0 0 10px rgba(139,42,42,0.5), 0 0 30px rgba(139,42,42,0.2);
+}
+
+.glow-rune {
+  text-shadow: 0 0 8px rgba(196,154,74,0.4), 0 0 20px rgba(196,154,74,0.15);
+}
+
+.glow-anomaly {
+  text-shadow: 0 0 10px rgba(122,42,90,0.4), 0 0 25px rgba(122,42,90,0.2);
+}
+
+.glow-sick {
+  text-shadow: 0 0 8px rgba(90,170,90,0.4), 0 0 20px rgba(58,106,58,0.2);
+}
+
+.glow-electric {
+  text-shadow: 0 0 8px rgba(74,154,238,0.4), 0 0 20px rgba(42,90,170,0.2);
+}
+
+/* === BREATHING === */
+.breathe {
+  animation: breathe 5s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+/* === STATUS MARKS === */
+.mark-blood {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--blood-fresh);
+  box-shadow: 0 0 6px var(--blood-fresh);
+  margin-right: 6px;
+}
+
+.mark-rune {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--rune-glow);
+  box-shadow: 0 0 4px var(--rune-glow);
+  margin-right: 6px;
+  transform: rotate(45deg);
+}
+
+.mark-sick {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--sick-green-text);
+  box-shadow: 0 0 6px var(--sick-green-text);
+  margin-right: 6px;
+}
+
+.mark-electric {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--electric-text);
+  box-shadow: 0 0 6px var(--electric-text);
+  margin-right: 6px;
+}
+
+/* === BORDER UTILITIES === */
+.border-torn-top {
+  border-top: 2px solid #2a1510;
+  position: relative;
+}
+
+.border-torn-top::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0px,
+    transparent 4px,
+    #1a0e08 4px,
+    #1a0e08 5px
+  );
+  opacity: 0.5;
+}
