@@ -311,13 +311,14 @@ const HM_SECTIONS = {
 };
 
 const HM_CATEGORIES = {
-  'Entidades': { items: ['Animales', 'Seres', 'Críptidos', 'Demonios / Diablo', 'Fantasmas', 'Dioses', 'Monstruos'] },
-  'Temáticas': { items: ['Navidad', 'Halloween', 'Historia', 'Sueños / Dormir', 'Hospitales', 'Ciencia', 'Espacio', 'Naturaleza', 'Lugares', 'Música', 'Fotografía', 'Televisión', 'Videojuegos', 'Internet / Computadoras', 'Crimen'] },
-  'Objetos': { items: ['Objetos', 'Libros', 'Espejos', 'Vehículos'] },
-  'Formatos': { items: ['Longpasta', 'Micropasta', 'Diario / Journal', 'Poesía'] },
-  'Psicología y Abstracción': { items: ['Enfermedad mental', 'Realidad', 'Rituales', 'Teorías', 'Weird'] },
-  'Estilo': { items: ['Lovecraftiano'] },
-  'Categorías Especiales': { items: ['Collab', 'Contextual', 'Historical Archive / PD', 'Holders', 'Lost Episodes', 'Reddit Pastas', 'Videos'] }
+  'Special Categories': { items: ['Historical Archive', 'Suggested Reading', 'PotM', 'Spotlighted Pastas', 'Contest Winner', 'User Stories', 'Memes', 'Trollpasta'] },
+  'Genre Categories': {
+    items: ['Animals', 'Beings', 'Cryptids', 'Demon/Devil', 'Ghosts', 'Gods', 'Monsters', 'Christmas', 'Computers and Internet', 'Crime', 'Diary/Journal', 'Disappearances', 'Dismemberment', 'Dreams/Sleep', 'Food', 'Halloween', 'History', 'Hospitals', 'Items/Objects', 'Longpasta', 'Lovecraftian', 'Mental Illness', 'Micropasta', 'Military', 'Music', 'Nature', 'NSFW', 'Photography', 'Places', 'Poetry', 'Reality', 'Ritual', 'Science', 'Space', 'Television', 'Theory', 'Video Games', 'Weird'],
+    subcategories: {
+      'Items/Objects': ['Books', 'Mirrors', 'Vehicles']
+    }
+  },
+  'Other Categories': { items: ['Collab', 'Contextual', 'Historical Archive/PD', 'Holders', 'Lost Episodes', 'PokéMon', 'Reddit Pastas', 'Videos', 'Zelda'] }
 };
 
 function getStoryById(id) {
