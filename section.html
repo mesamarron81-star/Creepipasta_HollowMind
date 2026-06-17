@@ -222,6 +222,53 @@
         ? Object.values(HM_WIKI_ARCHIVE).map(c => ({ id: c.id, name: c.name, icon: c.icon, count: c.entries.length }))
         : [];
 
+      function renderEntryCard(entry, idx) {
+        const name = entry.name || entry;
+        const image = entry.image || null;
+        const desc = entry.description || '';
+        return `
+        <div class="wiki-entry-card" data-entry-idx="${idx}"
+             style="display:flex;flex-direction:column;background:var(--void-surface);border:1px solid var(--blood-dark);color:var(--paper-white);font-family:monospace;font-size:12px;transition:all 0.3s;cursor:pointer;overflow:hidden;border-radius:2px;"
+             onmouseover="this.style.borderColor='var(--sick-green)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.5)'"
+             onmouseout="if(!this.classList.contains('selected')){this.style.borderColor='var(--blood-dark)';this.style.transform='none';this.style.boxShadow='none'}">
+          ${image ? `<div style="width:100%;height:160px;overflow:hidden;background:var(--void-deep);border-bottom:1px solid var(--blood-dark);"><img src="${image}" alt="${name}" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.style.display='none'"></div>` : `<div style="width:100%;height:80px;background:linear-gradient(135deg,var(--void-deep),var(--blood-dark));border-bottom:1px solid var(--blood-dark);display:flex;align-items:center;justify-content:center;"><span style="font-size:2rem;opacity:0.3;">${cat ? cat.icon : '📁'}</span></div>`}
+          <div style="padding:var(--space-sm) var(--space-md);flex:1;">
+            <div style="color:var(--sick-green);font-weight:bold;font-size:13px;margin-bottom:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${name}</div>
+            ${desc ? `<p style="color:var(--paper-ash);font-size:10px;line-height:1.4;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">${desc}</p>` : ''}
+          </div>
+          <div style="padding:4px var(--space-md);border-top:1px solid var(--blood-dark);display:flex;justify-content:space-between;align-items:center;">
+            <span style="color:var(--paper-ash);font-size:9px;">VER DETALLE</span>
+            <span style="color:var(--blood-fresh);font-size:10px;">→</span>
+          </div>
+        </div>`;
+      }
+
+      function renderDetailPanel(entry) {
+        const name = entry.name || entry;
+        const image = entry.image || null;
+        const desc = entry.description || '';
+        const url = `https://creepypasta.fandom.com/wiki/${encodeURIComponent(name.replace(/ /g, '_'))}`;
+        return `
+        <div id="wiki-detail-panel" style="background:var(--void-surface);border:1px solid var(--sick-green);padding:var(--space-lg);margin-bottom:var(--space-lg);position:relative;animation:fadeIn 0.3s ease;">
+          <button id="close-detail-btn" style="position:absolute;top:8px;right:12px;background:none;border:1px solid var(--blood-dark);color:var(--paper-ash);font-size:16px;cursor:pointer;padding:4px 8px;font-family:monospace;" onmouseover="this.style.color='var(--blood-fresh)';this.style.borderColor='var(--blood-fresh)'" onmouseout="this.style.color='var(--paper-ash)';this.style.borderColor='var(--blood-dark)'">✕ CERRAR</button>
+          <div style="display:flex;gap:var(--space-lg);flex-wrap:wrap;">
+            ${image ? `<div style="flex:0 0 320px;max-width:100%;"><img src="${image}" alt="${name}" style="width:100%;border:1px solid var(--blood-dark);filter:grayscale(30%) contrast(1.1);" onerror="this.style.display='none'"></div>` : ''}
+            <div style="flex:1;min-width:250px;">
+              <h2 class="font-manuscript" style="color:var(--sick-green);font-size:var(--text-lg);margin:0 0 var(--space-sm);letter-spacing:2px;">${name}</h2>
+              ${desc ? `<p style="color:var(--paper-white);font-family:monospace;font-size:13px;line-height:1.7;margin-bottom:var(--space-md);">${desc}</p>` : '<p style="color:var(--paper-ash);font-family:monospace;font-size:12px;font-style:italic;">Sin descripción disponible.</p>'}
+              <div style="display:flex;gap:var(--space-md);flex-wrap:wrap;align-items:center;margin-top:var(--space-md);">
+                <a href="${url}" target="_blank" rel="noopener noreferrer" class="hm-btn btn-xs font-manuscript"
+                   style="text-decoration:none;background:var(--blood-dark);color:var(--paper-white);padding:6px 14px;border:1px solid var(--blood-fresh);"
+                   onmouseover="this.style.background='var(--blood-fresh)'" onmouseout="this.style.background='var(--blood-dark)'">
+                  LEER EN WIKI ↗
+                </a>
+                <span style="color:var(--paper-ash);font-family:monospace;font-size:10px;">Categoría: ${cat ? cat.name : 'Archivo'}</span>
+              </div>
+            </div>
+          </div>
+        </div>`;
+      }
+
       function renderPage(page) {
         const start = (page - 1) * ITEMS_PER_PAGE;
         const pageEntries = entries.slice(start, start + ITEMS_PER_PAGE);
@@ -250,6 +297,8 @@
               </div>
             </div>
 
+            <div id="wiki-detail-container"></div>
+
             <div style="display:flex;gap:var(--space-md);flex-wrap:wrap;margin:var(--space-lg) 0;">
               ${allCategories.map(c => `
                 <a href="section.html?cat=${c.id}" class="hm-btn btn-xs font-manuscript ${c.id === (cat ? cat.id : '') ? 'active' : ''}"
@@ -274,28 +323,7 @@
             </div>
 
             <div class="wiki-entries-grid" id="wiki-entries-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:var(--space-md);margin-bottom:var(--space-xl);">
-              ${pageEntries.map(entry => {
-                const name = entry.name || entry;
-                const image = entry.image || null;
-                const desc = entry.description || '';
-                const url = `https://creepypasta.fandom.com/wiki/${encodeURIComponent(name.replace(/ /g, '_'))}`;
-                return `
-                <a href="${url}" target="_blank" rel="noopener noreferrer"
-                   class="wiki-entry-card"
-                   style="display:flex;flex-direction:column;background:var(--void-surface);border:1px solid var(--blood-dark);text-decoration:none;color:var(--paper-white);font-family:monospace;font-size:12px;transition:all 0.3s;cursor:pointer;overflow:hidden;border-radius:2px;"
-                   onmouseover="this.style.borderColor='var(--sick-green)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.5)'"
-                   onmouseout="this.style.borderColor='var(--blood-dark)';this.style.transform='none';this.style.boxShadow='none'">
-                  ${image ? `<div style="width:100%;height:160px;overflow:hidden;background:var(--void-deep);border-bottom:1px solid var(--blood-dark);"><img src="${image}" alt="${name}" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.style.display='none'"></div>` : `<div style="width:100%;height:80px;background:linear-gradient(135deg,var(--void-deep),var(--blood-dark));border-bottom:1px solid var(--blood-dark);display:flex;align-items:center;justify-content:center;"><span style="font-size:2rem;opacity:0.3;">${cat ? cat.icon : '📁'}</span></div>`}
-                  <div style="padding:var(--space-sm) var(--space-md);flex:1;">
-                    <div style="color:var(--sick-green);font-weight:bold;font-size:13px;margin-bottom:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${name}</div>
-                    ${desc ? `<p style="color:var(--paper-ash);font-size:10px;line-height:1.4;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">${desc}</p>` : ''}
-                  </div>
-                  <div style="padding:4px var(--space-md);border-top:1px solid var(--blood-dark);display:flex;justify-content:space-between;align-items:center;">
-                    <span style="color:var(--paper-ash);font-size:9px;">WIKI</span>
-                    <span style="color:var(--blood-fresh);font-size:10px;">↗</span>
-                  </div>
-                </a>`;
-              }).join('')}
+              ${pageEntries.map((entry, i) => renderEntryCard(entry, start + i)).join('')}
             </div>
 
             ${totalPages > 1 ? `
@@ -309,6 +337,31 @@
           </div>`;
 
         container.innerHTML = html;
+
+        container.querySelectorAll('.wiki-entry-card').forEach(card => {
+          card.addEventListener('click', () => {
+            const idx = parseInt(card.dataset.entryIdx);
+            const entry = entries[idx];
+            if (!entry) return;
+            const detailContainer = document.getElementById('wiki-detail-container');
+            if (detailContainer) {
+              detailContainer.innerHTML = renderDetailPanel(entry);
+              detailContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              document.getElementById('close-detail-btn').addEventListener('click', () => {
+                detailContainer.innerHTML = '';
+              });
+            }
+            container.querySelectorAll('.wiki-entry-card').forEach(c => {
+              c.classList.remove('selected');
+              c.style.borderColor = 'var(--blood-dark)';
+              c.style.transform = 'none';
+              c.style.boxShadow = 'none';
+            });
+            card.classList.add('selected');
+            card.style.borderColor = 'var(--sick-green)';
+            card.style.boxShadow = '0 0 15px rgba(0,255,65,0.15)';
+          });
+        });
 
         container.querySelectorAll('.pagination-btn[data-page]').forEach(btn => {
           btn.addEventListener('click', () => {
@@ -342,31 +395,35 @@
 
       function filterArchiveEntries(query) {
         const grid = document.getElementById('wiki-entries-grid');
+        const detailContainer = document.getElementById('wiki-detail-container');
         if (!grid) return;
+        if (detailContainer) detailContainer.innerHTML = '';
         const q = query.toLowerCase();
         const filtered = q ? entries.filter(e => (e.name || e).toLowerCase().includes(q) || (e.description && e.description.toLowerCase().includes(q))) : entries.slice(0, ITEMS_PER_PAGE);
-        grid.innerHTML = filtered.slice(0, ITEMS_PER_PAGE).map(entry => {
-          const name = entry.name || entry;
-          const image = entry.image || null;
-          const desc = entry.description || '';
-          const url = `https://creepypasta.fandom.com/wiki/${encodeURIComponent(name.replace(/ /g, '_'))}`;
-          return `
-          <a href="${url}" target="_blank" rel="noopener noreferrer"
-             class="wiki-entry-card"
-             style="display:flex;flex-direction:column;background:var(--void-surface);border:1px solid var(--blood-dark);text-decoration:none;color:var(--paper-white);font-family:monospace;font-size:12px;transition:all 0.3s;cursor:pointer;overflow:hidden;border-radius:2px;"
-             onmouseover="this.style.borderColor='var(--sick-green)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.5)'"
-             onmouseout="this.style.borderColor='var(--blood-dark)';this.style.transform='none';this.style.boxShadow='none'">
-            ${image ? `<div style="width:100%;height:160px;overflow:hidden;background:var(--void-deep);border-bottom:1px solid var(--blood-dark);"><img src="${image}" alt="${name}" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.style.display='none'"></div>` : `<div style="width:100%;height:80px;background:linear-gradient(135deg,var(--void-deep),var(--blood-dark));border-bottom:1px solid var(--blood-dark);display:flex;align-items:center;justify-content:center;"><span style="font-size:2rem;opacity:0.3;">📁</span></div>`}
-            <div style="padding:var(--space-sm) var(--space-md);flex:1;">
-              <div style="color:var(--sick-green);font-weight:bold;font-size:13px;margin-bottom:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${name}</div>
-              ${desc ? `<p style="color:var(--paper-ash);font-size:10px;line-height:1.4;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">${desc}</p>` : ''}
-            </div>
-            <div style="padding:4px var(--space-md);border-top:1px solid var(--blood-dark);display:flex;justify-content:space-between;align-items:center;">
-              <span style="color:var(--paper-ash);font-size:9px;">WIKI</span>
-              <span style="color:var(--blood-fresh);font-size:10px;">↗</span>
-            </div>
-          </a>`;
-        }).join('');
+        grid.innerHTML = filtered.slice(0, ITEMS_PER_PAGE).map((entry, i) => renderEntryCard(entry, entries.indexOf(entry))).join('');
+        grid.querySelectorAll('.wiki-entry-card').forEach(card => {
+          card.addEventListener('click', () => {
+            const idx = parseInt(card.dataset.entryIdx);
+            const entry = entries[idx];
+            if (!entry) return;
+            if (detailContainer) {
+              detailContainer.innerHTML = renderDetailPanel(entry);
+              detailContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              document.getElementById('close-detail-btn').addEventListener('click', () => {
+                detailContainer.innerHTML = '';
+              });
+            }
+            grid.querySelectorAll('.wiki-entry-card').forEach(c => {
+              c.classList.remove('selected');
+              c.style.borderColor = 'var(--blood-dark)';
+              c.style.transform = 'none';
+              c.style.boxShadow = 'none';
+            });
+            card.classList.add('selected');
+            card.style.borderColor = 'var(--sick-green)';
+            card.style.boxShadow = '0 0 15px rgba(0,255,65,0.15)';
+          });
+        });
       }
 
       renderPage(currentPage);
