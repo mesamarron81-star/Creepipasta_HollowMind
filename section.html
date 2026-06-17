@@ -67,6 +67,7 @@
   </div>
 
   <script src="js/story-data.js"></script>
+  <script src="js/wiki-archive-data.js"></script>
   <script src="js/effects.js"></script>
   <script src="js/hollow-sound.js"></script>
   <script src="js/typewriter.js"></script>
@@ -82,28 +83,79 @@
       const params = new URLSearchParams(window.location.search);
       const sectionId = params.get('id');
       const tag = params.get('tag');
+      const archiveCat = params.get('cat');
       const container = document.getElementById('section-container');
       if (!container) return;
 
       let stories = [];
       let sectionName = '';
+      let isWikiArchive = false;
+      let wikiEntries = [];
+      let currentArchiveCat = null;
 
-      if (tag) {
+      if (archiveCat && typeof HM_WIKI_ARCHIVE !== 'undefined') {
+        isWikiArchive = true;
+        const catKey = Object.keys(HM_WIKI_ARCHIVE).find(k => HM_WIKI_ARCHIVE[k].id === archiveCat);
+        if (catKey) {
+          currentArchiveCat = HM_WIKI_ARCHIVE[catKey];
+          wikiEntries = currentArchiveCat.entries;
+          sectionName = currentArchiveCat.name;
+          document.title = sectionName + ' — HollowMind';
+        }
+      } else if (tag) {
         stories = getStoriesByTag(tag);
         sectionName = tag.charAt(0).toUpperCase() + tag.slice(1).replace(/-/g, ' ');
         document.title = '#' + sectionName + ' — HollowMind';
       } else if (sectionId) {
-        stories = getStoriesBySection(sectionId);
-        const section = HM_SECTIONS[sectionId];
-        sectionName = section ? section.name : sectionId;
-        document.title = sectionName + ' — HollowMind';
+        if (sectionId === 'archivo') {
+          isWikiArchive = true;
+          sectionName = 'Archivo Histórico';
+          if (typeof HM_WIKI_ARCHIVE !== 'undefined') {
+            wikiEntries = Object.values(HM_WIKI_ARCHIVE).flatMap(cat => cat.entries);
+            currentArchiveCat = { name: 'Archivo Histórico', description: 'Todas las entradas del Creepypasta Wiki indexadas en nuestro sistema.', icon: '📁', totalItems: wikiEntries.length };
+          }
+          document.title = sectionName + ' — HollowMind';
+        } else {
+          stories = getStoriesBySection(sectionId);
+          const section = HM_SECTIONS[sectionId];
+          sectionName = section ? section.name : sectionId;
+          document.title = sectionName + ' — HollowMind';
+        }
       } else {
         stories = HM_STORIES;
         sectionName = 'Archivo Histórico';
         document.title = sectionName + ' — HollowMind';
       }
 
-      // Build section page
+      if (isWikiArchive) {
+        renderWikiArchive(container, sectionName, wikiEntries, currentArchiveCat);
+      } else {
+        renderStoriesSection(container, sectionName, stories, tag, sectionId);
+      }
+
+      // Repeating title corruption on revisit
+      const visitKey = 'hm-section-' + (tag || sectionId || archiveCat || 'all');
+      const sectionVisits = parseInt(localStorage.getItem(visitKey) || '0') + 1;
+      localStorage.setItem(visitKey, sectionVisits.toString());
+      if (sectionVisits > 1) {
+        const titleEl = container.querySelector('.section-banner h1');
+        if (titleEl) {
+          setTimeout(() => {
+            const originals = [titleEl.textContent];
+            const mutations = [
+              titleEl.textContent.split('').map((c,i) => i % 7 === 0 && c !== ' ' ? String.fromCharCode(c.charCodeAt(0) + (Math.random() > 0.5 ? 1 : -1)) : c).join(''),
+              titleEl.textContent + ' [MODIFICADO]',
+              titleEl.textContent.replace(/./g, (c) => Math.random() > 0.92 ? '█' : c)
+            ];
+            titleEl.textContent = mutations[Math.floor(Math.random() * mutations.length)];
+            titleEl.style.color = 'var(--blood-bright)';
+            setTimeout(() => { titleEl.textContent = originals[0]; titleEl.style.color = ''; }, 2000);
+          }, 4000 + Math.random() * 6000);
+        }
+      }
+    });
+
+    function renderStoriesSection(container, sectionName, stories, tag, sectionId) {
       let html = `
         <div class="section-page-layout container">
           <nav class="breadcrumbs">
@@ -143,7 +195,6 @@
 
       container.innerHTML = html;
 
-      // Filter functionality
       const filterBtns = container.querySelectorAll('.filter-btn');
       filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -159,28 +210,145 @@
           if (grid) grid.innerHTML = sorted.map(s => HMStoryRenderer.renderStoryCard(s)).join('');
         });
       });
+    }
 
-      // Repeating title corruption on revisit
-      const visitKey = 'hm-section-' + (tag || sectionId || 'all');
-      const sectionVisits = parseInt(localStorage.getItem(visitKey) || '0') + 1;
-      localStorage.setItem(visitKey, sectionVisits.toString());
-      if (sectionVisits > 1) {
-        const titleEl = container.querySelector('.section-banner h1');
-        if (titleEl) {
-          setTimeout(() => {
-            const originals = [titleEl.textContent];
-            const mutations = [
-              titleEl.textContent.split('').map((c,i) => i % 7 === 0 && c !== ' ' ? String.fromCharCode(c.charCodeAt(0) + (Math.random() > 0.5 ? 1 : -1)) : c).join(''),
-              titleEl.textContent + ' [MODIFICADO]',
-              titleEl.textContent.replace(/./g, (c) => Math.random() > 0.92 ? '█' : c)
-            ];
-            titleEl.textContent = mutations[Math.floor(Math.random() * mutations.length)];
-            titleEl.style.color = 'var(--blood-bright)';
-            setTimeout(() => { titleEl.textContent = originals[0]; titleEl.style.color = ''; }, 2000);
-          }, 4000 + Math.random() * 6000);
+    function renderWikiArchive(container, sectionName, entries, cat) {
+      const ITEMS_PER_PAGE = 50;
+      let currentPage = 1;
+      const totalPages = Math.ceil(entries.length / ITEMS_PER_PAGE);
+      const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ#'.split('');
+
+      const allCategories = typeof HM_WIKI_ARCHIVE !== 'undefined'
+        ? Object.values(HM_WIKI_ARCHIVE).map(c => ({ id: c.id, name: c.name, icon: c.icon, count: c.entries.length }))
+        : [];
+
+      function renderPage(page) {
+        const start = (page - 1) * ITEMS_PER_PAGE;
+        const pageEntries = entries.slice(start, start + ITEMS_PER_PAGE);
+
+        let html = `
+          <div class="section-page-layout container">
+            <nav class="breadcrumbs">
+              <a href="index.html">HollowMind</a>
+              <span class="separator">/</span>
+              <a href="section.html?id=archivo">Archivo</a>
+              <span class="separator">/</span>
+              <span class="current">${sectionName}</span>
+            </nav>
+
+            <div class="section-banner" style="background: linear-gradient(135deg, var(--void-surface) 0%, #1a0a0a 100%); border: 1px solid var(--blood-dark); padding:var(--space-xl);">
+              <div class="section-banner-content">
+                <div style="display:flex;align-items:center;gap:var(--space-md);margin-bottom:var(--space-sm);">
+                  <span style="font-size:2rem;">${cat ? cat.icon : '📁'}</span>
+                  <h1 class="font-manuscript glitch" data-text="${sectionName}" style="font-size:var(--text-2xl); color:var(--blood-fresh); letter-spacing:3px; margin:0;">${sectionName}</h1>
+                </div>
+                <p class="font-handwritten" style="color:var(--paper-burnt); max-width:600px; line-height:1.6; margin-bottom:var(--space-md);">${cat ? cat.description : 'Todas las entradas del Creepypasta Wiki indexadas.'}</p>
+                <div style="display:flex;gap:var(--space-lg);flex-wrap:wrap;">
+                  <span style="color:var(--sick-green);font-family:monospace;font-size:12px;">[${entries.length} ENTRADAS]</span>
+                  <span style="color:var(--paper-ash);font-family:monospace;font-size:12px;">PÁGINA ${page}/${totalPages}</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:var(--space-md);flex-wrap:wrap;margin:var(--space-lg) 0;">
+              ${allCategories.map(c => `
+                <a href="section.html?cat=${c.id}" class="hm-btn btn-xs font-manuscript ${c.id === (cat ? cat.id : '') ? 'active' : ''}"
+                   style="text-decoration:none;${c.id === (cat ? cat.id : '') ? 'background:var(--blood-dark);color:var(--paper-white);' : ''}">
+                  ${c.icon} ${c.name} <span style="opacity:0.6;">(${c.count})</span>
+                </a>
+              `).join('')}
+            </div>
+
+            <div style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:var(--space-lg);padding:var(--space-sm);background:var(--void-surface);border:1px solid var(--blood-dark);">
+              ${alphabet.map(letter => `
+                <button class="archive-letter-btn" data-letter="${letter}"
+                        style="background:${letter === '#' ? 'var(--void-deep)' : 'var(--void-surface)'};border:1px solid var(--blood-dark);color:var(--paper-ash);padding:4px 8px;font-family:monospace;font-size:11px;cursor:pointer;min-width:24px;text-align:center;">
+                  ${letter}
+                </button>
+              `).join('')}
+            </div>
+
+            <div id="archive-search-bar" style="margin-bottom:var(--space-lg);">
+              <input type="text" id="archive-search-input" placeholder="Buscar en el archivo..."
+                     style="width:100%;max-width:400px;padding:8px 12px;background:var(--void-deep);border:1px solid var(--blood-dark);color:var(--sick-green);font-family:monospace;font-size:13px;">
+            </div>
+
+            <div class="wiki-entries-grid" id="wiki-entries-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:var(--space-sm);margin-bottom:var(--space-xl);">
+              ${pageEntries.map(entry => `
+                <a href="https://creepypasta.fandom.com/wiki/${encodeURIComponent(entry.replace(/ /g, '_'))}" target="_blank" rel="noopener noreferrer"
+                   class="wiki-entry-card"
+                   style="display:flex;align-items:center;gap:var(--space-sm);padding:var(--space-sm) var(--space-md);background:var(--void-surface);border:1px solid var(--blood-dark);text-decoration:none;color:var(--paper-white);font-family:monospace;font-size:12px;transition:all 0.2s;cursor:pointer;"
+                   onmouseover="this.style.borderColor='var(--sick-green)';this.style.background='var(--void-deep)'"
+                   onmouseout="this.style.borderColor='var(--blood-dark)';this.style.background='var(--void-surface)'">
+                  <span style="color:var(--blood-fresh);font-size:10px;">▸</span>
+                  <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${entry}</span>
+                  <span style="color:var(--paper-ash);font-size:10px;">↗</span>
+                </a>
+              `).join('')}
+            </div>
+
+            ${totalPages > 1 ? `
+            <div class="pagination" style="display:flex;gap:4px;justify-content:center;flex-wrap:wrap;">
+              <button class="pagination-btn" id="prev-page" ${page === 1 ? 'disabled' : ''}>← Anterior</button>
+              ${Array.from({length: Math.min(totalPages, 10)}, (_, i) => i + 1).map(p => `
+                <button class="pagination-btn ${p === page ? 'active' : ''}" data-page="${p}">${p}</button>
+              `).join('')}
+              <button class="pagination-btn" id="next-page" ${page === totalPages ? 'disabled' : ''}>Siguiente →</button>
+            </div>` : ''}
+          </div>`;
+
+        container.innerHTML = html;
+
+        container.querySelectorAll('.pagination-btn[data-page]').forEach(btn => {
+          btn.addEventListener('click', () => {
+            currentPage = parseInt(btn.dataset.page);
+            renderPage(currentPage);
+            window.scrollTo(0, 0);
+          });
+        });
+
+        const prevBtn = document.getElementById('prev-page');
+        const nextBtn = document.getElementById('next-page');
+        if (prevBtn) prevBtn.addEventListener('click', () => { if (currentPage > 1) { currentPage--; renderPage(currentPage); window.scrollTo(0, 0); } });
+        if (nextBtn) nextBtn.addEventListener('click', () => { if (currentPage < totalPages) { currentPage++; renderPage(currentPage); window.scrollTo(0, 0); } });
+
+        container.querySelectorAll('.archive-letter-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const letter = btn.dataset.letter;
+            const searchInput = document.getElementById('archive-search-input');
+            if (searchInput) {
+              searchInput.value = letter === '#' ? '' : letter;
+              filterArchiveEntries(letter === '#' ? '' : letter);
+            }
+          });
+        });
+
+        const searchInput = document.getElementById('archive-search-input');
+        if (searchInput) {
+          searchInput.addEventListener('input', (e) => filterArchiveEntries(e.target.value));
         }
       }
-    });
+
+      function filterArchiveEntries(query) {
+        const grid = document.getElementById('wiki-entries-grid');
+        if (!grid) return;
+        const q = query.toLowerCase();
+        const filtered = q ? entries.filter(e => e.toLowerCase().includes(q)) : entries.slice(0, ITEMS_PER_PAGE);
+        grid.innerHTML = filtered.slice(0, ITEMS_PER_PAGE).map(entry => `
+          <a href="https://creepypasta.fandom.com/wiki/${encodeURIComponent(entry.replace(/ /g, '_'))}" target="_blank" rel="noopener noreferrer"
+             class="wiki-entry-card"
+             style="display:flex;align-items:center;gap:var(--space-sm);padding:var(--space-sm) var(--space-md);background:var(--void-surface);border:1px solid var(--blood-dark);text-decoration:none;color:var(--paper-white);font-family:monospace;font-size:12px;transition:all 0.2s;cursor:pointer;"
+             onmouseover="this.style.borderColor='var(--sick-green)';this.style.background='var(--void-deep)'"
+             onmouseout="this.style.borderColor='var(--blood-dark)';this.style.background='var(--void-surface)'">
+            <span style="color:var(--blood-fresh);font-size:10px;">▸</span>
+            <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${entry}</span>
+            <span style="color:var(--paper-ash);font-size:10px;">↗</span>
+          </a>
+        `).join('');
+      }
+
+      renderPage(currentPage);
+    }
   </script>
 </body>
 </html>
