@@ -235,18 +235,21 @@
         const name = entry.name || entry;
         const image = entry.image || null;
         const desc = entry.description || '';
+        const author = entry.author || null;
+        const date = entry.date || null;
+        const cats = entry.categories || [];
         return `
         <div class="wiki-entry-card" data-entry-idx="${idx}"
              style="display:flex;flex-direction:column;background:var(--void-surface);border:1px solid var(--blood-dark);color:var(--paper-white);font-family:monospace;font-size:12px;transition:all 0.3s;cursor:pointer;overflow:hidden;border-radius:2px;"
              onmouseover="this.style.borderColor='var(--sick-green)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 12px rgba(0,0,0,0.5)'"
              onmouseout="if(!this.classList.contains('selected')){this.style.borderColor='var(--blood-dark)';this.style.transform='none';this.style.boxShadow='none'}">
-          ${image ? `<div style="width:100%;height:160px;overflow:hidden;background:var(--void-deep);border-bottom:1px solid var(--blood-dark);"><img src="${image}" alt="${name}" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.style.display='none'"></div>` : `<div style="width:100%;height:80px;background:linear-gradient(135deg,var(--void-deep),var(--blood-dark));border-bottom:1px solid var(--blood-dark);display:flex;align-items:center;justify-content:center;"><span style="font-size:2rem;opacity:0.3;">${cat ? cat.icon : '📁'}</span></div>`}
+          ${image ? `<div style="width:100%;height:160px;overflow:hidden;background:var(--void-deep);border-bottom:1px solid var(--blood-dark);position:relative;"><img src="${image}" alt="${name}" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.style.display='none'">${author ? `<div style="position:absolute;bottom:4px;left:4px;background:rgba(0,0,0,0.8);padding:2px 6px;font-size:9px;color:var(--sick-green);border:1px solid var(--blood-dark);">✍ ${author}</div>` : ''}</div>` : `<div style="width:100%;height:80px;background:linear-gradient(135deg,var(--void-deep),var(--blood-dark));border-bottom:1px solid var(--blood-dark);display:flex;align-items:center;justify-content:center;"><span style="font-size:2rem;opacity:0.3;">${cat ? cat.icon : '📁'}</span></div>`}
           <div style="padding:var(--space-sm) var(--space-md);flex:1;">
             <div style="color:var(--sick-green);font-weight:bold;font-size:13px;margin-bottom:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${name}</div>
             ${desc ? `<p style="color:var(--paper-ash);font-size:10px;line-height:1.4;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;">${desc}</p>` : ''}
           </div>
           <div style="padding:4px var(--space-md);border-top:1px solid var(--blood-dark);display:flex;justify-content:space-between;align-items:center;">
-            <span style="color:var(--paper-ash);font-size:9px;">VER DETALLE</span>
+            <span style="color:var(--paper-ash);font-size:9px;">${date ? date.substring(0, 20) : 'VER DETALLE'}</span>
             <span style="color:var(--blood-fresh);font-size:10px;">→</span>
           </div>
         </div>`;
@@ -255,7 +258,12 @@
       function openModal(entry) {
         const name = entry.name || entry;
         const image = entry.image || null;
+        const images = entry.images || [];
         const desc = entry.description || '';
+        const url = entry.url || '';
+        const author = entry.author || null;
+        const date = entry.date || null;
+        const categories = entry.categories || [];
         const catName = cat ? cat.name : 'Archivo';
         const catIcon = cat ? cat.icon : '📁';
 
@@ -266,27 +274,59 @@
 
         const overlayEl = document.createElement('div');
         overlayEl.id = 'hm-wiki-modal-overlay';
-        overlayEl.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9998;animation:fadeIn 0.2s ease;';
+        overlayEl.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.88);z-index:9998;animation:fadeIn 0.2s ease;';
 
         const modalEl = document.createElement('div');
         modalEl.id = 'hm-wiki-modal';
-        modalEl.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;background:var(--void-deep);border:1px solid var(--sick-green);max-width:800px;width:92%;max-height:88vh;overflow-y:auto;padding:0;animation:modalIn 0.3s ease;box-shadow:0 0 60px rgba(0,255,65,0.15);';
+        modalEl.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;background:var(--void-deep);border:1px solid var(--sick-green);max-width:850px;width:94%;max-height:90vh;overflow-y:auto;padding:0;animation:modalIn 0.3s ease;box-shadow:0 0 80px rgba(0,255,65,0.12);';
+
+        const metaChips = [];
+        if (author) metaChips.push(`<span style="background:var(--void-surface);border:1px solid var(--blood-dark);padding:3px 10px;border-radius:2px;font-size:11px;color:var(--sick-green);">✍ ${author}</span>`);
+        if (date) metaChips.push(`<span style="background:var(--void-surface);border:1px solid var(--blood-dark);padding:3px 10px;border-radius:2px;font-size:11px;color:var(--paper-burnt);">📅 ${date}</span>`);
+        if (categories.length > 0) {
+          categories.slice(0, 6).forEach(c => {
+            const catLabel = c.replace(/_/g, ' ');
+            metaChips.push(`<span style="background:var(--void-deep);border:1px solid var(--blood-dark);padding:3px 8px;border-radius:2px;font-size:10px;color:var(--paper-ash);">${catLabel}</span>`);
+          });
+        }
+
+        const allImages = images.length > 1 ? images : (image ? [image] : []);
 
         modalEl.innerHTML = `
-          <div style="position:sticky;top:0;z-index:10;background:var(--void-deep);border-bottom:1px solid var(--blood-dark);padding:var(--space-md) var(--space-lg);display:flex;justify-content:space-between;align-items:center;">
+          <div style="position:sticky;top:0;z-index:10;background:var(--void-deep);border-bottom:1px solid var(--blood-dark);padding:var(--space-sm) var(--space-lg);display:flex;justify-content:space-between;align-items:center;">
             <div style="display:flex;align-items:center;gap:var(--space-sm);">
-              <span style="font-size:1.2rem;">${catIcon}</span>
-              <span style="color:var(--paper-ash);font-family:monospace;font-size:11px;">${catName}</span>
+              <span style="font-size:1.1rem;">${catIcon}</span>
+              <span style="color:var(--paper-ash);font-family:monospace;font-size:10px;">${catName}</span>
+              ${url ? `<a href="${url}" target="_blank" rel="noopener" style="color:var(--sick-green);font-family:monospace;font-size:10px;text-decoration:none;border:1px solid var(--blood-dark);padding:2px 8px;margin-left:8px;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--sick-green)'" onmouseout="this.style.borderColor='var(--blood-dark)'">ABRIR EN WIKI ↗</a>` : ''}
             </div>
             <button id="hm-modal-close-btn" style="background:none;border:1px solid var(--blood-dark);color:var(--paper-ash);font-size:18px;cursor:pointer;padding:2px 10px;font-family:monospace;line-height:1;transition:all 0.2s;">✕</button>
           </div>
+          ${allImages.length > 0 ? `
+          <div style="padding:var(--space-md) var(--space-lg);border-bottom:1px solid var(--blood-dark);background:var(--void-surface);">
+            ${allImages.length === 1 ? `
+              <div style="text-align:center;"><img src="${allImages[0]}" alt="${name}" style="max-width:100%;max-height:350px;object-fit:contain;border:1px solid var(--blood-dark);filter:grayscale(15%) contrast(1.05);" onerror="this.style.display='none'"></div>
+            ` : `
+              <div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;">
+                ${allImages.map((img, i) => `<img src="${img}" alt="${name} - imagen ${i+1}" style="max-height:250px;flex-shrink:0;object-fit:contain;border:1px solid var(--blood-dark);filter:grayscale(15%) contrast(1.05);cursor:pointer;" onerror="this.style.display='none'" onclick="window.open('${img}','_blank')">`).join('')}
+              </div>
+              <div style="color:var(--paper-ash);font-family:monospace;font-size:9px;text-align:center;margin-top:4px;">${allImages.length} imagen(es) — clic para ampliar</div>
+            `}
+          </div>` : ''}
           <div style="padding:var(--space-lg);">
-            ${image ? `<div style="margin-bottom:var(--space-lg);"><img src="${image}" alt="${name}" style="width:100%;max-height:400px;object-fit:contain;border:1px solid var(--blood-dark);filter:grayscale(20%) contrast(1.05);background:var(--void-surface);" onerror="this.style.display='none'"></div>` : ''}
-            <h2 class="font-manuscript" style="color:var(--sick-green);font-size:var(--text-lg);margin:0 0 var(--space-md);letter-spacing:2px;line-height:1.3;">${name}</h2>
-            ${desc ? `<p style="color:var(--paper-white);font-family:monospace;font-size:13px;line-height:1.8;margin-bottom:var(--space-md);">${desc}</p>` : '<p style="color:var(--paper-ash);font-family:monospace;font-size:12px;font-style:italic;">Sin descripción disponible.</p>'}
-            <div style="border-top:1px solid var(--blood-dark);padding-top:var(--space-md);margin-top:var(--space-md);display:flex;gap:var(--space-md);flex-wrap:wrap;align-items:center;">
-              <span style="color:var(--paper-ash);font-family:monospace;font-size:10px;">Entrada indexada del Creepypasta Wiki</span>
+            <h2 class="font-manuscript" style="color:var(--sick-green);font-size:var(--text-xl);margin:0 0 var(--space-md);letter-spacing:2px;line-height:1.3;text-shadow:0 0 20px rgba(0,255,65,0.2);">${name}</h2>
+            ${metaChips.length > 0 ? `<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:var(--space-md);">${metaChips.join('')}</div>` : ''}
+            <div style="background:var(--void-surface);border:1px solid var(--blood-dark);padding:var(--space-md);margin-bottom:var(--space-md);">
+              <div style="color:var(--sick-green);font-family:monospace;font-size:10px;margin-bottom:6px;letter-spacing:1px;">▸ DESCRIPCIÓN</div>
+              ${desc ? `<p style="color:var(--paper-white);font-family:monospace;font-size:13px;line-height:1.8;margin:0;">${desc}</p>` : '<p style="color:var(--paper-ash);font-family:monospace;font-size:12px;font-style:italic;margin:0;">Sin descripción disponible. Abre el enlace de la wiki para ver el contenido completo.</p>'}
             </div>
+            ${url ? `
+            <div style="background:var(--void-surface);border:1px solid var(--blood-dark);padding:var(--space-md);">
+              <div style="color:var(--sick-green);font-family:monospace;font-size:10px;margin-bottom:6px;letter-spacing:1px;">▸ ACCESO DIRECTO</div>
+              <a href="${url}" target="_blank" rel="noopener" style="color:var(--sick-green);font-family:monospace;font-size:12px;text-decoration:none;word-break:break-all;line-height:1.6;display:block;padding:8px;border:1px solid var(--blood-dark);transition:all 0.2s;background:var(--void-deep);" onmouseover="this.style.borderColor='var(--sick-green)'" onmouseout="this.style.borderColor='var(--blood-dark)'">
+                ${url}
+              </a>
+              <div style="color:var(--paper-ash);font-family:monospace;font-size:9px;margin-top:6px;">Haz clic para leer el creepypasta completo en la wiki oficial</div>
+            </div>` : ''}
           </div>
         `;
 
