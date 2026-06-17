@@ -101,6 +101,24 @@
         story.categories.forEach(cat => { allTags[cat] = (allTags[cat] || 0) + 1; });
       });
 
+      const wikiCategoryMap = {
+        'Historical Archive': 'historical-archive',
+        'Suggested Reading': 'suggested-reading',
+        'PotM': 'potm',
+        'Spotlighted Pastas': 'spotlighted',
+        'Contest Winner': 'contest-winner',
+        'User Stories': 'user-stories',
+        'Memes': 'memes',
+        'Trollpasta': 'trollpasta'
+      };
+
+      const wikiCounts = {};
+      if (typeof HM_WIKI_ARCHIVE !== 'undefined') {
+        Object.values(HM_WIKI_ARCHIVE).forEach(cat => {
+          wikiCounts[cat.id] = cat.entries.length;
+        });
+      }
+
       let html = `
         <nav class="breadcrumbs">
           <a href="index.html">HollowMind</a>
@@ -128,11 +146,14 @@
             .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
             .replace(/[^a-z0-9]+/g, '-')
             .replace(/^-|-$/g, '');
-          const count = allTags[slug] || 0;
+          const isWikiCategory = groupName === 'Special Categories' && wikiCategoryMap[item];
+          const wikiId = isWikiCategory ? wikiCategoryMap[item] : null;
+          const count = isWikiCategory ? (wikiCounts[wikiId] || 0) : (allTags[slug] || 0);
+          const link = isWikiCategory ? `section.html?cat=${wikiId}` : `section.html?tag=${slug}`;
           html += `
-            <a href="section.html?tag=${slug}" class="category-item" style="text-decoration:none;">
+            <a href="${link}" class="category-item" style="text-decoration:none;${isWikiCategory ? 'border-left:3px solid var(--sick-green);padding-left:12px;' : ''}">
               <span>${item}</span>
-              <span class="count">${count} registro${count !== 1 ? 's' : ''}</span>
+              <span class="count" style="${isWikiCategory ? 'color:var(--sick-green);' : ''}">${count} registro${count !== 1 ? 's' : ''}</span>
             </a>`;
 
           if (group.subcategories && group.subcategories[item]) {
