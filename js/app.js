@@ -1,16 +1,15 @@
 /* ============================================
    CREEPIPASTA HOLLOWMIND — APP MAIN
-   Orquestador del manuscrito autoconsciente
+   Orquestador del archivo autoconsciente
    ============================================ */
 
 const HMApp = {
-  isLoading: true,
+  isLoading: false,
   userId: null,
   totalVisits: 0,
 
   async init() {
     this.initUserIdentity();
-    this.handleLoadingScreen();
     HMNavigation.init();
     HMSearch.init();
     HMCursor.init();
@@ -23,12 +22,13 @@ const HMApp = {
     this.initRecentStories();
     this.initPopularTags();
     this.initWikiAwareness();
+    this.startAudio();
 
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (prefersReducedMotion) document.body.classList.add('reduced-motion');
   },
 
-  /* === USER IDENTITY (el wiki lo recuerda) === */
+  /* === USER IDENTITY (el archivo lo recuerda) === */
   initUserIdentity() {
     this.userId = localStorage.getItem('hm-user-id');
     if (!this.userId) {
@@ -37,53 +37,6 @@ const HMApp = {
     }
     this.totalVisits = parseInt(localStorage.getItem('hm-total-visits') || '0') + 1;
     localStorage.setItem('hm-total-visits', this.totalVisits.toString());
-  },
-
-  /* === LOADING SCREEN === */
-  handleLoadingScreen() {
-    const loadingScreen = document.querySelector('.loading-screen');
-    const bootTerminal = document.getElementById('boot-terminal');
-    const enterPrompt = document.querySelector('.boot-enter-prompt');
-    if (!loadingScreen || !bootTerminal) return;
-
-    const isFirstVisit = this.totalVisits <= 1;
-    const visitMsg = isFirstVisit
-      ? '> Primera visita detectada. Bienvenido al manuscrito.'
-      : `> Visitas previas: ${this.totalVisits}. El manuscrito le recuerda.`;
-
-    const bootLines = [
-      { text: '> SYSTEM_ARCHIVE_01 v1.99.4', class: 'line-system' },
-      { text: '> Iniciando terminal...', class: 'line-ok' },
-      { text: '> Identificando usuario: ' + this.userId, class: 'line-system' },
-      { text: visitMsg, class: isFirstVisit ? 'line-ok' : 'line-warn' },
-      { text: '> Verificando integridad del archivo...', class: 'line-ok' },
-      { text: '> Sincronizando fragmentos...', class: 'line-ok' },
-      { text: '> ADVERTENCIA: ARCHIVO COMPROMETIDO', class: 'line-warn' },
-      { text: '> Cargando 12 documentos sellados...', class: 'line-ok' },
-      { text: '> SIGNAL LOST... RECONECTANDO...', class: 'line-error' },
-      { text: '> SEÑAL RESTAURADA', class: 'line-ok' },
-      { text: '> El archivo le ha dado la bienvenida.', class: 'line-highlight' }
-    ];
-
-    HMTypewriter.typeLineByLine(bootTerminal, bootLines, {
-      speed: 16,
-      lineDelay: 280
-    }).then(() => {
-      setTimeout(() => {
-        if (enterPrompt) {
-          enterPrompt.classList.add('visible');
-          enterPrompt.addEventListener('click', () => {
-            loadingScreen.classList.add('hidden');
-            this.isLoading = false;
-            this.startAudio();
-          });
-        } else {
-          loadingScreen.classList.add('hidden');
-          this.isLoading = false;
-          this.startAudio();
-        }
-      }, 500);
-    });
   },
 
   startAudio() {
@@ -133,7 +86,7 @@ const HMApp = {
     ).join('');
   },
 
-  /* === WIKI AWARENESS (el wiki reacciona al usuario) === */
+  /* === WIKI AWARENESS (el archivo reacciona al usuario) === */
   initWikiAwareness() {
     this.welcomeBackMessage();
     this.startWatchingCursor();
@@ -144,11 +97,11 @@ const HMApp = {
     if (this.totalVisits <= 1) {
       setTimeout(() => {
         HMSystemMessages.show('Primera visita registrada. Bienvenido, ' + this.userId + '.');
-      }, 8000);
+      }, 5000);
     } else if (this.totalVisits > 5) {
       setTimeout(() => {
-        HMSystemMessages.show('Ha vuelto ' + this.totalVisits + ' veces. El manuscrito lo está estudiando.');
-      }, 10000);
+        HMSystemMessages.show('Ha vuelto ' + this.totalVisits + ' veces. El archivo lo está estudiando.');
+      }, 6000);
     }
   },
 
@@ -163,10 +116,10 @@ const HMApp = {
         idleTime += 1;
         if (idleTime > 45 && idleTime % 15 === 0) {
           const msgs = [
-            '¿Sigue ahí? El manuscrito nota su ausencia...',
-            'El archivo está being editado mientras no mira.',
+            '¿Sigue ahí? El archivo nota su ausencia...',
+            'El archivo está siendo editado mientras no mira.',
             'Algo se movió en el borde de su visión.',
-            'Las páginas se están reordenando solas.',
+            'Las secciones se están reordenando solas.',
             'El sistema detecta inactividad sospechosa.'
           ];
           HMSystemMessages.show(msgs[Math.floor(Math.random() * msgs.length)]);
