@@ -30,36 +30,35 @@ body {
   z-index: var(--z-base);
 }
 
-/* === HEADER (barra de sistema corrupta) === */
+/* === HEADER (barra de sistema) === */
 .hm-header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: var(--header-height);
-  background: #1a1a1a;
-  border-bottom: 2px solid;
-  border-color: #333 transparent #444 transparent;
+  background: linear-gradient(180deg, #1c1c1c 0%, #141414 100%);
+  border-bottom: 1px solid #2a2a2a;
   z-index: var(--z-sticky);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.6);
 }
 
 .hm-header::after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: 0;
   left: 0;
   right: 0;
   height: 1px;
   background: linear-gradient(
     90deg,
     transparent 0%,
-    var(--sick-green-dim) 20%,
+    var(--sick-green-dim) 30%,
     var(--sick-green) 50%,
-    var(--sick-green-dim) 80%,
+    var(--sick-green-dim) 70%,
     transparent 100%
   );
-  opacity: 0.3;
+  opacity: 0.25;
 }
 
 .header-container {

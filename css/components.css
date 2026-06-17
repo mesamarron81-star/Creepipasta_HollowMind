@@ -8,22 +8,25 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  margin-right: 24px;
 }
 
 .hm-logo {
-  font-size: var(--text-lg);
+  font-size: 14px;
   font-weight: 700;
   color: var(--sick-green-text);
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   font-family: var(--font-pixel);
-  text-shadow: 0 0 6px rgba(0,255,0,0.3);
+  text-shadow: 0 0 8px rgba(0,255,0,0.4);
+  padding: 6px 0;
 }
 
-/* === NAVBAR (barra de sistema) === */
+/* === NAVBAR (barra de navegación) === */
 .nav-links {
   display: flex;
-  gap: 1px;
+  gap: 2px;
+  align-items: center;
 }
 
 .nav-links .menu-item {
@@ -32,22 +35,26 @@
 
 .nav-link {
   display: block;
-  padding: var(--space-sm) var(--space-md);
+  padding: 8px 16px;
   font-family: var(--font-pixel);
-  font-size: var(--text-xs);
-  color: var(--paper-dark);
+  font-size: 11px;
+  color: #888;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease 0.15s;
+  letter-spacing: 1.5px;
+  transition: all 0.2s ease;
   border: 1px solid transparent;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
   color: var(--sick-green-text);
-  border-color: #333;
-  background: rgba(0,40,0,0.2);
-  text-shadow: 0 0 4px rgba(0,255,0,0.2);
+  background: rgba(0,255,0,0.05);
+  text-shadow: 0 0 6px rgba(0,255,0,0.3);
+}
+
+.nav-link:active {
+  transform: scale(0.97);
 }
 
 /* === MEGA MENU === */
@@ -56,20 +63,19 @@
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 480px;
-  background: var(--win95-bg);
-  border: 2px solid;
-  border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
-  box-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+  min-width: 500px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-top: 2px solid var(--sick-green-dim);
   padding: 0;
   z-index: var(--z-dropdown);
-  color: #000;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
 }
 
 .menu-item:hover .mega-menu-panel,
 .menu-item:focus-within .mega-menu-panel {
   display: block;
-  animation: fadeIn 0.2s ease;
+  animation: fadeIn 0.15s ease;
 }
 
 .mega-menu-grid {
@@ -79,8 +85,8 @@
 }
 
 .mega-column {
-  padding: 8px;
-  border-right: 1px solid var(--win95-dark);
+  padding: 12px;
+  border-right: 1px solid #2a2a2a;
 }
 
 .mega-column:last-child {
@@ -89,36 +95,36 @@
 
 .mega-column h4 {
   font-family: var(--font-pixel);
-  font-size: 11px;
-  color: var(--win95-blue);
+  font-size: 10px;
+  color: var(--sick-green-text);
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: var(--space-sm);
-  padding-bottom: 4px;
-  border-bottom: 1px solid var(--win95-dark);
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #2a2a2a;
   font-weight: bold;
 }
 
 .mega-column ul {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 }
 
 .mega-column a {
   font-family: var(--font-pixel);
   font-size: 11px;
-  color: var(--web-link);
-  padding: 2px 4px;
-  transition: all 0.1s;
-  text-decoration: underline;
+  color: #888;
+  padding: 3px 6px;
+  transition: all 0.15s;
+  text-decoration: none;
   display: block;
+  border-radius: 2px;
 }
 
 .mega-column a:hover {
-  color: var(--web-link-hover);
-  background: #000080;
-  color: #fff;
+  color: var(--sick-green-text);
+  background: rgba(0,255,0,0.08);
 }
 
 /* === MOBILE TOGGLE === */
@@ -126,10 +132,9 @@
   display: none;
   flex-direction: column;
   gap: 4px;
-  padding: var(--space-sm);
-  background: var(--win95-bg);
-  border: 2px solid;
-  border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
+  padding: 8px;
+  background: transparent;
+  border: 1px solid #333;
   cursor: pointer;
 }
 
@@ -137,8 +142,12 @@
   display: block;
   width: 18px;
   height: 2px;
-  background: #000;
-  transition: all 0.3s;
+  background: #888;
+  transition: all 0.2s;
+}
+
+.nav-toggle:hover .toggle-bar {
+  background: var(--sick-green-text);
 }
 
 .nav-toggle.active .toggle-bar:nth-child(1) {
@@ -157,7 +166,8 @@
 .header-controls {
   display: flex;
   align-items: center;
-  gap: var(--space-sm);
+  gap: 8px;
+  margin-left: auto;
 }
 
 /* === BUTTONS (Win95 style) === */
@@ -684,11 +694,11 @@
     top: var(--header-height);
     left: 0;
     right: 0;
-    background: var(--win95-bg);
-    border-bottom: 2px solid var(--win95-dark);
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
     flex-direction: column;
-    padding: var(--space-md);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   }
 
   .nav-links.open {
@@ -699,9 +709,10 @@
     position: static;
     min-width: auto;
     border: none;
-    border-top: 1px solid var(--win95-dark);
+    border-top: 1px solid #333;
     box-shadow: none;
-    padding: var(--space-md);
+    padding: 8px;
+    background: #141414;
   }
 
   .mega-menu-grid {
@@ -714,5 +725,10 @@
 
   .immersive-toggle .btn-text {
     display: none;
+  }
+
+  .hm-logo {
+    font-size: 12px;
+    letter-spacing: 2px;
   }
 }
