@@ -78,6 +78,15 @@
   <script src="js/navigation.js"></script>
   <script src="js/story-renderer.js"></script>
   <script src="js/app.js"></script>
+  <style>
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
+    @keyframes modalIn { from { opacity: 0; transform: translate(-50%,-50%) scale(0.95); } to { opacity: 1; transform: translate(-50%,-50%) scale(1); } }
+    #hm-wiki-modal::-webkit-scrollbar { width: 6px; }
+    #hm-wiki-modal::-webkit-scrollbar-track { background: var(--void-deep); }
+    #hm-wiki-modal::-webkit-scrollbar-thumb { background: var(--blood-dark); border-radius: 3px; }
+    #hm-wiki-modal::-webkit-scrollbar-thumb:hover { background: var(--blood-fresh); }
+  </style>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const params = new URLSearchParams(window.location.search);
@@ -243,30 +252,65 @@
         </div>`;
       }
 
-      function renderDetailPanel(entry) {
+      function openModal(entry) {
         const name = entry.name || entry;
         const image = entry.image || null;
         const desc = entry.description || '';
-        const url = `https://creepypasta.fandom.com/wiki/${encodeURIComponent(name.replace(/ /g, '_'))}`;
-        return `
-        <div id="wiki-detail-panel" style="background:var(--void-surface);border:1px solid var(--sick-green);padding:var(--space-lg);margin-bottom:var(--space-lg);position:relative;animation:fadeIn 0.3s ease;">
-          <button id="close-detail-btn" style="position:absolute;top:8px;right:12px;background:none;border:1px solid var(--blood-dark);color:var(--paper-ash);font-size:16px;cursor:pointer;padding:4px 8px;font-family:monospace;" onmouseover="this.style.color='var(--blood-fresh)';this.style.borderColor='var(--blood-fresh)'" onmouseout="this.style.color='var(--paper-ash)';this.style.borderColor='var(--blood-dark)'">✕ CERRAR</button>
-          <div style="display:flex;gap:var(--space-lg);flex-wrap:wrap;">
-            ${image ? `<div style="flex:0 0 320px;max-width:100%;"><img src="${image}" alt="${name}" style="width:100%;border:1px solid var(--blood-dark);filter:grayscale(30%) contrast(1.1);" onerror="this.style.display='none'"></div>` : ''}
-            <div style="flex:1;min-width:250px;">
-              <h2 class="font-manuscript" style="color:var(--sick-green);font-size:var(--text-lg);margin:0 0 var(--space-sm);letter-spacing:2px;">${name}</h2>
-              ${desc ? `<p style="color:var(--paper-white);font-family:monospace;font-size:13px;line-height:1.7;margin-bottom:var(--space-md);">${desc}</p>` : '<p style="color:var(--paper-ash);font-family:monospace;font-size:12px;font-style:italic;">Sin descripción disponible.</p>'}
-              <div style="display:flex;gap:var(--space-md);flex-wrap:wrap;align-items:center;margin-top:var(--space-md);">
-                <a href="${url}" target="_blank" rel="noopener noreferrer" class="hm-btn btn-xs font-manuscript"
-                   style="text-decoration:none;background:var(--blood-dark);color:var(--paper-white);padding:6px 14px;border:1px solid var(--blood-fresh);"
-                   onmouseover="this.style.background='var(--blood-fresh)'" onmouseout="this.style.background='var(--blood-dark)'">
-                  LEER EN WIKI ↗
-                </a>
-                <span style="color:var(--paper-ash);font-family:monospace;font-size:10px;">Categoría: ${cat ? cat.name : 'Archivo'}</span>
-              </div>
+        const catName = cat ? cat.name : 'Archivo';
+        const catIcon = cat ? cat.icon : '📁';
+
+        let existing = document.getElementById('hm-wiki-modal');
+        if (existing) existing.remove();
+        let overlay = document.getElementById('hm-wiki-modal-overlay');
+        if (overlay) overlay.remove();
+
+        const overlayEl = document.createElement('div');
+        overlayEl.id = 'hm-wiki-modal-overlay';
+        overlayEl.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9998;animation:fadeIn 0.2s ease;';
+
+        const modalEl = document.createElement('div');
+        modalEl.id = 'hm-wiki-modal';
+        modalEl.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;background:var(--void-deep);border:1px solid var(--sick-green);max-width:800px;width:92%;max-height:88vh;overflow-y:auto;padding:0;animation:modalIn 0.3s ease;box-shadow:0 0 60px rgba(0,255,65,0.15);';
+
+        modalEl.innerHTML = `
+          <div style="position:sticky;top:0;z-index:10;background:var(--void-deep);border-bottom:1px solid var(--blood-dark);padding:var(--space-md) var(--space-lg);display:flex;justify-content:space-between;align-items:center;">
+            <div style="display:flex;align-items:center;gap:var(--space-sm);">
+              <span style="font-size:1.2rem;">${catIcon}</span>
+              <span style="color:var(--paper-ash);font-family:monospace;font-size:11px;">${catName}</span>
+            </div>
+            <button id="hm-modal-close-btn" style="background:none;border:1px solid var(--blood-dark);color:var(--paper-ash);font-size:18px;cursor:pointer;padding:2px 10px;font-family:monospace;line-height:1;transition:all 0.2s;">✕</button>
+          </div>
+          <div style="padding:var(--space-lg);">
+            ${image ? `<div style="margin-bottom:var(--space-lg);"><img src="${image}" alt="${name}" style="width:100%;max-height:400px;object-fit:contain;border:1px solid var(--blood-dark);filter:grayscale(20%) contrast(1.05);background:var(--void-surface);" onerror="this.style.display='none'"></div>` : ''}
+            <h2 class="font-manuscript" style="color:var(--sick-green);font-size:var(--text-lg);margin:0 0 var(--space-md);letter-spacing:2px;line-height:1.3;">${name}</h2>
+            ${desc ? `<p style="color:var(--paper-white);font-family:monospace;font-size:13px;line-height:1.8;margin-bottom:var(--space-md);">${desc}</p>` : '<p style="color:var(--paper-ash);font-family:monospace;font-size:12px;font-style:italic;">Sin descripción disponible.</p>'}
+            <div style="border-top:1px solid var(--blood-dark);padding-top:var(--space-md);margin-top:var(--space-md);display:flex;gap:var(--space-md);flex-wrap:wrap;align-items:center;">
+              <span style="color:var(--paper-ash);font-family:monospace;font-size:10px;">Entrada indexada del Creepypasta Wiki</span>
             </div>
           </div>
-        </div>`;
+        `;
+
+        document.body.appendChild(overlayEl);
+        document.body.appendChild(modalEl);
+        document.body.style.overflow = 'hidden';
+
+        const closeAll = () => {
+          modalEl.style.animation = 'fadeOut 0.2s ease forwards';
+          overlayEl.style.animation = 'fadeOut 0.2s ease forwards';
+          setTimeout(() => {
+            if (modalEl.parentNode) modalEl.remove();
+            if (overlayEl.parentNode) overlayEl.remove();
+            document.body.style.overflow = '';
+          }, 180);
+        };
+
+        document.getElementById('hm-modal-close-btn').addEventListener('click', closeAll);
+        overlayEl.addEventListener('click', closeAll);
+
+        const escHandler = (e) => {
+          if (e.key === 'Escape') { closeAll(); document.removeEventListener('keydown', escHandler); }
+        };
+        document.addEventListener('keydown', escHandler);
       }
 
       function renderPage(page) {
@@ -296,8 +340,6 @@
                 </div>
               </div>
             </div>
-
-            <div id="wiki-detail-container"></div>
 
             <div style="display:flex;gap:var(--space-md);flex-wrap:wrap;margin:var(--space-lg) 0;">
               ${allCategories.map(c => `
@@ -343,23 +385,7 @@
             const idx = parseInt(card.dataset.entryIdx);
             const entry = entries[idx];
             if (!entry) return;
-            const detailContainer = document.getElementById('wiki-detail-container');
-            if (detailContainer) {
-              detailContainer.innerHTML = renderDetailPanel(entry);
-              detailContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              document.getElementById('close-detail-btn').addEventListener('click', () => {
-                detailContainer.innerHTML = '';
-              });
-            }
-            container.querySelectorAll('.wiki-entry-card').forEach(c => {
-              c.classList.remove('selected');
-              c.style.borderColor = 'var(--blood-dark)';
-              c.style.transform = 'none';
-              c.style.boxShadow = 'none';
-            });
-            card.classList.add('selected');
-            card.style.borderColor = 'var(--sick-green)';
-            card.style.boxShadow = '0 0 15px rgba(0,255,65,0.15)';
+            openModal(entry);
           });
         });
 
@@ -395,9 +421,7 @@
 
       function filterArchiveEntries(query) {
         const grid = document.getElementById('wiki-entries-grid');
-        const detailContainer = document.getElementById('wiki-detail-container');
         if (!grid) return;
-        if (detailContainer) detailContainer.innerHTML = '';
         const q = query.toLowerCase();
         const filtered = q ? entries.filter(e => (e.name || e).toLowerCase().includes(q) || (e.description && e.description.toLowerCase().includes(q))) : entries.slice(0, ITEMS_PER_PAGE);
         grid.innerHTML = filtered.slice(0, ITEMS_PER_PAGE).map((entry, i) => renderEntryCard(entry, entries.indexOf(entry))).join('');
@@ -406,22 +430,7 @@
             const idx = parseInt(card.dataset.entryIdx);
             const entry = entries[idx];
             if (!entry) return;
-            if (detailContainer) {
-              detailContainer.innerHTML = renderDetailPanel(entry);
-              detailContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              document.getElementById('close-detail-btn').addEventListener('click', () => {
-                detailContainer.innerHTML = '';
-              });
-            }
-            grid.querySelectorAll('.wiki-entry-card').forEach(c => {
-              c.classList.remove('selected');
-              c.style.borderColor = 'var(--blood-dark)';
-              c.style.transform = 'none';
-              c.style.boxShadow = 'none';
-            });
-            card.classList.add('selected');
-            card.style.borderColor = 'var(--sick-green)';
-            card.style.boxShadow = '0 0 15px rgba(0,255,65,0.15)';
+            openModal(entry);
           });
         });
       }
