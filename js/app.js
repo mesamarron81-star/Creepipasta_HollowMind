@@ -148,28 +148,29 @@ const HMApp = {
   initScrollReveal() {
     const observerOptions = {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.1
+      rootMargin: '50px',
+      threshold: 0.05
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
           observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
 
-    // Add reveal animation to elements
+    // Add reveal animation to elements (only in main content, not header)
     const revealElements = document.querySelectorAll(
-      '.character-card, .trending-card, .win95-panel, .category-group, .wiki-sidebar-widget'
+      '.trending-card, .wiki-sidebar-widget, .warning-box'
     );
 
     revealElements.forEach((el, index) => {
       el.style.opacity = '0';
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+      el.style.transform = 'translateY(15px)';
+      el.style.transition = `opacity 0.5s ease ${index * 0.08}s, transform 0.5s ease ${index * 0.08}s`;
       observer.observe(el);
     });
   },

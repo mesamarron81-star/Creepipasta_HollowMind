@@ -1,46 +1,46 @@
 /* ============================================
    CREEPIPASTA HOLLOWMIND — GENRE LISTING
-   Wiki index card layout
+   Wiki index card Win95 style
    ============================================ */
 
 /* === GENRE PAGE LAYOUT === */
 .genre-page {
-  padding-top: calc(var(--header-height) + var(--space-xl));
-  padding-bottom: var(--space-2xl);
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-xl);
 }
 
 /* === GENRE HEADER === */
 .genre-header {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-lg);
 }
 
 .genre-title {
-  font-family: var(--font-inscription);
-  font-size: var(--text-2xl);
-  color: var(--paper-aged);
-  font-weight: 400;
-  margin-bottom: var(--space-sm);
+  font-family: var(--font-pixel);
+  font-size: var(--text-xl);
+  color: #000;
+  font-weight: bold;
+  margin-bottom: var(--space-xs);
   letter-spacing: 1px;
 }
 
 .genre-subtitle {
-  font-family: var(--font-handwritten);
+  font-family: var(--font-pixel);
   font-size: var(--text-sm);
-  color: var(--paper-burnt);
+  color: #333;
   line-height: 1.6;
 }
 
 .genre-stats {
   display: flex;
   gap: var(--space-lg);
-  margin-top: var(--space-md);
-  font-family: var(--font-manuscript);
+  margin-top: var(--space-sm);
+  font-family: var(--font-pixel);
   font-size: var(--text-xs);
   letter-spacing: 1px;
 }
 
 .genre-stat {
-  color: var(--paper-burnt);
+  color: #333;
 }
 
 .genre-stat .num {
@@ -52,50 +52,51 @@
 .genre-tabs {
   display: flex;
   gap: 2px;
-  margin-bottom: var(--space-xl);
-  border-bottom: 1px solid #1a0e08;
+  margin-bottom: var(--space-lg);
+  border-bottom: 2px solid var(--win95-dark);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
 
 .genre-tab {
-  padding: var(--space-sm) var(--space-lg);
-  font-family: var(--font-manuscript);
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-pixel);
   font-size: var(--text-xs);
-  color: var(--paper-burnt);
+  color: #333;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   border: 1px solid transparent;
   border-bottom: none;
-  background: none;
+  background: var(--win95-bg);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   white-space: nowrap;
   position: relative;
-  top: 1px;
+  top: 2px;
 }
 
 .genre-tab:hover {
-  color: var(--paper-aged);
-  background: rgba(26,14,8,0.3);
+  color: #000;
+  background: #d0d0d0;
 }
 
 .genre-tab.active {
-  color: var(--blood-fresh);
-  border-color: #1a0e08;
-  background: var(--void-elevated);
+  color: #000;
+  border-color: var(--win95-dark);
+  background: var(--win95-white);
+  font-weight: bold;
 }
 
 .genre-tab .tab-count {
-  margin-left: 6px;
-  color: var(--paper-ash);
+  margin-left: 4px;
+  color: var(--win95-dark);
   font-size: 9px;
 }
 
 /* === GENRE SECTION CONTENT === */
 .genre-section {
   display: none;
-  animation: fadeIn 0.4s ease;
+  animation: fadeIn 0.3s ease;
 }
 
 .genre-section.active {
@@ -103,24 +104,24 @@
 }
 
 .genre-section-header {
-  margin-bottom: var(--space-lg);
-  padding-bottom: var(--space-md);
-  border-bottom: 1px solid #1a0e08;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--win95-dark);
 }
 
 .genre-section-title {
-  font-family: var(--font-manuscript);
+  font-family: var(--font-pixel);
   font-size: var(--text-sm);
   color: var(--blood-fresh);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-bottom: 4px;
 }
 
 .genre-section-desc {
-  font-family: var(--font-handwritten);
+  font-family: var(--font-pixel);
   font-size: var(--text-xs);
-  color: var(--paper-burnt);
+  color: #333;
   font-style: italic;
 }
 
@@ -133,10 +134,11 @@
 
 /* === GENRE CARD === */
 .genre-card {
-  border: 1px solid #1a0e08;
-  background: var(--void-elevated);
+  border: 2px solid;
+  border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
+  background: linear-gradient(180deg, #d0d0d0 0%, #c0c0c0 100%);
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
   position: relative;
   text-decoration: none;
@@ -149,16 +151,19 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
-  background: var(--card-color, var(--blood-dry));
-  opacity: 0.6;
+  height: 3px;
+  background: var(--card-color, var(--blood-fresh));
+  opacity: 0;
   transition: opacity 0.3s;
+  z-index: 5;
 }
 
 .genre-card:hover {
-  border-color: var(--blood-stain);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-deep);
+  border-color: var(--blood-fresh);
+  transform: translateY(-5px) rotate(-0.3deg);
+  box-shadow: 
+    0 8px 20px rgba(122,32,32,0.3),
+    0 0 25px rgba(122,32,32,0.1);
 }
 
 .genre-card:hover::before {
@@ -169,7 +174,7 @@
 .genre-card-image {
   width: 100%;
   height: 120px;
-  background: var(--void-surface);
+  background: #0a0a0a;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -182,12 +187,17 @@
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 0.6s ease, filter 0.6s ease;
-  filter: grayscale(0.5) contrast(1.1) brightness(0.8);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  filter: grayscale(0.3) contrast(1.1) brightness(0.9);
 }
 
 .genre-card-image img.loaded {
   opacity: 1;
+}
+
+.genre-card:hover .genre-card-image img {
+  filter: grayscale(0) contrast(1.2) brightness(1.1);
+  transform: scale(1.1);
 }
 
 .genre-card-image .img-placeholder {
@@ -197,8 +207,13 @@
   align-items: center;
   justify-content: center;
   font-size: 2rem;
-  background:
-    repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(26,14,8,0.1) 3px, rgba(26,14,8,0.1) 4px);
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(255,255,255,0.03) 3px,
+    rgba(255,255,255,0.03) 4px
+  );
   transition: opacity 0.4s;
 }
 
@@ -214,7 +229,7 @@
   left: 0;
   right: 0;
   height: 40%;
-  background: linear-gradient(to top, var(--void-elevated), transparent);
+  background: linear-gradient(to top, #c0c0c0, transparent);
 }
 
 /* Card Body */
@@ -226,69 +241,77 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 .genre-card-name {
-  font-family: var(--font-manuscript);
+  font-family: var(--font-pixel);
   font-size: var(--text-sm);
-  color: var(--paper-aged);
+  color: var(--web-link);
   letter-spacing: 0.5px;
   flex: 1;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.genre-card:hover .genre-card-name {
+  color: var(--blood-fresh);
 }
 
 .genre-card-count {
-  font-family: var(--font-manuscript);
+  font-family: var(--font-pixel);
   font-size: var(--text-xs);
   color: var(--blood-fresh);
-  background: rgba(58,10,10,0.15);
-  padding: 2px 8px;
-  border: 1px solid var(--blood-dry);
+  background: var(--win95-white);
+  padding: 2px 6px;
+  border: 1px solid var(--win95-dark);
+  border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
   letter-spacing: 1px;
   white-space: nowrap;
   margin-left: 8px;
 }
 
 .genre-card-desc {
-  font-family: var(--font-handwritten);
+  font-family: var(--font-pixel);
   font-size: var(--text-xs);
-  color: var(--paper-burnt);
-  line-height: 1.6;
+  color: #333;
+  line-height: 1.5;
 }
 
 /* Subcategory indicator */
 .genre-card-subcategory {
   display: inline-block;
-  font-family: var(--font-manuscript);
+  font-family: var(--font-pixel);
   font-size: 8px;
-  color: var(--paper-ash);
+  color: var(--win95-dark);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: var(--space-sm);
   padding: 2px 6px;
-  border: 1px solid #1a0e08;
+  border: 1px solid var(--win95-dark);
 }
 
 /* === SUBCATEGORY GROUPS === */
 .subcategory-group {
-  margin-left: var(--space-lg);
-  padding-left: var(--space-md);
-  border-left: 1px solid #1a0e08;
+  margin-left: var(--space-md);
+  padding-left: var(--space-sm);
+  border-left: 2px solid var(--win95-dark);
   margin-top: var(--space-sm);
 }
 
 /* === SEARCH FILTER === */
 .genre-search-wrapper {
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
   position: relative;
 }
 
 .genre-search-input {
   width: 100%;
-  background: var(--void);
-  border: 1px solid #1a0e08;
-  color: var(--paper-aged);
-  font-family: var(--font-manuscript);
+  background: var(--win95-white);
+  border: 2px solid;
+  border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
+  color: #000;
+  font-family: var(--font-pixel);
   font-size: var(--text-sm);
   padding: var(--space-sm) var(--space-md);
   padding-left: 35px;
@@ -298,12 +321,11 @@
 }
 
 .genre-search-input:focus {
-  border-color: var(--blood-stain);
+  border-color: var(--win95-blue);
 }
 
 .genre-search-input::placeholder {
-  color: var(--paper-ash);
-  opacity: 0.5;
+  color: var(--win95-dark);
 }
 
 .genre-search-icon {
@@ -311,7 +333,7 @@
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--paper-ash);
+  color: var(--win95-dark);
   font-size: var(--text-sm);
 }
 
@@ -321,16 +343,16 @@
   bottom: var(--space-lg);
   left: 50%;
   transform: translateX(-50%) translateY(20px);
-  background: var(--void-elevated);
-  border: 1px solid #1a0e08;
-  border-left: 3px solid var(--blood-stain);
+  background: var(--win95-bg);
+  border: 2px solid;
+  border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
   padding: var(--space-sm) var(--space-lg);
-  font-family: var(--font-manuscript);
+  font-family: var(--font-pixel);
   font-size: var(--text-xs);
-  color: var(--paper-dark);
+  color: #000;
   z-index: var(--z-modal);
   opacity: 0;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   letter-spacing: 0.5px;
 }
 

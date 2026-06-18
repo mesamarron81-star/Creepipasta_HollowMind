@@ -113,6 +113,28 @@
             paragraphs.forEach(p => observer.observe(p));
           }, 100);
 
+          // Scroll reveal for other elements
+          setTimeout(() => {
+            const revealElements = document.querySelectorAll(
+              '.story-header, .story-meta-bar, .story-hero-image, .story-actions, .related-stories, .comments-section'
+            );
+            const revealObserver = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                  entry.target.style.opacity = '1';
+                  entry.target.style.transform = 'translateY(0)';
+                  revealObserver.unobserve(entry.target);
+                }
+              });
+            }, { threshold: 0.1 });
+            revealElements.forEach((el, i) => {
+              el.style.opacity = '0';
+              el.style.transform = 'translateY(20px)';
+              el.style.transition = `opacity 0.6s ease ${i * 0.1}s, transform 0.6s ease ${i * 0.1}s`;
+              revealObserver.observe(el);
+            });
+          }, 100);
+
           // Text mutation on repeated visits
           if (visits[storyId] > 1) {
             setTimeout(() => {
