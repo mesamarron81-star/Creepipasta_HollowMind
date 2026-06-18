@@ -399,9 +399,9 @@
 .story-card {
   border: 2px solid;
   border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
-  background: var(--win95-bg);
+  background: linear-gradient(180deg, #d0d0d0 0%, #c0c0c0 100%);
   overflow: hidden;
-  transition: all 0.4s ease 0.2s;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -409,18 +409,21 @@
 }
 
 .story-card:hover {
-  border-color: var(--win95-blue);
-  transform: translateY(-3px);
-  box-shadow: 3px 3px 0 rgba(0,0,0,0.4);
+  border-color: var(--blood-fresh);
+  transform: translateY(-5px) rotate(-0.3deg);
+  box-shadow: 
+    0 8px 20px rgba(122,32,32,0.3),
+    0 0 25px rgba(122,32,32,0.1);
 }
 
 .story-card-image {
   width: 100%;
   height: 140px;
-  background: var(--win95-dark);
+  background: #0a0a0a;
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow: hidden;
 }
 
 .story-card-image::after {
@@ -430,7 +433,11 @@
   left: 0;
   right: 0;
   height: 50%;
-  background: linear-gradient(to top, var(--win95-bg), transparent);
+  background: linear-gradient(to top, #c0c0c0, transparent);
+}
+
+.story-card:hover .story-card-image {
+  filter: brightness(1.1);
 }
 
 .story-card-body {
@@ -446,6 +453,11 @@
   color: var(--web-link);
   margin-bottom: var(--space-sm);
   text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.story-card:hover .story-card-title {
+  color: var(--blood-fresh);
 }
 
 .story-card-excerpt {
@@ -463,10 +475,13 @@
   font-family: var(--font-pixel);
   font-size: 9px;
   letter-spacing: 1px;
+  padding-top: var(--space-xs);
+  border-top: 1px solid var(--win95-dark);
 }
 
 .story-card-terror {
   color: var(--blood-fresh);
+  font-weight: bold;
 }
 
 .story-card-time {
@@ -591,11 +606,23 @@
 /* === WIDGETS SIDEBAR === */
 .wiki-sidebar-widget {
   border: 2px solid;
-  border-color: var(--win95-dark) var(--win95-white) var(--win95-white) var(--win95-dark);
-  background: var(--win95-bg);
+  border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
+  box-shadow: 
+    inset 1px 1px 0 var(--win95-light),
+    inset -1px -1px 0 var(--win95-dark),
+    3px 3px 6px rgba(0,0,0,0.3);
+  background: linear-gradient(180deg, #d8d8d8 0%, #c8c8c8 100%);
   padding: var(--space-md);
   position: relative;
   color: #000;
+  transition: all 0.3s ease;
+}
+
+.wiki-sidebar-widget:hover {
+  box-shadow: 
+    inset 1px 1px 0 var(--win95-light),
+    inset -1px -1px 0 var(--win95-dark),
+    4px 4px 10px rgba(0,0,0,0.4);
 }
 
 .wiki-sidebar-widget::before {
@@ -605,7 +632,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--win95-blue);
+  background: linear-gradient(90deg, var(--win95-blue), #4090d0, var(--win95-blue));
 }
 
 /* === BREADCRUMBS === */
@@ -646,6 +673,12 @@
   padding: var(--space-md);
   margin-bottom: var(--space-sm);
   color: #000;
+  transition: all 0.2s ease;
+}
+
+.comment-item:hover {
+  border-color: var(--win95-blue);
+  background: #f0f0ff;
 }
 
 .comment-header {
@@ -660,6 +693,7 @@
 .comment-author {
   color: var(--win95-blue);
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .comment-date {

@@ -339,3 +339,62 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* === SIDEBAR WIDGETS FOR STORY === */
+.widget-title {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: var(--sick-green-text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--win95-dark);
+}
+
+.widget-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: #333;
+}
+
+.info-label {
+  color: var(--win95-dark);
+}
+
+.info-value {
+  color: #000;
+  font-weight: bold;
+}
+
+.widget-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.widget-link {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: var(--web-link);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.widget-link:hover {
+  color: var(--blood-fresh);
+}
+
+.widget-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}

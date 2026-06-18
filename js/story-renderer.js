@@ -59,8 +59,8 @@ const HMStoryRenderer = {
     const commentsHtml = this.generateFakeComments(story);
 
     return `
-      <div class="story-page-layout container">
-        <nav class="breadcrumbs">
+      <div class="layout-with-sidebar container">
+        <nav class="breadcrumbs" style="grid-column: 1 / -1;">
           <a href="index.html">HollowMind</a>
           <span class="separator">/</span>
           <a href="section.html?id=archivo">Archivo</a>
@@ -68,70 +68,101 @@ const HMStoryRenderer = {
           <span class="current">${story.title}</span>
         </nav>
 
-        <div class="story-header">
-          <h1 class="story-title glitch" data-text="${story.title}">${story.title}</h1>
-          <div class="story-categories">${categoriesHtml} ${tagsHtml}</div>
+        <div class="main-portal-content">
+          <div class="story-header">
+            <h1 class="story-title glitch" data-text="${story.title}">${story.title}</h1>
+            <div class="story-categories">${categoriesHtml} ${tagsHtml}</div>
 
-          <div class="story-terror-display">
-            <div class="terror-number" style="color:${terrorColor};">${story.terror}</div>
-            <div class="terror-description">
-              <div class="level">Nivel de Peligro</div>
-              <div class="classification" style="color:${terrorColor};">${terrorLabel}</div>
+            <div class="story-terror-display">
+              <div class="terror-number" style="color:${terrorColor};">${story.terror}</div>
+              <div class="terror-description">
+                <div class="level">Nivel de Peligro</div>
+                <div class="classification" style="color:${terrorColor};">${terrorLabel}</div>
+              </div>
+              <div class="terror-meter" style="flex:1; max-width:180px;">
+                <div class="terror-bar">
+                  <div class="terror-bar-fill" style="width:${story.terror * 10}%; background: linear-gradient(90deg, var(--rune-dim), ${terrorColor});"></div>
+                </div>
+              </div>
             </div>
-            <div class="terror-meter" style="flex:1; max-width:180px;">
-              <div class="terror-bar">
-                <div class="terror-bar-fill" style="width:${story.terror * 10}%; background: linear-gradient(90deg, var(--rune-dim), ${terrorColor});"></div>
+
+            <div class="story-meta-bar">
+              <div class="story-meta-item">
+                <span class="label">Autor:</span>
+                <span class="value author">${story.author}</span>
+              </div>
+              <div class="story-meta-item">
+                <span class="label">Fecha:</span>
+                <span class="value">${story.date}</span>
+              </div>
+              <div class="story-meta-item">
+                <span class="label">Lectura:</span>
+                <span class="value">${story.readTime}</span>
               </div>
             </div>
           </div>
 
-          <div class="story-meta-bar">
-            <div class="story-meta-item">
-              <span class="label">Autor:</span>
-              <span class="value author">${story.author}</span>
+          <div class="story-hero-image" style="background: linear-gradient(135deg, var(--void-surface) 0%, var(--void) 100%);"></div>
+
+          <div class="story-content" id="story-content">
+            ${contentHtml}
+          </div>
+
+          <div class="story-actions">
+            <button class="story-action-btn" onclick="this.classList.toggle('active')">
+              ★ Marcar
+            </button>
+            <button class="story-action-btn" onclick="navigator.share ? navigator.share({title:'${story.title}', url:window.location.href}) : alert('Link copiado')">
+              ↗ Compartir
+            </button>
+            <button class="story-action-btn">
+              ↻ Posición: #${Math.floor(Math.random() * 20) + 1}
+            </button>
+          </div>
+
+          <div class="related-stories">
+            <h3>Fragmentos Relacionados</h3>
+            <div class="related-grid">${relatedHtml}</div>
+          </div>
+
+          <div class="comments-section">
+            <h3>Testimonios de la Red (${commentsHtml.count})</h3>
+            <div class="comment-form">
+              <textarea class="comment-textarea" placeholder="> Escriba su testimonio aquí..."></textarea>
+              <button class="win95-button comment-submit">> SELLAR TESTIMONIO</button>
             </div>
-            <div class="story-meta-item">
-              <span class="label">Fecha:</span>
-              <span class="value">${story.date}</span>
-            </div>
-            <div class="story-meta-item">
-              <span class="label">Lectura:</span>
-              <span class="value">${story.readTime}</span>
-            </div>
+            <div id="comments-list">${commentsHtml.html}</div>
           </div>
         </div>
 
-        <div class="story-hero-image" style="background: linear-gradient(135deg, var(--void-surface) 0%, var(--void) 100%);"></div>
-
-        <div class="story-content" id="story-content">
-          ${contentHtml}
-        </div>
-
-        <div class="story-actions">
-          <button class="story-action-btn" onclick="this.classList.toggle('active')">
-            ★ Marcar
-          </button>
-          <button class="story-action-btn" onclick="navigator.share ? navigator.share({title:'${story.title}', url:window.location.href}) : alert('Link copiado')">
-            ↗ Compartir
-          </button>
-          <button class="story-action-btn">
-            ↻ Posición: #${Math.floor(Math.random() * 20) + 1}
-          </button>
-        </div>
-
-        <div class="related-stories">
-          <h3>Fragmentos Relacionados</h3>
-          <div class="related-grid">${relatedHtml}</div>
-        </div>
-
-        <div class="comments-section">
-          <h3>Testimonios de la Red (${commentsHtml.count})</h3>
-          <div class="comment-form">
-            <textarea class="comment-textarea font-manuscript" placeholder="> Escriba su testimonio aquí..."></textarea>
-            <button class="hm-btn btn-blood comment-submit font-manuscript">> SELLAR TESTIMONIO</button>
+        <aside class="sidebar">
+          <div class="wiki-sidebar-widget">
+            <h3 class="widget-title">INFORMACIÓN DEL ARCHIVO</h3>
+            <div class="widget-content">
+              <div class="info-row"><span class="info-label">ID:</span><span class="info-value">${story.id}</span></div>
+              <div class="info-row"><span class="info-label">Estado:</span><span class="info-value" style="color:var(--sick-green-text);">ACTIVO</span></div>
+              <div class="info-row"><span class="info-label">Clasificación:</span><span class="info-value" style="color:var(--blood-fresh);">${terrorLabel}</span></div>
+              <div class="info-row"><span class="info-label">Visitantes:</span><span class="info-value">${Math.floor(Math.random() * 5000) + 100}</span></div>
+            </div>
           </div>
-          <div id="comments-list">${commentsHtml.html}</div>
-        </div>
+
+          <div class="wiki-sidebar-widget">
+            <h3 class="widget-title">ACCESO RÁPIDO</h3>
+            <div class="widget-links">
+              <a href="section.html?id=archivo" class="widget-link">> Historical Archive</a>
+              <a href="section.html?id=lecturas" class="widget-link">> Suggested Reading</a>
+              <a href="genre-listing.html" class="widget-link">> Genre Listing</a>
+              <a href="categories.html" class="widget-link">> Taxonomía</a>
+            </div>
+          </div>
+
+          <div class="wiki-sidebar-widget">
+            <h3 class="widget-title">ENTIDADES RELACIONADAS</h3>
+            <div class="widget-tags">
+              ${story.tags.slice(0, 8).map(t => `<a href="section.html?tag=${t}" class="tag">${t}</a>`).join('')}
+            </div>
+          </div>
+        </aside>
       </div>
     `;
   },
