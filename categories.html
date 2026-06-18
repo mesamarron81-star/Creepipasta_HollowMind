@@ -126,9 +126,9 @@
           <span class="current">Taxonomía de Amenazas</span>
         </nav>
 
-        <div style="margin-bottom:var(--space-xl);">
-          <h1 class="font-manuscript glitch" data-text="TAXONOMÍA DE AMENAZAS" style="font-size:var(--text-2xl); color:var(--blood-fresh); margin-bottom:var(--space-sm); letter-spacing:3px;">TAXONOMÍA DE AMENAZAS</h1>
-          <p class="font-handwritten" style="color:var(--paper-burnt); line-height:1.6;">Sistema de clasificación del archivo. Cada categoría contiene entradas verificadas y catalogadas bajo protocolos de seguridad HollowMind.</p>
+        <div style="margin-bottom:var(--space-md);">
+          <h1 class="font-manuscript glitch" data-text="TAXONOMÍA DE AMENAZAS" style="font-size:var(--text-lg); color:var(--blood-fresh); margin-bottom:var(--space-xs); letter-spacing:2px;">TAXONOMÍA DE AMENAZAS</h1>
+          <p class="font-handwritten" style="color:var(--paper-burnt); font-size:11px; line-height:1.4;">Sistema de clasificación del archivo.</p>
         </div>
 
         <div class="categories-grid">`;
@@ -136,69 +136,85 @@
       Object.entries(HM_CATEGORIES).forEach(([groupName, group]) => {
         const color = groupColors[groupName] || 'var(--paper-dark)';
         const icon = groupIcons[groupName] || '◉';
-        html += `
+        
+        // Genre Categories gets two columns
+        if (groupName === 'Genre Categories') {
+          const midpoint = Math.ceil(group.items.length / 2);
+          const col1 = group.items.slice(0, midpoint);
+          const col2 = group.items.slice(midpoint);
+          
+          html += `
+          <div class="category-group category-group-genre">
+            <h3 style="color:${color};"><span style="margin-right:6px;">${icon}</span>${groupName}</h3>
+            <div class="genre-columns">`;
+          
+          [col1, col2].forEach(col => {
+            html += `<div class="category-list">`;
+            col.forEach(item => {
+              const slug = item.toLowerCase()
+                .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                .replace(/[^a-z0-9]+/g, '-')
+                .replace(/^-|-$/g, '');
+              const count = allTags[slug] || 0;
+              html += `
+                <a href="section.html?tag=${slug}" class="category-item" style="text-decoration:none;">
+                  <span>${item}</span>
+                  <span class="count">${count}</span>
+                </a>`;
+            });
+            html += `</div>`;
+          });
+          
+          html += `</div></div>`;
+        } else {
+          html += `
           <div class="category-group">
             <h3 style="color:${color};"><span style="margin-right:6px;">${icon}</span>${groupName}</h3>
             <div class="category-list">`;
 
-        group.items.forEach(item => {
-          const slug = item.toLowerCase()
-            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-            .replace(/[^a-z0-9]+/g, '-')
-            .replace(/^-|-$/g, '');
-          const isWikiCategory = groupName === 'Special Categories' && wikiCategoryMap[item];
-          const wikiId = isWikiCategory ? wikiCategoryMap[item] : null;
-          const count = isWikiCategory ? (wikiCounts[wikiId] || 0) : (allTags[slug] || 0);
-          const link = isWikiCategory ? `section.html?cat=${wikiId}` : `section.html?tag=${slug}`;
-          html += `
-            <a href="${link}" class="category-item" style="text-decoration:none;${isWikiCategory ? 'border-left:3px solid var(--sick-green);padding-left:12px;' : ''}">
-              <span>${item}</span>
-              <span class="count" style="${isWikiCategory ? 'color:var(--sick-green);' : ''}">${count} registro${count !== 1 ? 's' : ''}</span>
-            </a>`;
+          group.items.forEach(item => {
+            const slug = item.toLowerCase()
+              .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+              .replace(/[^a-z0-9]+/g, '-')
+              .replace(/^-|-$/g, '');
+            const isWikiCategory = groupName === 'Special Categories' && wikiCategoryMap[item];
+            const wikiId = isWikiCategory ? wikiCategoryMap[item] : null;
+            const count = isWikiCategory ? (wikiCounts[wikiId] || 0) : (allTags[slug] || 0);
+            const link = isWikiCategory ? `section.html?cat=${wikiId}` : `section.html?tag=${slug}`;
+            html += `
+              <a href="${link}" class="category-item" style="text-decoration:none;${isWikiCategory ? 'border-left:3px solid var(--sick-green);padding-left:8px;' : ''}">
+                <span>${item}</span>
+                <span class="count" style="${isWikiCategory ? 'color:var(--sick-green);' : ''}">${count}</span>
+              </a>`;
+          });
 
-          if (group.subcategories && group.subcategories[item]) {
-            group.subcategories[item].forEach(sub => {
-              const subSlug = sub.toLowerCase()
-                .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-                .replace(/[^a-z0-9]+/g, '-')
-                .replace(/^-|-$/g, '');
-              const subCount = allTags[subSlug] || 0;
-              html += `
-            <a href="section.html?tag=${subSlug}" class="category-item" style="text-decoration:none; padding-left:32px; font-size:var(--text-xs);">
-              <span>└ ${sub}</span>
-              <span class="count">${subCount} registro${subCount !== 1 ? 's' : ''}</span>
-            </a>`;
-            });
-          }
-        });
-
-        html += `</div></div>`;
+          html += `</div></div>`;
+        }
       });
 
       html += `</div>`;
 
       if (typeof HM_WIKI_ARCHIVE !== 'undefined') {
         html += `
-          <div style="margin-top:var(--space-2xl); padding:var(--space-lg); border:1px solid var(--blood-dark); background:var(--void-surface); position:relative;">
+          <div style="margin-top:var(--space-lg); padding:var(--space-md); border:1px solid var(--blood-dark); background:var(--void-surface); position:relative;">
             <div style="position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg, transparent, var(--sick-green), transparent);"></div>
-            <h2 class="font-manuscript" style="color:var(--sick-green); font-size:var(--text-lg); margin-bottom:var(--space-md); letter-spacing:2px;">📁 WIKI ARCHIVE — ENTRADAS SCRAPPEADAS</h2>
-            <p class="font-handwritten" style="color:var(--paper-ash); font-size:var(--text-xs); margin-bottom:var(--space-lg);">Datos extraídos del Creepypasta Wiki. Cada categoría contiene las entradas indexadas en nuestro sistema.</p>
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:var(--space-md);">`;
+            <h2 class="font-manuscript" style="color:var(--sick-green); font-size:var(--text-sm); margin-bottom:var(--space-sm); letter-spacing:1px;">📁 WIKI ARCHIVE — ENTRADAS SCRAPPEADAS</h2>
+            <p class="font-handwritten" style="color:var(--paper-ash); font-size:9px; margin-bottom:var(--space-sm);">Datos extraídos del Creepypasta Wiki.</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:var(--space-sm);">`;
 
         Object.values(HM_WIKI_ARCHIVE).forEach(cat => {
           html += `
               <a href="section.html?cat=${cat.id}" class="wiki-cat-card"
-                 style="display:block;padding:var(--space-md);background:var(--void-deep);border:1px solid var(--blood-dark);text-decoration:none;transition:all 0.2s;cursor:pointer;"
+                 style="display:block;padding:var(--space-sm);background:var(--void-deep);border:1px solid var(--blood-dark);text-decoration:none;transition:all 0.2s;cursor:pointer;"
                  onmouseover="this.style.borderColor='var(--sick-green)';this.style.transform='translateY(-2px)'"
                  onmouseout="this.style.borderColor='var(--blood-dark)';this.style.transform='none'">
-                <div style="display:flex;align-items:center;gap:var(--space-sm);margin-bottom:var(--space-xs);">
-                  <span style="font-size:1.2rem;">${cat.icon}</span>
-                  <span style="color:var(--paper-white);font-family:monospace;font-size:12px;font-weight:bold;">${cat.name}</span>
+                <div style="display:flex;align-items:center;gap:var(--space-xs);margin-bottom:2px;">
+                  <span style="font-size:10px;">${cat.icon}</span>
+                  <span style="color:var(--paper-white);font-family:monospace;font-size:9px;font-weight:bold;">${cat.name}</span>
                 </div>
-                <p style="color:var(--paper-ash);font-family:monospace;font-size:10px;margin-bottom:var(--space-sm);line-height:1.4;">${cat.description}</p>
                 <div style="display:flex;justify-content:space-between;align-items:center;">
-                  <span style="color:var(--sick-green);font-family:monospace;font-size:11px;">[${cat.entries.length} ENTRADAS]</span>
-                  <span style="color:var(--blood-fresh);font-size:10px;">▸ VER</span>
+                  <span style="color:var(--sick-green);font-family:monospace;font-size:9px;">[${cat.entries.length}]</span>
+                  <span style="color:var(--blood-fresh);font-size:8px;">▸ VER</span>
                 </div>
               </a>`;
         });
@@ -209,23 +225,22 @@
       }
 
       html += `
-        <div style="margin-top:var(--space-2xl); padding:var(--space-lg); border:1px solid #1a0e08; background:var(--void-elevated); position:relative;">
+        <div style="margin-top:var(--space-md); padding:var(--space-sm); border:1px solid #1a0e08; background:var(--void-elevated); position:relative;">
           <div style="position:absolute; top:0; left:0; right:0; height:1px; background:linear-gradient(90deg, transparent, var(--blood-dry), transparent);"></div>
-          <h3 class="font-manuscript" style="color:var(--blood-fresh); font-size:var(--text-sm); margin-bottom:var(--space-md); letter-spacing:2px;">> Nube de Firmas Activa</h3>
-          <div class="tags-cloud-wrapper" style="gap:7px;">`;
+          <h3 class="font-manuscript" style="color:var(--blood-fresh); font-size:9px; margin-bottom:var(--space-xs); letter-spacing:1px;">> Nube de Firmas Activa</h3>
+          <div class="tags-cloud-wrapper" style="gap:4px;">`;
 
       Object.entries(allTags)
         .sort((a, b) => b[1] - a[1])
         .forEach(([tag, count]) => {
-          html += `<a href="section.html?tag=${tag}" class="tag">${tag} <span style="color:var(--paper-ash);">(${count})</span></a>`;
+          html += `<a href="section.html?tag=${tag}" class="tag" style="font-size:8px;padding:2px 5px;">${tag} <span style="color:var(--paper-ash);">(${count})</span></a>`;
         });
 
       html += `</div></div>
 
-        <div style="margin-top:var(--space-xl); padding:var(--space-lg); border:1px solid #1a0e08; background:rgba(58,10,10,0.05); text-align:center;">
-          <p class="font-manuscript" style="color:var(--paper-burnt); font-size:var(--text-xs); letter-spacing:1px; line-height:1.8;">
+        <div style="margin-top:var(--space-sm); padding:var(--space-sm); border:1px solid #1a0e08; background:rgba(58,10,10,0.05); text-align:center;">
+          <p class="font-manuscript" style="color:var(--paper-burnt); font-size:8px; letter-spacing:1px; line-height:1.6;">
             > ADVERTENCIA: Algunas categorías pueden contener entradas que auto-modifican su contenido.<br>
-            > Si nota inconsistencias en las clasificaciones, no intente corregirlas.<br>
             > El archivo se corrige a sí mismo.
           </p>
         </div>`;
@@ -235,12 +250,12 @@
       const groups = container.querySelectorAll('.category-group');
       groups.forEach((group, i) => {
         group.style.opacity = '0';
-        group.style.transform = 'translateY(10px)';
-        group.style.transition = 'all 0.5s ease';
+        group.style.transform = 'translateY(5px)';
+        group.style.transition = 'all 0.3s ease';
         setTimeout(() => {
           group.style.opacity = '1';
           group.style.transform = 'translateY(0)';
-        }, 200 + i * 100);
+        }, 50 + i * 50);
       });
     });
   </script>

@@ -1,6 +1,6 @@
 /* ============================================
    CREEPIPASTA HOLLOWMIND — DESIGN SYSTEM
-   Sitio web perdido en internet antiguo
+   Archivo prohibido de creepypastas
    ============================================ */
 
 :root {
@@ -138,10 +138,11 @@
   --z-modal: 200;
   --z-loading: 500;
   --z-cursor: 9999;
+  --z-sticky: 50;
 
   /* === LAYOUT === */
-  --container-max: 1100px;
-  --sidebar-width: 280px;
+  --container-max: 100%;
+  --sidebar-width: 320px;
   --header-height: 56px;
 }
 

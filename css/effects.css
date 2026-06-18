@@ -540,6 +540,138 @@ body::before {
   opacity: 0.5;
 }
 
+/* === CHARACTER CARD BLOOD DRIP === */
+.character-card:hover .character-card-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 4px;
+  height: 0;
+  background: linear-gradient(to bottom, var(--blood-fresh), transparent);
+  z-index: 2;
+  animation: character-blood-drip 2s ease-in forwards;
+}
+
+@keyframes character-blood-drip {
+  0% { height: 0; opacity: 0; }
+  10% { opacity: 0.9; }
+  100% { height: 80px; opacity: 0; }
+}
+
+/* === CHARACTER CARD GLOW PULSE === */
+.character-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(122,32,32,0.05) 0%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.character-card:hover::after {
+  opacity: 1;
+  animation: character-glow-pulse 2s ease-in-out infinite;
+}
+
+@keyframes character-glow-pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* === GLITCH EFFECT ON CHARACTER NAME === */
+.character-card:hover .character-name {
+  animation: character-glitch 0.3s steps(2, jump-none);
+}
+
+@keyframes character-glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 1px); }
+  40% { transform: translate(2px, -1px); }
+  60% { transform: translate(-1px, -1px); }
+  80% { transform: translate(1px, 1px); }
+  100% { transform: translate(0); }
+}
+
+/* === TERROR BAR ANIMATION === */
+.character-card:hover .terror-level {
+  animation: terror-flicker 0.5s steps(3) infinite;
+}
+
+@keyframes terror-flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* === SECTION DIVIDER WITH BLOOD === */
+.character-gallery-section::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--blood-dry), transparent);
+  opacity: 0.3;
+}
+
+/* === TRENDING CARD HOVER EFFECT === */
+.trending-card {
+  position: relative;
+}
+
+.trending-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--blood-fresh);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.trending-card:hover::before {
+  transform: scaleY(1);
+}
+
+/* === WARNING BOX PULSE === */
+.warning-box {
+  animation: warning-pulse 3s ease-in-out infinite;
+}
+
+@keyframes warning-pulse {
+  0%, 100% { border-color: var(--blood-dry); }
+  50% { border-color: var(--blood-fresh); }
+}
+
+/* === FOOTER GLOW === */
+.footer-title {
+  position: relative;
+}
+
+.footer-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--sick-green-text);
+  transition: width 0.3s ease;
+}
+
+.footer-column:hover .footer-title::after {
+  width: 100%;
+}
+
 /* === REDUCED MOTION === */
 @media (prefers-reduced-motion: reduce) {
   .fx-vhs::after,
@@ -563,6 +695,30 @@ body::before {
   }
 
   .fx-flicker {
+    animation: none;
+  }
+
+  .character-card:hover .character-card-image::after {
+    animation: none;
+  }
+
+  .character-card:hover .character-name {
+    animation: none;
+  }
+
+  .character-card:hover .terror-level {
+    animation: none;
+  }
+
+  .trending-card::before {
+    animation: none;
+  }
+
+  .warning-box {
+    animation: none;
+  }
+
+  .footer-column:hover .footer-title::after {
     animation: none;
   }
 }
