@@ -79,13 +79,7 @@
   <script src="js/story-renderer.js"></script>
   <script src="js/app.js"></script>
   <style>
-    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-    @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
-    @keyframes modalIn { from { opacity: 0; transform: translate(-50%,-50%) scale(0.95); } to { opacity: 1; transform: translate(-50%,-50%) scale(1); } }
-    #hm-wiki-modal::-webkit-scrollbar { width: 6px; }
-    #hm-wiki-modal::-webkit-scrollbar-track { background: var(--void-deep); }
-    #hm-wiki-modal::-webkit-scrollbar-thumb { background: var(--blood-dark); border-radius: 3px; }
-    #hm-wiki-modal::-webkit-scrollbar-thumb:hover { background: var(--blood-fresh); }
+    .wiki-entry-card { transition: all 0.3s ease; }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -237,7 +231,6 @@
         const desc = entry.description || '';
         const author = entry.author || null;
         const date = entry.date || null;
-        const cats = entry.categories || [];
         return `
         <div class="wiki-entry-card" data-entry-idx="${idx}"
              style="display:flex;flex-direction:column;background:var(--void-surface);border:1px solid var(--blood-dark);color:var(--paper-white);font-family:monospace;font-size:12px;transition:all 0.3s;cursor:pointer;overflow:hidden;border-radius:2px;"
@@ -255,7 +248,7 @@
         </div>`;
       }
 
-      function openModal(entry) {
+      function renderInlineView(entry) {
         const name = entry.name || entry;
         const image = entry.image || null;
         const images = entry.images || [];
@@ -266,91 +259,77 @@
         const categories = entry.categories || [];
         const catName = cat ? cat.name : 'Archivo';
         const catIcon = cat ? cat.icon : '📁';
+        const allImages = images.length > 0 ? images : (image ? [image] : []);
 
-        let existing = document.getElementById('hm-wiki-modal');
-        if (existing) existing.remove();
-        let overlay = document.getElementById('hm-wiki-modal-overlay');
-        if (overlay) overlay.remove();
-
-        const overlayEl = document.createElement('div');
-        overlayEl.id = 'hm-wiki-modal-overlay';
-        overlayEl.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.88);z-index:9998;animation:fadeIn 0.2s ease;';
-
-        const modalEl = document.createElement('div');
-        modalEl.id = 'hm-wiki-modal';
-        modalEl.style.cssText = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;background:var(--void-deep);border:1px solid var(--sick-green);max-width:850px;width:94%;max-height:90vh;overflow-y:auto;padding:0;animation:modalIn 0.3s ease;box-shadow:0 0 80px rgba(0,255,65,0.12);';
+        const firstChar = desc.charAt(0);
+        const restDesc = desc.substring(1);
 
         const metaChips = [];
-        if (author) metaChips.push(`<span style="background:var(--void-surface);border:1px solid var(--blood-dark);padding:3px 10px;border-radius:2px;font-size:11px;color:var(--sick-green);">✍ ${author}</span>`);
-        if (date) metaChips.push(`<span style="background:var(--void-surface);border:1px solid var(--blood-dark);padding:3px 10px;border-radius:2px;font-size:11px;color:var(--paper-burnt);">📅 ${date}</span>`);
+        if (author) metaChips.push(`<span style="background:rgba(0,255,65,0.08);border:1px solid rgba(0,255,65,0.2);padding:6px 14px;font-size:13px;color:var(--sick-green);display:inline-block;">✍ ${author}</span>`);
+        if (date) metaChips.push(`<span style="background:rgba(139,0,0,0.15);border:1px solid rgba(139,0,0,0.3);padding:6px 14px;font-size:13px;color:#cd853f;display:inline-block;">📅 ${date}</span>`);
         if (categories.length > 0) {
-          categories.slice(0, 6).forEach(c => {
+          categories.forEach(c => {
             const catLabel = c.replace(/_/g, ' ');
-            metaChips.push(`<span style="background:var(--void-deep);border:1px solid var(--blood-dark);padding:3px 8px;border-radius:2px;font-size:10px;color:var(--paper-ash);">${catLabel}</span>`);
+            metaChips.push(`<span style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);padding:5px 12px;font-size:12px;color:#888;display:inline-block;">${catLabel}</span>`);
           });
         }
 
-        const allImages = images.length > 1 ? images : (image ? [image] : []);
+        const paragraphs = desc.split(/\n+/).filter(p => p.trim().length > 0);
+        const firstParagraph = paragraphs.length > 0 ? paragraphs[0] : desc;
+        const restParagraphs = paragraphs.slice(1);
 
-        modalEl.innerHTML = `
-          <div style="position:sticky;top:0;z-index:10;background:var(--void-deep);border-bottom:1px solid var(--blood-dark);padding:var(--space-sm) var(--space-lg);display:flex;justify-content:space-between;align-items:center;">
-            <div style="display:flex;align-items:center;gap:var(--space-sm);">
-              <span style="font-size:1.1rem;">${catIcon}</span>
-              <span style="color:var(--paper-ash);font-family:monospace;font-size:10px;">${catName}</span>
-              ${url ? `<a href="${url}" target="_blank" rel="noopener" style="color:var(--sick-green);font-family:monospace;font-size:10px;text-decoration:none;border:1px solid var(--blood-dark);padding:2px 8px;margin-left:8px;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--sick-green)'" onmouseout="this.style.borderColor='var(--blood-dark)'">ABRIR EN WIKI ↗</a>` : ''}
+        let html = `
+          <div class="section-page-layout" style="max-width:820px;margin:0 auto;padding:var(--space-xl) var(--space-lg);">
+            <nav class="breadcrumbs" style="margin-bottom:var(--space-lg);">
+              <a href="index.html">HollowMind</a>
+              <span class="separator">/</span>
+              <a href="section.html?id=archivo">Archivo</a>
+              <span class="separator">/</span>
+              <a href="javascript:void(0)" id="back-to-grid" style="color:var(--sick-green);cursor:pointer;">${sectionName}</a>
+              <span class="separator">/</span>
+              <span class="current" style="color:var(--paper-ash);">${name}</span>
+            </nav>
+
+            <div style="border-bottom:1px solid var(--blood-dark);padding-bottom:var(--space-lg);margin-bottom:var(--space-xl);">
+              <h1 style="font-family:'Playfair Display',Georgia,serif;font-size:2.2rem;color:var(--paper-white);line-height:1.3;margin:0 0 var(--space-md);letter-spacing:0.5px;font-weight:700;">${name}</h1>
+              ${metaChips.length > 0 ? `<div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:var(--space-md);">${metaChips.join('')}</div>` : ''}
+              ${url ? `<a href="${url}" target="_blank" rel="noopener" style="color:var(--sick-green);font-family:monospace;font-size:11px;text-decoration:none;border:1px solid var(--blood-dark);padding:4px 12px;display:inline-block;transition:all 0.2s;" onmouseover="this.style.borderColor='var(--sick-green)'" onmouseout="this.style.borderColor='var(--blood-dark)'">LEER EN WIKI ↗</a>` : ''}
             </div>
-            <button id="hm-modal-close-btn" style="background:none;border:1px solid var(--blood-dark);color:var(--paper-ash);font-size:18px;cursor:pointer;padding:2px 10px;font-family:monospace;line-height:1;transition:all 0.2s;">✕</button>
-          </div>
-          ${allImages.length > 0 ? `
-          <div style="padding:var(--space-md) var(--space-lg);border-bottom:1px solid var(--blood-dark);background:var(--void-surface);">
-            ${allImages.length === 1 ? `
-              <div style="text-align:center;"><img src="${allImages[0]}" alt="${name}" style="max-width:100%;max-height:350px;object-fit:contain;border:1px solid var(--blood-dark);filter:grayscale(15%) contrast(1.05);" onerror="this.style.display='none'"></div>
-            ` : `
-              <div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;">
-                ${allImages.map((img, i) => `<img src="${img}" alt="${name} - imagen ${i+1}" style="max-height:250px;flex-shrink:0;object-fit:contain;border:1px solid var(--blood-dark);filter:grayscale(15%) contrast(1.05);cursor:pointer;" onerror="this.style.display='none'" onclick="window.open('${img}','_blank')">`).join('')}
-              </div>
-              <div style="color:var(--paper-ash);font-family:monospace;font-size:9px;text-align:center;margin-top:4px;">${allImages.length} imagen(es) — clic para ampliar</div>
-            `}
-          </div>` : ''}
-          <div style="padding:var(--space-lg);">
-            <h2 class="font-manuscript" style="color:var(--sick-green);font-size:var(--text-xl);margin:0 0 var(--space-md);letter-spacing:2px;line-height:1.3;text-shadow:0 0 20px rgba(0,255,65,0.2);">${name}</h2>
-            ${metaChips.length > 0 ? `<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:var(--space-md);">${metaChips.join('')}</div>` : ''}
-            <div style="background:var(--void-surface);border:1px solid var(--blood-dark);padding:var(--space-md);margin-bottom:var(--space-md);">
-              <div style="color:var(--sick-green);font-family:monospace;font-size:10px;margin-bottom:6px;letter-spacing:1px;">▸ DESCRIPCIÓN</div>
-              ${desc ? `<p style="color:var(--paper-white);font-family:monospace;font-size:13px;line-height:1.8;margin:0;">${desc}</p>` : '<p style="color:var(--paper-ash);font-family:monospace;font-size:12px;font-style:italic;margin:0;">Sin descripción disponible. Abre el enlace de la wiki para ver el contenido completo.</p>'}
-            </div>
-            ${url ? `
-            <div style="background:var(--void-surface);border:1px solid var(--blood-dark);padding:var(--space-md);">
-              <div style="color:var(--sick-green);font-family:monospace;font-size:10px;margin-bottom:6px;letter-spacing:1px;">▸ ACCESO DIRECTO</div>
-              <a href="${url}" target="_blank" rel="noopener" style="color:var(--sick-green);font-family:monospace;font-size:12px;text-decoration:none;word-break:break-all;line-height:1.6;display:block;padding:8px;border:1px solid var(--blood-dark);transition:all 0.2s;background:var(--void-deep);" onmouseover="this.style.borderColor='var(--sick-green)'" onmouseout="this.style.borderColor='var(--blood-dark)'">
-                ${url}
-              </a>
-              <div style="color:var(--paper-ash);font-family:monospace;font-size:9px;margin-top:6px;">Haz clic para leer el creepypasta completo en la wiki oficial</div>
+
+            ${allImages.length > 0 ? `
+            <div style="margin-bottom:var(--space-xl);">
+              ${allImages.length === 1 ? `
+                <div style="text-align:center;"><img src="${allImages[0]}" alt="${name}" style="max-width:100%;max-height:500px;object-fit:contain;border:1px solid var(--blood-dark);filter:grayscale(10%) contrast(1.05);" onerror="this.style.display='none'"></div>
+              ` : `
+                <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:var(--space-md);">
+                  ${allImages.map((img, i) => `<img src="${img}" alt="${name} - imagen ${i+1}" style="width:100%;object-fit:contain;border:1px solid var(--blood-dark);filter:grayscale(10%) contrast(1.05);" onerror="this.style.display='none'">`).join('')}
+                </div>
+              `}
             </div>` : ''}
-          </div>
-        `;
 
-        document.body.appendChild(overlayEl);
-        document.body.appendChild(modalEl);
-        document.body.style.overflow = 'hidden';
+            <div style="font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;color:#c8c0b0;line-height:2;letter-spacing:0.3px;">
+              ${firstParagraph ? `<p style="margin-bottom:1.8em;text-indent:0;"><span style="float:left;font-size:4.5rem;line-height:0.8;padding-right:12px;padding-top:6px;color:var(--blood-fresh);font-family:'Playfair Display',Georgia,serif;font-weight:700;">${firstChar}</span>${restDesc || firstParagraph.substring(1)}</p>` : `<p style="margin-bottom:1.8em;color:#888;font-style:italic;">Sin descripción disponible.</p>`}
+              ${restParagraphs.map(p => `<p style="margin-bottom:1.8em;text-indent:2em;">${p.trim()}</p>`).join('')}
+              ${desc && paragraphs.length <= 1 && restDesc ? `<p style="margin-bottom:1.8em;text-indent:2em;color:#888;font-style:italic;">Continúa leyendo en la wiki oficial para el contenido completo.</p>` : ''}
+            </div>
 
-        const closeAll = () => {
-          modalEl.style.animation = 'fadeOut 0.2s ease forwards';
-          overlayEl.style.animation = 'fadeOut 0.2s ease forwards';
-          setTimeout(() => {
-            if (modalEl.parentNode) modalEl.remove();
-            if (overlayEl.parentNode) overlayEl.remove();
-            document.body.style.overflow = '';
-          }, 180);
-        };
+            ${url ? `
+            <div style="border-top:1px solid var(--blood-dark);padding-top:var(--space-xl);margin-top:var(--space-xl);text-align:center;">
+              <a href="${url}" target="_blank" rel="noopener" style="color:var(--sick-green);font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;text-decoration:none;padding:12px 32px;border:1px solid var(--blood-dark);display:inline-block;transition:all 0.3s;letter-spacing:1px;" onmouseover="this.style.borderColor='var(--sick-green)';this.style.background='rgba(0,255,65,0.05)'" onmouseout="this.style.borderColor='var(--blood-dark)';this.style.background='none'">
+                LEER HISTORIA COMPLETA EN LA WIKI ↗
+              </a>
+            </div>` : ''}
+          </div>`;
 
-        document.getElementById('hm-modal-close-btn').addEventListener('click', closeAll);
-        overlayEl.addEventListener('click', closeAll);
+        container.innerHTML = html;
 
-        const escHandler = (e) => {
-          if (e.key === 'Escape') { closeAll(); document.removeEventListener('keydown', escHandler); }
-        };
-        document.addEventListener('keydown', escHandler);
+        const backBtn = document.getElementById('back-to-grid');
+        if (backBtn) {
+          backBtn.addEventListener('click', () => {
+            renderPage(currentPage);
+            window.scrollTo(0, 0);
+          });
+        }
       }
 
       function renderPage(page) {
@@ -425,7 +404,8 @@
             const idx = parseInt(card.dataset.entryIdx);
             const entry = entries[idx];
             if (!entry) return;
-            openModal(entry);
+            renderInlineView(entry);
+            window.scrollTo(0, 0);
           });
         });
 
@@ -470,7 +450,8 @@
             const idx = parseInt(card.dataset.entryIdx);
             const entry = entries[idx];
             if (!entry) return;
-            openModal(entry);
+            renderInlineView(entry);
+            window.scrollTo(0, 0);
           });
         });
       }
