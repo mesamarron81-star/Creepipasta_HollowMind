@@ -1,7 +1,6 @@
-﻿/* ============================================
+/* ============================================
    CREEPIPASTA HOLLOWMIND — WIKI ARCHIVE DATA
    Datos completos scrappeados del Creepypasta Wiki
-   Incluye: nombre, imagen, descripción, categoría, autor, fecha, imágenes
    ============================================ */
 
 const HM_WIKI_ARCHIVE = {
@@ -9,806 +8,13001 @@ const HM_WIKI_ARCHIVE = {
     id: 'historical-archive',
     name: 'Historical Archive',
     description: "Older pastas from December 31, 2012 or earlier. Many are reposts from 4chan's /x/ board.",
-    icon: '🏚️',
-    totalItems: 797,
+    icon: '🏟',
+    totalItems: 796,
     entries: [
-{ name: "09/17/10", image: null, description: "" },
-      { name: "12 Minutes", image: null, description: "" },
-      { name: "12th Floor", image: null, description: "" },
-      { name: "1dollar.wav", image: null, description: "" },
-      { name: "29th Dragon", image: null, description: "" },
-      { name: "3 AM", image: null, description: "" },
-      { name: "7:05", image: null, description: "" },
-      { name: "A Bag of Candy", image: null, description: "" },
-      { name: "A Bigger Stick", image: null, description: "" },
-      { name: "A Candle Cove Anecdote", image: null, description: "" },
-      { name: "A Colder Place", image: null, description: "" },
-      { name: "A Conversation of the Footbound", image: null, description: "" },
-      { name: "A Crying Boy", image: null, description: "" },
-      { name: "A Dead Bart Update", image: null, description: "" },
-      { name: "A Diary in a Mine", image: null, description: "" },
-      { name: "A Fresh Start", image: null, description: "" },
-      { name: "A Game of Flashlight Tag", image: null, description: "" },
-      { name: "A Given Reason", image: null, description: "" },
-      { name: "A Good Man Is Hard to Find", image: null, description: "" },
-      { name: "A Good Night Out", image: null, description: "" },
-      { name: "A Hands-On Approach", image: null, description: "" },
-      { name: "A Haunting Most Mario", image: null, description: "" },
-      { name: "A Knock on the Window", image: null, description: "" },
-      { name: "A Light", image: null, description: "" },
-      { name: "A Little Gift", image: null, description: "" },
-      { name: "A Long Detour", image: null, description: "" },
-      { name: "A Memory", image: null, description: "" },
-      { name: "A Moment's Clarity", image: null, description: "" },
-      { name: "A Music Box", image: null, description: "" },
-      { name: "A Painted Christmas", image: null, description: "" },
-      { name: "A Painter From Queens", image: null, description: "" },
-      { name: "A Parent's Love", image: null, description: "" },
-      { name: "A Perfect Routine", image: null, description: "" },
-      { name: "A Pile of Photographs", image: null, description: "" },
-      { name: "A Room", image: null, description: "" },
-      { name: "A Strange Night in the City of Angels", image: null, description: "" },
-      { name: "A Thousand Words", image: null, description: "" },
-      { name: "A Touch of Love", image: null, description: "" },
-      { name: "A Warning", image: null, description: "" },
-      { name: "A Way Out", image: null, description: "" },
-      { name: "Abandoned PokéDoll", image: null, description: "" },
-      { name: "Abandoned Servers", image: null, description: "" },
-      { name: "Ability", image: null, description: "" },
-      { name: "Abrasiveness", image: null, description: "" },
-      { name: "Across the Border", image: null, description: "" },
-      { name: "Actaea Pachypoda", image: null, description: "" },
-      { name: "After the Flash", image: null, description: "" },
-      { name: "Afterward", image: null, description: "" },
-      { name: "Aggie", image: null, description: "" },
-      { name: "Alien", image: null, description: "" },
-      { name: "Alone", image: null, description: "" },
-      { name: "Alternate 21328", image: null, description: "" },
-      { name: "Always with You", image: null, description: "" },
-      { name: "Amnesia", image: null, description: "" },
-      { name: "Amy's Video", image: null, description: "" },
-      { name: "An Apple a Day", image: null, description: "" },
-      { name: "An Egg", image: null, description: "" },
-      { name: "An Hour Ago", image: null, description: "" },
-      { name: "Anansi's Goatman Story", image: null, description: "" },
-      { name: "Ancestors", image: null, description: "" },
-      { name: "AND THEN A SKELETON POPPED OUT", image: null, description: "" },
-      { name: "Annabelle", image: null, description: "" },
-      { name: "Anomaly", image: null, description: "" },
-      { name: "Another Perspective on BOB", image: null, description: "" },
-      { name: "Another You", image: null, description: "" },
-      { name: "Antran", image: null, description: "" },
-      { name: "Argbáktu: Pagan God of Treachery", image: null, description: "" },
-      { name: "Arizona", image: null, description: "" },
-      { name: "Arthur", image: null, description: "" },
-      { name: "Ash's Coma", image: null, description: "" },
-      { name: "Ashes", image: null, description: "" },
-      { name: "Attention", image: null, description: "" },
-      { name: "Atuk", image: null, description: "" },
-      { name: "Away from Grey", image: null, description: "" },
-      { name: "Axaram's Keep", image: null, description: "" },
-      { name: "Bad Dream", image: null, description: "" },
-      { name: "Bad Time to Call", image: null, description: "" },
-      { name: "Banchōd Sarayashiki", image: null, description: "" },
-      { name: "Barbie Doll", image: null, description: "" },
-      { name: "Barbie.avi", image: null, description: "" },
-      { name: "Barricade", image: null, description: "" },
-      { name: "Battery Ditto", image: null, description: "" },
-      { name: "Beauties of the Underworld", image: null, description: "" },
-      { name: "Bedtime II: The Aftermath", image: null, description: "" },
-      { name: "Bedtime III: My Fears Realized", image: null, description: "" },
-      { name: "Bedtime IV: Something Wicked this Way Comes", image: null, description: "" },
-      { name: "Bedtime V: Sleep Tight", image: null, description: "" },
-      { name: "Before It Rains", image: null, description: "" },
-      { name: "Behind the Line of Trees", image: null, description: "" },
-      { name: "BEN Drowned", image: null, description: "" },
-      { name: "Beneath the Garden", image: null, description: "" },
-      { name: "Beneath the Ground", image: null, description: "" },
-      { name: "Beneath the Mattress", image: null, description: "" },
-      { name: "Benjamin Bathurst", image: null, description: "" },
-      { name: "Best Apples", image: null, description: "" },
-      { name: "Better in the Dark", image: null, description: "" },
-      { name: "Bikini Atoll", image: null, description: "" },
-      { name: "Binary DNA", image: null, description: "" },
-      { name: "Birthday Party", image: null, description: "" },
-      { name: "Black Aggie", image: null, description: "" },
-      { name: "Black Friday", image: null, description: "" },
-      { name: "Black-Eyed People", image: null, description: "" },
-      { name: "Blair Witch Backstory", image: null, description: "" },
-      { name: "Blank Book", image: null, description: "" },
-      { name: "Blind Man's Bluff", image: null, description: "" },
-      { name: "Blood Freezing Experiment", image: null, description: "" },
-      { name: "Bloody Mary", image: null, description: "" },
-      { name: "Bloody Mary Returns", image: null, description: "" },
-      { name: "Bloop", image: null, description: "" },
-      { name: "Blue Lady", image: null, description: "" },
-      { name: "Blueberries", image: null, description: "" },
-      { name: "BOB", image: null, description: "" },
-      { name: "Body Jacked", image: null, description: "" },
-      { name: "Bottle", image: null, description: "" },
-      { name: "Braid", image: null, description: "" },
-      { name: "Breath", image: null, description: "" },
-      { name: "Bride Doll", image: null, description: "" },
-      { name: "Broadcast Interruption", image: null, description: "" },
-      { name: "Building Perfection", image: null, description: "" },
-      { name: "Bum-Bum", image: null, description: "" },
-      { name: "Bunnyman Bridge", image: null, description: "" },
-      { name: "Buried Alive Model", image: null, description: "" },
-      { name: "Busses Suck", image: null, description: "" },
-      { name: "Button Day", image: null, description: "" },
-      { name: "Cabinets", image: null, description: "" },
-      { name: "Cackling", image: null, description: "" },
-      { name: "Call Me Tomorrow Okay?", image: null, description: "" },
-      { name: "Camcorder", image: null, description: "" },
-      { name: "Candle Cove", image: null, description: "" },
-      { name: "Candy Pieces", image: null, description: "" },
-      { name: "Canker", image: null, description: "" },
-      { name: "Capgras Delusion", image: null, description: "" },
-      { name: "Cardinal Sins", image: null, description: "" },
-      { name: "Caretaker", image: null, description: "" },
-      { name: "Castle of Flesh", image: null, description: "" },
-      { name: "Cats", image: null, description: "" },
-      { name: "Cave Children", image: null, description: "" },
-      { name: "Cell Phones", image: null, description: "" },
-      { name: "Cervine Birth", image: null, description: "" },
-      { name: "Changeling", image: null, description: "" },
-      { name: "Chatting", image: null, description: "" },
-      { name: "Chiasma", image: null, description: "" },
-      { name: "Chicken Bones", image: null, description: "" },
-      { name: "Chile Diaries", image: null, description: "" },
-      { name: "Choke.exe", image: null, description: "" },
-      { name: "Cigarettes", image: null, description: "" },
-      { name: "Circle of Life", image: null, description: "" },
-      { name: "Clever", image: null, description: "" },
-      { name: "Club 33: A Dark Secret", image: null, description: "" },
-      { name: "Cold Reading", image: null, description: "" },
-      { name: "Come Closer", image: null, description: "" },
-      { name: "Come Follow Me", image: null, description: "" },
-      { name: "Come to Her", image: null, description: "" },
-      { name: "Comfort", image: null, description: "" },
-      { name: "Core", image: null, description: "" },
-      { name: "Crayons", image: null, description: "" },
-      { name: "Creephe", image: null, description: "" },
-      { name: "Creepy Pasta with a Side of Sauce", image: null, description: "" },
-      { name: "Crowded Street", image: null, description: "" },
-      { name: "Cry Baby Lane", image: null, description: "" },
-      { name: "Cuil Theory", image: null, description: "" },
-      { name: "Cul-de-sac", image: null, description: "" },
-      { name: "Cure for Cancer", image: null, description: "" },
-      { name: "Dad.txt", image: null, description: "" },
-      { name: "Daddy a Monster!", image: null, description: "" },
-      { name: "Dangerous Roads", image: null, description: "" },
-      { name: "Dark Corners", image: null, description: "" },
-      { name: "Dark Side of Season Eight", image: null, description: "" },
-      { name: "David's Diary", image: null, description: "" },
-      { name: "Dead Bart", image: null, description: "" },
-      { name: "Dead Rat", image: null, description: "" },
-      { name: "Dead Simple", image: null, description: "" },
-      { name: "Dear Diary", image: null, description: "" },
-      { name: "Debut", image: null, description: "" },
-      { name: "Deep Blue", image: null, description: "" },
-      { name: "Deeper Darkness", image: null, description: "" },
-      { name: "Deer Guy", image: null, description: "" },
-      { name: "Déjà Vu", image: null, description: "" },
-      { name: "Devolution", image: null, description: "" },
-      { name: "Die Before You Sleep", image: null, description: "" },
-      { name: "Dimension", image: null, description: "" },
-      { name: "Disney's Catacombs", image: null, description: "" },
-      { name: "Dispatch", image: null, description: "" },
-      { name: "Do Not Feed the Animals", image: null, description: "" },
-      { name: "Do Not Read This I Beg You", image: null, description: "" },
-      { name: "Dog Found", image: null, description: "" },
-      { name: "Dogs Dos and Don'ts", image: null, description: "" },
-      { name: "Dogscape", image: null, description: "" },
-      { name: "Dollar Short", image: null, description: "" },
-      { name: "Dolly", image: null, description: "" },
-      { name: "Don't Be So Afraid of the Dark", image: null, description: "" },
-      { name: "Don't Let the Cold Man In", image: null, description: "" },
-      { name: "Don't Look Down", image: null, description: "" },
-      { name: "Don't Mind Me", image: null, description: "" },
-      { name: "Don't Turn off the Webcam", image: null, description: "" },
-      { name: "Don't Turn on the Light!", image: null, description: "" },
-      { name: "Don't Worry About It", image: null, description: "" },
-      { name: "Doors", image: null, description: "" },
-      { name: "Doppelgänger", image: null, description: "" },
-      { name: "Doug's Real Life", image: null, description: "" },
-      { name: "Down the Rabbit Hole", image: null, description: "" },
-      { name: "Dream Death", image: null, description: "" },
-      { name: "Dream Memories", image: null, description: "" },
-      { name: "Dream of Waking", image: null, description: "" },
-      { name: "Dust", image: null, description: "" },
-      { name: "Dusty Corners", image: null, description: "" },
-      { name: "Dwain's Circle Report", image: null, description: "" },
-      { name: "Dyatlov Pass Incident", image: null, description: "" },
-      { name: "East", image: null, description: "" },
-      { name: "Easter Egg - Snow on Mt. Silver", image: null, description: "" },
-      { name: "Ed Edd n Eddy Lost Episode", image: null, description: "" },
-      { name: "Egg Sac", image: null, description: "" },
-      { name: "Eh Oh", image: null, description: "" },
-      { name: "Eleanor", image: null, description: "" },
-      { name: "Elizabeth Krull", image: null, description: "" },
-      { name: "Elmo in a Box", image: null, description: "" },
-      { name: "Elvis", image: null, description: "" },
-      { name: "Emails from Scotland", image: null, description: "" },
-      { name: "Emerald Eyes", image: null, description: "" },
-      { name: "Emotional Acting", image: null, description: "" },
-      { name: "End of the Line", image: null, description: "" },
-      { name: "Enlightenment", image: null, description: "" },
-      { name: "Euler's Identity", image: null, description: "" },
-      { name: "Europa", image: null, description: "" },
-      { name: "Evaporation", image: null, description: "" },
-      { name: "Exit", image: null, description: "" },
-      { name: "Experiment 84-B", image: null, description: "" },
-      { name: "Faceless Man", image: null, description: "" },
-      { name: "Faces in the Storm", image: null, description: "" },
-      { name: "Faded Memories", image: null, description: "" },
-      { name: "Failed Rituals", image: null, description: "" },
-      { name: "Faith Buddies", image: null, description: "" },
-      { name: "Fallout 3: Numbers Station", image: null, description: "" },
-      { name: "Family Heirlooms", image: null, description: "" },
-      { name: "Fetid Cage", image: null, description: "" },
-      { name: "Fetish", image: null, description: "" },
-      { name: "Findagrave.com", image: null, description: "" },
-      { name: "First Light", image: null, description: "" },
-      { name: "Five-String Guitar", image: null, description: "" },
-      { name: "Floyd", image: null, description: "" },
-      { name: "Fog", image: null, description: "" },
-      { name: "For the Few", image: null, description: "" },
-      { name: "Forest Eternal", image: null, description: "" },
-      { name: "Forgotten Something", image: null, description: "" },
-      { name: "Forgotten Valentine", image: null, description: "" },
-      { name: "Fractalvore", image: null, description: "" },
-      { name: "Freak", image: null, description: "" },
-      { name: "Free Water", image: null, description: "" },
-      { name: "Friends Don't Let Friends", image: null, description: "" },
-      { name: "Friends Like These", image: null, description: "" },
-      { name: "Gateway of the Mind", image: null, description: "" },
-      { name: "Generation Loss", image: null, description: "" },
-      { name: "Genetic Memory", image: null, description: "" },
-      { name: "Gengar and Clefable", image: null, description: "" },
-      { name: "Get Help", image: null, description: "" },
-      { name: "Ghost Animation", image: null, description: "" },
-      { name: "Ghost Marowak", image: null, description: "" },
-      { name: "Ghost Story", image: null, description: "" },
-      { name: "Glitchlett", image: null, description: "" },
-      { name: "Glitchy Red", image: null, description: "" },
-      { name: "Gloom House", image: null, description: "" },
-      { name: "Gloomy Sunday", image: null, description: "" },
-      { name: "God Toilet", image: null, description: "" },
-      { name: "God's Mouth", image: null, description: "" },
-      { name: "Good's Diner", image: null, description: "" },
-      { name: "Google Maps Balcony Creature", image: null, description: "" },
-      { name: "Götterdämmerung", image: null, description: "" },
-      { name: "Great Hunger", image: null, description: "" },
-      { name: "Grinning", image: null, description: "" },
-      { name: "Grocery List", image: null, description: "" },
-      { name: "Guiding Death", image: null, description: "" },
-      { name: "Gurgles and Bugman", image: null, description: "" },
-      { name: "Hags", image: null, description: "" },
-      { name: "Hands", image: null, description: "" },
-      { name: "Handsome", image: null, description: "" },
-      { name: "Happiness for Sale", image: null, description: "" },
-      { name: "Harmony", image: null, description: "" },
-      { name: "Hazards in Buying a Used Car", image: null, description: "" },
-      { name: "He Waits for You", image: null, description: "" },
-      { name: "Headed South", image: null, description: "" },
-      { name: "Headlines", image: null, description: "" },
-      { name: "Heads Up", image: null, description: "" },
-      { name: "Hearing Loss", image: null, description: "" },
-      { name: "Heart Break-In", image: null, description: "" },
-      { name: "Heartbeat", image: null, description: "" },
-      { name: "Hearts", image: null, description: "" },
-      { name: "Heavy Breathing", image: null, description: "" },
-      { name: "Helen", image: null, description: "" },
-      { name: "Hell Bell", image: null, description: "" },
-      { name: "Hell.exe", image: null, description: "" },
-      { name: "Her Protection", image: null, description: "" },
-      { name: "Herobrine", image: null, description: "" },
-      { name: "Hiding Beauty", image: null, description: "" },
-      { name: "Hillside Manor", image: null, description: "" },
-      { name: "Hitchhiker's Object", image: null, description: "" },
-      { name: "Holder of Fluffy Kittens", image: null, description: "" },
-      { name: "Holes", image: null, description: "" },
-      { name: "House of Rules", image: null, description: "" },
-      { name: "How This Ends", image: null, description: "" },
-      { name: "Humper-Monkey's Ghost Story", image: null, description: "" },
-      { name: "Huntsville Camping Trip", image: null, description: "" },
-      { name: "Hyper-Realistic", image: null, description: "" },
-      { name: "Hypno's Lullaby", image: null, description: "" },
-      { name: "I Am a Zombie", image: null, description: "" },
-      { name: "I Died", image: null, description: "" },
-      { name: "I Found a Digital Camera in the Woods", image: null, description: "" },
-      { name: "I Need Assistance", image: null, description: "" },
-      { name: "I Saw It Coming", image: null, description: "" },
-      { name: "I'm Blue", image: null, description: "" },
-      { name: "I'm Sorry Daddy", image: null, description: "" },
-      { name: "Illness", image: null, description: "" },
-      { name: "Imperfect Transition", image: null, description: "" },
-      { name: "In from the Cold", image: null, description: "" },
-      { name: "In the Bayou", image: null, description: "" },
-      { name: "In the Mirror", image: null, description: "" },
-      { name: "In the Shower", image: null, description: "" },
-      { name: "Incense", image: null, description: "" },
-      { name: "Indistinguishable", image: null, description: "" },
-      { name: "Infinite Regress", image: null, description: "" },
-      { name: "Influenza", image: null, description: "" },
-      { name: "Inspired", image: null, description: "" },
-      { name: "Inventor's Revenge", image: null, description: "" },
-      { name: "It Runs in the Family", image: null, description: "" },
-      { name: "Jack's Back", image: null, description: "" },
-      { name: "Jaundice", image: null, description: "" },
-      { name: "Jaywalk", image: null, description: "" },
-      { name: "Jennifer's Furby", image: null, description: "" },
-      { name: "Jessie Mack", image: null, description: "" },
-      { name: "Jesus Christ Deleted", image: null, description: "" },
-      { name: "JFK", image: null, description: "" },
-      { name: "Joshua", image: null, description: "" },
-      { name: "Journal Entries", image: null, description: "" },
-      { name: "Julia Legare", image: null, description: "" },
-      { name: "Just a Normal Pie", image: null, description: "" },
-      { name: "Jvk1166z.esp", image: null, description: "" },
-      { name: "Kagome Kagome", image: null, description: "" },
-      { name: "Khaki", image: null, description: "" },
-      { name: "Kisaragi Station", image: null, description: "" },
-      { name: "Knob.exe", image: null, description: "" },
-      { name: "Knocking", image: null, description: "" },
-      { name: "Knocks on the Window", image: null, description: "" },
-      { name: "Kuchisake-Onna", image: null, description: "" },
-      { name: "La Llorona", image: null, description: "" },
-      { name: "Last Friday", image: null, description: "" },
-      { name: "Last One Today", image: null, description: "" },
-      { name: "Last Words", image: null, description: "" },
-      { name: "Lavender Town Mysteries", image: null, description: "" },
-      { name: "Lavender Town Syndrome", image: null, description: "" },
-      { name: "Lead Masks", image: null, description: "" },
-      { name: "Legend of Zelda Bootleg/Hack", image: null, description: "" },
-      { name: "Let's Play a Game", image: null, description: "" },
-      { name: "Licking", image: null, description: "" },
-      { name: "Life and Death", image: null, description: "" },
-      { name: "Life Is Short", image: null, description: "" },
-      { name: "Lighthouse", image: null, description: "" },
-      { name: "Lightless City", image: null, description: "" },
-      { name: "Lightning", image: null, description: "" },
-      { name: "Lights On", image: null, description: "" },
-      { name: "Like Me", image: null, description: "" },
-      { name: "Lilith", image: null, description: "" },
-      { name: "Link's Awakening", image: null, description: "" },
-      { name: "Listen", image: null, description: "" },
-      { name: "Listening In", image: null, description: "" },
-      { name: "Long Way Home", image: null, description: "" },
-      { name: "Loss of Purpose", image: null, description: "" },
-      { name: "Lost and Found", image: null, description: "" },
-      { name: "Love", image: null, description: "" },
-      { name: "Love Dies", image: null, description: "" },
-      { name: "Love Letter", image: null, description: "" },
-      { name: "Luna Game", image: null, description: "" },
-      { name: "Lyeford West Virginia", image: null, description: "" },
-      { name: "M3", image: null, description: "" },
-      { name: "Majora's Mask", image: null, description: "" },
-      { name: "Malediction of Sapience", image: null, description: "" },
-      { name: "Man in Grey", image: null, description: "" },
-      { name: "Mankind", image: null, description: "" },
-      { name: "MARIO", image: null, description: "" },
-      { name: "Marks", image: null, description: "" },
-      { name: "Marshmallow Squares", image: null, description: "" },
-      { name: "Maskie", image: null, description: "" },
-      { name: "Masterpiece", image: null, description: "" },
-      { name: "Mechanical Constraint", image: null, description: "" },
-      { name: "Meet Thorvaldr", image: null, description: "" },
-      { name: "Mel's Hole", image: null, description: "" },
-      { name: "Melting Away", image: null, description: "" },
-      { name: "Mereana Mordegard Glesgorv", image: null, description: "" },
-      { name: "Meteor", image: null, description: "" },
-      { name: "Mewtwo", image: null, description: "" },
-      { name: "Miasma", image: null, description: "" },
-      { name: "Midget Mansion", image: null, description: "" },
-      { name: "Midnight Game", image: null, description: "" },
-      { name: "Midnight Train", image: null, description: "" },
-      { name: "Midwest", image: null, description: "" },
-      { name: "Mirror Avenue", image: null, description: "" },
-      { name: "Mirror Box", image: null, description: "" },
-      { name: "Misfortune.gb", image: null, description: "" },
-      { name: "Missing", image: null, description: "" },
-      { name: "Moonlight Films", image: null, description: "" },
-      { name: "Morbus.avi", image: null, description: "" },
-      { name: "Morning Coffee", image: null, description: "" },
-      { name: "Morph", image: null, description: "" },
-      { name: "Mother", image: null, description: "" },
-      { name: "Mother's Call", image: null, description: "" },
-      { name: "Mothman", image: null, description: "" },
-      { name: "Mount Pleasant", image: null, description: "" },
-      { name: "Movie Buff", image: null, description: "" },
-      { name: "Mr. Bones' Wild Ride", image: null, description: "" },
-      { name: "Mr. Mix", image: null, description: "" },
-      { name: "Mr. Smother", image: null, description: "" },
-      { name: "Mr. Widemouth", image: null, description: "" },
-      { name: "Mudhouse Mansion", image: null, description: "" },
-      { name: "Murmurs", image: null, description: "" },
-      { name: "Muse", image: null, description: "" },
-      { name: "Musings from the Bunker", image: null, description: "" },
-      { name: "Mutant Future", image: null, description: "" },
-      { name: "My Favorite Part", image: null, description: "" },
-      { name: "My First Friend", image: null, description: "" },
-      { name: "My Perfect World Shattered", image: null, description: "" },
-      { name: "My Wife", image: null, description: "" },
-      { name: "Mysterious Caller", image: null, description: "" },
-      { name: "Nana", image: null, description: "" },
-      { name: "Necrosis", image: null, description: "" },
-      { name: "NES Godzilla Creepypasta", image: null, description: "" },
-      { name: "New Cell Phone", image: null, description: "" },
-      { name: "New Eden", image: null, description: "" },
-      { name: "New Messages", image: null, description: "" },
-      { name: "No Gifts This Year", image: null, description: "" },
-      { name: "No Man's Land", image: null, description: "" },
-      { name: "No Through Road", image: null, description: "" },
-      { name: "No Will", image: null, description: "" },
-      { name: "No Wolves in the Stillwood", image: null, description: "" },
-      { name: "NoEnd House", image: null, description: "" },
-      { name: "Noises", image: null, description: "" },
-      { name: "Normal Porn for Normal People", image: null, description: "" },
-      { name: "Noseybonk Lost Episode", image: null, description: "" },
-      { name: "Not Anymore", image: null, description: "" },
-      { name: "Not Chocolate", image: null, description: "" },
-      { name: "Not So Funny When It Happened", image: null, description: "" },
-      { name: "Notebooks", image: null, description: "" },
-      { name: "Notes", image: null, description: "" },
-      { name: "Nuckelavee", image: null, description: "" },
-      { name: "Off the Beaten Path", image: null, description: "" },
-      { name: "Old News", image: null, description: "" },
-      { name: "On My Short Time at Miskatonic University", image: null, description: "" },
-      { name: "On My Shoulder", image: null, description: "" },
-      { name: "On the Bus", image: null, description: "" },
-      { name: "One for the Baron", image: null, description: "" },
-      { name: "One-Man Hide and Seek", image: null, description: "" },
-      { name: "Oneirophobia", image: null, description: "" },
-      { name: "Onriyo", image: null, description: "" },
-      { name: "Opal", image: null, description: "" },
-      { name: "Opossum", image: null, description: "" },
-      { name: "Orange Tabby", image: null, description: "" },
-      { name: "Orwin", image: null, description: "" },
-      { name: "Out with a Bang", image: null, description: "" },
-      { name: "Pale Luna", image: null, description: "" },
-      { name: "Parasite", image: null, description: "" },
-      { name: "Patient No. 0017983", image: null, description: "" },
-      { name: "Pendulum", image: null, description: "" },
-      { name: "Perfect Circle", image: null, description: "" },
-      { name: "Perfectown", image: null, description: "" },
-      { name: "Peripheral Vision", image: null, description: "" },
-      { name: "Persuaded", image: null, description: "" },
-      { name: "Photoslash", image: null, description: "" },
-      { name: "Picha Mlaji", image: null, description: "" },
-      { name: "Picking Up Courtney", image: null, description: "" },
-      { name: "Play It Again", image: null, description: "" },
-      { name: "Play Something", image: null, description: "" },
-      { name: "Please Come", image: null, description: "" },
-      { name: "Please Cry", image: null, description: "" },
-      { name: "Pokémon Black", image: null, description: "" },
-      { name: "Pokémon Blue", image: null, description: "" },
-      { name: "Pokémon Lost Silver", image: null, description: "" },
-      { name: "Pokémon War Theory", image: null, description: "" },
-      { name: "Polly the Staring Dolly", image: null, description: "" },
-      { name: "Polybius", image: null, description: "" },
-      { name: "Poor Rival", image: null, description: "" },
-      { name: "Pop Ups", image: null, description: "" },
-      { name: "Post-Mortem Photography", image: null, description: "" },
-      { name: "Prey", image: null, description: "" },
-      { name: "Private James Masterson", image: null, description: "" },
-      { name: "Psychosis", image: null, description: "" },
-      { name: "Quiet", image: null, description: "" },
-      { name: "Rainbow Factory", image: null, description: "" },
-      { name: "Rap Rat", image: null, description: "" },
-      { name: "Rasp", image: null, description: "" },
-      { name: "Raw Head and Bloody Bones", image: null, description: "" },
-      { name: "Red Man", image: null, description: "" },
-      { name: "Red Moon", image: null, description: "" },
-      { name: "Red with White", image: null, description: "" },
-      { name: "Reflections", image: null, description: "" },
-      { name: "Remedies", image: null, description: "" },
-      { name: "Repercussions of Evil", image: null, description: "" },
-      { name: "Richard Pryor", image: null, description: "" },
-      { name: "Right Through Me", image: null, description: "" },
-      { name: "Roadwork", image: null, description: "" },
-      { name: "Robert the Doll", image: null, description: "" },
-      { name: "Rocking Motion", image: null, description: "" },
-      { name: "Ruins of Alph", image: null, description: "" },
-      { name: "Ruins of an Urban Jungle", image: null, description: "" },
-      { name: "Sabotage", image: null, description: "" },
-      { name: "Sarah O'Bannon", image: null, description: "" },
-      { name: "Sawney's Cave", image: null, description: "" },
-      { name: "Scratchy Scratchy", image: null, description: "" },
-      { name: "Scribblings in the Well", image: null, description: "" },
-      { name: "Second Sight", image: null, description: "" },
-      { name: "Seen but Not Heard", image: null, description: "" },
-      { name: "Selena", image: null, description: "" },
-      { name: "Self Preservation", image: null, description: "" },
-      { name: "Seven Gables", image: null, description: "" },
-      { name: "Sever the Cord", image: null, description: "" },
-      { name: "Shadow of My Shadow", image: null, description: "" },
-      { name: "Shadow People", image: null, description: "" },
-      { name: "Shakkzcar Sheivirre.avi", image: null, description: "" },
-      { name: "Sibling Rivalry", image: null, description: "" },
-      { name: "Sick", image: null, description: "" },
-      { name: "Silent Nightmare", image: null, description: "" },
-      { name: "Simple Game", image: null, description: "" },
-      { name: "Siren", image: null, description: "" },
-      { name: "Skinwalker", image: null, description: "" },
-      { name: "Skipper's Bin", image: null, description: "" },
-      { name: "Sky Burial", image: null, description: "" },
-      { name: "Skype", image: null, description: "" },
-      { name: "Sleep Easy", image: null, description: "" },
-      { name: "Small Businesses", image: null, description: "" },
-      { name: "Smile Dog", image: null, description: "" },
-      { name: "Snowscape", image: null, description: "" },
-      { name: "Snuff Film", image: null, description: "" },
-      { name: "So Much for My Complexion!", image: null, description: "" },
-      { name: "Sokushinbutsu", image: null, description: "" },
-      { name: "Something Pale and Silent", image: null, description: "" },
-      { name: "Something Very Old", image: null, description: "" },
-      { name: "Sox", image: null, description: "" },
-      { name: "Special", image: null, description: "" },
-      { name: "Spectacular Creation", image: null, description: "" },
-      { name: "Spending the Night", image: null, description: "" },
-      { name: "Spirit of the Swamp", image: null, description: "" },
-      { name: "Squidward's Suicide", image: null, description: "" },
-      { name: "Stairs", image: null, description: "" },
-      { name: "Star-Crossed Night", image: null, description: "" },
-      { name: "Staring", image: null, description: "" },
-      { name: "Stick Stickly", image: null, description: "" },
-      { name: "Stop! Go!", image: null, description: "" },
-      { name: "Stranger", image: null, description: "" },
-      { name: "String Theory", image: null, description: "" },
-      { name: "Stuffy", image: null, description: "" },
-      { name: "Suicidemouse.avi", image: null, description: "" },
-      { name: "Suit", image: null, description: "" },
-      { name: "Sunken Statues", image: null, description: "" },
-      { name: "Sunlit Nightmare", image: null, description: "" },
-      { name: "Super Mario 128", image: null, description: "" },
-      { name: "Super Mario 64", image: null, description: "" },
-      { name: "Supernova", image: null, description: "" },
-      { name: "Survival Guide", image: null, description: "" },
-      { name: "Survival Instinct", image: null, description: "" },
-      { name: "Survivor Type", image: null, description: "" },
-      { name: "Systematic Risk", image: null, description: "" },
-      { name: "Takotsubo Cardiomyopathy", image: null, description: "" },
-      { name: "Tall Thin and Faceless", image: null, description: "" },
-      { name: "Ted the Caver", image: null, description: "" },
-      { name: "Teddy", image: null, description: "" },
-      { name: "TEH DAY OF ALL TEH BLOD", image: null, description: "" },
-      { name: "Televisions", image: null, description: "" },
-      { name: "Tenebrous Guardian", image: null, description: "" },
-      { name: "Text-Based Hell", image: null, description: "" },
-      { name: "Thailand - An Allegedly True Story", image: null, description: "" },
-      { name: "The .GIF", image: null, description: "" },
-      { name: "The Abandoned Train Station", image: null, description: "" },
-      { name: "The Algorithm", image: null, description: "" },
-      { name: "The Alice Killings", image: null, description: "" },
-      { name: "The Amnesia Tapes", image: null, description: "" },
-      { name: "The Angel of Industry", image: null, description: "" },
-      { name: "The Art of Jacob Emory", image: null, description: "" },
-      { name: "The Asylum", image: null, description: "" },
-      { name: "The Bagpipe Tune", image: null, description: "" },
-      { name: "The Bald Man", image: null, description: "" },
-      { name: "The Ballad of Jane", image: null, description: "" },
-      { name: "The Baseball Boy", image: null, description: "" },
-      { name: "The Bird Cage", image: null, description: "" },
-      { name: "The Bitterroot Footage", image: null, description: "" },
-      { name: "The Black Quill", image: null, description: "" },
-      { name: "The Black Stone", image: null, description: "" },
-      { name: "The Blank Face", image: null, description: "" },
-      { name: "The Blue Man", image: null, description: "" },
-      { name: "The Boy Who Loved to Read", image: null, description: "" },
-      { name: "The Boyfriend", image: null, description: "" },
-      { name: "The Bum's Countdown", image: null, description: "" },
-      { name: "The Buzz", image: null, description: "" },
-      { name: "The Bwystfel", image: null, description: "" },
-      { name: "The Cab", image: null, description: "" },
-      { name: "The Cardboard House", image: null, description: "" },
-      { name: "The Case of Martina Gomez", image: null, description: "" },
-      { name: "The Cave", image: null, description: "" },
-      { name: "The Cell Phone Game", image: null, description: "" },
-      { name: "The Channel", image: null, description: "" },
-      { name: "The Children Knew", image: null, description: "" },
-      { name: "The Chinatown Well", image: null, description: "" },
-      { name: "The Christmas Tree", image: null, description: "" },
-      { name: "The Classified Ad", image: null, description: "" },
-      { name: "The Comfy and Cozy Cabin", image: null, description: "" },
-      { name: "The Corandury", image: null, description: "" },
-      { name: "The Couch", image: null, description: "" },
-      { name: "The Creature in Your Mind", image: null, description: "" },
-      { name: "The Creeping Mange", image: null, description: "" },
-      { name: "The Crooked Box", image: null, description: "" },
-      { name: "The Crying Boy", image: null, description: "" },
-      { name: "The Dawn Is Your Enemy", image: null, description: "" },
-      { name: "The Descent of Man", image: null, description: "" },
-      { name: "The Dionaea House", image: null, description: "" },
-      { name: "The Disappearance of Ashley Kansas", image: null, description: "" },
-      { name: "The Doctor's Orders", image: null, description: "" },
-      { name: "The Doll", image: null, description: "" },
-      { name: "The Doughboy - The Ghost of the Great War", image: null, description: "" },
-      { name: "The Elements: Fire", image: null, description: "" },
-      { name: "The End", image: null, description: "" },
-      { name: "The End of Man", image: null, description: "" },
-      { name: "The Endor Holocaust", image: null, description: "" },
-      { name: "The Final Days", image: null, description: "" },
-      { name: "The Fish in the Mirror", image: null, description: "" },
-      { name: "The Five", image: null, description: "" },
-      { name: "The Flatwoods Monster", image: null, description: "" },
-      { name: "The Forgotten Vending Machine", image: null, description: "" },
-      { name: "The Gallery", image: null, description: "" },
-      { name: "The Gallery of Henri Beauchamp", image: null, description: "" },
-      { name: "The Gambler Game", image: null, description: "" },
-      { name: "The Ghost Pilot", image: null, description: "" },
-      { name: "The Girl in the Photograph", image: null, description: "" },
-      { name: "The Girl on the Train", image: null, description: "" },
-      { name: "The Golden Dilemma", image: null, description: "" },
-      { name: "The Grey Man", image: null, description: "" },
-      { name: "The Grifter", image: null, description: "" },
-      { name: "The Grinning Man", image: null, description: "" },
-      { name: "The Growths", image: null, description: "" },
-      { name: "The Hands", image: null, description: "" },
-      { name: "The Hole in the Wall", image: null, description: "" },
-      { name: "The Hook", image: null, description: "" },
-      { name: "The Idol", image: null, description: "" },
-      { name: "The Jawas", image: null, description: "" },
-      { name: "The Kaleidoscope", image: null, description: "" },
-      { name: "The Keeper", image: null, description: "" },
-      { name: "The King Come Down", image: null, description: "" },
-      { name: "The Lab", image: null, description: "" },
-      { name: "The Lady Behind the Door", image: null, description: "" },
-      { name: "The Lamp", image: null, description: "" },
-      { name: "The Last Testament", image: null, description: "" },
-      { name: "The Legend of Michigan's Dogman", image: null, description: "" },
-      { name: "The Lilies Are Bleeding", image: null, description: "" },
-      { name: "The Lunar Fires", image: null, description: "" },
-      { name: "The Mail Box", image: null, description: "" },
-      { name: "The Man and His Ancient Lyre", image: null, description: "" },
-      { name: "The Man at the Fork", image: null, description: "" },
-      { name: "The Masked Man", image: null, description: "" },
-      { name: "The Medic", image: null, description: "" },
-      { name: "The Melancholy of Herbert Solomon", image: null, description: "" },
-      { name: "The Memetic Symbol", image: null, description: "" },
-      { name: "The Message", image: null, description: "" },
-      { name: "The Mind Tomb", image: null, description: "" },
-      { name: "The Missing Step", image: null, description: "" },
-      { name: "The Modern Essenes", image: null, description: "" },
-      { name: "The Mouth of Truth", image: null, description: "" },
-      { name: "The Music Box", image: null, description: "" },
-      { name: "The Mute Man", image: null, description: "" },
-      { name: "The Mystery of Bertshine Iowa", image: null, description: "" },
-      { name: "The Never-Ending Road", image: null, description: "" },
-      { name: "The Nice Guy", image: null, description: "" },
-      { name: "The Note and the Toolbox", image: null, description: "" },
-      { name: "The Null Desert Soundfile", image: null, description: "" },
-      { name: "The Old Hospital", image: null, description: "" },
-      { name: "The Old Lady", image: null, description: "" },
-      { name: "The Parrot", image: null, description: "" },
-      { name: "The Patron Saint of the Good-Looking Corpse", image: null, description: "" },
-      { name: "The Perfect Child", image: null, description: "" },
-      { name: "The Perfect Video Game", image: null, description: "" },
-      { name: "The Photographs", image: null, description: "" },
-      { name: "The Pill", image: null, description: "" },
-      { name: "The Portraits", image: null, description: "" },
-      { name: "The Post Office", image: null, description: "" },
-      { name: "The Prophecy of Zarah", image: null, description: "" },
-      { name: "The Prophetic Monolith", image: null, description: "" },
-      { name: "The Puppet", image: null, description: "" },
-      { name: "The Puppetmaster's Regime", image: null, description: "" },
-      { name: "The Quantum Man", image: null, description: "" },
-      { name: "The Ragged Man", image: null, description: "" },
-      { name: "The Railroad", image: null, description: "" },
-      { name: "The Rake", image: null, description: "" },
-      { name: "The Real Nosferatu", image: null, description: "" },
-      { name: "The Red Eyes in the Dark", image: null, description: "" },
-      { name: "The Red Room", image: null, description: "" },
-      { name: "The Rugrats Theory", image: null, description: "" },
-      { name: "The Runner", image: null, description: "" },
-      { name: "The Russian Sleep Experiment", image: null, description: "" },
-      { name: "The Rusted Engine", image: null, description: "" },
-      { name: "The Sadness Is Sickening", image: null, description: "" },
-      { name: "The Scarecrow", image: null, description: "" },
-      { name: "The Scariest Video Game Ever", image: null, description: "" },
-      { name: "The SCP Foundation", image: null, description: "" },
-      { name: "The Secret", image: null, description: "" },
-      { name: "The Sermon", image: null, description: "" },
-      { name: "The Shaman", image: null, description: "" },
-      { name: "The Shelter", image: null, description: "" },
-      { name: "The Shift", image: null, description: "" },
-      { name: "The Shoe Tree", image: null, description: "" },
-      { name: "The Showers", image: null, description: "" },
-      { name: "The Siren Is Mine", image: null, description: "" },
-      { name: "The Six-Legged Rape Centaur", image: null, description: "" },
-      { name: "The Slender Man", image: null, description: "" },
-      { name: "The Slenderman Cometh", image: null, description: "" },
-      { name: "The Slumber Party Chronicles", image: null, description: "" },
-      { name: "The Smiling Man", image: null, description: "" },
-      { name: "The Song and Dance Man", image: null, description: "" },
-      { name: "The Stairs and the Doorway", image: null, description: "" },
-      { name: "The Stalker", image: null, description: "" },
-      { name: "The Statue", image: null, description: "" },
-      { name: "The Strange Death of Mary Reeser", image: null, description: "" },
-      { name: "The Strangers", image: null, description: "" },
-      { name: "The Strangest Security Tape I've Ever Seen", image: null, description: "" },
-      { name: "The Subway Effect", image: null, description: "" },
-      { name: "The Suicide King", image: null, description: "" },
-      { name: "The Tadpole Story", image: null, description: "" },
-      { name: "The Tale of Robert Elm", image: null, description: "" },
-      { name: "The Tall Man", image: null, description: "" },
-      { name: "The Theater", image: null, description: "" },
-      { name: "The Thing in the Fields", image: null, description: "" },
-      { name: "The Thing That Stalks the Fields", image: null, description: "" },
-      { name: "The Thump", image: null, description: "" },
-      { name: "The True Story of the Theater", image: null, description: "" },
-      { name: "The Tunnel", image: null, description: "" },
-      { name: "The Valley of the Shadow of Death", image: null, description: "" },
-      { name: "The Vanity", image: null, description: "" },
-      { name: "The Vials", image: null, description: "" },
-      { name: "The Wanderer", image: null, description: "" },
-      { name: "The Weird Part of YouTube", image: null, description: "" },
-      { name: "The Well to Hell", image: null, description: "" },
-      { name: "The Well...", image: null, description: "" },
-      { name: "The Woman in the Oven", image: null, description: "" },
-      { name: "The Wyoming Incident", image: null, description: "" },
-      { name: "The Zapata Letters", image: null, description: "" },
-      { name: "They Come Home to Roost", image: null, description: "" },
-      { name: "They're Everywhere", image: null, description: "" },
-      { name: "Think Not of the Morrow", image: null, description: "" },
-      { name: "Thomas's Reflection", image: null, description: "" },
-      { name: "Through the Scope", image: null, description: "" },
-      { name: "Thug Aim", image: null, description: "" },
-      { name: "Thumbs Out", image: null, description: "" },
-      { name: "To Fix You", image: null, description: "" },
-      { name: "Tom and Jerry Lost Cartoon", image: null, description: "" },
-      { name: "Tom and Jerry VHS", image: null, description: "" },
-      { name: "Tomato Soup", image: null, description: "" },
-      { name: "Tomino's Hell", image: null, description: "" },
-      { name: "Top Percentage", image: null, description: "" },
-      { name: "Trapped", image: null, description: "" },
-      { name: "Trick or Treat", image: null, description: "" },
-      { name: "Trows", image: null, description: "" },
-      { name: "Truth", image: null, description: "" },
-      { name: "Tug Tug Tug", image: null, description: "" },
-      { name: "Tulpa", image: null, description: "" },
-      { name: "Tunnel", image: null, description: "" },
-      { name: "Turn Me On Dead Man", image: null, description: "" },
-      { name: "Unit 232", image: null, description: "" },
-      { name: "Up", image: null, description: "" },
-      { name: "Upward Staring Eyes", image: null, description: "" },
-      { name: "Username: 666", image: null, description: "" },
-      { name: "Valentich's Last Flight", image: null, description: "" },
-      { name: "Vermilion City Construction Project", image: null, description: "" },
-      { name: "Vile Designs", image: null, description: "" },
-      { name: "Visions", image: null, description: "" },
-      { name: "Volcanic Winter", image: null, description: "" },
-      { name: "Vox and King Beau", image: null, description: "" },
-      { name: "Wagon Man", image: null, description: "" },
-      { name: "Wake Up", image: null, description: "" },
-      { name: "War of the Dead", image: null, description: "" },
-      { name: "War on the Gods", image: null, description: "" },
-      { name: "Watch Your Step", image: null, description: "" },
-      { name: "Water", image: null, description: "" },
-      { name: "We Danced", image: null, description: "" },
-      { name: "We Know What You've Done", image: null, description: "" },
-      { name: "We Know You Are Out There", image: null, description: "" },
-      { name: "West", image: null, description: "" },
-      { name: "What Happened to Agent Small?", image: null, description: "" },
-      { name: "What If I Told You...", image: null, description: "" },
-      { name: "What Is in a Name?", image: null, description: "" },
-      { name: "What My Eyes Have Seen", image: null, description: "" },
-      { name: "What the Animals See", image: null, description: "" },
-      { name: "Where Bad Kids Go", image: null, description: "" },
-      { name: "White Hand Sprite", image: null, description: "" },
-      { name: "White with Red", image: null, description: "" },
-      { name: "Who Are You Running From?", image: null, description: "" },
-      { name: "WHO WAS PHONE?", image: null, description: "" },
-      { name: "Winds of Regret/Stigmata/Mizu", image: null, description: "" },
-      { name: "Wristbands", image: null, description: "" },
-      { name: "Xbox Live", image: null, description: "" },
-      { name: "XoRax", image: null, description: "" },
-      { name: "You Never Know Who You Might Meet", image: null, description: "" },
-      { name: "Zalgo", image: null, description: "" },
-      { name: "Zelda 64 Beta", image: null, description: "" },
-      { name: "Zit", image: null, description: "" },
+  {
+    "name": "The .GIF",
+    "url": "https://creepypasta.fandom.com/wiki/The_.GIF",
+    "description": "One of the alleged pictures of the .GIF. On March 12, 2007, on the /b/ board of 4chan, an anonymous user posted a .GIF image. At first glance, strangely, the .GIF image wasn't animated. It was titled \"IM_HAPPY.GIF\", and showed what appeared to be a drawing of a smiley face, only with a realistic-looking eyes and mouth. People who clicked on it saw the face's smile slowly turn into a frown, the eyes taking on an angrier appearance. It would then scream loudly - loud enough to burst eardrums - and",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/52/IM_HAPPY.gif/revision/latest/scale-to-width-down/250?cb=20231126185220",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/52/IM_HAPPY.gif/revision/latest/scale-to-width-down/250?cb=20231126185220"
+    ],
+    "author": "unknown Originally uploaded on March 13th",
+    "date": "March 12, 2007",
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Memes",
+      "Micropasta"
     ]
+  },
+  {
+    "name": "09/17/10",
+    "url": "https://creepypasta.fandom.com/wiki/09/17/10",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/32/Old_Cheverolet.jpg/revision/latest/scale-to-width-down/180?cb=20110921030112",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/32/Old_Cheverolet.jpg/revision/latest/scale-to-width-down/180?cb=20110921030112",
+      "https://static.wikia.nocookie.net/creepypasta/images/8/85/Captured.jpg/revision/latest/scale-to-width-down/180?cb=20110921030406"
+    ],
+    "author": "Bongwatersnowman Originally uploaded on September 21st",
+    "date": "09/17/10",
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Computers_and_Internet",
+      "Vehicles",
+      "Crime"
+    ]
+  },
+  {
+    "name": "12 Minutes",
+    "url": "https://creepypasta.fandom.com/wiki/12_Minutes",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/c1/WSBTV.png/revision/latest?cb=20120127195247",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c1/WSBTV.png/revision/latest?cb=20120127195247",
+      "https://static.wikia.nocookie.net/creepypasta/images/8/83/Severedhead.jpg/revision/latest/scale-to-width-down/180?cb=20120309193346"
+    ],
+    "author": "RoboKy Originally uploaded on January 27th",
+    "date": null,
+    "categories": [
+      "PotM",
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Television",
+      "Mental_Illness",
+      "Dismemberment",
+      "Weird"
+    ]
+  },
+  {
+    "name": "12th Floor",
+    "url": "https://creepypasta.fandom.com/wiki/12th_Floor",
+    "description": "Living on the 12th floor wasn't bad; the view over the busy city was pleasant to look at. The only problem was those elevators. I have bad sinuses, you see, and the pressure of descending quickly gives me headaches. But it passes, so it's an easy sacrifice. I waited for the elevator to arrive on my floor. It always takes a while. After a couple minutes, I got impatient and started fumbling around with my pockets. While I was fondling my keys specifically, I realized one of the elevators had alre",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on November 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Places"
+    ]
+  },
+  {
+    "name": "1dollar.wav",
+    "url": "https://creepypasta.fandom.com/wiki/1dollar.wav",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/3f/Dollar_bill.jpg/revision/latest/scale-to-width-down/276?cb=20120419140349",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/3f/Dollar_bill.jpg/revision/latest/scale-to-width-down/276?cb=20120419140349"
+    ],
+    "author": "BlittleMcNilsen Originally uploaded on Oct 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Ghosts",
+      "Diary/Journal"
+    ]
+  },
+  {
+    "name": "29th Dragon",
+    "url": "https://creepypasta.fandom.com/wiki/29th_Dragon",
+    "description": "Atop the salt-encrusted docks and piers of Seattle squats an ugly clapboard shack, its windows smeared with grime and the walls draped in fishing nets. The Oil Slick – an aptly named bar riddled with age and barnacles, but a sanctuary to the swarm of deckhands and sailors that spend their days scurrying across the rotting hulls of ships, and their nights slipping into a drunken stupor... It’s a rough bar, where a careless comment will earn you a punch to the face and a long fall into the grimy w",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/6c/Dragon-tattoo-1.gif/revision/latest?cb=20120308151948",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6c/Dragon-tattoo-1.gif/revision/latest?cb=20120308151948"
+    ],
+    "author": "unknown Originally uploaded on March 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Beings",
+      "Disappearances"
+    ]
+  },
+  {
+    "name": "3 AM",
+    "url": "https://creepypasta.fandom.com/wiki/3_AM",
+    "description": "Have you ever woken up, only to find there was someone staring at you? It happens to people all the time on trains, buses, planes, and in public places. In fact, studies have shown that this instinctive response is a highly evolved defense mechanism of the subconscious mind; alerting your senses to the presence of a potential threat. Many other species in the animal kingdom possess similar traits which prove beneficial to survival. Given this, you might want to consider quickly pulling your curt",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/07/3-a.m..jpg/revision/latest/scale-to-width-down/180?cb=20121130234605",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/07/3-a.m..jpg/revision/latest/scale-to-width-down/180?cb=20121130234605"
+    ],
+    "author": "unknown Originally uploaded on September 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "7:05",
+    "url": "https://creepypasta.fandom.com/wiki/7:05",
+    "description": "7:05 AM You’re stirred from your Saturday morning slumber by a light buzzing coming from the other side of the room. Almost instinctively, you dash across the room to turn off your vibrating phone. It shows one unread text message, from a number you don’t recognize. Received: 7:05 I’m not really sure what’s going on. I’m scared — alone. I don’t know what to do anymore. I’ve decided to document what happens with these text messages in the unfortunate event that I am unable to tell the story mysel",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b1/OZ311_-_Imgur.jpg/revision/latest/scale-to-width-down/300?cb=20120302181850",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b1/OZ311_-_Imgur.jpg/revision/latest/scale-to-width-down/300?cb=20120302181850"
+    ],
+    "author": "unknown Originally uploaded on March 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Abandoned PokéDoll",
+    "url": "https://creepypasta.fandom.com/wiki/Abandoned_PokéDoll",
+    "description": "It was her favorite doll. She took it everywhere, clutching it tightly in her small hands. It did everything with her. It went to school, sleepovers, dinners, and even tagged along for baths. The two were inseparable. She even claimed that the first day she became a trainer, she’d still carry it around to remember her childhood. It might have been a bit odd-looking, but that didn’t change anything. She liked that; it made the doll truly unique. But as the years went on, she found interest in oth",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on September 5th",
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Historical_Archive",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "Abandoned Servers",
+    "url": "https://creepypasta.fandom.com/wiki/Abandoned_Servers",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/10/Scary-Forest-Seattle.jpg/revision/latest/scale-to-width-down/180?cb=20111215100152",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/10/Scary-Forest-Seattle.jpg/revision/latest/scale-to-width-down/180?cb=20111215100152"
+    ],
+    "author": "Awegner Originally uploaded on December 15",
+    "date": "December 15, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Video_Games",
+      "Beings",
+      "Mirrors"
+    ]
+  },
+  {
+    "name": "The Abandoned Train Station",
+    "url": "https://creepypasta.fandom.com/wiki/The_Abandoned_Train_Station",
+    "description": "There is a chance that while on a railway journey across the country, you will pass a darkened station. The platform will look as if it has been deserted for years. The train will have to slow down due to the condition of the tracks, but it will not stop. There are some conductors who will go much faster than they should just to get past the station, causing the train to feel as if it will shake apart. If you ask one of the personnel on the train about the station, they will tell you not to worr",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/15/2183974_f260.jpg/revision/latest?cb=20120328032856",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/15/2183974_f260.jpg/revision/latest?cb=20120328032856"
+    ],
+    "author": "unknown Originally uploaded on March 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Vehicles",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Ability",
+    "url": "https://creepypasta.fandom.com/wiki/Ability",
+    "description": "I live in Osaka, Japan and often use the subway to go to work in the morning. One day, when I was waiting for the train, I noticed a homeless man standing in a corner of the subway station, muttering to himself as people passed by. He was holding out a cup and seemed to be begging for spare change. A fat woman passed by the homeless man and I distinctly heard him say, “Pig.” Wow, I thought to myself. This homeless man is insulting people and he still expects them to give him money? Then a tall b",
+    "image": null,
+    "images": [],
+    "author": "unknown",
+    "date": null,
+    "categories": [
+      "Food",
+      "Weird",
+      "Suggested_Reading",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Abrasiveness",
+    "url": "https://creepypasta.fandom.com/wiki/Abrasiveness",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Mabby Gwendoll Originally uploaded on December 30th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Science",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Across the Border",
+    "url": "https://creepypasta.fandom.com/wiki/Across_the_Border",
+    "description": "There was a couple from Texas who were planning a weekend trip across the Mexican border for a shopping spree. At the last minute, their baby-sitter canceled, so they had to bring their two-year-old son along with them. They had been across the border for an hour when the baby got free and ran around the corner. The father tried to find him, but he'd disappeared. The mother got a police officer, who told her to go to the gate and wait. Not really understanding the instructions, she did as she wa",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/67/Border-wall-615.jpg/revision/latest/scale-to-width-down/225?cb=20110901225400",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/67/Border-wall-615.jpg/revision/latest/scale-to-width-down/225?cb=20110901225400"
+    ],
+    "author": "unknown Originally uploaded on August 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Actaea Pachypoda",
+    "url": "https://creepypasta.fandom.com/wiki/Actaea_Pachypoda",
+    "description": "A mile or so into the woods by my house is a trail. It's about six miles long and hardly used; some parts are nearly impossible to navigate because of the overgrowth. I love to run on this trail for precisely this reason, as I can be truly alone, and the occasional narrowing path or branch that requires hurdling is more diversion than detriment. Actaea Pachypoda I recently saw the first individuals other than myself on the trail. About three miles into my run, I saw an old couple walking togethe",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/08/Actaea-pachypoda.jpg/revision/latest/scale-to-width-down/150?cb=20120415152423",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/08/Actaea-pachypoda.jpg/revision/latest/scale-to-width-down/150?cb=20120415152423"
+    ],
+    "author": "unknown Originally uploaded on March 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Nature"
+    ]
+  },
+  {
+    "name": "After the Flash",
+    "url": "https://creepypasta.fandom.com/wiki/After_the_Flash",
+    "description": "Back then, the child did not understand a thing. He was dirty, restless, and aching; his face was covered with soot. Ever since the Bright Flash, he hadn't been allowed to leave the house, and it always seemed to be nighttime outside. He couldn't see much out the windows anyway; too much smoke and ash, like a black snow day. Nobody came to visit. It was just Mom, Dad, and him, and his Grandpa and Grandma. And now Grandpa and Grandma were gone. His tummy groaned once more and he tugged at his mot",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/0f/Mushroom-cloud-hb.jpg/revision/latest/scale-to-width-down/180?cb=20110911141828",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0f/Mushroom-cloud-hb.jpg/revision/latest/scale-to-width-down/180?cb=20110911141828"
+    ],
+    "author": "unknown Originally uploaded on December 21",
+    "date": "December 21, 2010",
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Afterward",
+    "url": "https://creepypasta.fandom.com/wiki/Afterward",
+    "description": "Robert sat reading in a comfortable chair close to his tainted, beautiful, wooden fireplace. The light of the flame flickered around the room, making the outside look cold and forbidden. Wind howled against the window as the snow pushed against it. \"Goddamn winter,\" he thought. As the night continued on, his eyelids grew heavier and heavier. The book became harder to read. He finally gave a satisfactory grumble and trotted off to bed. The wind howled outside the whole time. He stared up at the c",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/42/These_haunted_forests_talk_by_Dynnnad.jpg/revision/latest/scale-to-width-down/300?cb=20101107220721",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/42/These_haunted_forests_talk_by_Dynnnad.jpg/revision/latest/scale-to-width-down/300?cb=20101107220721"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Aggie",
+    "url": "https://creepypasta.fandom.com/wiki/Aggie",
+    "description": "Children are fascinating creatures. I can't help but marvel at they way they act and think. Their minds are molded so easily, so effortlessly, like the softest of dough in the strongest of hands. I worry that I will never understand this child, though, and how she thought. These things drifted through my head as I examined the dimly lit room. The doors and windows were taped off with crime scene ribbon, the sticky messes on the floor being sampled by a forensics team. The site before me was gris",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b0/Worry_Doll.jpg/revision/latest/scale-to-width-down/180?cb=20120612040039",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b0/Worry_Doll.jpg/revision/latest/scale-to-width-down/180?cb=20120612040039"
+    ],
+    "author": "unknown Originally uploaded on December 5th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Beings",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "The Algorithm",
+    "url": "https://creepypasta.fandom.com/wiki/The_Algorithm",
+    "description": "Sometime during the third consecutive night spent huddled over the toilet, insides heaving and shuddering as I vomit forth seemingly everything I’d ever eaten, I realize what’s happening: He’s trying to poison me. It’s all so elegant, so perfect, so clear, that I almost laugh, but another barrage of retching forces me into silence. The next morning, I threw everything in the kitchen away, wrapping it three times in black plastic and burying it deep in the apartment's communal trash cans, to prev",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/60/Spookyscary.jpg/revision/latest?cb=20130823045841",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/60/Spookyscary.jpg/revision/latest?cb=20130823045841"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "Mental_Illness",
+      "Beings",
+      "Dismemberment",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Alice Killings",
+    "url": "https://creepypasta.fandom.com/wiki/The_Alice_Killings",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "BigMouth12349 Originally uploaded on May 14th",
+    "date": "February 11, 2001",
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment",
+      "Crime",
+      "Items/Objects",
+      "Music",
+      "Videos"
+    ]
+  },
+  {
+    "name": "Alien",
+    "url": "https://creepypasta.fandom.com/wiki/Alien",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/7d/The_Alien.jpg/revision/latest/scale-to-width-down/180?cb=20120620172020",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7d/The_Alien.jpg/revision/latest/scale-to-width-down/180?cb=20120620172020"
+    ],
+    "author": "IvoryLovesYou Originally uploaded on June 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Space",
+      "Reality",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Alone",
+    "url": "https://creepypasta.fandom.com/wiki/Alone",
+    "description": "\"Alone\" I don’t even know why I’m writing this. I can post this in a million different places, it won’t matter. There’s still nobody there to read this. There is nobody left to hear my story. Yet, this might be my last chance to do this, so I will. The feeling won’t go away. They’re watching. They’re watching and getting closer every second. They can feel my terror, and I know they’re enjoying it. It has been about four months since everyone disappeared. I woke up one morning for school. I immed",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/af/The_lonely_walk.jpg/revision/latest/scale-to-width-down/180?cb=20110720050757",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/af/The_lonely_walk.jpg/revision/latest/scale-to-width-down/180?cb=20110720050757",
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8e/Shadow.png/revision/latest/scale-to-width-down/180?cb=20130305025946"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Disappearances",
+      "Videos"
+    ]
+  },
+  {
+    "name": "Alternate 21328",
+    "url": "https://creepypasta.fandom.com/wiki/Alternate_21328",
+    "description": "卐 Good. Now that I have your attention, I’m going to tell you how such a universally reviled symbol came to rule my life. For the sake of convenience, if my memoir is ever republished, I request it be under the title Alternate 21328. In the now outdated windows XP, this is the input that results in the above symbol. I recently became aware that a story posted by an old acquaintance of mine, whose name is John (but whom you may have known as “Jack”) has for some time been circulated in certain co",
+    "image": null,
+    "images": [],
+    "author": "an old acquaintance of mine",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Items/Objects",
+      "Disappearances"
+    ]
+  },
+  {
+    "name": "Always with You",
+    "url": "https://creepypasta.fandom.com/wiki/Always_with_You",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/12/Guardangelghost.png/revision/latest/scale-to-width-down/250?cb=20130922161317",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/12/Guardangelghost.png/revision/latest/scale-to-width-down/250?cb=20130922161317"
+    ],
+    "author": "KimJongIr Originally uploaded on August 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Reality",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Amnesia",
+    "url": "https://creepypasta.fandom.com/wiki/Amnesia",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Marglark Originally uploaded on October 27",
+    "date": "October 27, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Science"
+    ]
+  },
+  {
+    "name": "The Amnesia Tapes",
+    "url": "https://creepypasta.fandom.com/wiki/The_Amnesia_Tapes",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "TheOrangeGoblin Originally uploaded on December 7",
+    "date": "December 7, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil",
+      "Mental_Illness",
+      "Reality",
+      "Television"
+    ]
+  },
+  {
+    "name": "Amy's Video",
+    "url": "https://creepypasta.fandom.com/wiki/Amy's_Video",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "‎Toratio Originally uploaded on July 28",
+    "date": "July 28, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Television",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Anansi's Goatman Story",
+    "url": "https://creepypasta.fandom.com/wiki/Anansi's_Goatman_Story",
+    "description": "Saved from 4chan's /x/ on Friday Sep 28th 2012 at 1:31 AM Eastern Time. Edited slightly from the original thread to improve grammar and flow. Here's my story: >be 16 >be black and have family down in Alabama >they farm and own a huge amount of land down in Huntsville >uncle owns a big house and a bunch of trailers they put out in the woods for hunting or camping >down south cousins suggest that we go out there to camp >know I'm a city kid from Chicago so they tease the fuck out of me >collect fo",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/4a/Goatmancircled.jpg/revision/latest/scale-to-width-down/225?cb=20140103020231",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4a/Goatmancircled.jpg/revision/latest/scale-to-width-down/225?cb=20140103020231"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Cryptids",
+      "Nature"
+    ]
+  },
+  {
+    "name": "Ancestors",
+    "url": "https://creepypasta.fandom.com/wiki/Ancestors",
+    "description": "Family_Tree I did it last Thursday, from a book I found in my loft… This is the story of why I am sorry for you. Now you have read this there’s no turning back. I am a normal person, normal house, normal job, normal friends, and normal life. Just about everything to do with me is normal. Or so I thought, until I researched my family tree. It seems I am distantly related to one of those not found guilty, thus escaping execution, at the Salem Witch Trials. The legends go that she actually was a wi",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/88/Family_Tree_img.jpg/revision/latest/scale-to-width-down/163?cb=20130724221623",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/88/Family_Tree_img.jpg/revision/latest/scale-to-width-down/163?cb=20130724221623"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "History",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "AND THEN A SKELETON POPPED OUT",
+    "url": "https://creepypasta.fandom.com/wiki/AND_THEN_A_SKELETON_POPPED_OUT",
+    "description": "Like other classics such as WHO WAS PHONE? and TEH DAY OF ALL TEH BLOD , this is a legendary troll pasta, an all-caps jewel in the community. The phrase \"AND THEN A SKELETON POPPED OUT\" is often used to point out that the ending of a creepypasta is predictable or just downright shitty. It is also a dedicated category on the Trollpasta Wiki . The Terrifying Pasta This is the skeleton that popped out. WARNING: IF YOU HAVE A HEART CONDITION, DO NOT READ THIS. YOU WILL DROP TO THE FLOOR, FLOPPING LI",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/aa/THE_SKULITEN.jpg/revision/latest/scale-to-width-down/180?cb=20100819175634",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/aa/THE_SKULITEN.jpg/revision/latest/scale-to-width-down/180?cb=20100819175634"
+    ],
+    "author": "unknown Originally uploaded on August 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Troll_Pasta",
+      "Memes",
+      "Micropasta",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "The Angel of Industry",
+    "url": "https://creepypasta.fandom.com/wiki/The_Angel_of_Industry",
+    "description": "In a barren mountain range in northern Europe is a secluded cave. Deep inside is a wide chamber that appears to have been used in ancient rituals. The walls of the roughly circular space are densely covered in cave paintings. At first glance, they seem much like those found in other caves in that part of Europe, rendered in red and brown ochers. Look closely, however, and you will see that the most common figures depicted are subtly non-human. They are humanoid, but slightly hunched, and while i",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/13/Tumblr_ltektqo2kG1qivmwm.gif/revision/latest/scale-to-width-down/312?cb=20120302205912",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/13/Tumblr_ltektqo2kG1qivmwm.gif/revision/latest/scale-to-width-down/312?cb=20120302205912"
+    ],
+    "author": "unknown Originally uploaded on March 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Dreams/Sleep",
+      "History",
+      "Places",
+      "Ritual"
+    ]
+  },
+  {
+    "name": "Annabelle",
+    "url": "https://creepypasta.fandom.com/wiki/Annabelle",
+    "description": "Annabelle was the focus of a case that famed paranormal investigators Ed and Lorraine Warren took part in during the early 1970s, and is highlighted in the book The Demonologist. It has been stated that this is one of the most unusual cases of a possessed object on record. In 1970, a mother purchased an antique Raggedy Ann Doll from a hobby store. The doll was a present for her daughter Donna on her birthday. Donna, was a student in college at the time, preparing to graduate with her nursing deg",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/4b/Annabelledoll.jpg/revision/latest/scale-to-width-down/300?cb=20251013022832",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4b/Annabelledoll.jpg/revision/latest/scale-to-width-down/300?cb=20251013022832"
+    ],
+    "author": "unknown Originally uploaded on February 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Items/Objects",
+      "Ghosts",
+      "History",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Anomaly",
+    "url": "https://creepypasta.fandom.com/wiki/Anomaly",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/01/1o14.jpg/revision/latest/scale-to-width-down/350?cb=20121214025407",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/01/1o14.jpg/revision/latest/scale-to-width-down/350?cb=20121214025407",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/14/2o14.jpg/revision/latest/scale-to-width-down/280?cb=20121214030238",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/01/CharlieNoonan2.jpg/revision/latest/scale-to-width-down/160?cb=20151003144807",
+      "https://static.wikia.nocookie.net/creepypasta/images/3/3e/3o14.jpg/revision/latest/scale-to-width-down/220?cb=20121214030359",
+      "https://static.wikia.nocookie.net/creepypasta/images/8/80/4o14.jpg/revision/latest/scale-to-width-down/310?cb=20121214030439",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/13/Cavecrypt.jpg/revision/latest/scale-to-width-down/280?cb=20121214030751",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7e/7o14.jpg/revision/latest/scale-to-width-down/270?cb=20121214030925",
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8a/6o14.jpg/revision/latest/scale-to-width-down/250?cb=20121214031032",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/ce/ViolaPeters.jpg/revision/latest/scale-to-width-down/300?cb=20260402102914",
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d7/5o14.jpg/revision/latest/scale-to-width-down/270?cb=20121214031441",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2a/13o14.jpg/revision/latest/scale-to-width-down/270?cb=20121214031619",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/71/8o14.jpg/revision/latest/scale-to-width-down/247?cb=20121214031720",
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8b/9o14.jpg/revision/latest/scale-to-width-down/350?cb=20121214033227",
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a9/10o14.jpg/revision/latest/scale-to-width-down/220?cb=20121214033441",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/27/12o14.jpg/revision/latest/scale-to-width-down/180?cb=20121214033524",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b6/11o14.jpg/revision/latest/scale-to-width-down/200?cb=20121214033630",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7d/14_trinity.jpg/revision/latest/scale-to-width-down/200?cb=20151001174226",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/cd/30c_trinity3.jpg/revision/latest/scale-to-width-down/200?cb=20250308225706"
+    ],
+    "author": "Rembetis Originally uploaded on December 14th",
+    "date": "March 4, 1908",
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Photography",
+      "Ghosts",
+      "Places",
+      "History",
+      "Disappearances",
+      "Mental_Illness",
+      "Reality",
+      "Contextual",
+      "NSFW"
+    ]
+  },
+  {
+    "name": "Another Perspective on BOB",
+    "url": "https://creepypasta.fandom.com/wiki/Another_Perspective_on_BOB",
+    "description": "Originally uploaded on 4chan's /x/ board. Hey, guys. Normally, creepy shit doesn’t happen to me, despite living in Weird NJ. I guess I can’t really say that anymore, considering I’ve had the worst fucking week of my life. In a way, I brought all of this upon myself… but I’m getting ahead of myself. Since I’ve lurked /x/ for so long, it’s only fair I tell you guys what happened. So a week ago, it was my birthday. I just turned eighteen and decided I wanted to fuck around and look for ghosts. I wo",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f5/Piggy_sick.jpg/revision/latest/scale-to-width-down/180?cb=20110709055327",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f5/Piggy_sick.jpg/revision/latest/scale-to-width-down/180?cb=20110709055327",
+      "https://static.wikia.nocookie.net/creepypasta/images/3/35/Bill_2.jpg/revision/latest/scale-to-width-down/180?cb=20110709054850"
+    ],
+    "author": "unknown Originally uploaded on July 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Animals",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Another You",
+    "url": "https://creepypasta.fandom.com/wiki/Another_You",
+    "description": "You know when you're falling asleep, and you suddenly get the feeling that you've tripped? Your body lurches forward in an instant, ready to protect you instinctively from injury. You can almost SEE the ground rising to meet you. This occurs when the boundaries between you and the \"you\" in an alternate universe are weakest. This is the feeling that happens when another \"you\" dies. Original author unknown Originally uploaded on August 8th, 2010",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Dreams/Sleep",
+      "Theory",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Antran",
+    "url": "https://creepypasta.fandom.com/wiki/Antran",
+    "description": "The picture you’re staring at was taken sometime in the 70s. It’s the only image I have left of my son, and the artificial being known as \"ANTRAN\", whom we had adopted into our family at the time. It was a warm summer back in the mid-seventies. I was driving home from my logging company after a long shift, but I had to make a stop at the local garbage tip to drop off some old desks my mother had given us. When I got there, something caught my eye as I bent down. Upon closer inspection, I was sho",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/46/Antran.jpg/revision/latest?cb=20110824233434",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/46/Antran.jpg/revision/latest?cb=20110824233434"
+    ],
+    "author": "unknown Originally uploaded on August 25th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Disappearances"
+    ]
+  },
+  {
+    "name": "An Apple a Day",
+    "url": "https://creepypasta.fandom.com/wiki/An_Apple_a_Day",
+    "description": "Have you ever heard the expression “an apple a day keeps the doctor away”? Most assume, with no reason to think otherwise, that it is simply an easy to remember rhyme that stresses the importance of eating healthy foods to young children, but the saying did not originate as a harmless reminder. It was born in a frontier town in the early years of the Gold Rush, where food was scarce and money even scarcer. One August, when a bad drought had struck the region, a series of bloody killings swept th",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/ee/Apples.jpg/revision/latest?cb=20131128120644",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ee/Apples.jpg/revision/latest?cb=20131128120644"
+    ],
+    "author": "unknown Originally uploaded on August 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Food",
+      "Theory",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Argbáktu: Pagan God of Treachery",
+    "url": "https://creepypasta.fandom.com/wiki/Argbáktu:_Pagan_God_of_Treachery",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9c/God04_sources.jpg/revision/latest/scale-to-width-down/180?cb=20121024183647",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9c/God04_sources.jpg/revision/latest/scale-to-width-down/180?cb=20121024183647"
+    ],
+    "author": "Matt9196 Originally uploaded on October 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Gods",
+      "Theory",
+      "Contextual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Arizona",
+    "url": "https://creepypasta.fandom.com/wiki/Arizona",
+    "description": "For her birthday I took my girl, Katie, to Arizona so we could stay with some friends of hers and spend a few weeks partying and getting crazy and stuff before heading back to school for the year. We drove up in my dad's car. It's a really old Ford make, and it's pretty beat up. The road there was bumpy and long. Our relationship seemed at its strongest on the road. We were really in love. That was the first time I realized that. I had never truly been in love before. We were about half way ther",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/bb/Arizonacactus.jpg/revision/latest/scale-to-width-down/180?cb=20130802044342",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bb/Arizonacactus.jpg/revision/latest/scale-to-width-down/180?cb=20130802044342"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Demon/Devil",
+      "Historical_Archive",
+      "Places",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "The Art of Jacob Emory",
+    "url": "https://creepypasta.fandom.com/wiki/The_Art_of_Jacob_Emory",
+    "description": "Ghost stories? Nah, we don’t have anything like that around here. We DO have the story of Jacob, but that’s about as close as you’ll get. …You really want to know?… Well, I’m not supposed to tell you, but alright, just no interrupting. I don’t have the patience for it. How to describe Jacob Emory… well, I guess you could say he was the kind of guy you could never take notice of. This isn’t to say he was a bad kid in any sense - many people in this town thought he was the most reliable person for",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Beings",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Arthur",
+    "url": "https://creepypasta.fandom.com/wiki/Arthur",
+    "description": "You volunteer at the mental health clinic. Given the dangerous nature of the residents, they assigned you the rooms of the less violent patients. The suicidal. Those who hear voices. Those that don’t say anything at all. You become close to a mute man named Arthur. He is a rapt listener, willing to nod his head for hours as you tell him the story of your life. You mention your past, your present. The people involved in both. Your hopes for the future. Arthur just nods. After several months of li",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Mental_Illness",
+      "Historical_Archive",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Ash's Coma",
+    "url": "https://creepypasta.fandom.com/wiki/Ash's_Coma",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/32/The_very_best_by_skirt_wulf-d3lije4.jpg/revision/latest/scale-to-width-down/350?cb=20120214221510",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/32/The_very_best_by_skirt_wulf-d3lije4.jpg/revision/latest/scale-to-width-down/350?cb=20120214221510"
+    ],
+    "author": "ThePsychicDefective Originally uploaded on September 12th",
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Theory",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Ashes",
+    "url": "https://creepypasta.fandom.com/wiki/Ashes",
+    "description": "The following is a transcription from several pages of a burnt personal diary that was found next to the remains of Angela S. Yorke. Police officers entered Ms. Yorke’s apartment at 113 Cherry Lane on July 28th after she had been reported missing for several days. The interior of the apartment had apparently been completely destroyed in a fire, although none of the neighbors had reported seeing flames. In the corner of the bedroom the officers found a large pile of ash that was later identified,",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Diary/Journal",
+      "Disappearances",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Asylum",
+    "url": "https://creepypasta.fandom.com/wiki/The_Asylum",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Hospitals",
+      "Items/Objects",
+      "Mental_Illness",
+      "Places"
+    ]
+  },
+  {
+    "name": "Attention",
+    "url": "https://creepypasta.fandom.com/wiki/Attention",
+    "description": "Attention . Please read this sentence aloud: \"Hello, Molly\". If you read it out loud as I instructed, you should be safe. If you read it in your head… Molly is now safe, too. Inside your head.",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Ritual",
+      "Beings",
+      "Historical_Archive",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Atuk",
+    "url": "https://creepypasta.fandom.com/wiki/Atuk",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/10/Atuk.jpg/revision/latest/scale-to-width-down/250?cb=20120629171000",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/10/Atuk.jpg/revision/latest/scale-to-width-down/250?cb=20120629171000"
+    ],
+    "author": "Tod Carroll",
+    "date": "June 30, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Reality",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Away from Grey",
+    "url": "https://creepypasta.fandom.com/wiki/Away_from_Grey",
+    "description": "October evenings usually seem bleak and desolate by themselves. However, this one seems a bit greyer than usual. The outside world is a step beyond hopeless and I’m afraid I might know why. The last few days have been ominous. The dark, grey presence has gotten to me, and I’ve become jumpy and anxious. I’ve locked myself indoors and watched children’s cartoons for hours sometimes. Their sprightly behavior greatly contrasts the real world I live in. This seems to help. As these thoughts of despai",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Axaram's Keep",
+    "url": "https://creepypasta.fandom.com/wiki/Axaram's_Keep",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Bad Dream",
+    "url": "https://creepypasta.fandom.com/wiki/Bad_Dream",
+    "description": "\"Daddy, I had a bad dream.\" You blink your eyes and pull yourself up on your elbows. Your clock glows red in the darkness — it is 3:32 AM. \"Do you want to climb into bed and tell me about it?\" \"No, Daddy.\" The oddness of the situation wakes you up more fully. You can barely make out your daughter's pale form in the darkness of your room. \"Why not, sweetie?\" \"Because in my dream, when I told you about the dream, the thing wearing Mommy's skin sat up.\" For a moment, you feel paralyzed; you cannot ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Dreams/Sleep",
+      "Monsters",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Bad Time to Call",
+    "url": "https://creepypasta.fandom.com/wiki/Bad_Time_to_Call",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/6b/Telemarketing.jpg/revision/latest/scale-to-width-down/250?cb=20120116050158",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6b/Telemarketing.jpg/revision/latest/scale-to-width-down/250?cb=20120116050158"
+    ],
+    "author": "MJTR Originally uploaded on January 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Mental_Illness",
+      "MJTR"
+    ]
+  },
+  {
+    "name": "A Bag of Candy",
+    "url": "https://creepypasta.fandom.com/wiki/A_Bag_of_Candy",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/ff/Iresize.jpg/revision/latest/scale-to-width-down/185?cb=20120714185954",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/ff/Iresize.jpg/revision/latest/scale-to-width-down/185?cb=20120714185954"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Places",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "The Bagpipe Tune",
+    "url": "https://creepypasta.fandom.com/wiki/The_Bagpipe_Tune",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/c4/Bagpipers.jpg/revision/latest?cb=20141128135146",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c4/Bagpipers.jpg/revision/latest?cb=20141128135146"
+    ],
+    "author": "KindRitter Originally uploaded on November 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Ritual",
+      "Music",
+      "Military",
+      "Places",
+      "History",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Bald Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Bald_Man",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a9/Bald_Man.jpg/revision/latest/scale-to-width-down/180?cb=20110818033433",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a9/Bald_Man.jpg/revision/latest/scale-to-width-down/180?cb=20110818033433"
+    ],
+    "author": "KCohen Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Ballad of Jane",
+    "url": "https://creepypasta.fandom.com/wiki/The_Ballad_of_Jane",
+    "description": "It’s not the darkness in my room that frightens me. The unidentified sound floating up from somewhere deep in my house doesn’t set my poor heart panicking. I’m not terrified as I try not to notice my barely open closet door. It’s the potential that gets me. It’s what could be there. The more you think about it, the more likely every possibility becomes as the shadows thicken and every stray noise or movement forces you deeper into your fear. The scariest part, to me at least, is that you’ll neve",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Mirrors",
+      "Animals"
+    ]
+  },
+  {
+    "name": "Banchō Sarayashiki",
+    "url": "https://creepypasta.fandom.com/wiki/Banchō_Sarayashiki",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/4e/00139254_000.jpg/revision/latest/scale-to-width-down/180?cb=20260112132954",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4e/00139254_000.jpg/revision/latest/scale-to-width-down/180?cb=20260112132954",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c7/00139252_000.jpg/revision/latest/scale-to-width-down/180?cb=20260112133127"
+    ],
+    "author": "Jabronis Originally uploaded on February 12th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "History",
+      "Contextual",
+      "Places",
+      "Ghosts",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "Barbie Doll",
+    "url": "https://creepypasta.fandom.com/wiki/Barbie_Doll",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/ba/Barbiedoll.jpg/revision/latest?cb=20111010004637",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/ba/Barbiedoll.jpg/revision/latest?cb=20111010004637"
+    ],
+    "author": "MJTR Originally uploaded on October 10th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Disappearances",
+      "Mental_Illness",
+      "Items/Objects",
+      "MJTR"
+    ]
+  },
+  {
+    "name": "Barbie.avi",
+    "url": "https://creepypasta.fandom.com/wiki/Barbie.avi",
+    "description": "Hello. This happened to me a few months ago; I just need to share it with somebody. It all started at my friend’s party. He’s an artist who rented out a loft in the industrial part of town. If you can picture what a place like Detroit looked like in the 1920s – that’s what this area looks like. A bunch of old turn-of-the-century factories crammed into ten blocks. Most of them are abandoned. So I partied a little too hard that night and decided to crash on a couch at the loft. I woke up at around",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/c1/Metalshed.jpg/revision/latest/scale-to-width-down/180?cb=20100817195234",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c1/Metalshed.jpg/revision/latest/scale-to-width-down/180?cb=20100817195234"
+    ],
+    "author": "unknown Originally uploaded on August 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Places",
+      "Videos"
+    ]
+  },
+  {
+    "name": "Barricade",
+    "url": "https://creepypasta.fandom.com/wiki/Barricade",
+    "description": "I’m about to do a very stupid thing. I know it’s stupid. I know it. But I don’t think I have a choice anymore. And I have to do it now, while I have the nerve and the will. While my hands are still steady. I’m sick, I’ve always been sick. Some days are better than others. When I was young, my parents prayed that it might just be a precursor of the onset of epilepsy, but the seizures never came. I just…can’t trust myself. I see things. On some days, I can hear them and smell them too. I should sa",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "The Baseball Boy",
+    "url": "https://creepypasta.fandom.com/wiki/The_Baseball_Boy",
+    "description": "The schoolgrounds, if you're able to find them. If you can, try and find Queen Elizabeth Elementary School, a place notable for its spacious schoolyard and aged brick building. Go to this school's playground on a Sunday evening, any time between 6:25 PM and 6:45 PM. Optionally, you can bring only one object with you. It can be a bike (your means of getting there, perhaps) or a camera, but nothing that could distract you from your surroundings. You will fail to get far if you're not focused on th",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9c/4224237418_b2eed06f9d.jpg/revision/latest/scale-to-width-down/266?cb=20110502040559",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9c/4224237418_b2eed06f9d.jpg/revision/latest/scale-to-width-down/266?cb=20110502040559"
+    ],
+    "author": "unknown Originally uploaded on May 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Places",
+      "Beings",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "Battery Ditto",
+    "url": "https://creepypasta.fandom.com/wiki/Battery_Ditto",
+    "description": "Have you ever wondered why in Generation 2 (Gold, Silver, and Crystal) that there is only one place in the whole of Johto and Kanto that you can breed Pokémon? I can tell you why, but I warn you. You may not like what you hear, especially if you feel particularly attuned to the suffering of animals in our own world. With that out of the way I shall begin. A lot of emphasis was put on Team Rocket's little science experiment at the Lake Of Rage and soon after that their takeover of the Radio tower",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/8a/DITTO.jpg/revision/latest?cb=20120411163420",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8a/DITTO.jpg/revision/latest?cb=20120411163420",
+      "https://static.wikia.nocookie.net/creepypasta/images/a/ac/Free_range_breeding.jpg/revision/latest?cb=20120314214144"
+    ],
+    "author": null,
+    "date": "March 14, 2012",
+    "categories": [
+      "Historical_Archive",
+      "PokéMon",
+      "Theory"
+    ]
+  },
+  {
+    "name": "Beauties of the Underworld",
+    "url": "https://creepypasta.fandom.com/wiki/Beauties_of_the_Underworld",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9e/Tumblr_mwr9r5e8KM1r3q7iqo1_400.jpg/revision/latest/scale-to-width-down/138?cb=20140306104041",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9e/Tumblr_mwr9r5e8KM1r3q7iqo1_400.jpg/revision/latest/scale-to-width-down/138?cb=20140306104041"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Places",
+      "Ritual",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Bedtime II: The Aftermath",
+    "url": "https://creepypasta.fandom.com/wiki/Bedtime_II:_The_Aftermath",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/51/Bedtime_final.jpg/revision/latest/scale-to-width-down/180?cb=20121127235055",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/51/Bedtime_final.jpg/revision/latest/scale-to-width-down/180?cb=20121127235055"
+    ],
+    "author": "Michael Whitehouse Originally uploaded on November 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Ghosts",
+      "Michael_Whitehouse"
+    ]
+  },
+  {
+    "name": "Bedtime III: My Fears Realized",
+    "url": "https://creepypasta.fandom.com/wiki/Bedtime_III:_My_Fears_Realized",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/51/Bedtime_final.jpg/revision/latest/scale-to-width-down/180?cb=20121127235055",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/51/Bedtime_final.jpg/revision/latest/scale-to-width-down/180?cb=20121127235055"
+    ],
+    "author": "Michael Whitehouse Originally uploaded on November 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Ghosts",
+      "Michael_Whitehouse"
+    ]
+  },
+  {
+    "name": "Bedtime IV: Something Wicked this Way Comes",
+    "url": "https://creepypasta.fandom.com/wiki/Bedtime_IV:_Something_Wicked_this_Way_Comes",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/51/Bedtime_final.jpg/revision/latest/scale-to-width-down/180?cb=20121127235055",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/51/Bedtime_final.jpg/revision/latest/scale-to-width-down/180?cb=20121127235055"
+    ],
+    "author": "Michael Whitehouse Originally uploaded on November 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Ghosts",
+      "Michael_Whitehouse"
+    ]
+  },
+  {
+    "name": "Bedtime V: Sleep Tight",
+    "url": "https://creepypasta.fandom.com/wiki/Bedtime_V:_Sleep_Tight",
+    "description": "I am shaking as I write this. I was released by the police less than two hours ago and I am compelled to record the events of the past day and night as quickly and as accurately as possible. In some ways I want to forget, but I know that I cannot, I know that I should not. For my own sanity I must divulge what has happened, it is far too important. Should I ever allow myself to be swayed by the mechanical, rational nature of the world once again, these words should serve to remind me that what i",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/51/Bedtime_final.jpg/revision/latest/scale-to-width-down/180?cb=20121127235055",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/51/Bedtime_final.jpg/revision/latest/scale-to-width-down/180?cb=20121127235055"
+    ],
+    "author": "Michael Whitehouse",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Ghosts",
+      "Michael_Whitehouse"
+    ]
+  },
+  {
+    "name": "Before It Rains",
+    "url": "https://creepypasta.fandom.com/wiki/Before_It_Rains",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/09/Rainonthestreet.jpg/revision/latest/scale-to-width-down/180?cb=20121226023002",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/09/Rainonthestreet.jpg/revision/latest/scale-to-width-down/180?cb=20121226023002"
+    ],
+    "author": "Chambergambit Originally uploaded on November 14th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Behind the Line of Trees",
+    "url": "https://creepypasta.fandom.com/wiki/Behind_the_Line_of_Trees",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dr._Malpractice",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "BEN Drowned",
+    "url": "https://creepypasta.fandom.com/wiki/BEN_Drowned",
+    "description": "Artwork created by sarawtf . BEN Drowned or Haunted Majora's Mask is a well-known creepypasta (and later, an alternate reality game) created by Alex Hall, also known as \"Jadusable\". The story revolves around a Majora's Mask cartridge that is haunted by the ghost (if it is a ghost) of a boy named Ben. Analysis and updates on a possible addition to the story from the original author can be found on the Jadusable Wiki . 1 The Pasta 1.1 Post #1 (Sept. 7, 2010) 1.2 Post #2 (Sept. 8, 2010) 1.3 Post #3",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/00/You_shouldn%27t_have_done_that_by_sarawtf.jpg/revision/latest/scale-to-width-down/200?cb=20130928192047",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/00/You_shouldn%27t_have_done_that_by_sarawtf.jpg/revision/latest/scale-to-width-down/200?cb=20130928192047"
+    ],
+    "author": "can be found on the Jadusable Wiki",
+    "date": "September 6, 2010",
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Zelda",
+      "Memes",
+      "Videos",
+      "Longpasta",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Beneath the Garden",
+    "url": "https://creepypasta.fandom.com/wiki/Beneath_the_Garden",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Michael Whitehouse Originally uploaded on November 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Dismemberment",
+      "Beings",
+      "Michael_Whitehouse"
+    ]
+  },
+  {
+    "name": "Beneath the Ground",
+    "url": "https://creepypasta.fandom.com/wiki/Beneath_the_Ground",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Beneath the Mattress",
+    "url": "https://creepypasta.fandom.com/wiki/Beneath_the_Mattress",
+    "description": "A family went on vacation together and checked into a suite at a cheap old hotel. They booked two double rooms, one for the husband and wife and one for their children, a boy and a girl. When the children got to their room, they both detected a bad odor. The husband called down to the front desk and asked to speak to the manager. He explained that the room smelled very bad and they would like another suite. The manager apologized and told the man that they were all booked due to a convention. Bu",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 14th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Benjamin Bathurst",
+    "url": "https://creepypasta.fandom.com/wiki/Benjamin_Bathurst",
+    "description": "The case of Benjamin Bathurst is one of the most famous unexplained disappearances in history. 1809 was a turbulent time in Europe. Various countries were declaring war on each other, and travel between nations was extremely dangerous. Benjamin Bathurst, a British diplomat, was traveling through Berlin under the name 'Baron de Koch'. He and his German courier, Herr Krause, arrived at the city of Perleberg on November 25. Bathurst and his companion checked in at the White Swan Inn. There, they or",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d1/Bathurst.jpg/revision/latest/scale-to-width-down/180?cb=20250908160649",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d1/Bathurst.jpg/revision/latest/scale-to-width-down/180?cb=20250908160649"
+    ],
+    "author": "unknown Originally uploaded on April 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "History",
+      "Disappearances",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Best Apples",
+    "url": "https://creepypasta.fandom.com/wiki/Best_Apples",
+    "description": "The time had come to tear down the old orchard. For the longest time, it had produced fine apples, and the owners had always boasted about their work and home-grown fertilizer. But that was years ago, and with its owners long gone and the trees dead and withered, the farm had gone into default. Its land was returned to the county, and as it goes, the developers rolled in. It had been an odd place for a farm, not terribly far from the center of town, right near the old asylum. Cheap land at the t",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/7a/Apple_orchard_2_jpg_resized.jpg/revision/latest/scale-to-width-down/274?cb=20110911150112",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7a/Apple_orchard_2_jpg_resized.jpg/revision/latest/scale-to-width-down/274?cb=20110911150112"
+    ],
+    "author": "unknown Originally uploaded on September 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Nature",
+      "Micropasta",
+      "Food"
+    ]
+  },
+  {
+    "name": "Better in the Dark",
+    "url": "https://creepypasta.fandom.com/wiki/Better_in_the_Dark",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on September 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Computers_and_Internet",
+      "Theory",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "A Bigger Stick",
+    "url": "https://creepypasta.fandom.com/wiki/A_Bigger_Stick",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b0/Burn2.jpg/revision/latest?cb=20111210121513",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b0/Burn2.jpg/revision/latest?cb=20111210121513"
+    ],
+    "author": "The Silicon Lemming Originally uploaded on December 10th",
+    "date": "December 2, 1988",
+    "categories": [
+      "Historical_Archive",
+      "History",
+      "Military",
+      "Reality",
+      "The_Silicon_Lemming"
+    ]
+  },
+  {
+    "name": "Bikini Atoll",
+    "url": "https://creepypasta.fandom.com/wiki/Bikini_Atoll",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/ec/BikiniLigging.PNG/revision/latest/scale-to-width-down/228?cb=20120808175844",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ec/BikiniLigging.PNG/revision/latest/scale-to-width-down/228?cb=20120808175844"
+    ],
+    "author": "Tehtumpi Originally uploaded on August 8th",
+    "date": "June 2, 1946",
+    "categories": [
+      "Historical_Archive",
+      "Television",
+      "Reality",
+      "Theory",
+      "Contextual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Binary DNA",
+    "url": "https://creepypasta.fandom.com/wiki/Binary_DNA",
+    "description": "It is said when you take a picture of someone, you capture their soul in the camera. It is also said that if you print it off, that picture contains the soul itself, and you can control them with it. I’m not sure where to start. Do you know what the Primordial Soup is? A veritable ocean of elements, all floating around randomly. And through millions of years of time, eventually the right set of random circumstances came to pass, and the elements were able to connect together and form the world's",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b3/Binary_DNA.png/revision/latest/scale-to-width-down/250?cb=20100808212848",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b3/Binary_DNA.png/revision/latest/scale-to-width-down/250?cb=20100808212848"
+    ],
+    "author": "unknown Originally uploaded on August 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Computers_and_Internet",
+      "Reality",
+      "Videos",
+      "Memes",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "The Bird Cage",
+    "url": "https://creepypasta.fandom.com/wiki/The_Bird_Cage",
+    "description": "Black. Feathers. I can't escape. It's... --- As I awoke, shocked, from a fitful slumber, I was met with a severe pain in my chest. Brushing my fingertips over the bumps of my ribs, I located an area of extreme tenderness. Carefully, I raised myself from the plush surface of my bed, cradling my injured side. Making my way to the nearest bathroom, I lifted the loose night shirt that adorned my torso; staring back at my reflection in the pristine mirror, I found nothing wrong with my chest. Not a b",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d3/Crow.jpg/revision/latest/scale-to-width-down/200?cb=20110423194531",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d3/Crow.jpg/revision/latest/scale-to-width-down/200?cb=20110423194531"
+    ],
+    "author": "unknown Originally uploaded on April 23",
+    "date": "April 23, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Dismemberment",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Birthday Party",
+    "url": "https://creepypasta.fandom.com/wiki/Birthday_Party",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "MissShadowLovely Originally uploaded on December 5th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment",
+      "Mental_Illness",
+      "Poetry"
+    ]
+  },
+  {
+    "name": "The Bitterroot Footage",
+    "url": "https://creepypasta.fandom.com/wiki/The_Bitterroot_Footage",
+    "description": "My name is Chad. I'm a student at a university in New York. I just moved to a studio apartment and needed some furniture. I found a guy on Craigslist that wanted to desperately get rid of his things at super cheap prices so I went to check it out. He sold things in bulk to get rid of as much things as possible. I bought a small table and it came with a bunch of other random things. Some of it I gave away and some I kept. An old wooden box caught my attention. It was locked and out of curiosity, ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": "May 12, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Television",
+      "Videos"
+    ]
+  },
+  {
+    "name": "Black Aggie",
+    "url": "https://creepypasta.fandom.com/wiki/Black_Aggie",
+    "description": "When Felix Agnus put up the life-sized shrouded bronze statue of a grieving angel, seated on a pedestal, in the Agnus family plot in the Druid Ridge Cemetery, he had no idea what he had started. The statue was a rather eerie figure by day, frozen in a moment of grief and terrible pain. At night, the figure was almost unbelievably creepy; the shroud over its head obscuring the face until you were up close to it. There was a living air about the grieving angel, as if its arms could really reach ou",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "History",
+      "Ghosts",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Black Friday",
+    "url": "https://creepypasta.fandom.com/wiki/Black_Friday",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "GutsyLamp Originally uploaded on November 24",
+    "date": "November 24, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Black Quill",
+    "url": "https://creepypasta.fandom.com/wiki/The_Black_Quill",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Denalicain Originally uploaded on November 5th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Books"
+    ]
+  },
+  {
+    "name": "The Black Stone",
+    "url": "https://creepypasta.fandom.com/wiki/The_Black_Stone",
+    "description": "In 1653, Spanish explorers found the ruins of what appeared to be a Mesoamerican step pyramid in what is modern South Carolina. Though the site was far beyond the borders of any known American indigenous populations, it was also of a smaller size than existing Mesoamerican structures, and bore an unrecognized form of glyphic decoration. Local natives were familiar with the structure but knew nothing about it. The Spaniards sought to disassemble the building as a heathen relic and did so, brick b",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d0/Pyramid.jpg/revision/latest/scale-to-width-down/300?cb=20110712012850",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d0/Pyramid.jpg/revision/latest/scale-to-width-down/300?cb=20110712012850"
+    ],
+    "author": "unknown Originally uploaded on January 3rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "History",
+      "Places",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Black-Eyed People",
+    "url": "https://creepypasta.fandom.com/wiki/Black-Eyed_People",
+    "description": "Black-Eyed People (sometimes called Black Eyed Children) are young people, often children, with eyes that are solid black with no differentiation between sclera, pupil, or iris, and are occasionally reported to have blue or bluish tinted skin like that of a corpse. Those who report encounters with them often feel that the children were somehow supernatural and extremely dangerous, though they could not explain why. Often they can be seen playing games and singing the nursery songs Old Man Long L",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/13/Black-eyed-kids2.jpg.jpeg/revision/latest/scale-to-width-down/250?cb=20111009124934",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/13/Black-eyed-kids2.jpg.jpeg/revision/latest/scale-to-width-down/250?cb=20111009124934",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/26/Bek_feature_jo.jpg/revision/latest/scale-to-width-down/185?cb=20120403052124",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6b/Children-black-eyed.jpg/revision/latest/scale-to-width-down/185?cb=20120403052404",
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8b/Remy1.png/revision/latest/scale-to-width-down/185?cb=20120402041636",
+      "https://static.wikia.nocookie.net/creepypasta/images/4/46/Bk1-copy-300x242.jpg/revision/latest/scale-to-width-down/185?cb=20121231134438",
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e7/Bk3-copy-300x240.jpg/revision/latest/scale-to-width-down/185?cb=20110619215959"
+    ],
+    "author": "unknown Originally uploaded on April 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Beings",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Blair Witch Backstory",
+    "url": "https://creepypasta.fandom.com/wiki/Blair_Witch_Backstory",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/67/Witchmaker.jpg/revision/latest/scale-to-width-down/180?cb=20100809202020",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/67/Witchmaker.jpg/revision/latest/scale-to-width-down/180?cb=20100809202020"
+    ],
+    "author": "Shroob6390 Originally uploaded on October 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Crime",
+      "History",
+      "Theory"
+    ]
+  },
+  {
+    "name": "Blank Book",
+    "url": "https://creepypasta.fandom.com/wiki/Blank_Book",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "TacoExpress Originally uploaded on August 22",
+    "date": "August 22, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Books",
+      "Memes"
+    ]
+  },
+  {
+    "name": "The Blank Face",
+    "url": "https://creepypasta.fandom.com/wiki/The_Blank_Face",
+    "description": "After waking up with a jolt, the girl laid in bed a few seconds longer. Reaching over to switch on her bedside lamp, she tried to remember exactly what had stolen her sweet slumber away. When she couldn’t, the brunette swung her legs over the side of the bed and heaved herself up. Checking the time on her phone, she snorted when she saw it was three in the morning, the witching hour. Knowing that sleep would only evade her, she left her bedroom for the kitchen, a good cup of coffee on her mind. ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on April 22nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Blind Man's Bluff",
+    "url": "https://creepypasta.fandom.com/wiki/Blind_Man's_Bluff",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b5/Black_silk_blindfold_side211.jpg/revision/latest/scale-to-width-down/180?cb=20121105122012",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b5/Black_silk_blindfold_side211.jpg/revision/latest/scale-to-width-down/180?cb=20121105122012"
+    ],
+    "author": "Ananorai Originally uploaded on November 5th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Blood Freezing Experiment",
+    "url": "https://creepypasta.fandom.com/wiki/Blood_Freezing_Experiment",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/22/Hotlelatlaksjdh.png/revision/latest/scale-to-width-down/300?cb=20120603194452",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/22/Hotlelatlaksjdh.png/revision/latest/scale-to-width-down/300?cb=20120603194452"
+    ],
+    "author": "EvraVon53 Originally uploaded on May 19",
+    "date": "May 19, 2012",
+    "categories": [
+      "Historical_Archive",
+      "History",
+      "Science",
+      "Military"
+    ]
+  },
+  {
+    "name": "Bloody Mary",
+    "url": "https://creepypasta.fandom.com/wiki/Bloody_Mary",
+    "description": "Bloody Mary is an urban legend about a restless female spirit that supposedly materialises once its name is spoken aloud in a mirror three times. The spirit's function varies between specific instances and retellings, but is usually portrayed as causing grievous harm to the ritual-performer once summoned. The concept has roots in early-20th century folklore and has remained a popular representation of the occult in media such as films, TV adaptations, and videogames. While it is unclear whether ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/61/Mirrors_by_valentinakallias.jpg/revision/latest/scale-to-width-down/180?cb=20110610211436",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/61/Mirrors_by_valentinakallias.jpg/revision/latest/scale-to-width-down/180?cb=20110610211436"
+    ],
+    "author": "unknown Originally uploaded on October 25th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Contextual",
+      "Mirrors",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "Bloody Mary Returns",
+    "url": "https://creepypasta.fandom.com/wiki/Bloody_Mary_Returns",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "SkulOfUrSoul Originally uploaded on July 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mirrors",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "Bloop",
+    "url": "https://creepypasta.fandom.com/wiki/Bloop",
+    "description": "The Bloop portrayed through a spectrogram. Have you ever heard of “the Bloop”? It was an ultra-low frequency and extremely powerful underwater sound detected by the U.S. National Oceanic and Atmospheric Administration in a southern part of the Pacific Ocean in 1997. The hydrophone array that picked up the sound was in a very remote part of the ocean. In the NOAA’s words, the Bloop \"rose rapidly in frequency over about one minute and was of sufficient amplitude to be heard on multiple sensors, at",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/2a/Bloop.jpg/revision/latest?cb=20121024202518",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2a/Bloop.jpg/revision/latest?cb=20121024202518"
+    ],
+    "author": "unknown Originally uploaded on October 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Cryptids",
+      "Reality",
+      "Science",
+      "Micropasta",
+      "Theory"
+    ]
+  },
+  {
+    "name": "Blue Lady",
+    "url": "https://creepypasta.fandom.com/wiki/Blue_Lady",
+    "description": "To homeless children sleeping on the street, neon is as comforting as a night light. Angels love colored light too. After nightfall in downtown Miami, they nibble on the Nation's Bank building - always drenched in a green, pink, or golden glow. \"They eat light so they can fly,\" eight-year-old André tells the children sitting on the patio of the Salvation Army's emergency shelter on NW 38th Street. André explains that the angels hide in the building while they study battle maps. \"There's a lot of",
+    "image": null,
+    "images": [],
+    "author": "unknown",
+    "date": null,
+    "categories": [
+      "Places",
+      "Demon/Devil",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "The Blue Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Blue_Man",
+    "description": "If you see the Blue Man walk Mind to him you do not talk. For if you see the Blue Man smile Your sweet soul he will defile —From “The Blue Man”, traditional folk ballad Samuel Douglas drove home from town, taking the main highway instead of the usual back roads that he was particular to. He hadn’t had much business in town, so his visit was short and sweet. Spending time talking to the other men who farmed the area, the last few holdouts who hadn’t been bought out by any of the big conglomerates",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Mental_Illness",
+      "Crime"
+    ]
+  },
+  {
+    "name": "Blueberries",
+    "url": "https://creepypasta.fandom.com/wiki/Blueberries",
+    "description": "He smashed the dark oak desk into shards of stray wood strewn about the chamber with his sledgehammer. He couldn't eat the whole thing in one bite. As the veins in his eyes pulsed and his teeth ground for individual superiority over the others, he tried to think of something that didn't involve what the guard outside the heavy door was going to watch him eat through the bulletproof glass. \"Blueberries, they're nice, I remember blueberries. The best ones came from the big bushes outside the McCoy",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Weird"
+    ]
+  },
+  {
+    "name": "BOB",
+    "url": "https://creepypasta.fandom.com/wiki/BOB",
+    "description": "Originally uploaded on 4chan's /x/ board. BOB line art, edited to comply with Fandom's no-nudity policy. Andrew woke up with a start. He knew what had happened and his heart sank. The sound of shattering downstairs did the same to his nerves. It had come. After weeks of watching and stalking him, the creature had finally decided to break in. The patio doors, made completely of glass, provided it with the perfect entrance. Andrew lay there in bed, in the blackness, illuminated only by the small a",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9a/BOB-wikiasafeversion.jpg/revision/latest?cb=20120212235754",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9a/BOB-wikiasafeversion.jpg/revision/latest?cb=20120212235754",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b1/BOBjpeg.jpg/revision/latest/scale-to-width-down/250?cb=20110709040111"
+    ],
+    "author": "Anthony Rose",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Body Jacked",
+    "url": "https://creepypasta.fandom.com/wiki/Body_Jacked",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/4a/Madeline.png/revision/latest/scale-to-width-down/140?cb=20120628030907",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4a/Madeline.png/revision/latest/scale-to-width-down/140?cb=20120628030907"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Bottle",
+    "url": "https://creepypasta.fandom.com/wiki/Bottle",
+    "description": "My damnation came in the form of a bottle. No, not like that. When I was a child, my best friend lived next to a little junkyard - a great place for a kid to hang out. The place was full of mystery and exciting discoveries, and if you found anything nice, nobody minded if you took it. Well, no one but your parents. The only exception was my friend’s mom; most of their bowls and plates came from that junkyard. But I digress. One day, a bunch of us were hanging out there, dismantling a car. Some o",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Items/Objects",
+      "Monsters",
+      "Weird",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "The Boy Who Loved to Read",
+    "url": "https://creepypasta.fandom.com/wiki/The_Boy_Who_Loved_to_Read",
+    "description": "Once, there was a boy who loved to read. He read everything he could get his hands on, and loved going to his favorite book store. One day, the boy realized he had read everything the store had to offer. He confronted the owner and asked him if he had anything the boy had never checked out. The owner said 'why, yes, I do,' and pulled out a book called 'Death'. He gladly sold it to the boy at a discounted price of $50. However, he warned the boy never to read the front page. Well, the boy returne",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on December 5th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Books",
+      "Troll_Pasta",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Boyfriend",
+    "url": "https://creepypasta.fandom.com/wiki/The_Boyfriend",
+    "description": "A girl and her boyfriend were driving at night down an isolated country road. As they drove, the sky seemed to get darker and darker. Eventually, they lost their way and found themselves driving through a densely wooded area that neither of them recognized. Suddenly, the car started spluttering and eventually stalled. The boyfriend looked at the gauge and realized they had run out of gas. No matter how many times he turned the key, the engine just wouldn't start. The girlfriend began to panic be",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "Braid",
+    "url": "https://creepypasta.fandom.com/wiki/Braid",
+    "description": "There are certain rules one must follow while traveling through Ilex Forest. First, should you consider doing it, never stray from the path. Ever. Before you looms the darkness of Ilex Forest, you've just earned your second badge in the Johto League, and you're already excited about getting your third. It doesn't strike you as odd that no one in Azalea Town told you much about the forest. It strikes you as a little odd that no one will tell you how to get through it. Nonetheless, you know from t",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/73/Ilex_Forest_Map2.png/revision/latest/scale-to-width-down/180?cb=20130111203550",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/73/Ilex_Forest_Map2.png/revision/latest/scale-to-width-down/180?cb=20130111203550"
+    ],
+    "author": "Professor Elm",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PokéMon"
+    ]
+  },
+  {
+    "name": "Breath",
+    "url": "https://creepypasta.fandom.com/wiki/Breath",
+    "description": "Every time you exhale, a little bit of your soul escapes. Luckily, you almost always inhale quick enough to get it back before anyone else does. Almost... Ever fog up a mirror with your breath? Don't do that. Original author unknown Originally uploaded on August 18th, 2010",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Mirrors",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Bride Doll",
+    "url": "https://creepypasta.fandom.com/wiki/Bride_Doll",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b6/1221bride2.jpg/revision/latest/scale-to-width-down/235?cb=20120220005443",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b6/1221bride2.jpg/revision/latest/scale-to-width-down/235?cb=20120220005443"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Broadcast Interruption",
+    "url": "https://creepypasta.fandom.com/wiki/Broadcast_Interruption",
+    "description": "You might already have heard of the TV broadcast hijacking in Seneca, South Carolina; the story’s gained pretty wide currency on the internet, and part of the broadcast is available on YouTube, assuming it hasn’t been taken down for whatever reason. For the uninitiated, the Seneca hijacking is one of the lesser-known broadcast signal intrusions. It was big news here, but the national media barely touched on it. Anyway, I’ve decided to jot down my impressions of the whole thing, even though other",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on June 18th",
+    "date": "November 15, 2017",
+    "categories": [
+      "Historical_Archive",
+      "Television",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Building Perfection",
+    "url": "https://creepypasta.fandom.com/wiki/Building_Perfection",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "The Bum's Countdown",
+    "url": "https://creepypasta.fandom.com/wiki/The_Bum's_Countdown",
+    "description": "There's a strange phenomenon I've noticed on several television reports from the early 1960's onwards. There may be more before, but since I got my first television in 1962, I can't say for sure. I would like to post this here to ask if anybody else has noticed, or seen any others. It started in the early 1960s. Specifically, the Kennedy assassination. I was watching a broadcast by ABC of his final precession, and whilst the reporter was talking to the camera, amongst the crowd, I noticed someth",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Television",
+      "History",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Bum-Bum",
+    "url": "https://creepypasta.fandom.com/wiki/Bum-Bum",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "BillPincura Originally uploaded on October 7",
+    "date": "October 7, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Bunnyman Bridge",
+    "url": "https://creepypasta.fandom.com/wiki/Bunnyman_Bridge",
+    "description": "Bunnyman Bridge, or simply the Bunny Man, is a U.S. urban legend from 1970 about an axe-wielding man in a bunny costume. Though it stemmed from a real influx of supposed crimes and sightings, specific details differ heavily between variations, with many unique retellings and much of the original detail built on speculation and hearsay. The tale often features the pictured Colchester Bridge as a central setting, with some versions suggesting that the Bunny Man's spirit rises there every year on H",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e3/Bunnymanbridge.jpg/revision/latest/scale-to-width-down/300?cb=20120321204514",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e3/Bunnymanbridge.jpg/revision/latest/scale-to-width-down/300?cb=20120321204514"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Places",
+      "Beings",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Buried Alive Model",
+    "url": "https://creepypasta.fandom.com/wiki/Buried_Alive_Model",
+    "description": "An alleged frame from the Buryman script. Artwork by QueenKami . The Buried Alive Model — often referred to as its code, the Buryman script — was to be found on the final story of the Pokémon Tower, in what has now been replaced with the Marowak ghost. According to the scripts assigned to it, the Buried Alive model was intended to be the \"boss\" of the tower. Once reaching the top floor, the following conversation would have taken place. Buried Alive: You're... Here. BA: I'm trapped... BA: And I'",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/51/D2xy8rb-2f131322-0002-4ab6-885e-8b692c7d569d.png/revision/latest?cb=20190528011603",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/51/D2xy8rb-2f131322-0002-4ab6-885e-8b692c7d569d.png/revision/latest?cb=20190528011603"
+    ],
+    "author": "an unknown programmer upon losing the battle",
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Videos",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Busses Suck",
+    "url": "https://creepypasta.fandom.com/wiki/Busses_Suck",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/5c/Bus.jpg/revision/latest?cb=20120805154306",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/5c/Bus.jpg/revision/latest?cb=20120805154306"
+    ],
+    "author": "ClericofMadness Originally uploaded on August 10th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Demon/Devil",
+      "Troll_Pasta",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Button Day",
+    "url": "https://creepypasta.fandom.com/wiki/Button_Day",
+    "description": "\"...will YOU answer?\" Laura was woken by her father, something that he had not done since she was a child. As her thoughts slowly swam back into focus, she was suddenly sure that she had slept naked and he had seen her, but to her relief she was wearing her baby-blue pajamas. God, what was he doing in here anyway? “Come on, you,” he said brightly, opening the curtains and letting the sunlight in. Outside, she could hear a lawnmower running, perhaps in the next street, and what could’ve been bird",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/98/Buttonday.jpg/revision/latest/scale-to-width-down/180?cb=20101129234652",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/98/Buttonday.jpg/revision/latest/scale-to-width-down/180?cb=20101129234652"
+    ],
+    "author": "unknown Originally uploaded on November 29th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Buzz",
+    "url": "https://creepypasta.fandom.com/wiki/The_Buzz",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Justingreen74 Originally uploaded on November 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Reality"
+    ]
+  },
+  {
+    "name": "The Bwystfel",
+    "url": "https://creepypasta.fandom.com/wiki/The_Bwystfel",
+    "description": "When I was a child, I lived in Radnorshire. I was one of seven children and the youngest of six girls. As my parents had five other girls and an infant boy to take care of, they left me to myself. I was a wild thing. It wasn't because they didn't love me; they just had other things to do. I was about five when I began to see the Bwystfel. It roamed about the farm, slipping in the shadows. The only way to see it was to look for the shapes that were darker than the spaces between stars. Its mad ey",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on January 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "The Cab",
+    "url": "https://creepypasta.fandom.com/wiki/The_Cab",
+    "description": "'The Cab' provides a mysterious spin on the popular Bloody Mary or Midnight Man Game genre of scare-yourself-activities. Supposedly, if the required ritual is done correctly, the protagonist of the “game” will find himself in the back of a “cab” or car in general. The cab moniker is due to the protagonist being confined to the backseat, with someone else driving. The ritual goes as follows: Alone, drive and park YOUR car at 1:15 AM in an abandoned area. The process may be done in a populated are",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/67/Night-Driving1.jpg/revision/latest/scale-to-width-down/250?cb=20110513215006",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/67/Night-Driving1.jpg/revision/latest/scale-to-width-down/250?cb=20110513215006"
+    ],
+    "author": "unknown Originally uploaded on May 13th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Dreams/Sleep",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "Cabinets",
+    "url": "https://creepypasta.fandom.com/wiki/Cabinets",
+    "description": "Every family in every town on every continent has one. It's a cabinet. Not particularly odd or out of place. The finish was peeling on the corners, and the knob was a bit loose. The inside smelled like dust and the paint wasn't the same shade as the kitchen walls. You hid in there once during a game of hide 'n' seek. No one told you it doesn't open back into your reality. Don't worry, you can't tell the difference. But everybody misses you. Original author unknown Originally uploaded on August 1",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/16/Cabinet.jpg/revision/latest/scale-to-width-down/250?cb=20120413030128",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/16/Cabinet.jpg/revision/latest/scale-to-width-down/250?cb=20120413030128"
+    ],
+    "author": "unknown Originally uploaded on August 10th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Cackling",
+    "url": "https://creepypasta.fandom.com/wiki/Cackling",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Scythemantis Originally uploaded on March 6th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Troll_Pasta"
+    ]
+  },
+  {
+    "name": "Call Me Tomorrow Okay?",
+    "url": "https://creepypasta.fandom.com/wiki/Call_Me_Tomorrow_Okay?",
+    "description": "Still no messages on my phone. I guess he wasn’t going to call me back after all. I can’t really blame him; maybe I came on a bit too fast yesterday. I noticed him long before he noticed me. His shiny black hair and unnatural blue eyes. I wasn’t the only one watching him, that’s for sure. His movements were elegant in a boyish way. And his smile…his smile. I would die for that smile. Still no messages… I thought about calling him, maybe to apologize for going too fast yesterday. I’m a coward, I ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on November 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Camcorder",
+    "url": "https://creepypasta.fandom.com/wiki/Camcorder",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/86/Sony_DCR-HC-36E.jpg/revision/latest/scale-to-width-down/180?cb=20111113232227",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/86/Sony_DCR-HC-36E.jpg/revision/latest/scale-to-width-down/180?cb=20111113232227",
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9c/SNAPSHOT_1_FRAME-498765.png/revision/latest?cb=20111122062630"
+    ],
+    "author": "BlittleMcNilsen Originally uploaded on November 14th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Items/Objects",
+      "Beings",
+      "Television"
+    ]
+  },
+  {
+    "name": "Candle Cove",
+    "url": "https://creepypasta.fandom.com/wiki/Candle_Cove",
+    "description": "Candle Cove is a creepypasta by Kris Straub of Ichor Falls and Chainsawsuit . Due to copyright issues, it can no longer be read on this wiki, but is available at the author's website . Please do not repost this story anywhere on the wiki. Kris published Candle Cove in his anthology, Candle Cove and Other Stories , available from Amazon . The story was later adapted to form the first season of Channel Zero , a show based on well-known creepypastas. Also adapted were NoEnd House , I'm a Search and",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b3/Candlecovestorytelling.jpg/revision/latest/scale-to-width-down/215?cb=20110709005001",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b3/Candlecovestorytelling.jpg/revision/latest/scale-to-width-down/215?cb=20110709005001"
+    ],
+    "author": "Kris Straub",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Memes",
+      "Television",
+      "Micropasta",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "A Candle Cove Anecdote",
+    "url": "https://creepypasta.fandom.com/wiki/A_Candle_Cove_Anecdote",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Bogleech Originally uploaded on June 13",
+    "date": "June 13, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Television",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Candy Pieces",
+    "url": "https://creepypasta.fandom.com/wiki/Candy_Pieces",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "TacoExpress Originally uploaded on October 31",
+    "date": "October 31, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Halloween",
+      "Mental_Illness",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Canker",
+    "url": "https://creepypasta.fandom.com/wiki/Canker",
+    "description": "When I awoke, my first thought was that I should’ve brushed my teeth the night before. My mouth was sticky with tar and the filth of sleep. I opened and closed my jaw regretfully, smacking my tongue as I did so. That was when I noticed the bump that had formed on the roof of my mouth. I chalked it up to poor dental hygiene and tried to put it from my mind. But, as is so often the case when we try to ignore something, the bump kept interposing itself on my thoughts. My tongue would touch the welt",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Capgras Delusion",
+    "url": "https://creepypasta.fandom.com/wiki/Capgras_Delusion",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Chambergambit Originally uploaded on December 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "The Cardboard House",
+    "url": "https://creepypasta.fandom.com/wiki/The_Cardboard_House",
+    "description": "A couple weeks ago, my wife made our two young boys a playhouse out of a cardboard box left over from some Ikea furniture. It stands at about six feet tall and is in the corner of our living room. There’s a small door, and then a small window next to the door. It’s a pretty amazing little place that I wish I had when I was my boys’ age. It’s just one of the many reasons I love my wife: her ability to throw things like this together for our boys. The kids are seven and two years old. Even with th",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/ec/Cardboard_house.jpg/revision/latest/scale-to-width-down/230?cb=20120322223121",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ec/Cardboard_house.jpg/revision/latest/scale-to-width-down/230?cb=20120322223121",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/be/VuNEZ.jpg/revision/latest/scale-to-width-down/296?cb=20120304140706"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Disappearances",
+      "Beings",
+      "Reddit_Pastas"
+    ]
+  },
+  {
+    "name": "Cardinal Sins",
+    "url": "https://creepypasta.fandom.com/wiki/Cardinal_Sins",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d1/Seven-deadly-sins.jpg/revision/latest/scale-to-width-down/180?cb=20130111202808",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d1/Seven-deadly-sins.jpg/revision/latest/scale-to-width-down/180?cb=20130111202808"
+    ],
+    "author": "ClericofMadness Originally uploaded on March 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Beings",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Caretaker",
+    "url": "https://creepypasta.fandom.com/wiki/Caretaker",
+    "description": "She’s asleep. We can talk for a moment. It’s not as though I resent taking care of her, far from it. I know all the good people do in their lives should afford them some comforts as the years of their lives dwindle to an end. They need help and that is all I ever wanted to do - help. It’s tough, though. Definitely not for everybody. It’s thankless a lot of times. They just don’t recognize you and act like you’re trying to hurt them. That moment of fear in their eyes is just heartbreaking. They s",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Case of Martina Gomez",
+    "url": "https://creepypasta.fandom.com/wiki/The_Case_of_Martina_Gomez",
+    "description": "HAGERSALL CENTER FOR CHRONIC DEPRESSION, DA LLAS TX CASE STUDY: Martina Gomez KNOWN ILLNESSES: Depression, Paranoia, Insomnia, Panic Attacks SESSION DIRECTOR: R. Hagersall PREFACE Our team met with 25-year-old Martina Gomez on the morning of October 1st, 2009, at the insistence of her mother. Mrs. Gomez reported an alarming increase in the severity and duration of her daughter’s panic attacks and paranoia, and received a referral to us from Cobalt Valley Medical Center outside of Houston. Our te",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on July 9th",
+    "date": "10/2/2009",
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Beings",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Castle of Flesh",
+    "url": "https://creepypasta.fandom.com/wiki/Castle_of_Flesh",
+    "description": "Under humanity, under civilization, stands a colossal and beautiful castle made from bone and flesh. The bodies belong to every single person who's ever died in a war after killing an enemy - there are millions. Their bodies are twisted with each other to form eerie swirls, ornaments, gargoyles. If you should ever find yourself facing the castle, you will be looking at something eternal. If you are brave enough, and with a pure heart, you will be able to enter the castle. Inside it, there will b",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/8f/Castle_of_bones.jpg/revision/latest/scale-to-width-down/334?cb=20120323184043",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8f/Castle_of_bones.jpg/revision/latest/scale-to-width-down/334?cb=20120323184043"
+    ],
+    "author": "unknown Originally uploaded on April 22nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Ritual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Cats",
+    "url": "https://creepypasta.fandom.com/wiki/Cats",
+    "description": "Robert was convinced that his cat was trying to kill him. After using the litter box, Mr. Cuddles kicked the litter around, leaving a big gaping hole in the middle of the box. Robert was positive that Mr. Cuddles was practicing body burial. Robert also occasionally woke up on the sofa after his afternoon nap to find Mr. Cuddles kneading about on his body. Robert was certain that this was not a display of affection, but a clever technique in which Mr. Cuddles very subtlety checked his internal or",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/dc/2705763611_484c377186_o.jpg/revision/latest/scale-to-width-down/314?cb=20120404231959",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/dc/2705763611_484c377186_o.jpg/revision/latest/scale-to-width-down/314?cb=20120404231959"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Beings",
+      "Mental_Illness",
+      "Mirrors",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Cave Children",
+    "url": "https://creepypasta.fandom.com/wiki/Cave_Children",
+    "description": "On November 22nd, a rescue party led by Dr. Marcin Inciéda into the Dulth-Aral caves of Pohnpei discovered a damaged tape recorder tied up in a piece of white guide line. In none of the four excursions were the missing parties in question found, nor any of their supplies save for the length of guide line and the tape recorder attached to it. It serves as the only record of the events which the parties in question experienced. Seventeen entries of substantial length were recorded, as well as seve",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f8/Cavechild.jpg/revision/latest/scale-to-width-down/386?cb=20121021025758",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f8/Cavechild.jpg/revision/latest/scale-to-width-down/386?cb=20121021025758"
+    ],
+    "author": "unknown Originally uploaded on October 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Cryptids",
+      "Diary/Journal",
+      "Disappearances",
+      "Dismemberment",
+      "Nature",
+      "Places",
+      "Science",
+      "NSFW"
+    ]
+  },
+  {
+    "name": "The Cave",
+    "url": "https://creepypasta.fandom.com/wiki/The_Cave",
+    "description": "1 There were originally nine of us scheduled for the spelunking expedition, but Murphy’s Law dictated that two of the group had to pull out due to various issues. It was a disappointment having fewer members to share in the experience, but then again, there were benefits – less logistical problems, more space and so on. I, personally, wasn’t that affected by it; while most of us were close friends, I hadn’t known those two well. Our rendezvous was the cave entrance, at the crack of dawn. I was t",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/1b/Cave_07.jpg/revision/latest/scale-to-width-down/326?cb=20120325173635",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1b/Cave_07.jpg/revision/latest/scale-to-width-down/326?cb=20120325173635"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Places",
+      "Monsters",
+      "Nature"
+    ]
+  },
+  {
+    "name": "The Cell Phone Game",
+    "url": "https://creepypasta.fandom.com/wiki/The_Cell_Phone_Game",
+    "description": "Howdy. You can call me \"Jack\". It's not my real name, but that's what I'll go by for now. I reckon the time to tell my story has come. Believe it or don't, but here it is. I suggest you take away the lessons it teaches, even if you dismiss it all as bullshit like 98% of other stories on the internet. But there's more truth in this story than any one of you could know. Now, I've been out of high school for three years, but that's when this particular event takes place, so I'm going to have to win",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on April 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Disappearances",
+      "Computers_and_Internet"
+    ]
+  },
+  {
+    "name": "Cell Phones",
+    "url": "https://creepypasta.fandom.com/wiki/Cell_Phones",
+    "description": "My first thought was that my medication had suddenly and severely stopped working. It was really the only rational explanation at the time. I want to start out with that because, before I explain myself, I want you to know why it's taken me this long to take action. You see, I have a condition. Well, maybe that's not the word most people would choose. I suppose most people would say that I'm batshit crazy and, to tell the truth, I wouldn't blame them, but that's really not fair. When I'm on my m",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/1b/Old-cell-phone.jpg/revision/latest/scale-to-width-down/260?cb=20110913124513",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1b/Old-cell-phone.jpg/revision/latest/scale-to-width-down/260?cb=20110913124513"
+    ],
+    "author": "unknown Originally uploaded on March 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Disappearances",
+      "Reality",
+      "Mental_Illness",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "Cervine Birth",
+    "url": "https://creepypasta.fandom.com/wiki/Cervine_Birth",
+    "description": "Screenshot of the deer's eye from 'Cervine Birth'. In 2009, an amateur video artist studying in the UK uploaded a video onto YouTube of a recent piece he had completed. After many reports and complaints, the video was taken down. The piece allegedly begins with a lingering shot of a foggy meadow that some believe to be located in Ireland. The only sound throughout this shot is a light hissing and what sounds like muffled, unintelligible speech. The camera starts zooming in on a white shape in th",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/48/Cervine2.jpg/revision/latest/scale-to-width-down/322?cb=20121210213602",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/48/Cervine2.jpg/revision/latest/scale-to-width-down/322?cb=20121210213602"
+    ],
+    "author": "unknown Originally uploaded on December 10th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Computers_and_Internet",
+      "Videos",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Changeling",
+    "url": "https://creepypasta.fandom.com/wiki/Changeling",
+    "description": "The word \"Changeling\" was once used to refer to an unwanted child whom the parents believed was a demon switched at birth by malicious fairies. Changelings would have unusual behaviors or traits, which by modern standards would be considered birth defects or handicaps. Yet in the ancient mind, these characteristics were seen as proof of the child's inhuman origin. Often, these poor children were subjected to abuse, as common belief dictated that in order to get rid of the \"Changeling\", the paren",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/0e/15_changelings_.jpg/revision/latest/scale-to-width-down/200?cb=20130301174514",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0e/15_changelings_.jpg/revision/latest/scale-to-width-down/200?cb=20130301174514"
+    ],
+    "author": "unknown Originally uploaded on December 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Cryptids"
+    ]
+  },
+  {
+    "name": "The Channel",
+    "url": "https://creepypasta.fandom.com/wiki/The_Channel",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/2e/Tumblr_kwui50adH91qzg6kuo1_500.jpg/revision/latest/scale-to-width-down/268?cb=20110104212830",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2e/Tumblr_kwui50adH91qzg6kuo1_500.jpg/revision/latest/scale-to-width-down/268?cb=20110104212830"
+    ],
+    "author": "Meatzone Originally uploaded on January 4",
+    "date": "January 4, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Television",
+      "Demon/Devil"
+    ]
+  },
+  {
+    "name": "Chatting",
+    "url": "https://creepypasta.fandom.com/wiki/Chatting",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Breakingbad Originally uploaded on September 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "Chiasma",
+    "url": "https://creepypasta.fandom.com/wiki/Chiasma",
+    "description": "It wasn’t until I broke down in front of my sister that it occurred to me to use the word \"haunted\". When I tried to explain what was happening to me, finally articulating the weeks of dread and utter dislocation, I found that no other word would come. Haunted. There’s still a part of me that scoffs and glowers at this, to use the language of folklore; it seems to compress what I’d experienced into a simple banality, a prisoner of language. I paid cash upfront for the house in West Toluca Lake. ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "Places",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Chicken Bones",
+    "url": "https://creepypasta.fandom.com/wiki/Chicken_Bones",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b8/Foggygoodbye.jpg/revision/latest/scale-to-width-down/425?cb=20120403223837",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b8/Foggygoodbye.jpg/revision/latest/scale-to-width-down/425?cb=20120403223837"
+    ],
+    "author": "Steven Shorter Originally uploaded on April 3rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment",
+      "Items/Objects",
+      "Mental_Illness",
+      "Photography",
+      "Crime"
+    ]
+  },
+  {
+    "name": "The Children Knew",
+    "url": "https://creepypasta.fandom.com/wiki/The_Children_Knew",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/2f/Blue_child.jpg/revision/latest?cb=20121024155706",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2f/Blue_child.jpg/revision/latest?cb=20121024155706"
+    ],
+    "author": "Jifwu7 Originally uploaded on February 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Chile Diaries",
+    "url": "https://creepypasta.fandom.com/wiki/Chile_Diaries",
+    "description": "I recently came back from a three-month stay at the city of Valparaiso, Chile. It's a very beautiful and picturesque city, and an architecture student's playground—I recommend any of you to visit it if you ever have the chance—but what I am here to share with you is a number of puzzling activities that occurred to me during my stay there, from October 4 to January 13, 2009-10. I recorded these in a small diary and am transcribing them as I go. 10/6/09 As my first full day here I have decided to ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": "January 13, 2009",
+    "categories": [
+      "Places",
+      "Diary/Journal",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "The Chinatown Well",
+    "url": "https://creepypasta.fandom.com/wiki/The_Chinatown_Well",
+    "description": "If you ever find yourself in LA's old Chinatown, head into the square. Go past the statue of Sun Yat-sen, past the hip-ultramod toy store called \"Munky King\", and look for an import store next to what used to be a wishing fountain. Go into this store and head all the way to the back, and you'll see a selection of weapons. Look for a weapon called a Jiujiebian, a sort of multi-sectioned whip. It MUST have exactly nine segments, no more, no less. This will be called the \"chain of night\". As of now",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/ac/Well.jpg/revision/latest/scale-to-width-down/250?cb=20120329024142",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/ac/Well.jpg/revision/latest/scale-to-width-down/250?cb=20120329024142"
+    ],
+    "author": "unknown Originally uploaded on January 7th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Places",
+      "Ghosts",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Choke.exe",
+    "url": "https://creepypasta.fandom.com/wiki/Choke.exe",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/09/Choke.png/revision/latest/scale-to-width-down/180?cb=20120409014752",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/09/Choke.png/revision/latest/scale-to-width-down/180?cb=20120409014752"
+    ],
+    "author": "DrayMD Originally uploaded on April 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Diary/Journal",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "The Christmas Tree",
+    "url": "https://creepypasta.fandom.com/wiki/The_Christmas_Tree",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/0d/Christmas_tree.jpg/revision/latest/scale-to-width-down/250?cb=20120326155911",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0d/Christmas_tree.jpg/revision/latest/scale-to-width-down/250?cb=20120326155911"
+    ],
+    "author": "Michael Whitehouse Originally uploaded on December 13th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Christmas",
+      "Items/Objects",
+      "Nature",
+      "Michael_Whitehouse"
+    ]
+  },
+  {
+    "name": "Cigarettes",
+    "url": "https://creepypasta.fandom.com/wiki/Cigarettes",
+    "description": "Go to any high traffic bathroom. It must be a high traffic bathroom; otherwise, the room won't have enough latent residual energy to carry out the task. A hotel bathroom is perfect. Make sure it's after 12 A.M., and make sure you have two clove cigarettes. The stronger the cigarette, the higher your success rate will be. Sit in the dark and begin smoking one of the cigarettes. Make sure there is a mirror present, and that you look at your reflection at all times. The burning cherry should provid",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mirrors",
+      "Ritual",
+      "Beings",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "Circle of Life",
+    "url": "https://creepypasta.fandom.com/wiki/Circle_of_Life",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Dugarte Originally uploaded on February 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Nature",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Classified Ad",
+    "url": "https://creepypasta.fandom.com/wiki/The_Classified_Ad",
+    "description": "Every year, for an unknown number of years, an ad has been published in the New York Times' 'Classifieds' section. The advertisement is short and lists a seemingly mundane household appliance: a refrigerator, a vacuum, a piece of furniture. A select number of people in the U.S. and indeed the world search for this advertisement, which contains three keywords seemingly unusual for a simple ad. Once found, these people wait exactly one week for a second ad in the NY Times, also ostensibly a normal",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Clever",
+    "url": "https://creepypasta.fandom.com/wiki/Clever",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/41/2104980405_7e28498127.jpg/revision/latest/scale-to-width-down/250?cb=20150510180212",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/41/2104980405_7e28498127.jpg/revision/latest/scale-to-width-down/250?cb=20150510180212"
+    ],
+    "author": "Provider92 Originally uploaded on October 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Club 33: A Dark Secret",
+    "url": "https://creepypasta.fandom.com/wiki/Club_33:_A_Dark_Secret",
+    "description": "Out of all the bad things to come out of Walter Elias \"Walt\" Disney and his so-called \"Park of Magic\" and \"The Happiest Place on Earth\", people do not really seem to pay any attention to them. That is because they do not know the truth. I am writing this where they can't get me.I know too much, they say. Allow me to explain myself. I cannot give out myname, for obvious reasons. But I can tell you as much as I can reveal about Disney and Disneyland. I am currently 28 years old. The events that oc",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Places",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Cold Reading",
+    "url": "https://creepypasta.fandom.com/wiki/Cold_Reading",
+    "description": "EDITOR'S NOTE: This story is originally by Alan Moore, the genius behind Watchmen, V For Vendetta and many others. It was originally hosted on the New Humanist website, and can also be found at this website. In the old black-and-white plate, the pool of shadow on the left of the ghost’s face uncurled its legs to scuttle for the margin and the cluttered desk beyond. I shrank back in my seat and, no word of a lie, I genuinely felt it. It was over in a second when I realized it was just a garden sp",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9b/Cold_reading.jpg/revision/latest/scale-to-width-down/300?cb=20120716132725",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9b/Cold_reading.jpg/revision/latest/scale-to-width-down/300?cb=20120716132725"
+    ],
+    "author": "Alan Moore",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "A Colder Place",
+    "url": "https://creepypasta.fandom.com/wiki/A_Colder_Place",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/cc/GEDC0207.jpg/revision/latest/scale-to-width-down/308?cb=20121105214842",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/cc/GEDC0207.jpg/revision/latest/scale-to-width-down/308?cb=20121105214842"
+    ],
+    "author": "Carmine Gregory",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dr._Malpractice",
+      "Places",
+      "Beings",
+      "Disappearances"
+    ]
+  },
+  {
+    "name": "Come Closer",
+    "url": "https://creepypasta.fandom.com/wiki/Come_Closer",
+    "description": "One day, you drowned a puppy in the river. No reason why; you just wanted to kill something. So you held it under the water, and it stared up at you with big puppy eyes. Of course, the dog didn't understand why you did it — some creatures just aren't born with hate in them. Just love. But let me tell you, if there's one thing worse than your run-of-the-mill hatred, it's hatred born out of love. Something takes people into the river now. You find their bodies weeks later all fat and nibbled by fi",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on July 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Come Follow Me",
+    "url": "https://creepypasta.fandom.com/wiki/Come_Follow_Me",
+    "description": "During the first few days of the release of Pokemon Red and Green in Japan, back in February 27, 1996, a peak of deaths appeared in the age group of 10-15. The children were usually found dead through suicide, usually by hanging or jumping from heights. However, some were more odd. A few cases recorded children who had began sawing off their limbs, others sticking their faces inside the oven, and choking themselves on their own fist, shoving their own arms down their throat. The few children who",
+    "image": null,
+    "images": [],
+    "author": "Chiro himself",
+    "date": "February 27, 1996",
+    "categories": [
+      "PokéMon",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Come to Her",
+    "url": "https://creepypasta.fandom.com/wiki/Come_to_Her",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d9/Flashlight-In-Woods-300x199.jpg/revision/latest/scale-to-width-down/180?cb=20120806193846",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d9/Flashlight-In-Woods-300x199.jpg/revision/latest/scale-to-width-down/180?cb=20120806193846"
+    ],
+    "author": "Chambergambit Originally uploaded on November 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Nature",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Comfort",
+    "url": "https://creepypasta.fandom.com/wiki/Comfort",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Dreams/Sleep",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "The Comfy and Cozy Cabin",
+    "url": "https://creepypasta.fandom.com/wiki/The_Comfy_and_Cozy_Cabin",
+    "description": "I quickly walked through the cabin, making sure everything was nice and tidy, just right. I've gotten pretty good at getting the whole cabin clean in less than a day. After a quick alignment of the magazines on the coffee table, the place was perfect. Penny would have been proud. The name of the place was \"The Comfy and Cozy Cabin\". Sounds relaxing, right? The cabin was built into a slab of rock, right in the middle of nowhere, North Carolina. It's three stories tall, and features a breathtaking",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/4c/Cabin-in-the-woods.jpg/revision/latest?cb=20110720233307",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4c/Cabin-in-the-woods.jpg/revision/latest?cb=20110720233307"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Places",
+      "Beings",
+      "Dreams/Sleep",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "A Conversation of the Footbound",
+    "url": "https://creepypasta.fandom.com/wiki/A_Conversation_of_the_Footbound",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9a/Jo-moulton-home-sweet-home.jpg/revision/latest/scale-to-width-down/300?cb=20120103030158",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9a/Jo-moulton-home-sweet-home.jpg/revision/latest/scale-to-width-down/300?cb=20120103030158"
+    ],
+    "author": "Mabby Gwendoll Originally uploaded on December 29th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings"
+    ]
+  },
+  {
+    "name": "The Corandury",
+    "url": "https://creepypasta.fandom.com/wiki/The_Corandury",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Carousel Gizmologist Originally uploaded on December 30th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment",
+      "Items/Objects",
+      "Poetry"
+    ]
+  },
+  {
+    "name": "Core",
+    "url": "https://creepypasta.fandom.com/wiki/Core",
+    "description": "This message is my map, and this map is my message. The earth here is thin. I move about it so freely, and the ease of it is a delicious thing, but it is also frightful. I dig my inscriptions by feel and touch, and because I know the earth, I know that this will be massive for your senses. Here in this layer of the planet, I am in between my people and your people. I float about in this soft soil like a drifting bubble, weightless and yet handled so delicately within my surroundings that my frag",
+    "image": null,
+    "images": [],
+    "author": "Mother Earth",
+    "date": null,
+    "categories": [
+      "Beings",
+      "Lovecraftian",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "The Couch",
+    "url": "https://creepypasta.fandom.com/wiki/The_Couch",
+    "description": "Ok, disclaimer: to the very best of my knowledge, this story is true. I don't expect to convince you - truth be told, I've had a hard time coming to terms with it myself. Cliché as it may be, I really am a rational person, and, if not for this, I would probably be the most stone-faced atheist you'd ever meet. But, after much internal struggle and debate, I have come to the conclusion that there are things in life that simply can't be explained with reason, at least in the form in which we know i",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Beings",
+      "Items/Objects",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Crayons",
+    "url": "https://creepypasta.fandom.com/wiki/Crayons",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "unknown Retrieved from scaryforkids",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Creature in Your Mind",
+    "url": "https://creepypasta.fandom.com/wiki/The_Creature_in_Your_Mind",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9b/Javier-Botet-as-Mama.jpg/revision/latest/scale-to-width-down/280?cb=20140630001330",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9b/Javier-Botet-as-Mama.jpg/revision/latest/scale-to-width-down/280?cb=20140630001330"
+    ],
+    "author": "RiboZurai Originally uploaded on June 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Dreams/Sleep",
+      "Items/Objects",
+      "Ritual"
+    ]
+  },
+  {
+    "name": "Creephe",
+    "url": "https://creepypasta.fandom.com/wiki/Creephe",
+    "description": "I was always the kind of person to stubbornly reject new generations at first after the second generation, and generation five was no different. Though I played through the game and enjoyed my experience and the graphics, the Pokémon were all but appealing to me. I finally grew accustomed to my Serperior, but still wanted to find other companions that I actually liked. For a while I had been hoarding gold nuggets, among other rarities, to sell for money in preparation for EV training that specia",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": "February 20, 2012",
+    "categories": [
+      "Historical_Archive",
+      "PokéMon"
+    ]
+  },
+  {
+    "name": "The Creeping Mange",
+    "url": "https://creepypasta.fandom.com/wiki/The_Creeping_Mange",
+    "description": "Inspired by another thread, I decided I would share with you, my compatriots, some of my darker dreams. Now I often have your average silly nonsense dreams. But occasionally I have nightmares that… well, it’s hard to explain. They say that the time you dream is equal to the time you sleep, but these dreams feel like they last for days, weeks, months, years. I even sleep and dream in these dreams, creating a further level to the madness. Just the other night I had a very vivid dream that left me ",
+    "image": null,
+    "images": [],
+    "author": "unknown",
+    "date": null,
+    "categories": [
+      "Dreams/Sleep",
+      "Mental_Illness",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Creepy Pasta with a Side of Sauce",
+    "url": "https://creepypasta.fandom.com/wiki/Creepy_Pasta_with_a_Side_of_Sauce",
+    "description": "This thing on? I guess it is. I can see the little light on the recorder and it isn’t flashing just yet. This is a… well, OK. It isn’t a last will of any sort. It’s a recording of the freaky stuff I just saw. Saw and ate. Oh God, that was bad. Not the previous phrase but the food. Well, OK. Let me start at the beginning. As in, a few hours ago, and what the hell I did at that café. If it was a café in the first place. I got a call from an old school friend. She wanted to meet me for a bite to ea",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on November 7th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Memes",
+      "Places",
+      "Food",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Crooked Box",
+    "url": "https://creepypasta.fandom.com/wiki/The_Crooked_Box",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/59/9534.jpg/revision/latest?cb=20120430035822",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/59/9534.jpg/revision/latest?cb=20120430035822"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dr._Malpractice",
+      "Poetry",
+      "Science",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "Crowded Street",
+    "url": "https://creepypasta.fandom.com/wiki/Crowded_Street",
+    "description": "When I stepped out of the tube station, it was raining heavily outside. I opened my umbrella and started walking, but something was wrong. The atmosphere was somehow very unpleasant. Strange... No-one I walked past had an umbrella over their head. Everybody was silent and had grim looks, too; they walked on, all facing the same direction. Then, suddenly, a taxi stopped by, and the driver put out his hand and beckoned me to come over. I gestured to him that I didn't need a taxi, but the man said,",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/27/Crowd.jpg/revision/latest/scale-to-width-down/290?cb=20110710212144",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/27/Crowd.jpg/revision/latest/scale-to-width-down/290?cb=20110710212144"
+    ],
+    "author": "unknown Originally uploaded on March 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Cry Baby Lane",
+    "url": "https://creepypasta.fandom.com/wiki/Cry_Baby_Lane",
+    "description": "In 1999, I was twenty-two and had just graduated from Emerson University in downtown Boston, majoring in screenwriting, specifically in cartoons and children’s programming. My debt was pretty bad, so when Nickelodeon Studios offered me an internship at the studio in California, I accepted immediately. I jumped at the chance to get away from my dead end job as a Benjamin Franklin tour guide. Many of you ask to see Cry Baby Lane, but if you want to see the original, you never will, even if Nickelo",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/02/Rybabylane081511.jpg/revision/latest?cb=20110901114204",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/02/Rybabylane081511.jpg/revision/latest?cb=20110901114204"
+    ],
+    "author": "unknown Originally uploaded on February 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes",
+      "Videos"
+    ]
+  },
+  {
+    "name": "A Crying Boy",
+    "url": "https://creepypasta.fandom.com/wiki/A_Crying_Boy",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/63/Material_Objects_Burning_House.jpg/revision/latest/scale-to-width-down/250?cb=20121220065141",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/63/Material_Objects_Burning_House.jpg/revision/latest/scale-to-width-down/250?cb=20121220065141"
+    ],
+    "author": "Curly-BraceXD Originally uploaded on December 20",
+    "date": "December 20, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "The Crying Boy",
+    "url": "https://creepypasta.fandom.com/wiki/The_Crying_Boy",
+    "description": "The Crying Boy refers to a myth surrounding the existence of cheap, mass-produced painted depictions of tearful young boys, which are said to have been found completely unscathed at the site of numerous house fires. The rumour was brought into the public eye following a 1985 report by British tabloid The Sun, which corroborated the supposed testimony of a firefighter who had witnessed the presence of such paintings at several burned locations. Urban Legend In 1988, a mysterious explosion destroy",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/36/Tumblr_lztbulTdZr1qlirvbo2_400.jpg/revision/latest/scale-to-width-down/274?cb=20120224153132",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/36/Tumblr_lztbulTdZr1qlirvbo2_400.jpg/revision/latest/scale-to-width-down/274?cb=20120224153132"
+    ],
+    "author": "unknown Originally uploaded on February 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Cuil Theory",
+    "url": "https://creepypasta.fandom.com/wiki/Cuil_Theory",
+    "description": "A Cuil = a level of abstraction away from the reality of a situation. Example: You ask me for a hamburger. 1 Cuil: You ask me for a hamburger, and I give you a raccoon. 2 Cuils: You ask me for a hamburger, but it turns out I don't really exist. Where I was originally standing, a picture of a hamburger rests on the ground. 3 Cuils: You awaken as a hamburger. You start screaming, only to have special sauce fly from your lips. The world is in sepia. 4 Cuils: Why are we speaking German? A mime cries",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reddit_Pastas",
+      "Theory",
+      "Memes",
+      "Science",
+      "Reality",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Cul-de-sac",
+    "url": "https://creepypasta.fandom.com/wiki/Cul-de-sac",
+    "description": "We hadn't always been here. But the neighborhood has. Even before it was a neighborhood on earth, this one had been here. Here for those that would be lost on those cursed grounds, here for those who would die long before their real life ever truly began, here for those who never really wanted to grow up. We come from different times and we come from different lives, but one thing remains true of all of us. We lived on the earthly realm of the neighborhood at some point in our lives, and died lo",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/60/Culdesac.jpg/revision/latest?cb=20121019113218",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/60/Culdesac.jpg/revision/latest?cb=20121019113218"
+    ],
+    "author": "unknown Originally uploaded on September 5th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Television",
+      "Theory",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Cure for Cancer",
+    "url": "https://creepypasta.fandom.com/wiki/Cure_for_Cancer",
+    "description": "When Marissa said, \"Maybe we should see other people,\" Nicholas decided to give her cancer. Nicholas, like many geniuses, had his great obsession. The root of his monomania wasn't hard to trace. After all, he'd lost both his parents to cancer by the age of thirteen. He bore mute witness as they wasted away, leaking mucilaginous fluids onto crisp white hospital sheets. Colon cancer (father) and lung cancer (mother) had followed in quick succession. Outwardly, he remained stoic; inwardly, he was a",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "PotM",
+      "Historical_Archive",
+      "NSFW",
+      "Science",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Dad.txt",
+    "url": "https://creepypasta.fandom.com/wiki/Dad.txt",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/ca/Dad.jpg/revision/latest?cb=20121119235633",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/ca/Dad.jpg/revision/latest?cb=20121119235633"
+    ],
+    "author": "ClericofMadness Originally uploaded on March 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Computers_and_Internet",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Daddy, a Monster!",
+    "url": "https://creepypasta.fandom.com/wiki/Daddy,_a_Monster!",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Dangerous Roads",
+    "url": "https://creepypasta.fandom.com/wiki/Dangerous_Roads",
+    "description": "I was driving a shortcut from Twentynine Palms, CA to Albuquerque, NM. Twentynine Palms is located in the desolate high desert east of LA. The shortcut was all two lane road through total nothingness, except for passing through Amboy, CA. Amboy is a nearly abandoned town nearly as far below sea level as Death Valley, with a dormant volcano and lava field on one side and a salt flat on the other. It was also, at the time, a hotspot for satanic group activity. So I was driving by myself in the aft",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "Dark Corners",
+    "url": "https://creepypasta.fandom.com/wiki/Dark_Corners",
+    "description": "In almost every building, there is one corner, one small enclosure that no one ever looks at. It's the corner in the basement that has been blocked by a disused sofa for years; the thin gap in the attic between the wall and the stacks of crates full of junk you never use, but could never throw away. A space that never sees the light of day, or any other kind of light at all. Where darkness does not merely dominate, but practically oozes out from around the edges of its prison. No one knows quite",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Dark Side of Season Eight",
+    "url": "https://creepypasta.fandom.com/wiki/Dark_Side_of_Season_Eight",
+    "description": "I will not say who I am. I will not say what position I held that allowed for me to be aware of the information I'm about to share; suffice to say, I don't hold it anymore. I have read some of the letters directed at Seth and Fox complaining about season eight of Family Guy, and while I can't officially make these statements to any press, I don't want to stay quiet anymore. Many people feel that season eight was just off in an odd sort of way. For anyone who took note of season eight of Family G",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Television"
+    ]
+  },
+  {
+    "name": "David's Diary",
+    "url": "https://creepypasta.fandom.com/wiki/David's_Diary",
+    "description": "Picture found at the house June 13 th 2008: The wife says that journals help alleviate stress and retain memories. She always has a new way to make me feel like I have some sort of mental deficiency. She says she’s going to read it for a few weeks to make sure that I actually write in it. Pretty rude if you ask me. I don’t think she’d like it if I went through her journal… if she keeps one. But you know what they say, “happy wife, happy life.” So I guess I’ll just do what she says. June 15 th 20",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/6a/Cheyenne%27s_drawing_.jpg/revision/latest/scale-to-width-down/180?cb=20120801003739",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6a/Cheyenne%27s_drawing_.jpg/revision/latest/scale-to-width-down/180?cb=20120801003739"
+    ],
+    "author": "unknown Originally uploaded on July 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Diary/Journal",
+      "Beings",
+      "Memes",
+      "Disappearances"
+    ]
+  },
+  {
+    "name": "TEH DAY OF ALL TEH BLOD",
+    "url": "https://creepypasta.fandom.com/wiki/TEH_DAY_OF_ALL_TEH_BLOD",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Bogleech Originally uploaded on August 16th",
+    "date": null,
+    "categories": [
+      "Videos",
+      "Historical_Archive",
+      "Troll_Pasta",
+      "Memes",
+      "Micropasta",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Dead Bart",
+    "url": "https://creepypasta.fandom.com/wiki/Dead_Bart",
+    "description": "You know how Fox has a weird way of counting Simpsons episodes? They refuse to count a couple of them, making the amount of episodes inconsistent. The reason for this is a lost episode from season 1. Finding details about this missing episode is difficult. No-one who was working on the show at the time likes to talk about it. From what has been pieced together, the episode's production number was 7G06, and the title was Dead Bart. The episode labeled 7G06, Moaning Lisa, was made later, and given",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/ed/DAEDBORT.jpg/revision/latest/scale-to-width-down/200?cb=20180214041305",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ed/DAEDBORT.jpg/revision/latest/scale-to-width-down/200?cb=20180214041305"
+    ],
+    "author": "the same author",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes",
+      "Memes",
+      "KI_Simpson",
+      "Videos"
+    ]
+  },
+  {
+    "name": "A Dead Bart Update",
+    "url": "https://creepypasta.fandom.com/wiki/A_Dead_Bart_Update",
+    "description": "Well, I had to get rid of that computer I watched the episode on. Even after a complete reformatting, it never worked correctly. I couldn't delete the episode file and it kept opening on its own. I wiped the hard drive clean several times; it wouldn't go away. The sound control didn't work, either. It was a laptop, but the power never seemed to run out, and I couldn't get it to turn off. I was going to keep the computer just so I'd have a copy of the lost episode, but looking at it was making me",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/5c/DeadBart.jpg/revision/latest?cb=20120425135528",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/5c/DeadBart.jpg/revision/latest?cb=20120425135528"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Lost_Episodes",
+      "Historical_Archive",
+      "KI_Simpson"
+    ]
+  },
+  {
+    "name": "Dead Rat",
+    "url": "https://creepypasta.fandom.com/wiki/Dead_Rat",
+    "description": "June stared at the dead rat in her closet, at a loss. For months she’d been hearing it scuttle around her apartment at night, little feet on the hardwood floor, droppings in to morning to mark where it’d been. With disdain she’d sweep up the little black pellets with her hand broom and deposit them in the trash. Almost every morning. So often it’d nearly become routine. The mousetrap that had snared it, she’d put down within the first week after discovering that the thing was running around her ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Monsters",
+      "NSFW",
+      "Weird",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Dead Simple",
+    "url": "https://creepypasta.fandom.com/wiki/Dead_Simple",
+    "description": "It was about 7:30pm when I drove into Pleasant Creek. Never was there a more ironic name for a town ever created (except perhaps for some of those dismal little towns along the southern coast of Australia like Mount Hope or Coffin Bay — towns obviously settled by convicts or castaways). I was a castaway in my own right, running from my terrible past. The news hadn’t reached the local radio stations yet and for that, I was grateful. Pleasant Creek was a hunting town nestled somewhere in heart of ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Places"
+    ]
+  },
+  {
+    "name": "Dear Diary",
+    "url": "https://creepypasta.fandom.com/wiki/Dear_Diary",
+    "description": "2 AM: I can’t seem to sleep tonight, and writing has always calmed me down. Today has been quite an odd day, It’s been very quiet. Nobody seemed to want to talk today. Nobody seemed to want to smile today. I felt different from them, I felt happy. As for why: I am not sure. I seemed to get happier the more I saw them sad, but that’s probably just my mind making things up this late at night. I’m not an evil person. I just want to go to sleep. 3 AM: I still can’t go to sleep. All I can seem to do ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Mental_Illness",
+      "Diary/Journal",
+      "Historical_Archive",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "Debut",
+    "url": "https://creepypasta.fandom.com/wiki/Debut",
+    "description": "I. Well, I’ve finished my education and learned everything there is to learn about singing, and despite the difficulties, I’ve found myself at the heart of Music City and struggling to get my material out there. I haven’t been able to meet with any labels and I’m barely surviving on gig money. I have an audition at a new place that’s opening down by Broadway Street. It’s a Vegas style night club, very yuppie. I can sing, but I also have to dance with the other girls. My first song will be “Mouli",
+    "image": null,
+    "images": [],
+    "author": "Broadway Street",
+    "date": null,
+    "categories": [
+      "Items/Objects",
+      "Diary/Journal",
+      "Music",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Deep Blue",
+    "url": "https://creepypasta.fandom.com/wiki/Deep_Blue",
+    "description": "Lights flickered erratically from the crew’s cell phones. James watched as the masked figure beside him shook and button-mashed one of the devices while stepping off the pod. From the particularly expensive brand of phone he knew it belonged to Mary, one of the two paramedics. “Ah, shit.” Eric’s face couldn’t be seen through his oxygen mask, but since the poor man wasn’t even five feet tall it was easy to tell him apart from the rest. Eric stared at his phone passively as his own screen mimicked",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Deeper Darkness",
+    "url": "https://creepypasta.fandom.com/wiki/Deeper_Darkness",
+    "description": "There is a moment each leap year, at exactly three minutes past three on the morning of February twenty-ninth. If you possess the courage, await that moment in a darkened room, with no one else present. At that minute, the darkness will deepen. If you were to hold your hand directly before your face, you would not see a thing. But you must not do so. No, for that would waste the moment. Instead, you must reach out into that impenetrable darkness. It will reach out to you. An unseen hand will gra",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on December 25th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Deer Guy",
+    "url": "https://creepypasta.fandom.com/wiki/Deer_Guy",
+    "description": "I love the woods. Rather, I love the woods in the daytime. They're beautiful then, when you can appreciate the life in the green leaves and the musty smells of slow rot and decay, giving birth to new life in the form of fungi and nutrients for insects. The forest in daylight just thrills me. I love watching bugs walk around in the detritus on the wet floor, like shiny little organic robots, so keen to get somewhere without ever reaching their destination. I love walking through wet leaves and fi",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on December 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Nature",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "The Descent of Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Descent_of_Man",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "The Silicon Lemming Content is available under CC BY-SA",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Science",
+      "The_Silicon_Lemming"
+    ]
+  },
+  {
+    "name": "Devolution",
+    "url": "https://creepypasta.fandom.com/wiki/Devolution",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9c/Hiding_fanart_by_cloudtheespeon-d3ceehi.jpg/revision/latest/scale-to-width-down/290?cb=20120805002918",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9c/Hiding_fanart_by_cloudtheespeon-d3ceehi.jpg/revision/latest/scale-to-width-down/290?cb=20120805002918"
+    ],
+    "author": "Furbearingbrick Originally uploaded on August 2",
+    "date": "August 2, 2012",
+    "categories": [
+      "Historical_Archive",
+      "PokéMon",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "A Diary in a Mine",
+    "url": "https://creepypasta.fandom.com/wiki/A_Diary_in_a_Mine",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d1/Bonair_mine_cabin.jpg/revision/latest/scale-to-width-down/180?cb=20111212232019",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d1/Bonair_mine_cabin.jpg/revision/latest/scale-to-width-down/180?cb=20111212232019",
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d8/Mine1.jpg/revision/latest/scale-to-width-down/180?cb=20111212232207"
+    ],
+    "author": "Daltsch Originally uploaded on December 12th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Diary/Journal",
+      "Disappearances",
+      "Places",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "Die Before You Sleep",
+    "url": "https://creepypasta.fandom.com/wiki/Die_Before_You_Sleep",
+    "description": "You ever wonder what happens to you when you die? Well, I have a little idea of it. People die at all ages, and of all types of causes. Sometimes it's by injury, sometimes it's by disease. But sometimes, old men and women just die in their sleep. People who are perfectly healthy, just old. There really is no explanation for why they die, but they do. There was a little test done in the 1950s to see if this could be explained. They took ten subjects who were at least eighty years old and asked th",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/31/Person-Casket-Dead.jpg/revision/latest/scale-to-width-down/300?cb=20110105034526",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/31/Person-Casket-Dead.jpg/revision/latest/scale-to-width-down/300?cb=20110105034526"
+    ],
+    "author": "unknown Originally uploaded on November 6th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Science",
+      "Dreams/Sleep",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Dimension",
+    "url": "https://creepypasta.fandom.com/wiki/Dimension",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/14/Anfall.jpg/revision/latest/scale-to-width-down/180?cb=20111228200755",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/14/Anfall.jpg/revision/latest/scale-to-width-down/180?cb=20111228200755"
+    ],
+    "author": "MrsMcDowell Originally uploaded on December 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Science",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "The Dionaea House",
+    "url": "https://creepypasta.fandom.com/wiki/The_Dionaea_House",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "is (allegedly) a 16-year-old named Danielle Stephens",
+    "date": "September 06, 2004",
+    "categories": [
+      "Suggested_Reading",
+      "Historical_Archive",
+      "Disappearances",
+      "Diary/Journal",
+      "Computers_and_Internet"
+    ]
+  },
+  {
+    "name": "The Disappearance of Ashley, Kansas",
+    "url": "https://creepypasta.fandom.com/wiki/The_Disappearance_of_Ashley,_Kansas",
+    "description": "Sometime during the night of August 16, 1952, the small town of Ashley, Kansas ceased to exist. At 3:28 AM on August 17, 1952, a magnitude 7.9 earthquake was measured by the United States Geological Survey. The earthquake itself was felt throughout the state and most of the midwest. The epicenter was determined to be directly under Ashley, Kansas. When state law enforcement arrived at what should have been the outskirts of the farming community, they found a smoldering, burning fissure in the ea",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/94/Full-moon.jpg/revision/latest/scale-to-width-down/250?cb=20120407173032",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/94/Full-moon.jpg/revision/latest/scale-to-width-down/250?cb=20120407173032"
+    ],
+    "author": "unknown Originally uploaded on April 7th",
+    "date": "August 16, 1952",
+    "categories": [
+      "PotM",
+      "Historical_Archive",
+      "Disappearances",
+      "Places",
+      "Lovecraftian"
+    ]
+  },
+  {
+    "name": "Disney's Catacombs",
+    "url": "https://creepypasta.fandom.com/wiki/Disney's_Catacombs",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/53/The-gang-in-frot-of-castle.jpg/revision/latest/scale-to-width-down/180?cb=20121015222411",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/53/The-gang-in-frot-of-castle.jpg/revision/latest/scale-to-width-down/180?cb=20121015222411",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/cd/Catacombs.jpg/revision/latest?cb=20130226220841"
+    ],
+    "author": "Horrofan664 Originally uploaded on October 15th",
+    "date": "December 5, 1901",
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Dispatch",
+    "url": "https://creepypasta.fandom.com/wiki/Dispatch",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d3/Woop_Woop.jpg/revision/latest/scale-to-width-down/250?cb=20111118234800",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d3/Woop_Woop.jpg/revision/latest/scale-to-width-down/250?cb=20111118234800"
+    ],
+    "author": "MooseJuice Originally uploaded on November 18",
+    "date": "November 18, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Crime",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "Do Not Feed the Animals",
+    "url": "https://creepypasta.fandom.com/wiki/Do_Not_Feed_the_Animals",
+    "description": "I have been receiving the letters for well over 50 years, although now it’s more often I will get an email from him. Usually threatening, sometimes cordial or boastful, occasionally almost begging me to return to the small town of Fairview. A few years after they started, he began to claim to have found the little girl, and described in vivid detail how he tore her to shreds. I was worried he may have been telling the truth for over a decade, until I managed to track her down in the summer of '7",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on December 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Cryptids",
+      "Places",
+      "History"
+    ]
+  },
+  {
+    "name": "Do Not Read This, I Beg You",
+    "url": "https://creepypasta.fandom.com/wiki/Do_Not_Read_This,_I_Beg_You",
+    "description": "You must trust me. I have one piece of advice and you must follow it without question; you must stop reading this and go straight to the last paragraph. Do so without reading any other paragraphs and do it now. Please... trust me. What happens next is entirely your fault. You failed the test and now you're in danger. I didn't write this. They made me write it. It's my fingers on the keyboard, that's all, and your eyes on these words. Whatever happens, do not look away from these words. Keep read",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on January 3rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Beings",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "The Doctor's Orders",
+    "url": "https://creepypasta.fandom.com/wiki/The_Doctor's_Orders",
+    "description": "Unlike the larger circuses that dominated the railroads, the little medical show still puttered along in the old ornate wagons and trailers. This made travel much harder but allowed for the doctor to make his own curious, meandering paths. Max often wondered how his life had been hitched to every whim of this strange little man, but as Arthur reminded him, if he really cared that much they could have just quit. This particular detour had led them to a small town in Eastern Lowa. A brutal drought",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Mental_Illness",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Dog Found",
+    "url": "https://creepypasta.fandom.com/wiki/Dog_Found",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/5b/Stray_dog.jpg/revision/latest/scale-to-width-down/180?cb=20120321200646",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/5b/Stray_dog.jpg/revision/latest/scale-to-width-down/180?cb=20120321200646"
+    ],
+    "author": "ClericofMadness Originally uploaded on August 14th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Animals",
+      "Disappearances"
+    ]
+  },
+  {
+    "name": "Dogs Dos and Don'ts",
+    "url": "https://creepypasta.fandom.com/wiki/Dogs_Dos_and_Don'ts",
+    "description": "I'm not much of a book lover, because they've never really interested me all that much. All I really love is dogs, because they are just so cute and fluffy; they truly are man's best friend. Well, my mother and father want me to start reading, so they tried to find me a book on dogs. Makes sense, doesn't it? The thing is though, there aren't many book shops in town (or anywhere near), and my parents are fervent technophobes. I would never be able to convince them to buy some stuff on the web abo",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 13th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "NSFW",
+      "Animals",
+      "Books",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Dogscape",
+    "url": "https://creepypasta.fandom.com/wiki/Dogscape",
+    "description": "Originally created by users on the Something Awful forums and 4chan as a creative writing collaboration. Log One I awaken. I don't know it at the moment, but this day marks my fourth straight year of existing in the dogscape. I push myself up from the carpet of writhing, twitching dogflesh beneath me and rise to my feet, stretching in the morning sun. It took me a while to learn to balance on the layer of solid dogs that now blankets every inch of solid ground, but nowadays, I can walk and run a",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "NSFW",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Doll",
+    "url": "https://creepypasta.fandom.com/wiki/The_Doll",
+    "description": "I gave her the doll on her birthday. She loved it at first, and told me it was so beautiful. That its hair was so soft and the dress was so pretty. She wouldn't let it out of her sight for days. Through the daylight hours she set it on the table, so she could see it while cleaning the house, and at nighttime it sat next to the bed, watching us sleep with big blue unmoving eyes. But my daughter's love for the doll soon changed. I noticed something was bothering her. I asked, of course, but she wo",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f3/Doll.jpg/revision/latest/scale-to-width-down/180?cb=20131019170418",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f3/Doll.jpg/revision/latest/scale-to-width-down/180?cb=20131019170418"
+    ],
+    "author": "unknown Originally uploaded on November 3rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Dollar Short",
+    "url": "https://creepypasta.fandom.com/wiki/Dollar_Short",
+    "description": "I get the newspaper a day ahead of time. Unfortunately, it's not the New York Times or anything, just the plain old Aumsville Herald. It has a front page with the major AP headlines, a sports page with local results, and a funnies/crossword section alongside the obituaries. As far as I can tell, I started getting the \"special edition\" about a month ago. Once I caught on, I made a fair amount of cash in local betting, but nothing too dramatic. I never investigated how the paper got on my doorstep",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on September 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Dolly",
+    "url": "https://creepypasta.fandom.com/wiki/Dolly",
+    "description": "Hello. I just wanted to list this item because it's causing my life to be a living hell. Let me first start off by letting everyone know that I don't believe one bit in the supernatural, voodoo, witchcraft, or religion for that matter; and although I cannot explain what has been happening in my home, I would just assume get rid of this thing, nevertheless. I don't know much about this doll. My wife and I went to a garage sale a few months ago, when our 3 year old daughter pulled it out of a ches",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Items/Objects",
+      "Demon/Devil",
+      "Lovecraftian",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Don't Be So Afraid of the Dark",
+    "url": "https://creepypasta.fandom.com/wiki/Don't_Be_So_Afraid_of_the_Dark",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/41/Fgrdpfg145.jpg/revision/latest?cb=20130519182553",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/41/Fgrdpfg145.jpg/revision/latest?cb=20130519182553"
+    ],
+    "author": "KingRidley Originally uploaded on February 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Dreams/Sleep",
+      "Monsters",
+      "Theory"
+    ]
+  },
+  {
+    "name": "Don't Let the Cold Man In",
+    "url": "https://creepypasta.fandom.com/wiki/Don't_Let_the_Cold_Man_In",
+    "description": "I had a dream last night. It was the kind that seems real right up to the point where you wake up. Some things were strange about it…certain things were really strange about it, but it never occurred to me that it might not actually be happening. I’m still not prepared to say that it didn’t happen. I’m not spiritual and I don’t really understand stuff like that. I just feel like I’ve been somewhere and now I’m back, and I know something happened when I woke up… and I think while I was asleep too",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Suggested_Reading",
+      "Historical_Archive",
+      "Beings",
+      "Dreams/Sleep",
+      "Disappearances",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Don't Look Down",
+    "url": "https://creepypasta.fandom.com/wiki/Don't_Look_Down",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "41488p-fduser Originally uploaded on December 29th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "CPWX11",
+      "41488p-fduser",
+      "Beings",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Don't Mind Me",
+    "url": "https://creepypasta.fandom.com/wiki/Don't_Mind_Me",
+    "description": "I'm only here to observe. My family has always been big into conspiracies. My brother likes to ramble on about The Illuminati, and believes that Obama is the Anti-Christ. My mom can trace literally anything in life back to being the government's fault, and constantly worries about being arrested and shipped overseas for no reason. My dad, although staying silent most of the time, agrees with what my mom says. It really just annoys the hell out of me when I hear them all spewing the 2012 end-of-t",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/06/Dontmindme.jpg/revision/latest?cb=20120319000907",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/06/Dontmindme.jpg/revision/latest?cb=20120319000907"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Dreams/Sleep",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Don't Turn off the Webcam",
+    "url": "https://creepypasta.fandom.com/wiki/Don't_Turn_off_the_Webcam",
+    "description": "Linh and I met in 2008. She was from a very small town in Washington with a population of less than five hundred. I was working my way through college as an event bartender in Portland. Linh’s cousin was getting married in Portland, and as fate would have it, the wedding reception was held at an upscale hotel on the Columbia River where I frequently tended to small wine and beer bars. I noticed her immediately, as I often notice women that I quickly convince myself are too beautiful to ever date",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on September 26th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Don't Turn on the Light!",
+    "url": "https://creepypasta.fandom.com/wiki/Don't_Turn_on_the_Light!",
+    "description": "She commandeered the room in the basement of her dorm as soon as she realized she would have to pull an all-nighter in order to prepare for tomorrow’s final exam. Her roommate, Jenna, liked to get to bed early, so she packed up everything she thought she would need and went downstairs to study . . . and study . . . and study some more. It was two o’clock, when she realized that she’d left one of the textbooks upstairs on her bed. With a dramatic sigh, she rose, and climbed the stairs slowly to h",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "Don't Worry About It",
+    "url": "https://creepypasta.fandom.com/wiki/Don't_Worry_About_It",
+    "description": "You're slowly stirred awake by the distant ringing as the phone beside your bed pulls you out of your dreams. Your thoughts gather themselves and you groan, reaching over to answer. As soon as you place the phone to your ear, you're greeted by the background noise consisting of twisted screams. There were people in agonizing pain begging for help or death, not that the interference allows you to hear any individual voice clearly enough. \"Get out of the house now!\" The call ends abruptly after wh",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Doors",
+    "url": "https://creepypasta.fandom.com/wiki/Doors",
+    "description": "I was adopted. I never knew my real mother; rather, I knew her at one time, but left her side when I was too little to be able to remember. I loved my adopted family, though. They were so kind to me. I ate well, lived in a warm and comfortable house, and got to stay up pretty late. Let me tell you about my family real fast. First, there’s my mother. I never called her Mom or anything like that; I just called her by her first name, Janice. She didn’t mind at all, though. I called her that for so ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "PotM",
+      "Animals",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Doppelgänger",
+    "url": "https://creepypasta.fandom.com/wiki/Doppelgänger",
+    "description": "Legend has it that if you come face to face with your doppelgänger, it's an omen or warning of death — for both you and your twin. Because of this, if you see a replica of yourself, run for your life. If you keep seeing your doppelgänger, chances are that your days are numbered, because you'll soon see your demise. There are many stories regarding encounters with doppelgängers, none of them pleasant. Often, a person does not actually see their own doppelgänger, but someone else does. Can you be ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/12/Dopple.jpg/revision/latest/scale-to-width-down/200?cb=20120412142326",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/12/Dopple.jpg/revision/latest/scale-to-width-down/200?cb=20120412142326"
+    ],
+    "author": "unknown Originally uploaded on January 30th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Beings",
+      "Theory",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Doug's Real Life",
+    "url": "https://creepypasta.fandom.com/wiki/Doug's_Real_Life",
+    "description": "Everyone remembers Doug, one of the original three Nicktoons. It seemed like a pretty normal show about the challenges a young boy faced in his daily life, but I always got a weird kind of feeling from it. Compared to other kid's shows, Doug seemed more negative and anxiety-centered. Doug was always worried about something, and in most episodes, he would have fantasies of everyone he knew cruelly laughing at him due to whatever problem he was facing that week. Doug always came through in the end",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes",
+      "KI_Simpson"
+    ]
+  },
+  {
+    "name": "The Doughboy - The Ghost of the Great War",
+    "url": "https://creepypasta.fandom.com/wiki/The_Doughboy_-_The_Ghost_of_the_Great_War",
+    "description": "A common US soldier of WWI, aka: \"Doughboy\". It's been said that in the Argonne forest in France, on JUST the right day in the summer, you will hear distant thunder and meet a man in old military gear shrouded in fog. He will motion to you to follow him. If you don't, your corpse will end up found in the forest. Cause of death: apparent lacerations due to shrapnel wounds. If you follow him, you will survive. He will take you to an open field, scarred by craters of the Great War. Eventually, fog ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/6f/Doughboy.jpg/revision/latest/scale-to-width-down/180?cb=20110416031726",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6f/Doughboy.jpg/revision/latest/scale-to-width-down/180?cb=20110416031726"
+    ],
+    "author": "unknown Originally uploaded on April 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "History",
+      "Military",
+      "Ritual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Down the Rabbit Hole",
+    "url": "https://creepypasta.fandom.com/wiki/Down_the_Rabbit_Hole",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/cc/Forest1-1.jpg/revision/latest/scale-to-width-down/250?cb=20121119044909",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/cc/Forest1-1.jpg/revision/latest/scale-to-width-down/250?cb=20121119044909",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b5/Cheshirecat.png/revision/latest/scale-to-width-down/180?cb=20131001211103"
+    ],
+    "author": "LoVeLy_MoNsTeR Originally uploaded on November 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Books",
+      "Places",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Dream Death",
+    "url": "https://creepypasta.fandom.com/wiki/Dream_Death",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/dc/What-is-Lucid-Dreaming.jpg/revision/latest/scale-to-width-down/220?cb=20140315232650",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/dc/What-is-Lucid-Dreaming.jpg/revision/latest/scale-to-width-down/220?cb=20140315232650"
+    ],
+    "author": "ClericofMadness Originally uploaded on January 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Reality",
+      "Dreams/Sleep",
+      "Theory",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Dream Memories",
+    "url": "https://creepypasta.fandom.com/wiki/Dream_Memories",
+    "description": "Do you ever have dreams that give you false memories? They're when something happens in a dream and you remember it as being real. They can be an inconsequential, imaginary episode of your favorite TV show, or an important childhood memory that could have completely changed your life. I started having a series of dreams like this. In the dream, I was in a small house in the middle of a huge, empty field. I was just standing in the living room, thinking. I had memories of myself in the house, dec",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d1/Fear_of_sleep.jpg/revision/latest/scale-to-width-down/250?cb=20130802121022",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d1/Fear_of_sleep.jpg/revision/latest/scale-to-width-down/250?cb=20130802121022"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Mental_Illness",
+      "KI_Simpson"
+    ]
+  },
+  {
+    "name": "Dream of Waking",
+    "url": "https://creepypasta.fandom.com/wiki/Dream_of_Waking",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "CaptainCutler'sGhost Originally uploaded on April 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Dreams/Sleep",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Dust",
+    "url": "https://creepypasta.fandom.com/wiki/Dust",
+    "description": "The last storm was already on the horizon when I woke that Sunday morning. It hung in the south, a solid black wall of dust, churning and seemingly motionless. I’d every intention of sleeping late into the morning, as had been my Sunday custom since Adele and the girls had left, but the distant rumbling and crackle of lightning drug me from the bed just after sunrise. I shuffled drowsily around the farm in the early morning, lashing the doors of the barn, rounding up the two stubborn hogs, and s",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/c9/Dustbowl.jpg/revision/latest/scale-to-width-down/180?cb=20120123190744",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c9/Dustbowl.jpg/revision/latest/scale-to-width-down/180?cb=20120123190744"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "Monsters",
+      "History"
+    ]
+  },
+  {
+    "name": "Dusty Corners",
+    "url": "https://creepypasta.fandom.com/wiki/Dusty_Corners",
+    "description": "A Black Widow. My friend liked to keep things clean in her house, but as a single parent with six kids to look after, she sometimes couldn't get around to everything and everyone as often as she would have liked. Her bathroom in particular had poor lighting, so it had taken her a while to notice how dusty it had become in places. When she went to straighten it up, she discovered an unwelcome inhabitant living on the underside of her toilet tank: a female black widow spider. She immediately kille",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/1c/800px-Black_Widow_Spider_07-04-20.jpg/revision/latest/scale-to-width-down/270?cb=20120121022924",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1c/800px-Black_Widow_Spider_07-04-20.jpg/revision/latest/scale-to-width-down/270?cb=20120121022924"
+    ],
+    "author": "unknown Originally uploaded on April 10th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Dwain's Circle Report",
+    "url": "https://creepypasta.fandom.com/wiki/Dwain's_Circle_Report",
+    "description": "November 29, 2009 I have been instructed to keep this journal while we’re here and turn it in for inspection at the end of deployment. Don’t understand what’s going on. Told to prepare for three month deployment to unknown, potentially hostile location called Dwain’s Circle. Is that a code name? To top it off, we don’t even know how we’re getting there. It’s classified. They’re going to dope us up and then drop us off there; only the LT and Sarge know how to get there or back. Sounds like bullsh",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on June 11th",
+    "date": "November 29, 2009",
+    "categories": [
+      "Historical_Archive",
+      "Military",
+      "Diary/Journal",
+      "Beings",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Dyatlov Pass Incident",
+    "url": "https://creepypasta.fandom.com/wiki/Dyatlov_Pass_Incident",
+    "description": "In the winter of 1959, nine university students died mysteriously while hiking in the Ural mountains, located in the former Soviet Union. Details never leaked out to the public until well after the fall of the iron curtain due to the unusual circumstances contained in the report. The bodies of the hikers were found not far from their camp, which had been nearly destroyed. Investigators followed footprints to what looked to be the site of a small bonfire and the first two bodies. Inexplicably, th",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/0c/Dyatlov.jpg/revision/latest/scale-to-width-down/193?cb=20110518034531",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0c/Dyatlov.jpg/revision/latest/scale-to-width-down/193?cb=20110518034531"
+    ],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment",
+      "Places",
+      "Reality",
+      "Nature"
+    ]
+  },
+  {
+    "name": "Déjà Vu",
+    "url": "https://creepypasta.fandom.com/wiki/Déjà_Vu",
+    "description": "An instance of déjà vu is actually a glitch in reality, and it indicates that something has just been changed. Someone or something has ceased to exist, all memories and records of their existence erased forever. Déjà vu happens when they get into your brain, when they need to change your memories. Maybe to erase your brother from the world. You know, the brother that you never had.",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Theory",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "East",
+    "url": "https://creepypasta.fandom.com/wiki/East",
+    "description": "It’s been a long time since I’ve seen the Storm. It’s always been there, behind us, whispering through the shuddering ground. A background roar behind the wind. We’d been ahead for so long, moving slightly faster than its clockwork crawl. Until the mountains. Then, as we ground ourselves upward against these slopes, we heard it rumbling closer, a rising quake in the earth. But it’s been a while since I turned around and actually saw it. Sitting here on the side of the mountain, in the frigid mor",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "Weird",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Easter Egg - Snow on Mt. Silver",
+    "url": "https://creepypasta.fandom.com/wiki/Easter_Egg_-_Snow_on_Mt._Silver",
+    "description": "Art by Polyhexian . So, my brother and I, we kind of grew up on Pokémon. Around here a lot of kids did. It worked out perfectly for us, too - every time a new gen came out one of us would get one version, one of us would get the other, and since our mom liked to spoil us, we both got the 3rd one. This is going to sound, at first, like a bittersweet story about two siblings who grow up with a couple of games that eventually take them down two different roads… Well, it’s a little more than that. T",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/03/Easter_egg_snow_on_mt_silver_by_draikinator-d31l1bz.jpg/revision/latest/scale-to-width-down/300?cb=20110428230306",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/03/Easter_egg_snow_on_mt_silver_by_draikinator-d31l1bz.jpg/revision/latest/scale-to-width-down/300?cb=20110428230306",
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ed/Stuff....png/revision/latest?cb=20120401232729",
+      "https://static.wikia.nocookie.net/creepypasta/images/5/50/Snowonmtsilver.png/revision/latest?cb=20111025235448"
+    ],
+    "author": "unknown Originally uploaded on April 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PokéMon"
+    ]
+  },
+  {
+    "name": "Ed, Edd n Eddy Lost Episode",
+    "url": "https://creepypasta.fandom.com/wiki/Ed,_Edd_n_Eddy_Lost_Episode",
+    "description": "As you may know, the popular show \"Ed, Edd and Eddy\" has been running for a long time. However, in 2003, between October 7th and 21st, episode 34 was accidentally released one week before it was scheduled to. It was known to some around the office that the primary writer of the show had been sick with the flu, so instead of going on to make episode 34, the show was supposed to replay episode 1. At 5:00am eastern, people reported a very disturbing new episode premiering on Cartoon Network - some ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "NSFW",
+      "Lost_Episodes",
+      "Troll_Pasta",
+      "Videos"
+    ]
+  },
+  {
+    "name": "Egg Sac",
+    "url": "https://creepypasta.fandom.com/wiki/Egg_Sac",
+    "description": "I thought it would be a good idea. I thought I could lock myself in, that I could keep them out. I even thought I could wait them out; I'd have a fresh water supply, I'd be able to hold out for weeks. It's not like they could break down the door; they're so small... I rolled up a towel, got it nice and wet in the sink, stuffed it at the bottom of the door. I turned on the fan, just in case they tried to come around through the vents. It also helped to drown out my family's screams... I must have",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/55/Spider_egg_sac_mason_farm_111407.jpg/revision/latest/scale-to-width-down/220?cb=20120402075309",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/55/Spider_egg_sac_mason_farm_111407.jpg/revision/latest/scale-to-width-down/220?cb=20120402075309"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Animals",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "An Egg",
+    "url": "https://creepypasta.fandom.com/wiki/An_Egg",
+    "description": "It was a car accident. Nothing particularly remarkable, but fatal nonetheless. You left behind a wife and two children. It was a painless death. The EMTs tried their best to save you, but to no avail. Your body was so utterly shattered you were better off, trust me. And that's when you met me. \"What... what happened?\" you asked. \"Where am I?\" \"You died,\" I said, matter-of-factly. No point mincing words. \"There was a... a truck and it was skidding...\" \"Yup,\" I said. \"I... I died?\" \"Yup. But don't",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/21/An_egg.jpg/revision/latest/scale-to-width-down/180?cb=20110716041432",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/21/An_egg.jpg/revision/latest/scale-to-width-down/180?cb=20110716041432"
+    ],
+    "author": "Andy Weir",
+    "date": null,
+    "categories": [
+      "Reality",
+      "Gods",
+      "Suggested_Reading",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Eh Oh",
+    "url": "https://creepypasta.fandom.com/wiki/Eh_Oh",
+    "description": "\"Eh-oooh,\" Julia said, sitting in her playpen. Dan could hear her sloshing her juice around in the sippy cup from across the room as she waved and attempted to say \"hello\". \"Hi, babygirl,\" he said, lounging in the recliner next to the fireplace and looking intently at his laptop. He gave a half-hearted wave back, still reading the news. As he switched between his multiple open windows, from a comic to stock listings to a news site, his daughter tossed the juice cup over the edge. He heard it hit",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/be/Ehoh.jpg/revision/latest/scale-to-width-down/180?cb=20110711070400",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/be/Ehoh.jpg/revision/latest/scale-to-width-down/180?cb=20110711070400"
+    ],
+    "author": "unknown Originally uploaded on July 11th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Beings",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "Eleanor",
+    "url": "https://creepypasta.fandom.com/wiki/Eleanor",
+    "description": "Pitch black. You can't see a thing. Cold hard floor. Head throbbing. Hard to think. Jogging. You were jogging through the park. It's starting to come back now. You had just crossed the lane by the cherry trees. You were rounding the maintenance shed. It hurts to think. You were jogging through the park. It was warmer than usual. You were rounding the maintenance shed. You quickened your pace because you never trusted the look of that old shed. You're shivering. The floor is cold and hard. It sap",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/ce/Winter_Night_in_a_Park.jpg/revision/latest/scale-to-width-down/276?cb=20120411203312",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/ce/Winter_Night_in_a_Park.jpg/revision/latest/scale-to-width-down/276?cb=20120411203312"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Places",
+      "Disappearances"
+    ]
+  },
+  {
+    "name": "The Elements: Fire",
+    "url": "https://creepypasta.fandom.com/wiki/The_Elements:_Fire",
+    "description": "You might have heard of a song called \" The Elements: Fire \", or as some people call it, \"Mrs. O'Leary's Cow\", or simply \"Fire\". For those of you who don't know, \"Fire\" is an instrumental song on an unreleased album by The Beach Boys titled 'Smile'. The song was intended to part of a suite of songs called \"The Elements\", with each song based on an element of classic mythology, like earth, air, water and so forth. Artist's despiction of the Great Chicago Fire. According to Brian Wilson, the song ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/39/GreatChicagoFire.jpg/revision/latest/scale-to-width-down/250?cb=20250908171950",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/39/GreatChicagoFire.jpg/revision/latest/scale-to-width-down/250?cb=20250908171950"
+    ],
+    "author": "unknown Originally uploaded on May 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Music",
+      "History"
+    ]
+  },
+  {
+    "name": "Elizabeth Krull",
+    "url": "https://creepypasta.fandom.com/wiki/Elizabeth_Krull",
+    "description": "The phone rings. I run to get it, thinking it may be my dad, coming to rescue me from Myrlie's house and tell me everything about Elizabeth. Then everything would be alright; Mom would stop crying, Elizabeth would just be some girl Mom knew during childhood, and everything would be alright. I finally reach the phone. \"Oh, Elizabeth!\" the person on the other end cries. It's not my dad. It's Mom. \"Mom? This is Bethany. Not Elizabeth.\" \"Oh, Elizabeth, you silly girl! Is this one of your made up ali",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on April 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Science",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Elmo in a Box",
+    "url": "https://creepypasta.fandom.com/wiki/Elmo_in_a_Box",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d2/Tickle_Me_Elmo.jpg/revision/latest/scale-to-width-down/180?cb=20120703095523",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d2/Tickle_Me_Elmo.jpg/revision/latest/scale-to-width-down/180?cb=20120703095523"
+    ],
+    "author": "Gigaman20 Originally uploaded on June 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "Elvis",
+    "url": "https://creepypasta.fandom.com/wiki/Elvis",
+    "description": "There are many reasons to believe that Elvis Presley is dead. When the only arguments otherwise come from crazed fans and supermarket tabloids, it is easy to dismiss the possibility that the King is still among us. However, the circumstances surrounding Elvis's alleged death are quite mysterious and beg closer attention. As it turns out, there are many concrete reasons to believe that the King is still alive. The Gravesite For starters, Elvis's name is spelled wrong on his headstone. Elvis's ful",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/17/Elvisconcert.jpg/revision/latest/scale-to-width-down/250?cb=20250908165042",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/17/Elvisconcert.jpg/revision/latest/scale-to-width-down/250?cb=20250908165042"
+    ],
+    "author": "Gail Brewer-Georgio about a legendary performer who had several identities and wanted to fake his death",
+    "date": "August 16, 1977",
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "History",
+      "Disappearances"
+    ]
+  },
+  {
+    "name": "Emails from Scotland",
+    "url": "https://creepypasta.fandom.com/wiki/Emails_from_Scotland",
+    "description": "A friend of mine went up to Scotland recently, and got back a few days ago. I forget the exact reason he went. These are the emails he's been sending me. They get really strange as they go on, so I thought I'd share them to see if you guys would have any theories on what the hell's going on. I'm omitting some stuff about our personal lives and general stuff which nobody would be interested in. Received Thursday, 2:32am I'm home, and glad about it. Scotland itself was kind of dull, but the trip d",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/93/Images_%2839%29.jpg/revision/latest/scale-to-width-down/272?cb=20130727193526",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/93/Images_%2839%29.jpg/revision/latest/scale-to-width-down/272?cb=20130727193526"
+    ],
+    "author": "unknown Originally uploaded on June 12th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Beings",
+      "Diary/Journal",
+      "Music"
+    ]
+  },
+  {
+    "name": "Emerald Eyes",
+    "url": "https://creepypasta.fandom.com/wiki/Emerald_Eyes",
+    "description": "Seven years ago, during my summer vacation, my parents were killed by a kid who broke into our house. I had just come in from swimming in the lake. It was getting late and the sun was setting. I was changing into dry clothes when I heard a loud noise from the living room. Mommy and Daddy were always fighting, so I passed it off as that. But being curious, I opened my door an inch and peeked down the hall to see what I could see. There was a dark stain on the carpet in the living room. \"Maybe Mom",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/1e/Eye.jpg/revision/latest/scale-to-width-down/275?cb=20140706014518",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1e/Eye.jpg/revision/latest/scale-to-width-down/275?cb=20140706014518"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Mental_Illness",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Emotional Acting",
+    "url": "https://creepypasta.fandom.com/wiki/Emotional_Acting",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "The Aeronaut Originally uploaded on March 23rd",
+    "date": null,
+    "categories": [
+      "Pages_with_broken_file_links",
+      "Historical_Archive",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "The End of Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_End_of_Man",
+    "description": "I think this might be the end. For us, anyway. You know, man and all that we've accomplished. I've had plenty of time to think about it since the last time I saw the sun — the last time I'd ever see it. It's not the end of the world, but it is for us. I guess it started almost a month ago, but it could be longer; there's only the clocks scattered around the house to tell me how long, and half of them are dead now. Anyway, I'm straying from the point. It was on the news. A cruise ship sank for no",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/47/Quickadoodle.jpg/revision/latest?cb=20121115144553",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/47/Quickadoodle.jpg/revision/latest?cb=20121115144553"
+    ],
+    "author": "unknown Originally uploaded on March 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Nature"
+    ]
+  },
+  {
+    "name": "End of the Line",
+    "url": "https://creepypasta.fandom.com/wiki/End_of_the_Line",
+    "description": "My name is Gerald. I'm a truck driver. I work for the North American Transport Company (NATCO). I normally make runs up into southern Canada, but this time was different; my boss had asked me to make a run up north, way north. It was further than I normally went, but the boss was offering me double overtime for this one run, saying it was for a really important client. Normally I would have put up more of a fight, as I liked to stick to my schedule, but I really needed the money. The run was mos",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on July 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Vehicles",
+      "Places"
+    ]
+  },
+  {
+    "name": "The End",
+    "url": "https://creepypasta.fandom.com/wiki/The_End",
+    "description": "On his way home that night, as he walked through town, a man stepped out of an alley in front of him. He tensed to defend himself, but the man just stood there. Looking him over, he realized the man looked like a comedy caricature hippie - long, unwashed hair and beard, sandals, and a sandwich board reading \"THE END IS NEAR\". That, he thought, was unusual, even for a hippie. \"You want something?\" he asked. \"The world's ending,\" said the hippie. \"I need your help.\" He stepped around the hippie an",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Gods",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Endor Holocaust",
+    "url": "https://creepypasta.fandom.com/wiki/The_Endor_Holocaust",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/2a/Ds2.jpg/revision/latest/scale-to-width-down/300?cb=20120307021412",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2a/Ds2.jpg/revision/latest/scale-to-width-down/300?cb=20120307021412"
+    ],
+    "author": "Sadofreedomist Originally uploaded on March 5th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Theory",
+      "Television",
+      "Science",
+      "Space"
+    ]
+  },
+  {
+    "name": "Enlightenment",
+    "url": "https://creepypasta.fandom.com/wiki/Enlightenment",
+    "description": "The old monk lets out a sigh. For nearly a hundred years now, he's sought the Truth. He's traveled far and wide to meet religious leaders and philosophical giants to discuss the true nature of the universe. He isn't satisfied. He knows men pervert the wishes of their gods to their own ends. Science has only revealed so much to us. He now meditates in the silence of a deep cavern. There is no outside world to distract him. It's just him and his mind. He mouths silent chants. He is emaciated and u",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lovecraftian",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Euler's Identity",
+    "url": "https://creepypasta.fandom.com/wiki/Euler's_Identity",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Daltsch Originally uploaded on September 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Theory",
+      "Dismemberment",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Europa",
+    "url": "https://creepypasta.fandom.com/wiki/Europa",
+    "description": "Europa is one of the many moons of Jupiter. Its most interesting characteristic is the thick layer of ice covering a liquid water ocean. The water is kept from solidifying by the gravitational pull of Jupiter, causing heat to vent from the ocean floor. This is very similar to vents on Earth's own ocean floors, which are teeming with life. The various temperatures ranging from warm to freezing would allow any potential life to avoid the warm-blooded size barrier brought on by overheating. Size wo",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/63/Europa.png/revision/latest/scale-to-width-down/180?cb=20120829213728",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/63/Europa.png/revision/latest/scale-to-width-down/180?cb=20120829213728"
+    ],
+    "author": "unknown Originally uploaded on August 29th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Science",
+      "Space",
+      "Monsters",
+      "Micropasta",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Evaporation",
+    "url": "https://creepypasta.fandom.com/wiki/Evaporation",
+    "description": "Water. Water is the cornerstone of life. It nourishes us, irrigates our crops, and maintains our livestock. Water is vital for all known forms of life. We rely on it to wash our cars, clean our food, and produce our power. It has an effect on almost every activity in everyday life. Without it, civilization would cease to function. Governments would collapse, crippled by an unbeatable enemy: drought. It would be a matter of days – no longer than a week – before every living being on Earth perishe",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Diary/Journal",
+      "Science",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Exit",
+    "url": "https://creepypasta.fandom.com/wiki/Exit",
+    "description": "I know this road better than I know myself. I know each of Interstate 85’s 250 odd miles; I know that it takes me an average of 3 hours and 26 minutes to drive west, from Charlotte to Atlanta, and an average of 3 hours and 29 minutes to make the same trip going eastward. I know the price of gas at a dozen stands, and the closing hours of each fast food shack and greasy diner. I know the curves of each low hill and I know each stand of pine and oak trees. I know the stretching dark of the long wi",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/79/Exit0006.jpg/revision/latest?cb=20110129022755",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/79/Exit0006.jpg/revision/latest?cb=20110129022755"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "Crime",
+      "Places",
+      "Ghosts",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "Experiment 84-B",
+    "url": "https://creepypasta.fandom.com/wiki/Experiment_84-B",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Stickshows Originally uploaded on April 7th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Science",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Faceless Man",
+    "url": "https://creepypasta.fandom.com/wiki/Faceless_Man",
+    "description": "It was a nice day. Fresh, light, warm. A most harmless of days. Until I heard my mother scream so loud it would've woken the devil. I found her standing in the garden in hysterics, pacing back and forth, looking in bushes and over fences. I grabbed her and tried to speak, but she just kept screaming. I gave her a slap, and it actually worked. \"What happened, what's wrong?\" My mother's pale face replied, \"Your sister, she's gone. I was watching her play with the flowers, and when I blinked a man ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on November 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Memes",
+      "Crime"
+    ]
+  },
+  {
+    "name": "Faces in the Storm",
+    "url": "https://creepypasta.fandom.com/wiki/Faces_in_the_Storm",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/24/Storm.jpg/revision/latest/scale-to-width-down/274?cb=20120531233219",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/24/Storm.jpg/revision/latest/scale-to-width-down/274?cb=20120531233219"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Dr._Malpractice",
+      "Beings",
+      "Nature"
+    ]
+  },
+  {
+    "name": "Faded Memories",
+    "url": "https://creepypasta.fandom.com/wiki/Faded_Memories",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/c0/Campfire_View.jpg/revision/latest/scale-to-width-down/250?cb=20120510153944",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c0/Campfire_View.jpg/revision/latest/scale-to-width-down/250?cb=20120510153944"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dr._Malpractice",
+      "Beings",
+      "Mental_Illness",
+      "Nature"
+    ]
+  },
+  {
+    "name": "Failed Rituals",
+    "url": "https://creepypasta.fandom.com/wiki/Failed_Rituals",
+    "description": "I really wish I had left that fucking light switch alone! Who would have thought the flick of a switch could mean the difference between life and death? Actually, everyone’s thought that. That’s why I turned it on. Stupid little rituals that we take from childhood. The light will chase the monsters away, the blanket over your head will save you from the boogieman. It seems like you just get more of these rituals as you get older. As long as you lock the doors and turn on the home security system",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b9/Lightswitch.jpg/revision/latest/scale-to-width-down/180?cb=20130301151309",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b9/Lightswitch.jpg/revision/latest/scale-to-width-down/180?cb=20130301151309"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Dreams/Sleep",
+      "Monsters",
+      "Ritual"
+    ]
+  },
+  {
+    "name": "Faith Buddies",
+    "url": "https://creepypasta.fandom.com/wiki/Faith_Buddies",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/4e/Faith_buddies_by_cosbydaf-d5l92dx.png/revision/latest?cb=20130130074430",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4e/Faith_buddies_by_cosbydaf-d5l92dx.png/revision/latest?cb=20130130074430"
+    ],
+    "author": "Cosbydaf Originally uploaded on November 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil",
+      "Television"
+    ]
+  },
+  {
+    "name": "Fallout 3: Numbers Station",
+    "url": "https://creepypasta.fandom.com/wiki/Fallout_3:_Numbers_Station",
+    "description": "Fallout 3 contains several in-game radio stations. The most diverse and important is Galaxy News Radio. Many players of the evil persuasion know that you can kill Three Dog , the station's host, and he will be replaced by the technician Margaret. She is not a charismatic person and has very little to say, seeming to not enjoy her new announcing duties. She also never appears in person, and therefore cannot be killed. Once Three Dog is dead, you're stuck with Margaret. What most players do NOT kn",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/c0/Fallout_3_cover_art.png/revision/latest?cb=20120403185247",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c0/Fallout_3_cover_art.png/revision/latest?cb=20120403185247",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/08/F3ns.png/revision/latest/scale-to-width-down/330?cb=20240327135900"
+    ],
+    "author": "unknown Originally uploaded on November 11th",
+    "date": null,
+    "categories": [
+      "Appealed_Stories",
+      "Historical_Archive",
+      "Video_Games",
+      "Ritual"
+    ]
+  },
+  {
+    "name": "Family Heirlooms",
+    "url": "https://creepypasta.fandom.com/wiki/Family_Heirlooms",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/de/Antcolony.jpg/revision/latest?cb=20120305042025",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/de/Antcolony.jpg/revision/latest?cb=20120305042025"
+    ],
+    "author": "Oddstranger Originally uploaded on December 6th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Fetid Cage",
+    "url": "https://creepypasta.fandom.com/wiki/Fetid_Cage",
+    "description": "As I walked nervously to the stairs, my sleeve brushed along the rusted bars of her cage, and to my absolute horror, she awoke. A frail voice resonated from the stagnant corner - that ancient, fetid prison that had laid untouched for over a decade, and kept us safe from the unimaginable hate within. As her words began to form, interjected by that awful wheezing, a cold sweat crept through my body. I should not have come through here. I should have stayed upstairs. \"Daddy please! Let me out... ju",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on September 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Fetish",
+    "url": "https://creepypasta.fandom.com/wiki/Fetish",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/4f/Bbb.jpg/revision/latest/scale-to-width-down/180?cb=20130928233206",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4f/Bbb.jpg/revision/latest/scale-to-width-down/180?cb=20130928233206"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "NSFW",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "The Final Days",
+    "url": "https://creepypasta.fandom.com/wiki/The_Final_Days",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a1/1305859364282.png/revision/latest/scale-to-width-down/320?cb=20120204224827",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a1/1305859364282.png/revision/latest/scale-to-width-down/320?cb=20120204224827"
+    ],
+    "author": "XenoDeath888 Originally uploaded on February 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Zelda"
+    ]
+  },
+  {
+    "name": "Findagrave.com",
+    "url": "https://creepypasta.fandom.com/wiki/Findagrave.com",
+    "description": "One day, I was screwing around at school. I was on our school's home page, procrastinating on some random PowerPoint I should've been finishing. On the side of our school's home page, it shows links for our classes that we use when we go on the computers. One of the websites was called \"www.findagrave.com\". I thought about it for a second, then clicked on it. But before I did, I felt uneasy. Like, why is this here? It wasn't like we were doing some ancestry project or anything. It made me feel o",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/8a/Findagrave.png/revision/latest?cb=20121006035841",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8a/Findagrave.png/revision/latest?cb=20121006035841"
+    ],
+    "author": "unknown Originally uploaded on October 6th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "First Light",
+    "url": "https://creepypasta.fandom.com/wiki/First_Light",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "TheLimo64 Originally uploaded on March 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "The Fish in the Mirror",
+    "url": "https://creepypasta.fandom.com/wiki/The_Fish_in_the_Mirror",
+    "description": "The Fish is a shifting and shining creature that nobody has ever caught, but one that many say they have glimpsed in the depths of mirrors. According to Herbert Allen Giles, belief in the Fish is part of a larger myth that goes back to the times of the Yellow Emperor. In those days, the world of mirrors and the world of men were not, as they are now, cut off from each other. They were, besides, quite different; neither beings nor colors nor shapes were the same. Both kingdoms lived in harmony; y",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a5/Fishmirror.jpg/revision/latest/scale-to-width-down/180?cb=20101222072057",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a5/Fishmirror.jpg/revision/latest/scale-to-width-down/180?cb=20101222072057"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Beings",
+      "Animals",
+      "Historical_Archive",
+      "Mirrors",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Five",
+    "url": "https://creepypasta.fandom.com/wiki/The_Five",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Scythemantis Originally uploaded on November 22nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Weird",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Five-String Guitar",
+    "url": "https://creepypasta.fandom.com/wiki/Five-String_Guitar",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/3f/Guitar.png/revision/latest/scale-to-width-down/252?cb=20121208022917",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/3f/Guitar.png/revision/latest/scale-to-width-down/252?cb=20121208022917"
+    ],
+    "author": "JrvUnleashed Originally uploaded on September 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Items/Objects",
+      "Disappearances",
+      "Music"
+    ]
+  },
+  {
+    "name": "The Flatwoods Monster",
+    "url": "https://creepypasta.fandom.com/wiki/The_Flatwoods_Monster",
+    "description": "The original drawing of the creature, made by an uncredited New York sketch artist. A newspaper account of the event. A composited depiction of the creature. On the evening of September 12, 1952, a UFO was reported to have crashed in the forest by some people living in Flatwoods, a small town in Braxton County, West Virginia. The occurrence was initially sighted by a group of three boys, who witnessed a bright light crossing the sky before supposedly coming to rest upon the property of a local f",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/05/Originalflatwoods2.jpg/revision/latest/scale-to-width-down/180?cb=20260115030006",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/05/Originalflatwoods2.jpg/revision/latest/scale-to-width-down/180?cb=20260115030006",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2a/Originalflatwoods.jpg/revision/latest/scale-to-width-down/180?cb=20260115025825",
+      "https://static.wikia.nocookie.net/creepypasta/images/a/ac/Flatwoodsalien.jpg/revision/latest?cb=20120625170601"
+    ],
+    "author": null,
+    "date": "September 12, 1952",
+    "categories": [
+      "Historical_Archive",
+      "Cryptids",
+      "History",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Floyd",
+    "url": "https://creepypasta.fandom.com/wiki/Floyd",
+    "description": "Preface M- I know I've been dragging my heels getting this to you. Truth be told, I was a few pints in when I agreed to do this and am now reluctant to retell this story. I've changed a few details because I don't need to get into trouble at work (I'll refer to myself as Mr. C), but the story itself is accurate. I've included the background for your readers, so feel free to edit that as you see fit. I just ask that you leave in the bits about the conditions at the schools, because sharing that w",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/1e/Silent-creepypasta1.jpg/revision/latest/scale-to-width-down/250?cb=20110713094101",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1e/Silent-creepypasta1.jpg/revision/latest/scale-to-width-down/250?cb=20110713094101",
+      "https://static.wikia.nocookie.net/creepypasta/images/d/df/Silent-creepypasta2.jpg/revision/latest/scale-to-width-down/250?cb=20110713094203",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/10/Silent-creepypasta3.jpg/revision/latest/scale-to-width-down/250?cb=20110713094259",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f4/Silent-creepypasta4.jpg/revision/latest/scale-to-width-down/250?cb=20110713094427",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/79/Silent-creepypasta5.jpg/revision/latest/scale-to-width-down/180?cb=20110713094521"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "Fog",
+    "url": "https://creepypasta.fandom.com/wiki/Fog",
+    "description": "If you are reading this, then I am dead, and you are standing aboard a derelict Cyclone class patrol ship, the USS Mistral, with her engines dead and her electrical systems nonfunctional. I am, was, the XO of this vessel, Lieutenant Commander Ryan Simmons. Please read this carefully. If you are an officer or enlisted man in the United States Navy, this is an order: Scuttle this vessel, immediately. Do not finish this letter. Get off the Mistral at once, and send her down. Consider this a quarant",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/75/Fog.gif/revision/latest/scale-to-width-down/282?cb=20110918210543",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/75/Fog.gif/revision/latest/scale-to-width-down/282?cb=20110918210543"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "PotM",
+      "Suggested_Reading",
+      "Military",
+      "Nature",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "For the Few",
+    "url": "https://creepypasta.fandom.com/wiki/For_the_Few",
+    "description": "I’m the easiest to talk to because I go by so many different names. Every person in every country has heard of me, and spoken of me when things are at their very worst. And I’m so easy to call upon. All you have to do is ask. No ritual to adhere to. No prayer. No personal relationship. Just ask. Once, earnestly. I’m ever so popular. I’m in your music, your news, and even in your food. I’m Santa Claus, the Easter Bunny, Haphaestus and Nietschze. I was there, guiding the hand of Shakespeare, Dahme",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on April 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Weird",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Forest Eternal",
+    "url": "https://creepypasta.fandom.com/wiki/Forest_Eternal",
+    "description": "Joelle had never liked it here. Beth and Amy have never enjoyed this place either, I don’t really understand them. I think it’s beautiful here. We have a nice, cozy home out here in the forest. It’s lovely, secluded, quiet, and lost in time. Lost in time…that’s what I love the most, from the moment we moved in, it seemed like time had frozen. For the longest time my sisters and I wouldn’t believe it, but now we are convinced. You see, we didn’t always live here; we came from a land very far away",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/cc/397px-Forest_Temple_%28Ocarina_of_Time%29_%281%29.png/revision/latest/scale-to-width-down/180?cb=20110408162420",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/cc/397px-Forest_Temple_%28Ocarina_of_Time%29_%281%29.png/revision/latest/scale-to-width-down/180?cb=20110408162420",
+      "https://static.wikia.nocookie.net/creepypasta/images/8/86/Poe_Sisters_by_HellLemur.png/revision/latest/scale-to-width-down/180?cb=20110408162508"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Zelda",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Forgotten Something",
+    "url": "https://creepypasta.fandom.com/wiki/Forgotten_Something",
+    "description": "Lately, I’ve been listening to a lot of radio. FM mostly, but I occasionally will tune into some AM stations. I live in Ontario, Canada, just about 50 kilometers north of Ottawa, Canada's capital, in a small farming community, so there really aren’t a lot of stations up here. But enough to keep you satisfied. I’ll go on long drives around empty roads just to listen to the radio. It's some of the best times I’ve had up here. I especially love listening to the AM stations where they talk about the",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f3/11radio.jpg/revision/latest/scale-to-width-down/214?cb=20121228232847",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f3/11radio.jpg/revision/latest/scale-to-width-down/214?cb=20121228232847"
+    ],
+    "author": "unknown Originally uploaded on July 26th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Forgotten Valentine",
+    "url": "https://creepypasta.fandom.com/wiki/Forgotten_Valentine",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Michael Whitehouse Originally uploaded on August 10th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Michael_Whitehouse"
+    ]
+  },
+  {
+    "name": "The Forgotten Vending Machine",
+    "url": "https://creepypasta.fandom.com/wiki/The_Forgotten_Vending_Machine",
+    "description": "There is a village somewhere in England that has not been inhabited for over twenty years. It has long since been forgotten off most maps, and only has one road in and out of it. If you manage to find it, it will seem a peaceful enough place, the derelict buildings being overgrown and nature taking back the land for herself. However, somewhere within the village is a vending machine which still has power. It will still have its original look and sell ordinary brands of drink, though with twenty-",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/bf/Oldvending.jpg/revision/latest?cb=20110827105521",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bf/Oldvending.jpg/revision/latest?cb=20110827105521"
+    ],
+    "author": "unknown Originally uploaded on January 3",
+    "date": "January 3, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Items/Objects",
+      "Places",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Fractalvore",
+    "url": "https://creepypasta.fandom.com/wiki/Fractalvore",
+    "description": "My girlfriend has a TV for a head. I never really thought much of it, though. Her parents are pretty big on bodmodding, after all (I couldn’t tell which one was her father and which one was her mother when she first introduced me to them). Sure, they say modding doesn’t affect the gametes, but hey, the world’s a pretty weird place when you think about it. However, I’ve gotta admit, having a fully functional machine for a head is a little odd. Sometimes people stare at us, but they usually just l",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on June 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Television",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Freak",
+    "url": "https://creepypasta.fandom.com/wiki/Freak",
+    "description": "The freak meandered through a group of the undead. It was nearing nightfall, and he began to head back home. His pack had plenty of food in it, and he shouldn’t have to leave his house again for another week or so. Unless one of the zombie bastards punched its way in again. He didn’t carry a gun anymore. He had figured out a while ago that they couldn’t see him. It wasn’t necessary for him to carry a gun, because if they did realize he was there he would be dead long before he could pull out any",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Monsters",
+      "Mental_Illness",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Free Water",
+    "url": "https://creepypasta.fandom.com/wiki/Free_Water",
+    "description": "It's been a week now, and life has already returned to normal... well, as normal as can be expected. People go about their lives as if nothing has happened, completely ignoring them. I don't blame them; I want to ignore them too. But I can't. I, and a few others like me, were selected for certain duties by them. I can't tell you how I know I was selected; I just know. One of them hovers near me constantly, as if watching my every move, studying me. It told me that I was in charge of my community",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/0b/Sink-water-drain.jpg/revision/latest/scale-to-width-down/244?cb=20120402005637",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0b/Sink-water-drain.jpg/revision/latest/scale-to-width-down/244?cb=20120402005637"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Science",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "A Fresh Start",
+    "url": "https://creepypasta.fandom.com/wiki/A_Fresh_Start",
+    "description": "Somewhere in West Philadelphia, you will find an old basketball court with a single ball lying in the middle. Pick it up, and start shooting hoops. After a while, a small group of hooligans will approach you and challenge you to a fight, which you must accept. After the fight, you must go home and relay the events to your mother. She will then inform you that you have an aunt and uncle living in one of the districts of Los Angeles, and out of fear, she will send you to live there for an indefini",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 25th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Memes",
+      "Troll_Pasta",
+      "Television",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Friends Don't Let Friends",
+    "url": "https://creepypasta.fandom.com/wiki/Friends_Don't_Let_Friends",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "ClericofMadness Originally uploaded on March 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Mental_Illness",
+      "Dismemberment",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Friends Like These",
+    "url": "https://creepypasta.fandom.com/wiki/Friends_Like_These",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "ClericofMadness Originally uploaded on March 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "The Gallery of Henri Beauchamp",
+    "url": "https://creepypasta.fandom.com/wiki/The_Gallery_of_Henri_Beauchamp",
+    "description": "If you visit this tiny, dingy, one-story bar in Paris, and the right bartender is behind the counter that night, you might be able to see a very exclusive gallery show of the lost works of one Henri Beauchamp. But to get in, you'll have to prove you're a devotee of the artist. You'll be asked, in clear and perfect English, \"What would like to partake of in this glorious night?\" Answer absinthe, no matter what. Any other drink, from whiskey to water, will kill you as you sleep. The next question ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/8e/48268_1248329777_submedium_large.jpg/revision/latest?cb=20110308195918",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8e/48268_1248329777_submedium_large.jpg/revision/latest?cb=20110308195918"
+    ],
+    "author": "unknown Originally uploaded on August 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "History",
+      "Places"
+    ]
+  },
+  {
+    "name": "The Gallery",
+    "url": "https://creepypasta.fandom.com/wiki/The_Gallery",
+    "description": "About fifteen years ago, I was attending university outside of London. The school is famous for its art gallery that draws visitors from all over England. My final exams were given in a cavernous hall with dozens of enormous oil paintings covering the walls from floor to ceiling. I noticed that one painting hanging to my right had been covered with a large British flag. Although I didn't think much of it at the time, I asked several of the third-year students if they knew anything about it. They",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f5/460px-Portrait_of_a_Nobleman_Aged_36_1617.jpg/revision/latest/scale-to-width-down/180?cb=20110905023337",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f5/460px-Portrait_of_a_Nobleman_Aged_36_1617.jpg/revision/latest/scale-to-width-down/180?cb=20110905023337"
+    ],
+    "author": "unknown Originally uploaded on April 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Places",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Gambler Game",
+    "url": "https://creepypasta.fandom.com/wiki/The_Gambler_Game",
+    "description": "Take a pack of playing cards, shuffle it, and deal yourself a hand from the top of the deck. Choose whichever card game you wish (Blackjack is preferred). Now look across the room and say, \"Let's play.\" If the Gambler is with you, you will feel a sudden chill down your left arm. The game has begun. Draw the Gambler his hand and play as you normally would. For the Gambler's turn, you will lay down cards randomly from his hand. You must never look at his hand before it is on the table. This will l",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Ritual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "A Game of Flashlight Tag",
+    "url": "https://creepypasta.fandom.com/wiki/A_Game_of_Flashlight_Tag",
+    "description": "When I was ten, I played a late night game of flashlight tag with a bunch of neighborhood kids. If you don't know what flashlight tag is, it's the same as tag, but you play it in the dark. The person who's \"it\" gets a flashlight, and they have to yell the name of the person they see with it in order to \"tag\" them. It was really cloudy that night, and most people had their curtains drawn, so it was the perfect level of darkness for hiding in. The side of the street my house was on was skirted by ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Disappearances",
+      "Reddit_Pastas"
+    ]
+  },
+  {
+    "name": "Gateway of the Mind",
+    "url": "https://creepypasta.fandom.com/wiki/Gateway_of_the_Mind",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Science"
+    ]
+  },
+  {
+    "name": "Generation Loss",
+    "url": "https://creepypasta.fandom.com/wiki/Generation_Loss",
+    "description": "One of the human shapes found in the video's static. The image appears during the sixth rotation of the footage. In 2007, a British audio programmer and electronic musician attempted to make a video documenting generation loss. This is when one tape is copied from another, each incarnation wearing the quality down by a certain amount. He used a spare tape made by a friend in the early nineties, featuring footage of a nearby intersection. He edited his own music into the clip, and then copied it ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e4/5868.png/revision/latest/scale-to-width-down/300?cb=20120112001923",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e4/5868.png/revision/latest/scale-to-width-down/300?cb=20120112001923"
+    ],
+    "author": "unknown Originally uploaded on October 22nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Videos",
+      "Computers_and_Internet",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Genetic Memory",
+    "url": "https://creepypasta.fandom.com/wiki/Genetic_Memory",
+    "description": "Many classic horror icons (such as Giger’s Xenomorphs , Silent Hill’s Pyramid Head , and other disturbing creatures) share common characteristics. Pale skin; dark, sunken eyes; elongated faces; sharp teeth, and the like. These images inspire horror and revulsion in many, and with good reason. The characteristics shared by these faces are imprinted in the human mind. Many things frighten humans instinctively. The fear is natural, and does not need to be reinforced in order to terrify. The fears a",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 11th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Monsters",
+      "History",
+      "Reality",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Gengar and Clefable",
+    "url": "https://creepypasta.fandom.com/wiki/Gengar_and_Clefable",
+    "description": "Gengar and Clefable have, through trademarking and beta art, been proven to have been some of the earliest Pokémon made. Coincidentally, they are also some of the first Pokémon when you list the original 151 by index number, with Gengar appearing shortly after Clefable. Also, Clefairy was originally going to be the mascot of Pokémon (instead of Pikachu), so it was going to be a pretty important Pokémon. Gengar is known as the \"Shadow Pokémon\", but what exactly is it a shadow of? Take a look at a",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/45/Images_%2811%29C.jpg/revision/latest/scale-to-width-down/170?cb=20140218135042",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/45/Images_%2811%29C.jpg/revision/latest/scale-to-width-down/170?cb=20140218135042",
+      "https://static.wikia.nocookie.net/creepypasta/images/a/ac/Gandc.jpg/revision/latest/scale-to-width-down/170?cb=20110305213440",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/78/Gengar.jpg/revision/latest/scale-to-width-down/170?cb=20131127144019"
+    ],
+    "author": "unknown Originally uploaded on March 5th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PokéMon",
+      "Theory",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Get Help",
+    "url": "https://creepypasta.fandom.com/wiki/Get_Help",
+    "description": "GET HELP. You start noticing those words when you're going about your day-to-day business - just flipping through the classifieds, or posted on telephones near bridges. Normal places. Merely words that seem to be catching your eye. Then they start appearing more randomly: the first seven tiles you pick in Scrabble, the first spoonful of Alphabet Soup, even those stupid spams sent by strangers. You even check a few of them, but they all end up being for the same old pills and promises. Now it's g",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Weird",
+      "Micropasta",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Ghost Animation",
+    "url": "https://creepypasta.fandom.com/wiki/Ghost_Animation",
+    "description": "The \"unused\" ghost model. Artwork by QueenKami. The Ghost Animation , coded as Haunting.swf, was intended to be placed in several areas throughout the tower, including in the center of a path on the second floor. However, players cannot interact with it, leaving many to believe that it was intended as a “background feature”. The ghost animation as well must be viewed in individual frames. It is comprised of 59 frames total. However, after extraction, around half of these frames have been reveale",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/92/Evil.png/revision/latest?cb=20111006020731",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/92/Evil.png/revision/latest?cb=20111006020731"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PokéMon",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Ghost Marowak",
+    "url": "https://creepypasta.fandom.com/wiki/Ghost_Marowak",
+    "description": "Once, I managed to catch the Pokémon Tower Marowak, you know, the ghost one? Usually, it’ll slog off any Pokéball thrown at it. Out of curiosity, I tossed a Master Ball at the Marowak. If you’re wondering, I had hacked an infinite amount of Master Balls at the beginning of my Pokémon Blue save for the sake of convenience. It was the equivalent of an airplane read in terms of Pokémon game playthroughs, so I didn’t really care. I was expecting the game to break immediately upon capture since the g",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/ab/Ghost.png/revision/latest?cb=20120518211909",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/ab/Ghost.png/revision/latest?cb=20120518211909"
+    ],
+    "author": "Team Rocket",
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "The Ghost Pilot",
+    "url": "https://creepypasta.fandom.com/wiki/The_Ghost_Pilot",
+    "description": "A commercial airplane pilot with 30 years experience was flying a 747 from Chicago to Los Angeles. One of the flight attendants on board was his daughter. During the course of the flight, the plane suffered one problem after another. The pilot did everything he could to compensate for the mechanical failures. His daughter, in the meantime, tried to keep the passengers calm. Finally, she had a spare moment and slipped into the cockpit. \"Daddy, tell me what's going to happen,\" she said. \"It's seri",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Ghosts",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Ghost Story",
+    "url": "https://creepypasta.fandom.com/wiki/Ghost_Story",
+    "description": "I was an American male on the loose in Belgium in the late 80’s. The tiny village I lived in was called Cambron-Casteau and was only a few kilometers north of the French Frontier. The town was truly nondescript and an ancient abbey remained the only interesting feature it possessed. The abbey’s remains stood on fifty acres of land just beyond the town with a great house, a tower, forests, lakes and catacombs. The latter caught my attention as soon as I learned of them. I investigated the tunnels",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Ghosts",
+      "Places",
+      "History",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "The Girl in the Photograph",
+    "url": "https://creepypasta.fandom.com/wiki/The_Girl_in_the_Photograph",
+    "description": "NOTE: Not to be confused with The Girl in the Picture . One school day, a boy named Tom was sitting at his desk by the window, doing math. It was six more minutes until school ended. As he was doing his homework, something caught his eye. Looking at the grass outside, he thought he saw a picture. When school was over, he ran outside fast, so that no one else could grab it. He picked it up and smiled. It was an image of the most beautiful girl he had ever seen. She had a dress with tights on and ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/bc/TheGirlInThePicture.jpg/revision/latest?cb=20101128210040",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bc/TheGirlInThePicture.jpg/revision/latest?cb=20101128210040"
+    ],
+    "author": "unknown Originally uploaded on August 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Photography"
+    ]
+  },
+  {
+    "name": "The Girl on the Train",
+    "url": "https://creepypasta.fandom.com/wiki/The_Girl_on_the_Train",
+    "description": "I live in the UK. A colleague at work heard this from her boyfriend. He works with someone who said that his sister's friend got the last tube (subway train) home a couple of weeks ago. When she got on, there were five rows of empty seats, but the last row had three people sitting in it. As she was a little shy, she went and sat opposite them. She settled down and looked up to see the woman sitting opposite her staring right at her. So she got out her book and started to read, but every time she",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Vehicles",
+      "Weird",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "A Given Reason",
+    "url": "https://creepypasta.fandom.com/wiki/A_Given_Reason",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "ClericofMadness Originally uploaded on February 15th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Glitchlett",
+    "url": "https://creepypasta.fandom.com/wiki/Glitchlett",
+    "description": "Do you remember when you first discovered glitches in Pokémon? I remember when I did. Summer, 1999, at Kingswood Summer Club. Pokémon Red and Blue was released the previous year, which I guess would make me eight or nine. The Pokémon craze was in full swing over here in the UK — every day, I packed up my Pikachu-yellow Gameboy Colour with Pokémon Red permanently slotted into its top. My friends and I would get together with our link cables for epic trading and battling sessions that lasted for t",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Glitchy Red",
+    "url": "https://creepypasta.fandom.com/wiki/Glitchy_Red",
+    "description": "About a month ago, I bought a second Pokémon Red cartridge off eBay so I could start a new game and screw around without messing up my save file. As soon as I compared it to my old one, I knew it was either a bootleg or produced somewhere else. You can see in the picture how the sticker doesn't fit the front of the cartridge, and the red plastic is cheap and almost see-through (if you look close, you can see the internal battery on the second, while the first can't be seen through at all). When ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a3/GlitchyRedCartridge.jpg/revision/latest?cb=20110903223008",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a3/GlitchyRedCartridge.jpg/revision/latest?cb=20110903223008"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Gloom House",
+    "url": "https://creepypasta.fandom.com/wiki/Gloom_House",
+    "description": "Think back, and see if this image matches up with any of your memories: a big, old fashioned living room, lots of antique chairs, candle holders, expensive china, things like that. The objects in the room have a bluish tint, and there’s a big staircase across from the door. There are large windows, but the blinds are closed. The only light source is a faint amount of daylight shining through the curtains, but it’s a grey, rainy day. Does that seem familiar? If not, you’re one of the lucky ones. ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f4/FotoFlexer_Photo.jpg/revision/latest/scale-to-width-down/324?cb=20131031183708",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f4/FotoFlexer_Photo.jpg/revision/latest/scale-to-width-down/324?cb=20131031183708"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Places",
+      "Beings",
+      "KI_Simpson"
+    ]
+  },
+  {
+    "name": "Gloomy Sunday",
+    "url": "https://creepypasta.fandom.com/wiki/Gloomy_Sunday",
+    "description": "\"Szomorú Vasárnap,\" or \"Gloomy Sunday\" in English, is a hit song written in 1933 by Hungarian composer Rezső Seress. It's more commonly known as the \"Hungarian Suicide Song\" because of hundreds (if not thousands) of suicides that were inspired by listening to it. The song itself has been covered several times, most famously by Billie Holiday, and for the most part is considered an urban legend and a brilliant marketing campaign. The version that reached radio waves, however, is not the version t",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on January 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Music",
+      "Videos",
+      "Contextual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "God Toilet",
+    "url": "https://creepypasta.fandom.com/wiki/God_Toilet",
+    "description": "It's time to tell the story of the God Toilet! That's what we call one of the washroom stalls in the building where I work. It's in one of the men's rooms in an out-of-the-way corner of the building that people don't tend to frequent. I like to go there, even though it's quite a trek across the building, because I'm the shy type when it comes to bathroom duties. That, and it gives me an excuse to get away from my desk for a bit. Well, I used to like to go there. The God Toilet stall itself has b",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Gods",
+      "Places",
+      "Weird"
+    ]
+  },
+  {
+    "name": "God's Mouth",
+    "url": "https://creepypasta.fandom.com/wiki/God's_Mouth",
+    "description": "I huffed and puffed under my breath as I stared into God’s Mouth. I felt like the Big Bad Wolf, ready to interrupt the three innocent little pigs as they hurriedly fortified their makeshift homes. I grinned at this thought and then turned my head to look for Margaret. She was a couple of feet down the hill from the entrance of the cave, holding a walking stick close to her petite breasts. “Hurry up!” I called down to her. I turned back to the cave, still grinning. An old, rotted sign outside rea",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/88/Wica0579-bw.jpeg/revision/latest/scale-to-width-down/302?cb=20110614055234",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/88/Wica0579-bw.jpeg/revision/latest/scale-to-width-down/302?cb=20110614055234"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Places",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Golden Dilemma",
+    "url": "https://creepypasta.fandom.com/wiki/The_Golden_Dilemma",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/1c/Dagger.jpg/revision/latest?cb=20111206120538",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1c/Dagger.jpg/revision/latest?cb=20111206120538"
+    ],
+    "author": "The Silicon Lemming Originally uploaded on December 6th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Items/Objects",
+      "Micropasta",
+      "The_Silicon_Lemming"
+    ]
+  },
+  {
+    "name": "A Good Man Is Hard to Find",
+    "url": "https://creepypasta.fandom.com/wiki/A_Good_Man_Is_Hard_to_Find",
+    "description": "NOTE: First published in 1953 by Flannery O'Connor . The grandmother didn't want to go to Florida. She wanted to visit some of her connections in east Tennessee and she was seizing at every chance to change Bailey's mind. Bailey was the son she lived with, her only boy. He was sitting on the edge of his chair at the table, bent over the orange sports section of the Journal. \"Now look here, Bailey,\" she said, \"see here, read this,\" and she stood with one hand on her thin hip and the other rattlin",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading"
+    ]
+  },
+  {
+    "name": "A Good Night Out",
+    "url": "https://creepypasta.fandom.com/wiki/A_Good_Night_Out",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/73/Reality_Checkpoint.jpg/revision/latest/scale-to-width-down/180?cb=20111204120842",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/73/Reality_Checkpoint.jpg/revision/latest/scale-to-width-down/180?cb=20111204120842"
+    ],
+    "author": "The Silicon Lemming Originally uploaded on December 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "The_Silicon_Lemming",
+      "Places",
+      "Ritual"
+    ]
+  },
+  {
+    "name": "Good's Diner",
+    "url": "https://creepypasta.fandom.com/wiki/Good's_Diner",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/70/378542585_cb13438167_o.jpg/revision/latest/scale-to-width-down/306?cb=20120313061500",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/70/378542585_cb13438167_o.jpg/revision/latest/scale-to-width-down/306?cb=20120313061500",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/cc/Wasteland.jpg/revision/latest/scale-to-width-down/300?cb=20120924200938"
+    ],
+    "author": "Mdcowboy Originally uploaded on March 13th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Places",
+      "Vehicles",
+      "Gods",
+      "Items/Objects",
+      "Food"
+    ]
+  },
+  {
+    "name": "Google Maps Balcony Creature",
+    "url": "https://creepypasta.fandom.com/wiki/Google_Maps_Balcony_Creature",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/65/Google_Maps_Balcony_Creature.jpg/revision/latest/scale-to-width-down/300?cb=20120304062502",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/65/Google_Maps_Balcony_Creature.jpg/revision/latest/scale-to-width-down/300?cb=20120304062502",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/76/1331510425587.png/revision/latest/scale-to-width-down/500?cb=20120409200245"
+    ],
+    "author": "Jabronis Originally uploaded on March 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Computers_and_Internet",
+      "Beings",
+      "Memes",
+      "Micropasta",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Great Hunger",
+    "url": "https://creepypasta.fandom.com/wiki/Great_Hunger",
+    "description": "According to myths of the time, during the Great War, both German and British soldiers experienced any number of phenomena that were officially suppressed by both governments. Rumors abounded of secret weapons and covert experiments, but one story was too strange for even embittered soldiers to attribute to conscience-less war-time power mongers. It is said that shortly after the battle of Flanders, surgeons and nurses began to notice errors in admittance logs. The books showed soldiers placed i",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "History",
+      "Hospitals",
+      "Military"
+    ]
+  },
+  {
+    "name": "The Grey Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Grey_Man",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Palmshark Originally uploaded on June 20",
+    "date": "June 20, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Video_Games"
+    ]
+  },
+  {
+    "name": "The Grifter",
+    "url": "https://creepypasta.fandom.com/wiki/The_Grifter",
+    "description": "Click to view the full image. The Grifter is an alleged video that was first mentioned somewhere on 4chan's /x/ imageboard. Watching it is said to be a soul-rending experience, far more horrible than anything one could imagine. The image on the right supposedly contains screenshots from some of the scenes in the video. The few that have watched it were rumored to have been found killed in their own homes, with the one thing in common between the murders being a strange doll hidden somewhere insi",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/3a/The_Grifter.jpg/revision/latest/scale-to-width-down/286?cb=20101003182005",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/3a/The_Grifter.jpg/revision/latest/scale-to-width-down/286?cb=20101003182005"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Memes",
+      "Micropasta",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Grinning",
+    "url": "https://creepypasta.fandom.com/wiki/Grinning",
+    "description": "This morning, I stepped out of the shower and the bathroom was fine: white walls, white tiles, sink and counter with toothpaste crusted all over. Three out of the four light bulbs over the mirror were still good — 100 watt, clear bulbs, blinding bright in the small white room. Like always, I was late, so I skipped shaving. She liked it when I didn’t shave, anyway. I was thinking about doing mutton chops. She'd get a kick out of that. I passed the mirror and noticed I was grinning. I didn't even ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/da/Grinning.jpg/revision/latest/scale-to-width-down/220?cb=20101108165032",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/da/Grinning.jpg/revision/latest/scale-to-width-down/220?cb=20101108165032"
+    ],
+    "author": "unknown Originally uploaded on March 11th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Mirrors",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Grinning Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Grinning_Man",
+    "description": "I have a story to tell you, but I beg you not to read it. Please, don't. I know it sounds stupid, but by the time you understand why, it will be too late. I know this will not deter many of you, but without this simple warning to ease my conscience, I may not be able to go through with this. And I desperately need to go through with this. Let me start at the beginning. I have an old friend, Joe, who I've known since grade school. I'm in my late twenties - so is he - and he's been my friend for a",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Beings",
+      "Mental_Illness",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "Grocery List",
+    "url": "https://creepypasta.fandom.com/wiki/Grocery_List",
+    "description": "You get a phone call from your mother. Since her car is in the shop, she's asked you to go to the grocery store and pick up a few odds and ends for her. Bread, milk, cereal, and chicken breasts. After writing down a small list, you reluctantly get in the car and pick up the items at the store. The lady cashier makes an odd remark to you. \"You know, we're in no danger of a milk shortage.\" Upon arriving at her house, you knock several times. No answer. You decide to try the door. It opens. You pla",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Suggested_Reading",
+      "Historical_Archive",
+      "Mental_Illness",
+      "Food",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Growths",
+    "url": "https://creepypasta.fandom.com/wiki/The_Growths",
+    "description": "I’d had them ever since I was a kid. I can remember being incredibly self-conscious about them, hiding them in my pockets under books and bags. The kids at school never said anything to my face, but I knew they were laughing behind my back. I remember asking my parents to take me to the doctor, to get them checked out. The growths on my hands seemed to be the elephant in the room back then, since they’d just say I was fine and change the subject. But I knew better. I had tried to remove them as ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Dismemberment",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Guiding Death",
+    "url": "https://creepypasta.fandom.com/wiki/Guiding_Death",
+    "description": "A man worked alone at a lighthouse with his fifteen year-old son. One stormy night, he realized he was in dire need of supplies - food, water, propane for the generator - and decided to head into town. Since the man lived twenty miles from the nearest neighbor and thirty from the nearest store, he thought it would be best to leave his son alone. He told him to be cautious, to lock the door, and to stay in his room where it was safe. When he had driven almost thirteen miles, he saw a single cloak",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Vehicles",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Gurgles and Bugman",
+    "url": "https://creepypasta.fandom.com/wiki/Gurgles_and_Bugman",
+    "description": "After my last experience, my parents reminded me of another story from my childhood. When you're five, your mind lacks the experience to make informed judgements, or connect things which aren't obvious. Over the years, the details get fuzzy and forgotten. Speaking with my parents the other day, they cleared the cobwebs burying this story. I remember now, much too clearly, the story of Gurgles and Bugman. I'd just started kindergarten that year. Everyone’s a friend when you're five, so I had no s",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/0e/Aheno.jpg/revision/latest/scale-to-width-down/180?cb=20100817180503",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0e/Aheno.jpg/revision/latest/scale-to-width-down/180?cb=20100817180503"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reddit_Pastas",
+      "Television",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Götterdämmerung",
+    "url": "https://creepypasta.fandom.com/wiki/Götterdämmerung",
+    "description": "Berlin, Germany April 30, 1945 Fate has taken its course. Adolf Hitler, Chancellor of Germany, allowed the tears to fall freely from his face. His wife, Eva Braun Hitler, lay beside him, the cyanide-induced seizures finally subsiding. He did not cry for her, though he felt her absence profoundly. No, Hitler cried for the death of Germany; the total devastation that had been visited on his country and his people. As if on cue, the walls shuddered as more Slavic shells pounded the lands he had rul",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/70/Slenderman.png/revision/latest?cb=20110312084243",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/70/Slenderman.png/revision/latest?cb=20110312084243"
+    ],
+    "author": null,
+    "date": "April 30, 1945",
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Memes",
+      "History"
+    ]
+  },
+  {
+    "name": "Hags",
+    "url": "https://creepypasta.fandom.com/wiki/Hags",
+    "description": "Every nation has their own variation of the wicked old witch, to the point it is a stereotype largely mocked in media - reserved for frightening little children on Halloween or playing the antagonist in simplified fairy tales that have been altered significantly from their darker roots in mythology and legend. Where I'm from, they are known as Hags, and although the term has slowly begun to be replaced by the generic \"witch\", it is still widely used - though belief in these supernatural beings h",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/6e/65643e.jpg/revision/latest/scale-to-width-down/180?cb=20120629180536",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6e/65643e.jpg/revision/latest/scale-to-width-down/180?cb=20120629180536"
+    ],
+    "author": "unknown Originally uploaded on June 29th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "History",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Hands",
+    "url": "https://creepypasta.fandom.com/wiki/Hands",
+    "description": "The worst thing I’ve ever done in my life happened about twelve years ago, when I was a sixteen year old kid living in Cleveland, Ohio. It was the early fall, when the leaves were just starting to turn orange and the temperatures were beginning to fall, hinting at the freezing chill that was only a few months away. School had just started, but it had been going on for about a month now, so all the excitement of going back and reuniting with old friends had been replaced by the realization that w",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Beings",
+      "Disappearances",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Hands",
+    "url": "https://creepypasta.fandom.com/wiki/The_Hands",
+    "description": "The Hands \"Scorcher today. High, a blazing 110. No sign of rain.\" I turned off my car radio. I lived in Texas, this was pretty normal. I was headed to GameStop to get a used copy of Legend of Zelda: Ocarina of Time, my childhood game. I remember playing it for hours on end, even after I beat the main game I had so much fun with it. Even after getting all the heart pieces and Gold Skulltulas, it was so much fun. It's been 30 long years. I'm ready to start again. I bought a copy and headed home. I",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d7/The_Hands.jpeg/revision/latest/scale-to-width-down/180?cb=20121223214521",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d7/The_Hands.jpeg/revision/latest/scale-to-width-down/180?cb=20121223214521"
+    ],
+    "author": "unknown Originally uploaded on April 9",
+    "date": "April 9, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Zelda"
+    ]
+  },
+  {
+    "name": "A Hands-On Approach",
+    "url": "https://creepypasta.fandom.com/wiki/A_Hands-On_Approach",
+    "description": "From: —— @ —— .com Re: entries/information requested re: compiling psychological profile Written below are the journal entries of Christopher Young, brother of Daryl Young, found saved as individual files on his personal computer, with file names Prologue.doc, Ch1.doc, Ch2.doc, etc. Apart from being compiled into one document, they have not been altered in any way. — Prologue Two weeks later, there was a sound. There was a humming. It came from that place on the carpet, the spot near the corner.",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Mental_Illness",
+      "Crime",
+      "Diary/Journal",
+      "Computers_and_Internet",
+      "Monsters",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Handsome",
+    "url": "https://creepypasta.fandom.com/wiki/Handsome",
+    "description": "Dressed in resplendent shimmering green am I. Tall and mighty, my feet planted in the snow—the envy of all my siblings. I am truly handsome. The cold icy wind whips up the ice into a thick miasma. Out of the mist of what seems like time everlasting, a small family. They seem to be a jolly lot, talking on about my majestic looks, singing merrily as they look at my siblings with utter disdain. I can't blame them, for I am handsome. Then I see a most horrifying sight. The father of this small pack ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Christmas",
+      "Nature",
+      "Reality",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Happiness for Sale",
+    "url": "https://creepypasta.fandom.com/wiki/Happiness_for_Sale",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/46/Happy-mask-salesman.jpg/revision/latest/scale-to-width-down/180?cb=20111117065101",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/46/Happy-mask-salesman.jpg/revision/latest/scale-to-width-down/180?cb=20111117065101"
+    ],
+    "author": "XenoDeath888 Originally uploaded on November 17",
+    "date": "November 17, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Zelda"
+    ]
+  },
+  {
+    "name": "Harmony",
+    "url": "https://creepypasta.fandom.com/wiki/Harmony",
+    "description": "October 23, 1937 Biala, Poland We have gathered great amounts of information from the local villagers. They seemed scared, terrified even, but willing to talk. Our interpreter has problems with the English language, which slows down our progress. Without him, we would be lost, though. The forest; that's where we can find it. You can see it in their eyes, in the swift and nervous glances at the brim of the woods. Sometimes it comes out, they say, only at night, dashing along the outskirts of Bial",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on November 13th",
+    "date": "October 23, 1937",
+    "categories": [
+      "Historical_Archive",
+      "Troll_Pasta",
+      "Video_Games"
+    ]
+  },
+  {
+    "name": "A Haunting Most Mario",
+    "url": "https://creepypasta.fandom.com/wiki/A_Haunting_Most_Mario",
+    "description": "Once, I wanted to play Mario, but I didn't have a Nintendo for it, and I was at a flea market. This old man I saw had Mario and a NES, but the label was not there. The man said it was owned by a dead kid named Jim. I just said \"whatever\", because I was eager to play Mario on my new NES. I plugged it in, and everything seemed normal. I played world 1-1 and beat it. Then I tried the old warp pipe trick, and when I got to the pipes, instead of the usual text that said \"Welcome To The Warp Zone\", it",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/58/4-Welcometothescaryhellplace_-_Copy.png/revision/latest/scale-to-width-down/236?cb=20111221004824",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/58/4-Welcometothescaryhellplace_-_Copy.png/revision/latest/scale-to-width-down/236?cb=20111221004824"
+    ],
+    "author": "unknown Originally uploaded on December 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Troll_Pasta",
+      "Video_Games"
+    ]
+  },
+  {
+    "name": "Hazards in Buying a Used Car",
+    "url": "https://creepypasta.fandom.com/wiki/Hazards_in_Buying_a_Used_Car",
+    "description": "A 1998 powder-blue Ford Taurus isn’t anyone’s choice for a vehicle, but it was what I ended up going for at the lot. It wasn’t a bad car; not too many miles, recently replaced tires, and cheap. My only real complaint was that the previous owner had seriously gone overboard with air fresheners; the whole interior reeked of vanilla and pine. The dealer, real nice guy, said he was cutting me a deal. Told me that they were having trouble moving this one off the lot, explained how no one seemed to be",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "He Waits for You",
+    "url": "https://creepypasta.fandom.com/wiki/He_Waits_for_You",
+    "description": "As the dead of winter approaches, you may find yourself alone, feeling isolated and abandoned in an all-too-empty bed as the night grows ever bleaker. Ghastly shadows dancing across the wall. The crying wind battering against your window. An ambulance siren in the distance. And there’s no one around to convince you that you didn’t hear those gunshots. There’s no one there. No one there. But do not be afraid. He waits for you. Wait for the moon to hide itself, perhaps behind a gathering of clouds",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Headed South",
+    "url": "https://creepypasta.fandom.com/wiki/Headed_South",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Scythemantis Originally uploaded on November 29th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Headlines",
+    "url": "https://creepypasta.fandom.com/wiki/Headlines",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/7d/Dark-alley1.jpg/revision/latest/scale-to-width-down/180?cb=20111218230257",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7d/Dark-alley1.jpg/revision/latest/scale-to-width-down/180?cb=20111218230257"
+    ],
+    "author": "ClericofMadness Originally uploaded on March 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Heads Up",
+    "url": "https://creepypasta.fandom.com/wiki/Heads_Up",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/31/Penny.jpg/revision/latest/scale-to-width-down/153?cb=20120325195459",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/31/Penny.jpg/revision/latest/scale-to-width-down/153?cb=20120325195459"
+    ],
+    "author": "ClericofMadness Originally uploaded on March 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Items/Objects",
+      "Videos",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Hearing Loss",
+    "url": "https://creepypasta.fandom.com/wiki/Hearing_Loss",
+    "description": "When the doctors first told me I had ruptured an eardrum, I can admit I wasn’t all that surprised. I’d been waterskiing on Lake Winnipesaukee and had taken a hard fall, and my ear had been in pain ever since. They gave me some medicine and told me it would heal and that the pain would fade, but I’d never be able to hear quite as well as I before. I accepted this at face value, not worried. Working as a tyre salesman didn’t require the most acute senses in the world, after all. As my ear healed, ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/8a/Painfulear.jpg/revision/latest/scale-to-width-down/200?cb=20120321212135",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8a/Painfulear.jpg/revision/latest/scale-to-width-down/200?cb=20120321212135"
+    ],
+    "author": "unknown Originally uploaded on August 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Heart Break-In",
+    "url": "https://creepypasta.fandom.com/wiki/Heart_Break-In",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "ClericofMadness Originally uploaded on January 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Heartbeat",
+    "url": "https://creepypasta.fandom.com/wiki/Heartbeat",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Poetry"
+    ]
+  },
+  {
+    "name": "Hearts",
+    "url": "https://creepypasta.fandom.com/wiki/Hearts",
+    "description": "On the farthest point of Long Island, the last scrap of land that still counts as New York, there sits a tremendous, abandoned building. Protected by its own isolated location, there are also, at any given time, two to three security guards there. However, if one approaches the cast iron gates on the night of December 4, even those few security guards refuse to work. The gates are left unlocked and the wind will be utterly still, a nearly opaque fog filling the peninsula. Go directly to the main",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/2a/Large_apothecary_heart_jar_100_73983_zoom.jpg/revision/latest/scale-to-width-down/180?cb=20110308180728",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2a/Large_apothecary_heart_jar_100_73983_zoom.jpg/revision/latest/scale-to-width-down/180?cb=20110308180728"
+    ],
+    "author": "unknown Originally uploaded on February 12",
+    "date": "February 12, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Ritual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Heavy Breathing",
+    "url": "https://creepypasta.fandom.com/wiki/Heavy_Breathing",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "ClericofMadness Originally uploaded on December 13th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Monsters",
+      "Dreams/Sleep",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Helen",
+    "url": "https://creepypasta.fandom.com/wiki/Helen",
+    "description": "My Grandpa is a strange man. I'm forced to go into some detail about him here because it sort of explains some of my actions later on. He is Greek and in his mid-seventies. I speak no Greek, and this makes conversations with him a nightmare. It essentially degenerates into me talking to him and him pretending he doesn't understand and begrudgingly barking English nouns at me until I can decode what he is telling me. The thing is, his English is fluent. I love him, but he is infuriating. He is ca",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on June 1st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Hell Bell",
+    "url": "https://creepypasta.fandom.com/wiki/Hell_Bell",
+    "description": "After the fourth generation of Pokémon disappointed him so much, my brother tossed me all his Pokémon stuff in disgust. I received hundreds of cards to add to my collection, the Blastiose plush he won at King’s Island nine years ago, and the Diamond game that completely swept away his love for the game and all things associated with it. That chapter of his life came to a sad close while mine just gained something to continue on. Admittedly, the games that had come out for the DS disappointed me ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Hell.exe",
+    "url": "https://creepypasta.fandom.com/wiki/Hell.exe",
+    "description": "Have you ever wondered if it is possible to visit the afterlife without actually dying? The saying goes that you can only go to Heaven or Hell if you're dead, but this is not entirely true. You can indeed have a brief visit to the afterlife and meet your dead friends, relatives, and even God. Sounds good, right? But there is one catch. It's not exactly easy. Many have returned as changed individuals; some even chose to take their own lives afterwards. Many lost their sanity, and only a small per",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/09/2695233631_04ec2e5062.jpg/revision/latest/scale-to-width-down/250?cb=20121118160558",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/09/2695233631_04ec2e5062.jpg/revision/latest/scale-to-width-down/250?cb=20121118160558"
+    ],
+    "author": "unknown Originally uploaded on May 22nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Demon/Devil",
+      "Computers_and_Internet",
+      "Diary/Journal",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Her Protection",
+    "url": "https://creepypasta.fandom.com/wiki/Her_Protection",
+    "description": "In every major town and city, there is a house with no official record, the windows of which have been boarded up for longer than anyone around can remember. The previous occupants, if there ever were any, are untraceable, and no organization or individual will ever lay claim to the plot on which it stands. Nevertheless, when you break in – always through a back, ground-floor window; you must never touch the outer doors – you will see amongst the dust the signs of inhabitants long gone. A flatte",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/4d/2spooky.jpg/revision/latest/scale-to-width-down/220?cb=20150223131712",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4d/2spooky.jpg/revision/latest/scale-to-width-down/220?cb=20150223131712"
+    ],
+    "author": "unknown Originally uploaded on November 7th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Ritual",
+      "Places"
+    ]
+  },
+  {
+    "name": "Herobrine",
+    "url": "https://creepypasta.fandom.com/wiki/Herobrine",
+    "description": "I had recently spawned a new world in single-player Minecraft. Everything was normal at first as I began chopping down trees and crafting a workbench. I noticed something move amongst the dense fog (I have a very slow computer, so I have to play with a tiny render distance). I thought it was a cow, so I pursued it, hoping to grab some hides for armor. It wasn't a cow, though. Looking back at me was another character with the default skin, but his eyes were empty. I saw no name pop up, and I doub",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e0/Herobrineiswatchingyou.jpg/revision/latest?cb=20110223061923",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e0/Herobrineiswatchingyou.jpg/revision/latest?cb=20110223061923",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/68/1283223082465.jpg/revision/latest/scale-to-width-down/425?cb=20110525224714"
+    ],
+    "author": "unknown Originally uploaded on October 30th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Memes",
+      "Video_Games"
+    ]
+  },
+  {
+    "name": "Hiding Beauty",
+    "url": "https://creepypasta.fandom.com/wiki/Hiding_Beauty",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Hillside Manor",
+    "url": "https://creepypasta.fandom.com/wiki/Hillside_Manor",
+    "description": "Hillside Manor was built in 1805 by a wealthy couple by the name of Marcus and Elizabeth Belle. For two years, Marcus and Elizabeth lived in the Manor and grew reclusive, rarely leaving. Rumors of black magic and depravity spread - during this time, two extra rooms were formed, and a mere day after the completion of these rooms, both Marcus and Elizabeth died of self-induced poisoning. Hillside Manor remained empty for five years afterwards, until it was bought by a widower by the name of Thomas",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/51/543213456.jpg/revision/latest/scale-to-width-down/250?cb=20120629171220",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/51/543213456.jpg/revision/latest/scale-to-width-down/250?cb=20120629171220"
+    ],
+    "author": "unknown Originally uploaded on June 29th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "History"
+    ]
+  },
+  {
+    "name": "Hitchhiker's Object",
+    "url": "https://creepypasta.fandom.com/wiki/Hitchhiker's_Object",
+    "description": "There are stories about a certain kind of hitchhiker - they only ever appear at night on quiet roads, seeming to flicker into existence in the very edge of headlights, never carrying a sign, always with an expression of deep despondency on their faces, swathed in a heavy coat and long pants, usually with gloves. If you stop, they will seem cordial enough, polite, but hardly chatty. They will assure you that the next town or city along your route will be a fine spot to leave them. Normal enough. ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Ritual",
+      "Vehicles",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Holder of Fluffy Kittens",
+    "url": "https://creepypasta.fandom.com/wiki/Holder_of_Fluffy_Kittens",
+    "description": "Taken from theholders.org . In any city, in any country, go to any pet store or zoo you can get yourself to. When you reach the front desk, ask to visit someone who calls himself \"The Holder of Fluffy Kittens\". Should a look of child-like glee come over the worker's face, you will then be taken into the building, in a long, well lit, windowed corridor. All you will hear is the sound of fluffy kittens meowing, growling, and purring endlessly. It is a language that you do not understand, but your ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/db/Persian_kittens_44.jpg/revision/latest?cb=20111216235353",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/db/Persian_kittens_44.jpg/revision/latest?cb=20111216235353"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Troll_Pasta",
+      "Animals"
+    ]
+  },
+  {
+    "name": "The Hole in the Wall",
+    "url": "https://creepypasta.fandom.com/wiki/The_Hole_in_the_Wall",
+    "description": "It’s been 12 days since I saw the apartment last, but there are echoes of it in everywhere, here in my temporary home. Light streaming through window will remind me of the bright, spacious living room. The squeak of the floorboards recalls the creaking first step in the hallway. The smell of cracked drywall sets my teeth on edge. I’ve severed all ties with the apartment; all my possessions are in storage or stacked in sagging boxes here in Leif’s squalid garage. I went through the vague motions ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d2/California_patch_01.jpg/revision/latest/scale-to-width-down/250?cb=20121021122223",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d2/California_patch_01.jpg/revision/latest/scale-to-width-down/250?cb=20121021122223"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "Places"
+    ]
+  },
+  {
+    "name": "Holes",
+    "url": "https://creepypasta.fandom.com/wiki/Holes",
+    "description": "It began slowly, innocuously, although the first appearance was quite sudden. There was no warning, no dent; it was just there. As if the small little hole had always belonged on my calf. As though it had always been there and always would. I first noticed it, and, after a quick moment’s inspection, I thought that I should visit the doctor soon. Then I went about my day and it promptly left my mind. The next time I noticed, I chided myself for not making an appointment and once more thought to d",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reddit_Pastas",
+      "Beings",
+      "Mental_Illness",
+      "Dismemberment",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Hook",
+    "url": "https://creepypasta.fandom.com/wiki/The_Hook",
+    "description": "The Hook is an urban legend originally dating back to 1950s America about a young couple and their encounter with a hook-handed serial killer. Though there are differences between variations, the basic skeleton of the story involves a man and his female partner, both teenagers, making out at a lovers' lane (a secluded location where people engage in romantic/sexual activity). The pair then hear a radio broadcast warning of an escaped criminal in the local area with a hook in place of a hand. At ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/35/Brownhook.jpg/revision/latest/scale-to-width-down/250?cb=20260119011206",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/35/Brownhook.jpg/revision/latest/scale-to-width-down/250?cb=20260119011206",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2f/Mandoorhandhookcardoor.png/revision/latest/scale-to-width-down/350?cb=20260119010542"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "History",
+      "Items/Objects",
+      "Vehicles",
+      "Troll_Pasta"
+    ]
+  },
+  {
+    "name": "An Hour Ago",
+    "url": "https://creepypasta.fandom.com/wiki/An_Hour_Ago",
+    "description": "I’m the only one here. I just woke up. My wife’s not here. She asked me if I wanted to join her in browsing for a new washing machine. I told her no. I’d much rather stay at home. She left to find a replacement, even though the one we have now works just fine. I used it just an hour ago. My father’s not here. He lives with us, since his wife died. He’s an old, grey, bespectacled little man. I love him, but he never says much to me. He’s old-fashioned. He used to cut wood for a living; he earned ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment",
+      "Weird"
+    ]
+  },
+  {
+    "name": "House of Rules",
+    "url": "https://creepypasta.fandom.com/wiki/House_of_Rules",
+    "description": "I live in a house of rules. I should explain. I moved here three months ago. Flat number 27. The flat was a repossession. I never met the previous owner, and to date, know him only from the post I receive in his name. I could make up stories of him vanishing, or his screams being heard in the darkness one night... I could make such exaggerated claims, but this is not a work of fiction, nor is it written to entertain. I had just got a new job — a promotion I'd waited years for. This was meant to ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/ef/Ju_tree_house.jpg/revision/latest/scale-to-width-down/180?cb=20110613013242",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ef/Ju_tree_house.jpg/revision/latest/scale-to-width-down/180?cb=20110613013242"
+    ],
+    "author": "unknown Originally uploaded on April 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Beings",
+      "Places"
+    ]
+  },
+  {
+    "name": "How This Ends",
+    "url": "https://creepypasta.fandom.com/wiki/How_This_Ends",
+    "description": "There were parties that night, but I elected to spend it alone, drinking and snorting the last of my priceless heroin on a wooded bluff overlooking the sea, capturing what quiet I could on my own terms and determined to meet the last day sober. I woke, caked in vomit and pain as the sun arose, and trickled down to the beach, relishing the cool salt breeze on my chapped face. As I plunged my face into the water, I heard a tinny wail of joy, and turned in mute disbelief. A child raced down the bea",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "Weird",
+      "Nature",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Humper-Monkey's Ghost Story",
+    "url": "https://creepypasta.fandom.com/wiki/Humper-Monkey's_Ghost_Story",
+    "description": "Humper-Monkey's Ghost Story is a very long pasta written by Something Awful forums poster Humper-Monkey in a military stories thread (requires archive upgrade to view). 1 Chapter 1 2 Chapter 2 3 Chapter 3 4 Chapter 4 5 Chapter 5 6 Chapter 6 7 Chapter 7 8 Chapter 8 9 Chapter 9 10 Chapter 10 11 Chapter 11 12 Chapter 12 13 Chapter 13 14 Chapter 14 15 Chapter 15 16 Chapter 16 17 Epilogue NOTE: This is the first part of a series of six pastas ( see below ). ORIGINAL VERSION: http://nothotbutspicy.com",
+    "image": null,
+    "images": [],
+    "author": "Something Awful forums poster Humper-Monkey in a military stories thread (requires archive upgrade to view)",
+    "date": "December 7, 1941",
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Ghosts",
+      "Places",
+      "Military",
+      "NSFW",
+      "Longpasta"
+    ]
+  },
+  {
+    "name": "Huntsville Camping Trip",
+    "url": "https://creepypasta.fandom.com/wiki/Huntsville_Camping_Trip",
+    "description": "I went camping about three weekends ago at the Huntsville National Forest in Texas. Me and three friends that came home for the weekend, they are all in college and usually we all get together at least once a year, old friends from high school. For the camping trip we planned to go backpacking deep in the forest, live off of fish that we catch and animals that we can trap. We have been doing this for a while in Texas and in numerous places, Arizona, Colorado (if anyone is familiar with the Spani",
+    "image": null,
+    "images": [],
+    "author": "unknown",
+    "date": null,
+    "categories": [
+      "Places",
+      "Mental_Illness",
+      "Nature",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Hyper-Realistic",
+    "url": "https://creepypasta.fandom.com/wiki/Hyper-Realistic",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/fb/Basil_Fawlty.jpg/revision/latest/scale-to-width-down/180?cb=20110529001454",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/fb/Basil_Fawlty.jpg/revision/latest/scale-to-width-down/180?cb=20110529001454"
+    ],
+    "author": "Trogdorbad Originally uploaded on May 29th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Memes",
+      "Troll_Pasta",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Hypno's Lullaby",
+    "url": "https://creepypasta.fandom.com/wiki/Hypno's_Lullaby",
+    "description": "Come little children, come with me Safe and happy you will be Away from your homes, now let us run With Hypno, you'll have so much fun Oh, little children, please don't cry Hypno wouldn't hurt a fly Be free, be free be free to play Come down in my cave with me to stay Oh, little children, please don't squirm Those ropes, I know, will hold you firm Hypno tells you this is true But sadly, Hypno lied to you Oh, little children, you mustn't leave Your families for you will grieve Their minds will un",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PokéMon",
+      "Videos",
+      "Memes",
+      "Micropasta",
+      "Poetry"
+    ]
+  },
+  {
+    "name": "I Am a Zombie",
+    "url": "https://creepypasta.fandom.com/wiki/I_Am_a_Zombie",
+    "description": "I am a zombie, and it's not so bad. I'm learning to live with it. I'm sorry I can't properly introduce myself, but I don't have a name anymore. Hardly any of us do. We forget them, like anniversaries and PIN numbers. I think mine might have started with a \"T\", but I'm not sure. It's funny, because back when I was alive, I was forgetting other people's names. I am finding that irony abounds in the zombie life, an ever-present punch line. But it's hard to smile when your lips have rotted off. Befo",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b4/Images_%2850%29.jpg/revision/latest/scale-to-width-down/264?cb=20130727193727",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b4/Images_%2850%29.jpg/revision/latest/scale-to-width-down/264?cb=20130727193727"
+    ],
+    "author": "unknown Originally uploaded on July 3",
+    "date": "July 3, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "I Died",
+    "url": "https://creepypasta.fandom.com/wiki/I_Died",
+    "description": "I died. It wasn't a particularly spectacular death, in fact it was fairly embarrassing. I suppose I have nothing better to do right now than to relate to you the sorry state of my corporeal body before I left it. I tripped, you see. Such a trivial act, but I hadn't been paying attention to where I was going, and fell. I used to silently laugh, thinking on it, that my first instinct was to save my phone, reasoning that I would heal, but my phone would break. But this occupied the use of one hand,",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Gods",
+      "Dreams/Sleep",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "I Found a Digital Camera in the Woods",
+    "url": "https://creepypasta.fandom.com/wiki/I_Found_a_Digital_Camera_in_the_Woods",
+    "description": "Last week, I drove to a nearby town. The place was surrounded by tall hills and mountains. You could have a very pleasant hike down any of the numerous trails there. I was climbing one trail when I saw what looked like a silver box. When I approached it, I noticed it was a digital camera! It wasa 3.3 megapixel Powershot S20! Slightly scuffed, but otherwise fine. It rained the next day, so I was really lucky to get there when I did. When I got home, I saw thatit had a 300 megabyte hard drive insi",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/36/Pshot01.jpg/revision/latest/scale-to-width-down/185?cb=20110612230501",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/36/Pshot01.jpg/revision/latest/scale-to-width-down/185?cb=20110612230501",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c5/Pshot02.jpg/revision/latest/scale-to-width-down/185?cb=20110612230740",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/ff/Pshot03.jpg/revision/latest/scale-to-width-down/139?cb=20110612230748",
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a4/Pshot04.jpg/revision/latest/scale-to-width-down/185?cb=20110612230755",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f9/Pshot05.jpg/revision/latest/scale-to-width-down/185?cb=20110612230805",
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9b/Pshot06.jpg/revision/latest/scale-to-width-down/185?cb=20110612230813",
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4a/Pshot07.jpg/revision/latest/scale-to-width-down/139?cb=20110612230821",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/be/Pshot08.jpg/revision/latest/scale-to-width-down/139?cb=20110612230827",
+      "https://static.wikia.nocookie.net/creepypasta/images/9/90/Pshot09.jpg/revision/latest/scale-to-width-down/139?cb=20110612230834",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/62/Pshot10.jpg/revision/latest/scale-to-width-down/185?cb=20110612230841",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2c/Pshot11.jpg/revision/latest/scale-to-width-down/185?cb=20110612230847",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7c/Pshot12.jpg/revision/latest/scale-to-width-down/185?cb=20110612230907",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bb/Pshot13.jpg/revision/latest/scale-to-width-down/139?cb=20110612230916",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c8/Pshot15.jpg/revision/latest/scale-to-width-down/139?cb=20110612230922",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f6/Pshot16.jpg/revision/latest/scale-to-width-down/185?cb=20110612230932",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/78/Pshot17.jpg/revision/latest/scale-to-width-down/185?cb=20110612230940",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/00/Pshot18.jpg/revision/latest/scale-to-width-down/185?cb=20110612230947",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/25/Pshot19.jpg/revision/latest/scale-to-width-down/139?cb=20110612230956",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/07/Pshot20.jpg/revision/latest/scale-to-width-down/139?cb=20110612231004",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/03/Pshot21.jpg/revision/latest/scale-to-width-down/185?cb=20110612231012",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b2/Pshot22.jpg/revision/latest/scale-to-width-down/185?cb=20110612231024",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/64/Pshot23.jpg/revision/latest/scale-to-width-down/185?cb=20110612231032",
+      "https://static.wikia.nocookie.net/creepypasta/images/5/52/Pshot24.jpg/revision/latest/scale-to-width-down/139?cb=20110612231041",
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d2/Pshot25.jpg/revision/latest/scale-to-width-down/139?cb=20110612231049",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/60/Pshot26.jpg/revision/latest/scale-to-width-down/185?cb=20110612231057",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7f/Pshot27.jpg/revision/latest/scale-to-width-down/185?cb=20110612231105",
+      "https://static.wikia.nocookie.net/creepypasta/images/d/da/Pshot28.jpg/revision/latest/scale-to-width-down/185?cb=20110612231112",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/22/Pshot29.jpg/revision/latest/scale-to-width-down/185?cb=20260202121921",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/73/Pshot30.jpg/revision/latest/scale-to-width-down/185?cb=20110612231202",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f8/Pshot31.jpg/revision/latest/scale-to-width-down/185?cb=20110612231209",
+      "https://static.wikia.nocookie.net/creepypasta/images/3/32/Pshot32.jpg/revision/latest/scale-to-width-down/185?cb=20110612231217",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7a/Pshot33.jpg/revision/latest/scale-to-width-down/139?cb=20110612231225"
+    ],
+    "author": "unknown Originally uploaded on June 12th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Photography",
+      "Items/Objects",
+      "Nature",
+      "Places",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "I Need Assistance",
+    "url": "https://creepypasta.fandom.com/wiki/I_Need_Assistance",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "ClericofMadness Originally uploaded on September 7th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Ritual",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "I Saw It Coming",
+    "url": "https://creepypasta.fandom.com/wiki/I_Saw_It_Coming",
+    "description": "This isn't a confession. You can't prove a damn thing, so don't even try. I'll deny it to my grave. I'm on my third drink for the evening anyways. You can't trust the word of a drunken man. That's when I start to feel anything these days, the third drink. Sometimes it takes four, but usually three will do. It's the same cycle every night for weeks now; I drink, then I start to feel, then the fear comes over me, then I drink some more until I pass out. Wake up, slog through the day. Keep my head ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reddit_Pastas",
+      "Dismemberment",
+      "Weird"
+    ]
+  },
+  {
+    "name": "I'm Blue",
+    "url": "https://creepypasta.fandom.com/wiki/I'm_Blue",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/ae/Blue.jpg/revision/latest/scale-to-width-down/180?cb=20130926183739",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/ae/Blue.jpg/revision/latest/scale-to-width-down/180?cb=20130926183739"
+    ],
+    "author": "Extramrdo Originally uploaded on April 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Theory",
+      "Music",
+      "Weird"
+    ]
+  },
+  {
+    "name": "I'm Sorry, Daddy",
+    "url": "https://creepypasta.fandom.com/wiki/I'm_Sorry,_Daddy",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/85/The_scary_door_tn.jpg/revision/latest/scale-to-width-down/180?cb=20120402213612",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/85/The_scary_door_tn.jpg/revision/latest/scale-to-width-down/180?cb=20120402213612"
+    ],
+    "author": "Hagenisnotacat Originally uploaded on April 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "We_Go_Bump_2",
+      "Dreams/Sleep",
+      "Dismemberment",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "The Idol",
+    "url": "https://creepypasta.fandom.com/wiki/The_Idol",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f9/The_idol.png/revision/latest/scale-to-width-down/271?cb=20120130004717",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f9/The_idol.png/revision/latest/scale-to-width-down/271?cb=20120130004717"
+    ],
+    "author": "Cosbydaf Originally uploaded on January 30",
+    "date": "January 30, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes",
+      "Gods",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "Illness",
+    "url": "https://creepypasta.fandom.com/wiki/Illness",
+    "description": "Illness. This is the word that has plagued my life. \"His illness prevents… he has an illness… his illness is progressing… we can cure his illness… we can't cure his illness.\" Omens spewed forth from the mouths of so many white-clothed prophets and soothsayers. They are paraded around my bed on a daily basis; grim-faced apparitions bedecked in the colour of angels but carrying the devil's tools. Hope and misfortune. The ringmasters of this morbid circus stand behind the flowing line of white; the",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Hospitals",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Imperfect Transition",
+    "url": "https://creepypasta.fandom.com/wiki/Imperfect_Transition",
+    "description": "I was sitting in the upstairs office of the Museum with a cup of coffee when it happened. It had been a long day, and I’d sent the work experience kid the seemingly unfuckupable task of dusting the exhibits- after repeating my warning, of course, that some of them must not be touched or opened. A terrified scream, quickly strangled by a building-shaking thump and an awful rending sound, brought me rushing downstairs. The mirror room. I knew it. In there hung an ancient mirror, about a foot aroun",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mirrors",
+      "Beings",
+      "Dismemberment",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "In from the Cold",
+    "url": "https://creepypasta.fandom.com/wiki/In_from_the_Cold",
+    "description": "Alec sat in the cold blue glow of the steel chamber, monitors projecting their indecision between camera views outside the small compound. Each switch depicting the bright white of the lunar sands under floodlight, and the unrelenting black of the empty space above. Life in the small research station was similarly dark, oppressively quiet, with nothing but the clicks of recording equipment, inconsistent hums from computer systems, and faint- CLANG! The sharp noise from down the hall pierced the ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": "November 11, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Space"
+    ]
+  },
+  {
+    "name": "In the Bayou",
+    "url": "https://creepypasta.fandom.com/wiki/In_the_Bayou",
+    "description": "If you want to understand why I left the place I was at, you’re really just going to have to hear the entire story. You won’t believe it, of course. But your skepticism means nothing. Because what I saw that night on the bayou has been with me ever since. In my mind, in my thoughts, and sometimes even in my dreams. It exists as a disturbing memory that I cannot shake away. That will never go away, just so long as I live. It will be one of those things so terrifying that it’ll still be just as ke",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Nature",
+      "Beings"
+    ]
+  },
+  {
+    "name": "In the Mirror",
+    "url": "https://creepypasta.fandom.com/wiki/In_the_Mirror",
+    "description": "Normally, you sleep soundly, but the thunderstorm raging outside is stirring you. You begin to doze, then another crash jolts you awake. This cycle lasts most of the night. You lay there, eyes open, looking at your room stretching out before you in oblong shadows. Your gaze moves from nameless object to object, until you reach your mirror, sitting adjacent to you across the room. Suddenly, there is a flash of lightning, and the mirror flickers in its light. For a second, it reveals to you dozens",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mirrors",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "In the Shower",
+    "url": "https://creepypasta.fandom.com/wiki/In_the_Shower",
+    "description": "Have you ever been taking a shower while alone in the house and felt like something was moving around behind the curtain? Or watching you? Did you look up? Did you catch the very vaguest hint of eyebrows or a tuft of matted, greasy hair above the curtain rod? That’s not a good idea. It doesn't really like it if you see it. It likes it the most when you’ve got shampoo on your hair, and your eyes are shut tight so your eyes don’t sting. Or even better, when there’s soap and bubbles all over your s",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on January 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Incense",
+    "url": "https://creepypasta.fandom.com/wiki/Incense",
+    "description": "I heard stories of this ritual happening throughout the Internet and decided to try it for myself since the tasks are not hard to do and the payout is worth the trouble. The materials to complete this task will cost around 10-15 dollars, which can be earned from working any sort of job. I’ll save the reward for the end because the sacrifice will go along with it, and telling you now might deject you from attempting this ritual, but I assure you that it is well worth it. Failure to either complet",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Ritual",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Indistinguishable",
+    "url": "https://creepypasta.fandom.com/wiki/Indistinguishable",
+    "description": "\"It is a process which I derived empirically. All motion, either generated by, or imparted to an object, obeys the same principle,\" he said. \"When your arm moves, is the motion continuous, or are there discretized points, however small, at which there is no in-between?\" \"The latter case, I would imagine, at some subatomic level,\" I offer. \"Indeed,\" he replies. \"In my work, I have discovered it matters not the timeframe in which the motion occurs, nor the force that impels it. On film, during the",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Science",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Infinite Regress",
+    "url": "https://creepypasta.fandom.com/wiki/Infinite_Regress",
+    "description": "I Animal instincts, animal extracts. Bone powders and bone grinds. Strike the bone against the flint. Forty-degree angle, eight hundred pounds per square inch. Extract a blade. Fasten the blade to a branch. Becomes a spear. The spear enters flesh. The spear enters bone. The spear sits behind an inch of glass. The spear glimmers benign under spotlights. Eyes click in their sockets, following its edge. A swipe and the neck is severed. Hung upside-down, the blood pools on the ground. Crooked legs k",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/bd/11Prehistoric-hunting.jpg/revision/latest/scale-to-width-down/250?cb=20120217210454",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bd/11Prehistoric-hunting.jpg/revision/latest/scale-to-width-down/250?cb=20120217210454"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Dismemberment",
+      "Mental_Illness",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Influenza",
+    "url": "https://creepypasta.fandom.com/wiki/Influenza",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/10/Influ.jpg/revision/latest/scale-to-width-down/180?cb=20140512165852",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/10/Influ.jpg/revision/latest/scale-to-width-down/180?cb=20140512165852"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Inspired",
+    "url": "https://creepypasta.fandom.com/wiki/Inspired",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/5f/Bloo.jpg/revision/latest?cb=20111224103027",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/5f/Bloo.jpg/revision/latest?cb=20111224103027"
+    ],
+    "author": "The Silicon Lemming Originally uploaded on December 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Micropasta",
+      "The_Silicon_Lemming"
+    ]
+  },
+  {
+    "name": "Inventor's Revenge",
+    "url": "https://creepypasta.fandom.com/wiki/Inventor's_Revenge",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e8/Post_tutorial_mad-scientist_6_470.jpg/revision/latest/scale-to-width-down/180?cb=20121027204126",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e8/Post_tutorial_mad-scientist_6_470.jpg/revision/latest/scale-to-width-down/180?cb=20121027204126"
+    ],
+    "author": "CaptainPlanetPug Originally uploaded on October 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Poetry",
+      "Science"
+    ]
+  },
+  {
+    "name": "It Runs in the Family",
+    "url": "https://creepypasta.fandom.com/wiki/It_Runs_in_the_Family",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Django DuMonde Originally uploaded on September 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "Jack's Back",
+    "url": "https://creepypasta.fandom.com/wiki/Jack's_Back",
+    "description": "I first got in contact with Jack, my former landlord, a little over a year ago when I answered his ad in the paper. I was in a rush to move out as I had just broken up with my significant other, whom I shared an apartment with, and Jack was renting out the furnished basement of his house. The location was good and the price was a steal, and I moved in with a few boxes of personal items four days later. The house was old and the floors were creaky – Jack was the eternal bachelor, interested in no",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reddit_Pastas",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Jaundice",
+    "url": "https://creepypasta.fandom.com/wiki/Jaundice",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "ClericofMadness Originally uploaded on February 15th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Ghosts",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Jawas",
+    "url": "https://creepypasta.fandom.com/wiki/The_Jawas",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/02/Jawa.jpg/revision/latest/scale-to-width-down/312?cb=20111118043026",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/02/Jawa.jpg/revision/latest/scale-to-width-down/312?cb=20111118043026"
+    ],
+    "author": null,
+    "date": "6/25/11",
+    "categories": [
+      "Historical_Archive",
+      "Diary/Journal",
+      "Beings",
+      "Animals",
+      "Disappearances",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Jaywalk",
+    "url": "https://creepypasta.fandom.com/wiki/Jaywalk",
+    "description": "There is a way to live well beyond your appointed time. You need a car, preferably something late-model, with a strong body. Newer cars tend to be too light and not do enough damage. Next, you need to find a candidate. It has to be a pedestrian, and it's best to pick younger people, as they have more time left, but not always. You'll have to watch them, if it's late just drive slow and pretend to be lost, but if you have to, make a second sweep by going around the block. You have to do this on a",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on February 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Vehicles",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Jennifer's Furby",
+    "url": "https://creepypasta.fandom.com/wiki/Jennifer's_Furby",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/dc/Black_furby.png/revision/latest/scale-to-width-down/250?cb=20120418003945",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/dc/Black_furby.png/revision/latest/scale-to-width-down/250?cb=20120418003945",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/06/Black_furby1.png/revision/latest/scale-to-width-down/180?cb=20120418004143"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Jessie Mack",
+    "url": "https://creepypasta.fandom.com/wiki/Jessie_Mack",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "XanCrews Originally uploaded on March 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Memes",
+      "Beings",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Jesus Christ, Deleted",
+    "url": "https://creepypasta.fandom.com/wiki/Jesus_Christ,_Deleted",
+    "description": "When AIs become prevalent, there will be checks and balances to keep them in place, rules to stop them from achieving singularity and supplanting the human race. Boundaries will exist to prevent them from becoming too intelligent. After all, we can’t have them connecting into one network, taking over the world, inventing new objects and minds that render us superfluous, or even deciding to kill themselves. So how will they be stopped? Perhaps there will be an organization that interviews and exa",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Theory",
+      "Reality",
+      "Disappearances",
+      "Gods"
+    ]
+  },
+  {
+    "name": "JFK",
+    "url": "https://creepypasta.fandom.com/wiki/JFK",
+    "description": "The assassination of John F. Kennedy started a macabre chain that continues to this day. Oswald killed Kennedy, and Jack Ruby killed Oswald; this much we do know. What many people aren't aware of is how far it continued after that. In 1967, while awaiting retrial for the murder of Lee Harvey Oswald, Ruby died in Parkland Hospital (the place of death of both Oswald and JFK), some say due to the negligence of the doctor overseeing him. A few years following this, that same doctor died in an auto a",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/47/John_f_kennedy1963.jpg/revision/latest/scale-to-width-down/225?cb=20120331231028",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/47/John_f_kennedy1963.jpg/revision/latest/scale-to-width-down/225?cb=20120331231028"
+    ],
+    "author": "unknown Originally uploaded on August 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "History",
+      "Theory",
+      "Reality",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Joshua",
+    "url": "https://creepypasta.fandom.com/wiki/Joshua",
+    "description": "Pride. That's the problem with the younger generation; they simply don't take pride in their work. They come to my door daily, peddling their goods, but they don't have their hearts in it. At least, not like people used to - not like I still do. People aren't interested in alarm systems or credit card services, they're interested in service. They want to know that they can count on someone to keep their business safe at night, or to set them up with a good interest rate off the bat. You shouldn'",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil"
+    ]
+  },
+  {
+    "name": "Journal Entries",
+    "url": "https://creepypasta.fandom.com/wiki/Journal_Entries",
+    "description": "1 Exc. from Notebook 3: Untitled List #4 2 Exc. from Notebook 1: \"A Memory\" 3 Exc. from Notebook 2: \"Xochipilli\" 4 Exc. from Notebook 1: \"Monica\" 5 Exc. from Notebook 4: \"Lists of Our Lost Friends\" 6 Exc. from Notebook 3: \"Record Store\" 7 Excerpt from Notebook 5: \"The Hissing of Summer Lawns\" 8 Excerpt from Notebook 2: \"Mom & Pop\" 9 Excerpt from Notebook 3: \"Yuga Park under Watch\" 10 Excerpt from Notebook 2: \"Miranda Cassette Exchange\" 11 Excerpt from Notebook 5: \"The Children of District 11\" 12",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/5e/Recordplayer.jpg/revision/latest/scale-to-width-down/180?cb=20150923070148",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/5e/Recordplayer.jpg/revision/latest/scale-to-width-down/180?cb=20150923070148",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/27/Peoplealleyway.jpg/revision/latest/scale-to-width-down/180?cb=20150923023052",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/19/Lightsatthepark.jpg/revision/latest/scale-to-width-down/180?cb=20150923023246",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c9/Cassettetape.jpg/revision/latest/scale-to-width-down/100?cb=20150923022719",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/70/Walkwaywithlights.jpg/revision/latest/scale-to-width-down/180?cb=20150923023505",
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8e/Snowywarehouse.jpg/revision/latest/scale-to-width-down/250?cb=20150923023720",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/fe/Obscurefacility.jpg/revision/latest/scale-to-width-down/180?cb=20150923023924",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1d/Aminals.jpg/revision/latest/scale-to-width-down/180?cb=20111214035920"
+    ],
+    "author": "my brother",
+    "date": null,
+    "categories": [
+      "PotM",
+      "Historical_Archive",
+      "Diary/Journal",
+      "Beings",
+      "Dismemberment",
+      "Longpasta"
+    ]
+  },
+  {
+    "name": "Julia Legare",
+    "url": "https://creepypasta.fandom.com/wiki/Julia_Legare",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/23/Edisto_Island_Photos_12-L.jpg/revision/latest/scale-to-width-down/180?cb=20121216075146",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/23/Edisto_Island_Photos_12-L.jpg/revision/latest/scale-to-width-down/180?cb=20121216075146"
+    ],
+    "author": "Wolfenx Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Ghosts",
+      "Places",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Just a Normal Pie",
+    "url": "https://creepypasta.fandom.com/wiki/Just_a_Normal_Pie",
+    "description": "Eat up, eat up. \"Mmm, this pie is delicious, Mrs. Basingstoke,\" I said, happily filling my face with another spoonful. \"You're welcome, dearie. Can I get you any more?\" she replied in her usual upbeat tone. \"Say, um...you're a Mrs , yet you're alone. What happened to your husband?\" I inquired. \"Oh, he's gone,\" she said. \"Fairly recently, actually. Took me by surprise just the other week.\" \"I'm so sorry,\" I said, feeling rude for asking. \"Don't worry about it, sweetheart, you didn't know. You jus",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9b/Homemade_meat_pie.jpg/revision/latest/scale-to-width-down/328?cb=20121013141401",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9b/Homemade_meat_pie.jpg/revision/latest/scale-to-width-down/328?cb=20121013141401"
+    ],
+    "author": "unknown Originally uploaded on October 13th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Food"
+    ]
+  },
+  {
+    "name": "Jvk1166z.esp",
+    "url": "https://creepypasta.fandom.com/wiki/Jvk1166z.esp",
+    "description": "Some people might recall the momentary buzz caused in 2009 by a particularly odd Morrowind mod. The file name was 'jvk1166z.esp'. It was never posted on any of the larger Elder Scrolls communities, only smaller boards and role-playing groups. I know in a few cases, rather than being posted, it was sent via PM or email to a 'chosen few'. It was only up for a few days, to the best of my knowledge. It caused a buzz because it was a virus, or seemed to be. If you tried to load the game with the mod ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a4/Morrowind.jpg/revision/latest/scale-to-width-down/232?cb=20110423225726",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a4/Morrowind.jpg/revision/latest/scale-to-width-down/232?cb=20110423225726",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6b/Screenprint_024.jpg/revision/latest/scale-to-width-down/180?cb=20120411182457",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c3/Screenprint_06.jpg/revision/latest/scale-to-width-down/180?cb=20120411182857"
+    ],
+    "author": "unknown Originally uploaded on April 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Dreams/Sleep",
+      "Video_Games",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Kagome Kagome",
+    "url": "https://creepypasta.fandom.com/wiki/Kagome_Kagome",
+    "description": "1 War Experiments 2 Giving Man the Power of God 3 Disease of the Mind 4 Their Proposal 5 The Location 6 Carrying Out the Experiments 7 Success, Presumably 8 Continuation 9 Project Venom 10 Rebellion 11 Numerous Failures 12 Kill Switch Reversal 13 Personalities Gone Awry 14 Demise 15 The Story Now War Experiments The Nazi reign was famous for its backdoor scientists and occult researchers. Special expeditionary divisions of the Reich were often sent out in search of artifacts, or locations of occ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/42/Kagome_Circle.jpg/revision/latest/scale-to-width-down/272?cb=20111201071209",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/42/Kagome_Circle.jpg/revision/latest/scale-to-width-down/272?cb=20111201071209",
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e3/3101621525_e6ac41d5a5-1-.jpg/revision/latest/scale-to-width-down/180?cb=20121104231256",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/ff/Noninfectious-Bionic-Limbs-Directly-Attached-to-Human-Bones-2-1-.jpg/revision/latest/scale-to-width-down/180?cb=20121104231827"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Science",
+      "Ritual",
+      "History",
+      "Dismemberment",
+      "Memes",
+      "Music",
+      "Videos"
+    ]
+  },
+  {
+    "name": "The Kaleidoscope",
+    "url": "https://creepypasta.fandom.com/wiki/The_Kaleidoscope",
+    "description": "While honeymooning in Maine, my wife and I stopped in the picturesque town of Boothbay on a particularly dreary and rainy day. Since our planned picnic was out of the question, we sought shelter in a dilapidated little antique store near the harbour. While my wife inspected the large chests and side tables near the door, I eagerly examined the antique tools and seafaring equipment inside the glass sales counter at the back. Being a collector of optics and mariner's instruments, I hoped to find a",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/6a/Kal.jpg/revision/latest/scale-to-width-down/180?cb=20101130230448",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6a/Kal.jpg/revision/latest/scale-to-width-down/180?cb=20101130230448"
+    ],
+    "author": "unknown Originally uploaded on November 30th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "The Keeper",
+    "url": "https://creepypasta.fandom.com/wiki/The_Keeper",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Rake666 Content is available under CC BY-SA",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Memes",
+      "Troll_Pasta",
+      "Ritual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Khaki",
+    "url": "https://creepypasta.fandom.com/wiki/Khaki",
+    "description": "While the ship is in port, most of the equipment in the Reactor and Machinery Rooms is shut down, and everything is aligned so that only a skeleton crew is needed to maintain it. In the Machinery Rooms (which contain the propulsion machinery, distillers, and electrical generators), this consisted of one Shutdown Watch and one roving watchstander, with occasional visits from the crewman who was the overall supervisor for the plants. The Machinery Room has three levels. The topmost level (4th Deck",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on June 13th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Demon/Devil"
+    ]
+  },
+  {
+    "name": "The King Come Down",
+    "url": "https://creepypasta.fandom.com/wiki/The_King_Come_Down",
+    "description": "Hey guys, I have a story to tell. You probably won't believe me, and frankly, I'm done trying to convince people. It was about three weeks ago. I was on Google searching for some funny sites to look at, and I found my way to an imageboard. Everyone on the board spoke in extremely cryptic nonsense. They said things like, \"Hiel I saw them tonight. Holdings hand we are up in high 99924028 THE KING COME DOWN.\" That was one phrase that was used repeatedly: \"The king come down.\" At first, I thought it",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a0/Computer_guy.png/revision/latest?cb=20140906182631",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a0/Computer_guy.png/revision/latest?cb=20140906182631"
+    ],
+    "author": "unknown Originally uploaded on November 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Memes",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Kisaragi Station",
+    "url": "https://creepypasta.fandom.com/wiki/Kisaragi_Station",
+    "description": "Origin The following is a translated transcript of an actual thread posted on the Japanese message board 2channel in 2004. The stated topic was “Post About Strange Occurrences Around You: Thread 26”. The poster was anonymous at first before using the name Hasumi not long into the discussion. #??? and Hasumi indicate posts made by the thread creator. #2ch indicates a post made by any other 2chan user (they are not all the same person). Story ??? This may just be my imagination… Can I post it anyw",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Knob.exe",
+    "url": "https://creepypasta.fandom.com/wiki/Knob.exe",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "BlittleMcNilsen Originally uploaded on November 25th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Dreams/Sleep",
+      "Video_Games",
+      "Beings"
+    ]
+  },
+  {
+    "name": "A Knock on the Window",
+    "url": "https://creepypasta.fandom.com/wiki/A_Knock_on_the_Window",
+    "description": "I lay in my bed, restless and alone, on a dark and silent night. I toss and turn in my bed, trying to find a comfortable spot, but I feel uneasy. Something about tonight just doesn't feel right. I move around until I finally find a comfortable position. I close my eyes, but it doesn’t make a difference; it’s too dark in my room to see a thing, anyway. I guess it takes time for my eyes to adjust to darkness. I lay there, still and silent. My body is relaxed, my mind is blank, and I’m ready for so",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on June 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Knocking",
+    "url": "https://creepypasta.fandom.com/wiki/Knocking",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/92/Keyhole.jpg/revision/latest?cb=20120514110243",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/92/Keyhole.jpg/revision/latest?cb=20120514110243"
+    ],
+    "author": "Steven Shorter Originally uploaded on May 14th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Knocks on the Window",
+    "url": "https://creepypasta.fandom.com/wiki/Knocks_on_the_Window",
+    "description": "The digital clock humming quietly on my nightstand was the only sound my ears could detect. The night was dead quiet, yet I knew he was there. Right on schedule, he would be lurking there, outside my window. He would knock. I, for reasons I wish I could explain, would open the blinds, a sense of dread flooding my body. He would stare at me, and I would stare at him. He would leave soon after, and I would stay awake until the sun began to rise. This was our routine. My mind was wandering a thousa",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on November 14",
+    "date": "November 14, 2010",
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Mental_Illness",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "Kuchisake-Onna",
+    "url": "https://creepypasta.fandom.com/wiki/Kuchisake-Onna",
+    "description": "Kuchisake-Onna is the legend of a Japanese woman who was mutilated by her jealous samurai husband. The man murdered her for infidelity, scarring her horribly. Supposedly, her jealous ghost still haunts places in Japan, usually on foggy nights. She wears a surgical mask, and will approach people and ask shyly: “Utsukushii toomoimasu ka?” (Do you think I'm beautiful?) The person will usually respond with \"hai\", or \"yes\". She will then pull down her mask to reveal an ear-to-ear grin, cut by her jea",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9a/Kuchisake-onna-01.jpg/revision/latest/scale-to-width-down/272?cb=20110816032411",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9a/Kuchisake-onna-01.jpg/revision/latest/scale-to-width-down/272?cb=20110816032411"
+    ],
+    "author": "unknown Originally uploaded on April 22nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Ghosts",
+      "Contextual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "La Llorona",
+    "url": "https://creepypasta.fandom.com/wiki/La_Llorona",
+    "description": "In Hispanic American folklore, La Llorona (\"The Weeping Woman\" or \"The Wailer\") is a ghost who roams waterfront areas mourning her drowned children. In a typical version of the legend, a beautiful woman named Maria marries a rich ranchero (farm worker) with whom she has two children. One day, Maria sees her husband with another woman, and in a fit of rage, she drowns their children in a river, which she immediately regrets. Unable to save them and consumed by guilt, she drowns herself as well, b",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f5/Llorona.jpg/revision/latest/scale-to-width-down/300?cb=20250531212224",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f5/Llorona.jpg/revision/latest/scale-to-width-down/300?cb=20250531212224"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Ghosts",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Lab",
+    "url": "https://creepypasta.fandom.com/wiki/The_Lab",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Gothicshadow001 Originally uploaded on March 23",
+    "date": "March 23, 2012",
+    "categories": [
+      "Historical_Archive",
+      "PokéMon"
+    ]
+  },
+  {
+    "name": "The Lady Behind the Door",
+    "url": "https://creepypasta.fandom.com/wiki/The_Lady_Behind_the_Door",
+    "description": "It was night and two guys in a classic car traveled down a lonely stretch of I-95 in Pennsylvania. The one in the passenger seat had a pensive look about him. The driver reached down to fiddle with the radio. They slowly pulled ahead of me. Squinting through the darkness and the bug-dotted windshield of my eight year old Isuzu I observed a blue bumper sticker with the words in white “Hilary ‘08” on it. “God damn it. I hate those guys.” Gabe looked at me inquiringly, still rubbing the sleep out o",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Places",
+      "Historical_Archive",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "The Lamp",
+    "url": "https://creepypasta.fandom.com/wiki/The_Lamp",
+    "description": "Notice: This is an allegedly true story, posted in the comment section of an r/AskReddit post. The question was, \"Have you ever felt a deep connection to a person you've met in a dream?\" A screenshot can be found here . This story is also known as \"A Parallel Life\" or \"Awoken by a Lamp.\" throw away account cause this is really personal. My last semester at a certain college I was assulted by a football player for walking where he was trying to drive (note he was 325lbs I was 120lbs), while uncon",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reddit_Pastas",
+      "Dreams/Sleep",
+      "Items/Objects",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Last Friday",
+    "url": "https://creepypasta.fandom.com/wiki/Last_Friday",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/63/Lamppostghost.jpg/revision/latest/scale-to-width-down/300?cb=20100819201704",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/63/Lamppostghost.jpg/revision/latest/scale-to-width-down/300?cb=20100819201704"
+    ],
+    "author": "ChibiCthulhu Originally uploaded on February 22nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Disappearances",
+      "Ritual",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "Last One Today",
+    "url": "https://creepypasta.fandom.com/wiki/Last_One_Today",
+    "description": "In Berlin, after World War II, money was short, supplies were tight, and it seemed like everyone was hungry. At that time, people were telling the tale of a young woman who saw a blind man picking his way through a crowd. The two started to talk. The man asked her for a favor: could she deliver the letter to the address on the envelope? Well, it was on her way home, so she agreed. She started out to deliver the message, when she turned around to see if there was anything else the blind man neede",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 19",
+    "date": "August 19, 2010",
+    "categories": [
+      "History",
+      "Disappearances",
+      "Historical_Archive",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Last Testament",
+    "url": "https://creepypasta.fandom.com/wiki/The_Last_Testament",
+    "description": "NOTE: Original story by Carol Amen . If I sound calm as I begin this, I’m not. Numb would be more like it. Drained, nearly hopeless, I’m writing to try to hold on to my sanity. It’s something to do, a discipline of sorts. I will make every effort to tell what happened, no matter how painful the telling is. I want this record to be accurate, and in sequence. March 23. Tonight as I fixed dinner and wrestled with self-pity because Tom had phoned saying he’d be staying late in San Francisco, the ent",
+    "image": null,
+    "images": [],
+    "author": "Carol Amen",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Diary/Journal"
+    ]
+  },
+  {
+    "name": "Last Words",
+    "url": "https://creepypasta.fandom.com/wiki/Last_Words",
+    "description": "Last summer, my brother and his friends went exploring a cave about 3 miles east of my house. There was a cave-in, and when the rocks were cleared, photographs and a video camera were discovered. The photographs were generic. Pools of water, pictures of friends walking, cool rock formations. But soon, the pictures got much darker. And blurrier, as if whoever took them was shaking or nervous. The lack of light was said to be because they were far down in the cave, but it was probably the cave-in.",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on December 13th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Troll_Pasta",
+      "Memes",
+      "Photography"
+    ]
+  },
+  {
+    "name": "Lavender Town Mysteries",
+    "url": "https://creepypasta.fandom.com/wiki/Lavender_Town_Mysteries",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/be/D2xybvg-ff523abd-0a2a-410b-8bec-8661c5b2ae99.png/revision/latest?cb=20190528010705",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/be/D2xybvg-ff523abd-0a2a-410b-8bec-8661c5b2ae99.png/revision/latest?cb=20190528010705",
+      "https://static.wikia.nocookie.net/creepypasta/images/9/92/Evil.png/revision/latest?cb=20111006020731",
+      "https://static.wikia.nocookie.net/creepypasta/images/5/51/D2xy8rb-2f131322-0002-4ab6-885e-8b692c7d569d.png/revision/latest?cb=20190528011603"
+    ],
+    "author": "an unknown programmer upon losing the battle",
+    "date": "April 12, 1996",
+    "categories": [
+      "Historical_Archive",
+      "PokéMon",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Lavender Town Syndrome",
+    "url": "https://creepypasta.fandom.com/wiki/Lavender_Town_Syndrome",
+    "description": "Lavender Town as seen in Red and Green. The Lavender Town Syndrome (also known as \"Lavender Town Tone\" or the \"Lavender Town Suicides\") was a peak in suicides and illnesses of children between the ages of 7-12 in Japan back in February 27th, 1996. The phenomenon occurred shortly after the release of the first Pokémon games, Pokémon Red and Green . Rumors say that these suicides and illnesses only occurred after children playing the game reached Lavender Town. The location's theme music had extre",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/76/Lavender_Town_Syndrome.jpg/revision/latest?cb=20130119103754",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/76/Lavender_Town_Syndrome.jpg/revision/latest?cb=20130119103754"
+    ],
+    "author": "unknown Originally uploaded on April 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PokéMon",
+      "Music",
+      "Memes",
+      "Videos",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Lead Masks",
+    "url": "https://creepypasta.fandom.com/wiki/Lead_Masks",
+    "description": "It’s 1966, and Jorge da Costa Alves finds himself flying a kite one afternoon in the nearby Vintém Hill in Niterói, Rio de Janeiro, Brazil. As the eighteen year old Jorge walks around Vintém Hill, he makes the macabre discovery of two bodies laying side by side in the tall weeds. The bodies were of two men, who appeared to be dressed identically. Both men were wearing matching suits and impermeable coats, which wasn’t out of the ordinary since the area had been drenched by recent showers. What w",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/14/Mascaras.gif/revision/latest/scale-to-width-down/211?cb=20120831042713",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/14/Mascaras.gif/revision/latest/scale-to-width-down/211?cb=20120831042713"
+    ],
+    "author": "unknown Originally uploaded on July 3rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Crime",
+      "History",
+      "Contextual",
+      "Places",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "The Legend of Michigan's Dogman",
+    "url": "https://creepypasta.fandom.com/wiki/The_Legend_of_Michigan's_Dogman",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/57/Dogman_03.jpg/revision/latest/scale-to-width-down/180?cb=20120928200134",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/57/Dogman_03.jpg/revision/latest/scale-to-width-down/180?cb=20120928200134",
+      "https://static.wikia.nocookie.net/creepypasta/images/4/46/Gable_filmscreenshot.jpg/revision/latest/scale-to-width-down/150?cb=20121002181710",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/06/Haymarsh.jpg/revision/latest/scale-to-width-down/180?cb=20121004144132",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7f/Dogman_04.jpg/revision/latest/scale-to-width-down/180?cb=20121002181640",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c5/Coolpix_snapshot02.jpg/revision/latest/scale-to-width-down/185?cb=20121002181736",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/10/Meadow-lake.JPG/revision/latest/scale-to-width-down/185?cb=20121004143704"
+    ],
+    "author": "CR Productions Originally uploaded on September 28th",
+    "date": "April 1, 1987",
+    "categories": [
+      "Historical_Archive",
+      "Cryptids",
+      "Contextual",
+      "Animals",
+      "Nature",
+      "History",
+      "Videos",
+      "Music"
+    ]
+  },
+  {
+    "name": "Legend of Zelda Bootleg/Hack",
+    "url": "https://creepypasta.fandom.com/wiki/Legend_of_Zelda_Bootleg/Hack",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "The Hooded Informant Originally uploaded on July 31",
+    "date": "July 31, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Zelda"
+    ]
+  },
+  {
+    "name": "Let's Play a Game",
+    "url": "https://creepypasta.fandom.com/wiki/Let's_Play_a_Game",
+    "description": "Let's play a game. Get a small group together, one as evenly divided amongst boys and girls as you can, or all of one gender. Make sure to say whatever you need to say to each other before you start. After this, you won't get another chance. This game isn't for the faint of heart, and it isn't for the frail in spirit. If you do not think you can handle it, now is the time to back out. Meet in any park, woods, or abandoned complex as close to midnight as you can, on a night of the new moon. Be su",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/65/Let%27s_Play_A_Game.jpg/revision/latest/scale-to-width-down/280?cb=20130125031020",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/65/Let%27s_Play_A_Game.jpg/revision/latest/scale-to-width-down/280?cb=20130125031020"
+    ],
+    "author": "unknown Originally uploaded on July 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "Licking",
+    "url": "https://creepypasta.fandom.com/wiki/Licking",
+    "description": "My great-grandmother lived by herself up in the mountains at her cabin. Her husband was dead, so she was all alone there. She only had one companion, and that was her loving dog. They both adored each other and the dog was a great comfort to her. Every night when she went to bed, he would lick her hand to let her know that he was there to protect her. One night, she had gone to bed and the dog had licked her hand, like he had done routinely every night since her husband died. But this night was ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 19th",
+    "date": null,
+    "categories": [
+      "Animals",
+      "Historical_Archive",
+      "Suggested_Reading"
+    ]
+  },
+  {
+    "name": "Life and Death",
+    "url": "https://creepypasta.fandom.com/wiki/Life_and_Death",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/5a/Creepy_Door_by_macgyvering_my_way.jpg/revision/latest/scale-to-width-down/300?cb=20101107220748",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/5a/Creepy_Door_by_macgyvering_my_way.jpg/revision/latest/scale-to-width-down/300?cb=20101107220748"
+    ],
+    "author": "JrvUnleashed Originally uploaded on October 14th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "Life Is Short",
+    "url": "https://creepypasta.fandom.com/wiki/Life_Is_Short",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Dugarte Originally uploaded on February 25th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Gods",
+      "Reality"
+    ]
+  },
+  {
+    "name": "A Light",
+    "url": "https://creepypasta.fandom.com/wiki/A_Light",
+    "description": "NOTE: Taken from the Something Awful forums. 1991 It's odd that past experiences haven't really affected me today. I can look back to two of the strangest possible things that happened in my childhood, have a beer, and laugh about it - as though it either never happened, or was supposed to have happened, and my subconscious has brushed it off. I was thirteen years old, disinterested in anything paranormal. I had also stumbled into an almost unheard-of situation: one of my best friend's parents h",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on June 13th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Lighthouse",
+    "url": "https://creepypasta.fandom.com/wiki/Lighthouse",
+    "description": "There is a small island in the Mediterranean Sea that does not appear on any map. It cannot be seen from any other island, nor can any other land be seen from it. On this island is a lighthouse, rotting from age and sea water, which is never lit. There is nothing inside it, save for a spiraling staircase that leads to the top and an ancient, dusty bookcase. The case is filled with unmarked books bound in ancient leather, save for a single space. If you remove a book from the shelf, it will fling",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/7f/54DE8_lighthouse2.jpg/revision/latest/scale-to-width-down/220?cb=20110308184634",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7f/54DE8_lighthouse2.jpg/revision/latest/scale-to-width-down/220?cb=20110308184634"
+    ],
+    "author": "unknown Originally uploaded on August 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Ritual",
+      "Books",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Lightless City",
+    "url": "https://creepypasta.fandom.com/wiki/Lightless_City",
+    "description": "Do you have someone you hate? Someone you would do anything to hurt, pay any price for vengeance? If so, you may want to consider visiting Lightless City. To get there, go to any decent-sized city and find a deserted alleyway at night. Enter it, and close your eyes as tightly as you can. Whisper “Lightless City”, and concentrate on the darkness. You’ve probably noticed that there are faint colors and abstract shapes you can make out if you try to focus your eyes when they’re closed. Watch those ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/6d/Lightlesscity.jpg/revision/latest/scale-to-width-down/250?cb=20130103202904",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6d/Lightlesscity.jpg/revision/latest/scale-to-width-down/250?cb=20130103202904"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Ritual",
+      "Places",
+      "KI_Simpson"
+    ]
+  },
+  {
+    "name": "Lightning",
+    "url": "https://creepypasta.fandom.com/wiki/Lightning",
+    "description": "We had just moved into a little ranch house in the suburbs. Storybook neighborhood — quiet, friendly neighbors, picket fences, the whole nine yards. Suffice it to say that this was supposed to be a new start for me, a recently single dad, and my three-year-old son. A time to move on from the previous year's drama and stress. I viewed the thunderstorm as a metaphor for this fresh start: one last show of theatrics before the dirt and grime of the past would be washed away. My son loved it anyway, ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Photography"
+    ]
+  },
+  {
+    "name": "Lights On",
+    "url": "https://creepypasta.fandom.com/wiki/Lights_On",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/77/Window.jpg/revision/latest/scale-to-width-down/180?cb=20140625231711",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/77/Window.jpg/revision/latest/scale-to-width-down/180?cb=20140625231711"
+    ],
+    "author": "RoboKy Originally uploaded on February 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Like Me",
+    "url": "https://creepypasta.fandom.com/wiki/Like_Me",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Chaoseed Originally uploaded on October 21st",
+    "date": null,
+    "categories": [
+      "CPWH11",
+      "Historical_Archive",
+      "Monsters",
+      "Dismemberment",
+      "Weird",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Lilies Are Bleeding",
+    "url": "https://creepypasta.fandom.com/wiki/The_Lilies_Are_Bleeding",
+    "description": "My lilies are my most prized possession. Hand picked. I will only take the most supremely beautiful specimens. They must be white as an angel’s wings, and so soft and delicate to the touch that you must be careful of the harm you bring to them. Perhaps it is selfish of me to hoard them as I do. But as it is I who takes them first, it is I who shall enjoy them, their sweet, intoxicating scent and their soothing elegance. To listen to the lily’s voice is to hear the sound of unrestrained magnifice",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Mental_Illness",
+      "Historical_Archive",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Lilith",
+    "url": "https://creepypasta.fandom.com/wiki/Lilith",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Link's Awakening",
+    "url": "https://creepypasta.fandom.com/wiki/Link's_Awakening",
+    "description": "Author's note: For the RUSSIAN version, go here . For me, the defining Zelda experience was Link’s Awakening. It was the first Zelda title I played and the most challenging. It took me longer to clear than any other game (I was pretty young). That said, it’s clear why this has bothered me so much. A few months ago I was helping a friend of a friend move. After a few hours of heavy lifting we took a break. I saw a box of old game boy cartridges and my eyes lit up. I like the new systems, but I st",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/cd/535px-LA_-_Owl.png/revision/latest/scale-to-width-down/180?cb=20111216193646",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/cd/535px-LA_-_Owl.png/revision/latest/scale-to-width-down/180?cb=20111216193646"
+    ],
+    "author": "unknown Originally uploaded on March 15",
+    "date": "March 15, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Zelda"
+    ]
+  },
+  {
+    "name": "Listen",
+    "url": "https://creepypasta.fandom.com/wiki/Listen",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f0/2012-10-01_13.08.15.jpg/revision/latest/scale-to-width-down/250?cb=20121001171143",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f0/2012-10-01_13.08.15.jpg/revision/latest/scale-to-width-down/250?cb=20121001171143"
+    ],
+    "author": "The-skin-taker Originally uploaded on March 10th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Listening In",
+    "url": "https://creepypasta.fandom.com/wiki/Listening_In",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/79/Wireless-headphones.jpg/revision/latest?cb=20111216152456",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/79/Wireless-headphones.jpg/revision/latest?cb=20111216152456"
+    ],
+    "author": "Jeffthefineman Originally uploaded on November 11",
+    "date": "November 11, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Beings",
+      "Television"
+    ]
+  },
+  {
+    "name": "A Little Gift",
+    "url": "https://creepypasta.fandom.com/wiki/A_Little_Gift",
+    "description": "Before I begin to relay the details of this ritual, I should probably explain that you need to be in a certain state of mind for it to work. I'm sure a lot of you out there will know what I mean, even though I am not the best person to be explaining human emotions. It's a kind of churning, constant emptiness. A feeling that although you have no desire to die, life simply \"takes too long\", and you would rather another option. It is very important that you feel this way when undertaking the ritual",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on October 1st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Places",
+      "Beings"
+    ]
+  },
+  {
+    "name": "A Long Detour",
+    "url": "https://creepypasta.fandom.com/wiki/A_Long_Detour",
+    "description": "The hitchhiker Andy picked up on that July afternoon was one of the stranger people he had met. She had, after a warm thanks for stopping and a moment or two of silence, proclaimed herself to be able to grant a wish. The conjuration she performed in support of this was quite remarkable – once the sound of the cymbal had stopped ringing in Andy’s head, he was impressed. Now Andy, good Christian that he was, was always of the opinion that you should do a good deed for its own sake, and not for any",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Long Way Home",
+    "url": "https://creepypasta.fandom.com/wiki/Long_Way_Home",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e3/CPWH11_Pic_1.JPG/revision/latest/scale-to-width-down/350?cb=20110902005245",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e3/CPWH11_Pic_1.JPG/revision/latest/scale-to-width-down/350?cb=20110902005245"
+    ],
+    "author": "Javer80 Originally uploaded on October 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Ghosts",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "Loss of Purpose",
+    "url": "https://creepypasta.fandom.com/wiki/Loss_of_Purpose",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Bushcraft Medic Originally uploaded on September 10",
+    "date": "September 10, 2011",
+    "categories": [
+      "Historical_Archive",
+      "PokéMon"
+    ]
+  },
+  {
+    "name": "Lost and Found",
+    "url": "https://creepypasta.fandom.com/wiki/Lost_and_Found",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/05/Final_box.jpg/revision/latest/scale-to-width-down/292?cb=20120401000822",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/05/Final_box.jpg/revision/latest/scale-to-width-down/292?cb=20120401000822",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/04/Guards2bbowler-hat-black.jpg/revision/latest/scale-to-width-down/166?cb=20120606131738"
+    ],
+    "author": "ClericofMadness Originally uploaded on March 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Love",
+    "url": "https://creepypasta.fandom.com/wiki/Love",
+    "description": "This is not meant to scare anyone. Calling it a creepy story would be a bit of an insult, because it isn't one. This is an expression of gratitude toward a friend, a friend who was always there for me. He watched over me as I was growing up and was the best friend any kid could ever have. Even if I didn't recognize it at the time. He was always there, even though I couldn’t see him, and he was always acting in my best interests, even if I couldn’t understand. I’d like to take some time to share ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 5th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "Love Dies",
+    "url": "https://creepypasta.fandom.com/wiki/Love_Dies",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "NSFW",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Love Letter",
+    "url": "https://creepypasta.fandom.com/wiki/Love_Letter",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e3/Bloody.heart_.jpg/revision/latest/scale-to-width-down/180?cb=20120501005307",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e3/Bloody.heart_.jpg/revision/latest/scale-to-width-down/180?cb=20120501005307"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Dismemberment",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Luna Game",
+    "url": "https://creepypasta.fandom.com/wiki/Luna_Game",
+    "description": "Zalgo Pinkie On April 3rd, 2011, a post was made on Equestria Daily labeled Luna Game . It appeared harmless enough, so a few bronies downloaded it — only to quickly realize it was not what it seemed. 1 Gameplay 2 Aftermath 3 Luna Game 2 (aka Luna 2) 4 Luna Game 3 5 Luna Game 4 6 Luna Game 0 7 Luna Game End 8 Luna Game 5 (Fan-Made Version) 8.1 Friday the 13th Extra Cutscene 8.2 Other Easter Eggs 9 Other Luna Games 9.1 The Lunar Game 9.2 LONA'S GOEM 48 10 Following 11 Website The beginnings of th",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/dc/Aaa.png/revision/latest?cb=20120327213538",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/dc/Aaa.png/revision/latest?cb=20120327213538",
+      "https://static.wikia.nocookie.net/creepypasta/images/3/35/Aaa.jpg/revision/latest?cb=20120327213652",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/68/Zalgo_Pie_Awesome_Face.jpg/revision/latest/scale-to-width-down/180?cb=20120810200628",
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e6/Creepypony.png/revision/latest/scale-to-width-down/334?cb=20180214041817"
+    ],
+    "author": "of the games has — through much effort — remained anonymous)",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games",
+      "Videos",
+      "Memes",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "The Lunar Fires",
+    "url": "https://creepypasta.fandom.com/wiki/The_Lunar_Fires",
+    "description": "After the end of the Cold War, America’s efforts in space exploration quickly declined. Some would say we no longer had competition to push us onward. Some say it wouldn’t be economically wise to devote such funding to space exploration. I know the real reason Uncle Sam’s eyes have turned away from the stars, and it’s got nothing to do with money. We no longer explore the stars because we discovered a truth we cannot bear to face. My name is Kurt Ellenwood, communications engineer for the last m",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": "February 23, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil",
+      "Space",
+      "Reality",
+      "History"
+    ]
+  },
+  {
+    "name": "Lyeford, West Virginia",
+    "url": "https://creepypasta.fandom.com/wiki/Lyeford,_West_Virginia",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/21/220px-NewRiverGorgeBridgeWV.jpg/revision/latest/scale-to-width-down/198?cb=20130725143812",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/21/220px-NewRiverGorgeBridgeWV.jpg/revision/latest/scale-to-width-down/198?cb=20130725143812"
+    ],
+    "author": "unknown Originally uploaded on February 1st",
+    "date": "April 5, 1780",
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Beings",
+      "Monsters",
+      "Disappearances",
+      "Dismemberment",
+      "History"
+    ]
+  },
+  {
+    "name": "M3",
+    "url": "https://creepypasta.fandom.com/wiki/M3",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/4f/Tumblr_l8knlbj3fe1qd2qlzo1_400.jpg/revision/latest/scale-to-width-down/266?cb=20110401191546",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4f/Tumblr_l8knlbj3fe1qd2qlzo1_400.jpg/revision/latest/scale-to-width-down/266?cb=20110401191546"
+    ],
+    "author": "XenoDeath888 Originally uploaded on April 1",
+    "date": "April 1, 2011",
+    "categories": [
+      "Historical_Archive",
+      "PokéMon"
+    ]
+  },
+  {
+    "name": "The Mail Box",
+    "url": "https://creepypasta.fandom.com/wiki/The_Mail_Box",
+    "description": "There’s a mail box somewhere in the city which can solve your direst problems. Which city? That depends on who you ask. There may even be more than one, who knows? Anyway, this mail box isn’t emptied anymore – the mail service has completely forgotten about it. But it clings on. It is located in some relatively unlikely place, so you won’t spot it immediately. Mail you put inside it won’t go anywhere. But the box is special. Write a letter about your most pressing problems to the persons in char",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on April 22nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Ritual",
+      "Troll_Pasta",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Majora's Mask",
+    "url": "https://creepypasta.fandom.com/wiki/Majora's_Mask",
+    "description": "Majora's Mask is a Legend of Zelda creepypasta about hacking a used copy of Majora's Mask with a GameShark. It is not to be confused with BEN , another popular Majora's Mask pasta. So, I don't know if you guys are too young to remember GameSharks. I'm not even sure if they make them anymore. They were this cool little thing that you could plug into a game console and use to hack the game and discover cheats. My buddy still has one for his old Nintendo 64, and we still like to mess around with it",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/14/Majora.png/revision/latest/scale-to-width-down/220?cb=20171001223517",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/14/Majora.png/revision/latest/scale-to-width-down/220?cb=20171001223517"
+    ],
+    "author": "unknown Originally uploaded on November 8",
+    "date": "November 8, 2010",
+    "categories": [
+      "Historical_Archive",
+      "Zelda",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Malediction of Sapience",
+    "url": "https://creepypasta.fandom.com/wiki/Malediction_of_Sapience",
+    "description": "Mankind has long contented itself with the harsh realities of a hostile and imperfect world, believing—each in their own way—that paradise would come to them. Some men worked for the promise of a better tomorrow, some put their hopes in religion, and yet others actively worked to shape the world into their own version of perfection. But these men have been blind to one, very unsettling realization. A realization that came upon a man named Jeffery Jermayne one night. The revelation, which we will",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality"
+    ]
+  },
+  {
+    "name": "The Man and His Ancient Lyre",
+    "url": "https://creepypasta.fandom.com/wiki/The_Man_and_His_Ancient_Lyre",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/c8/Amphion.jpg/revision/latest/scale-to-width-down/180?cb=20120115033648",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c8/Amphion.jpg/revision/latest/scale-to-width-down/180?cb=20120115033648"
+    ],
+    "author": "KingWaffles Originally uploaded on January 6th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Music",
+      "History",
+      "Gods",
+      "Places"
+    ]
+  },
+  {
+    "name": "The Man at the Fork",
+    "url": "https://creepypasta.fandom.com/wiki/The_Man_at_the_Fork",
+    "description": "There is a certain road near the Everglades in Florida. If you drive down it alone in the rain, day or night, you will suddenly have a very real feeling of being completely lost. Your radio will turn to static, your CDs will skip, and your tapes will play slower than normal. If you try to find a map in your car, it will have mysteriously vanished. If you continue forward down the road for more than a minute, you will find that you can't turn around, and everything behind you is pitch dark. There",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/28/BWroadfork.jpg/revision/latest/scale-to-width-down/250?cb=20110308225717",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/28/BWroadfork.jpg/revision/latest/scale-to-width-down/250?cb=20110308225717"
+    ],
+    "author": "unknown Originally uploaded on August 11th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Places",
+      "Ritual"
+    ]
+  },
+  {
+    "name": "Man in Grey",
+    "url": "https://creepypasta.fandom.com/wiki/Man_in_Grey",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/18/Antique-photo-of-man_medium.jpg/revision/latest/scale-to-width-down/180?cb=20130301055927",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/18/Antique-photo-of-man_medium.jpg/revision/latest/scale-to-width-down/180?cb=20130301055927"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Mankind",
+    "url": "https://creepypasta.fandom.com/wiki/Mankind",
+    "description": "When mankind ventured out into space, we never suspected what was to come. Our first inhabited planet was less than thirty light-years away, far closer than we would have thought. The issue? Everyone was dead. The entire planet was like that, a perfectly stable world with no issues that we could determine. And yet it seemed the suicide rates were the greatest cause of death among the people. We don't know why, but they apparently had been doing this for some time. Years of study later showed tha",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on April 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Space",
+      "Reality",
+      "Science",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "MARIO",
+    "url": "https://creepypasta.fandom.com/wiki/MARIO",
+    "description": "MARIO is a Super Mario World ROM hack creepypasta by SMW Central user Adam . The patch can be downloaded here . It was made by SMW Central user M A R I O , whose avatar was a SMW Mario without a face. The account is disabled, but used to be active (one month of no activity makes you inactive on SMW Central); they would post mysterious and eerie things every now and then, up until they became inactive. You can find the original thread here . The link in it is safe to download. The Story So, it al",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/18/MARIO_00003.png/revision/latest?cb=20130113225310",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/18/MARIO_00003.png/revision/latest?cb=20130113225310",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1a/MARIO_00001.png/revision/latest?cb=20130113224742",
+      "https://static.wikia.nocookie.net/creepypasta/images/a/af/MARIO_00000.png/revision/latest?cb=20130113224019",
+      "https://static.wikia.nocookie.net/creepypasta/images/5/5c/MARIO_00002.png/revision/latest/scale-to-width-down/225?cb=20130113225733",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c9/Binary_cryptic.png/revision/latest?cb=20130113221853",
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e4/MARIO_00004.png/revision/latest?cb=20130113230403",
+      "https://static.wikia.nocookie.net/creepypasta/images/5/50/MARIO_00005.png/revision/latest?cb=20130113231001",
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9c/MARIO_00006.png/revision/latest?cb=20130113231408",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/be/MARIO_00007.png/revision/latest?cb=20130113231804",
+      "https://static.wikia.nocookie.net/creepypasta/images/e/eb/MARIO_00008.png/revision/latest?cb=20130113232252",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0d/MARIO_00009.png/revision/latest?cb=20130113232458",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/73/MARIO_00010.png/revision/latest?cb=20130113232835",
+      "https://static.wikia.nocookie.net/creepypasta/images/9/99/MARIO_00011.png/revision/latest/scale-to-width-down/160?cb=20130113233205",
+      "https://static.wikia.nocookie.net/creepypasta/images/4/40/MARIO_0013.png/revision/latest?cb=20130113233756",
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4f/MARIO_00014.png/revision/latest?cb=20130113234136",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0f/MARIO_00015.png/revision/latest?cb=20130113234317",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/cc/MARIO_00016.png/revision/latest?cb=20130113234643",
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e5/MARIO_00017.png/revision/latest?cb=20130113234841",
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9b/MARIO_00018.png/revision/latest?cb=20130113235439",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b9/MARIO_00019.png/revision/latest/scale-to-width-down/180?cb=20130113235632",
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9d/MARIO_00020.png/revision/latest/scale-to-width-down/180?cb=20130113235752",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/cb/MARIO_00021.png/revision/latest/scale-to-width-down/180?cb=20130113235816",
+      "https://static.wikia.nocookie.net/creepypasta/images/5/57/Victim1.jpg/revision/latest/scale-to-width-down/180?cb=20110603161838"
+    ],
+    "author": "of the hack had to say",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games",
+      "Memes",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Marks",
+    "url": "https://creepypasta.fandom.com/wiki/Marks",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/99/Apples.png/revision/latest/scale-to-width-down/250?cb=20111124040755",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/99/Apples.png/revision/latest/scale-to-width-down/250?cb=20111124040755"
+    ],
+    "author": "MooseJuice Originally uploaded on November 24",
+    "date": "November 24, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Troll_Pasta",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Marshmallow Squares",
+    "url": "https://creepypasta.fandom.com/wiki/Marshmallow_Squares",
+    "description": "It is first period. \"Good morning, children,\" said their math teacher, cheerfully, \"Because of how proud I am of your scores last week, I've made my favorite sixth-grade prodigies some marshmallow squares! Now, I want you all to finish your tests, and when everyone is done, you all get your treats!\" The sixth-graders, having had her marshmallow treats before, were excited to try another batch. They all rushed and finished their tests, with exactly 31 minutes left in class. The teacher passed out",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/52/Rice-krispie-treats.jpg/revision/latest/scale-to-width-down/250?cb=20121027210225",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/52/Rice-krispie-treats.jpg/revision/latest/scale-to-width-down/250?cb=20121027210225"
+    ],
+    "author": "unknown Originally uploaded on October 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Food",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Masked Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Masked_Man",
+    "description": "Tuesday, October 11th Today, I drove my seven-year-old son James into town to go Halloween shopping. I didn’t have to buy any candy this year because we live in a cul-de-sac out in the middle of a farming community on the outskirts of the city. I moved last year because I had divorced my wife and lost my old house along with custody of James. It’s rather the shit-end of the stick, but James and I love Halloween. It’s one of the few times a year that Tracy finds it acceptable for my only son to c",
+    "image": null,
+    "images": [],
+    "author": "unknown",
+    "date": null,
+    "categories": [
+      "Diary/Journal",
+      "Dismemberment",
+      "Halloween",
+      "Historical_Archive",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "Maskie",
+    "url": "https://creepypasta.fandom.com/wiki/Maskie",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/36/Thread_1.jpg/revision/latest/scale-to-width-down/185?cb=20120704151211",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/36/Thread_1.jpg/revision/latest/scale-to-width-down/185?cb=20120704151211",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/25/1341358082002.jpg/revision/latest/scale-to-width-down/185?cb=20120704151240",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/ca/Thread_2.jpg/revision/latest/scale-to-width-down/185?cb=20120704151446",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/05/Thread_3.jpg/revision/latest/scale-to-width-down/185?cb=20120704151624",
+      "https://static.wikia.nocookie.net/creepypasta/images/5/52/Thread_4.jpg/revision/latest/scale-to-width-down/164?cb=20120704151856",
+      "https://static.wikia.nocookie.net/creepypasta/images/a/af/Thread_5.jpg/revision/latest/scale-to-width-down/185?cb=20120704152039",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c8/Thread_6.jpg/revision/latest/scale-to-width-down/185?cb=20120704152550",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f5/Thread_7.jpg/revision/latest/scale-to-width-down/185?cb=20120704152853",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0c/Thread_8.jpg/revision/latest/scale-to-width-down/185?cb=20120704153118",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bc/Thread_9.jpg/revision/latest/scale-to-width-down/185?cb=20120704153452",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c2/1341362098321.jpg/revision/latest/scale-to-width-down/138?cb=20120704153510",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/75/Thread_10.jpg/revision/latest/scale-to-width-down/185?cb=20120704153741",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/17/Thread_11.jpg/revision/latest/scale-to-width-down/185?cb=20120704154014",
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9b/Thread_12.jpg/revision/latest/scale-to-width-down/185?cb=20120704154544",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/01/Thread_13.jpg/revision/latest/scale-to-width-down/185?cb=20120704155240",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b1/Thread_14.jpg/revision/latest/scale-to-width-down/185?cb=20120704155254",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/be/Thread_15.jpg/revision/latest/scale-to-width-down/185?cb=20120704155519",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/03/Thread_16.jpg/revision/latest/scale-to-width-down/185?cb=20120704155803",
+      "https://static.wikia.nocookie.net/creepypasta/images/4/47/Thread_17.jpg/revision/latest/scale-to-width-down/151?cb=20120704160418",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/62/Thread_178.jpg/revision/latest/scale-to-width-down/170?cb=20120704160654",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7f/Thread_179.jpg/revision/latest/scale-to-width-down/185?cb=20120704160913",
+      "https://static.wikia.nocookie.net/creepypasta/images/3/3d/New_1.jpg/revision/latest/scale-to-width-down/185?cb=20120705184221",
+      "https://static.wikia.nocookie.net/creepypasta/images/8/89/New_2.jpg/revision/latest/scale-to-width-down/185?cb=20120705184233",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bf/New_3.jpg/revision/latest/scale-to-width-down/185?cb=20120705184244",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b0/New_4.jpg/revision/latest/scale-to-width-down/185?cb=20120705184258",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/78/New_5.jpg/revision/latest/scale-to-width-down/185?cb=20120705184320",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6e/New_6.jpg/revision/latest/scale-to-width-down/182?cb=20120705184333",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b5/New_7.jpg/revision/latest/scale-to-width-down/185?cb=20120705184342",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bf/1341369577099.jpg/revision/latest/scale-to-width-down/185?cb=20120705184416",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f3/New_8.jpg/revision/latest/scale-to-width-down/185?cb=20120705184619",
+      "https://static.wikia.nocookie.net/creepypasta/images/d/dd/New_9.jpg/revision/latest/scale-to-width-down/181?cb=20120705184628",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/24/New_10.jpg/revision/latest/scale-to-width-down/185?cb=20120705184635"
+    ],
+    "author": "CadenceAndCascade Originally uploaded on July 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Photography",
+      "Videos",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Masterpiece",
+    "url": "https://creepypasta.fandom.com/wiki/Masterpiece",
+    "description": "I've been lying down for hours now. It's 5:35AM and there's not much I can do. You know what the worst part about my situation is? I'm in the same room as my parents. They keep looking at me, and I can't help but look back and try not to cry or scream. Their eyes are focused on me and their mouths are wide open. There's a strong scent of blood and I feel paralyzed with fear. Here's the thing. The second I make any hint that I'm not asleep anymore, I'm completely fucked. I will die and there's no",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on December 29th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Dreams/Sleep",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "Mechanical Constraint",
+    "url": "https://creepypasta.fandom.com/wiki/Mechanical_Constraint",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a8/Becomes_Sentient.jpg/revision/latest/scale-to-width-down/180?cb=20120512184829",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a8/Becomes_Sentient.jpg/revision/latest/scale-to-width-down/180?cb=20120512184829"
+    ],
+    "author": "TheCreepyOne Originally uploaded on May 12th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Beings",
+      "Poetry"
+    ]
+  },
+  {
+    "name": "The Medic",
+    "url": "https://creepypasta.fandom.com/wiki/The_Medic",
+    "description": "In the winter of 1944, with overtaxed supply lines in the Ardennes, a medic in the German army had completely run out of plasma, bandages, and antiseptic. During one particularly bad round of mortar fire, his encampment was a bloodbath. Those who survived claimed to have heard, amidst the screams and barked commands of their Lieutenant, someone cackling with almost girlish glee. The medic had made his rounds during the fire in almost complete darkness, as he had so many times before; but never h",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Military",
+      "History",
+      "Dismemberment",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Meet Thorvaldr",
+    "url": "https://creepypasta.fandom.com/wiki/Meet_Thorvaldr",
+    "description": "Necronymous Forum Private Message Subject: Okay… Sent: Thu Jan 08, 6:36 pm From: Seraphine-Savior To: Centurion616 This is kind of random, but I notice your posts constantly mention this ‘Thorvaldr’ character. You always say it’s watching something or waiting for something, but no one else has any idea who or what it is. I’m just curious… Who is Thorvaldr? :O Subject: Re: Okay… Sent: Fri Jan 09, 2:17 am From: Centurion616 To: Seraphine-Savior Thorvaldr? I’m almost glad you asked. He’s just kind ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Beings",
+      "Computers_and_Internet",
+      "Dismemberment",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Mel's Hole",
+    "url": "https://creepypasta.fandom.com/wiki/Mel's_Hole",
+    "description": "Around the world exist massive holes in the ground, the edges surrounded by a metal collar, and strange phenomena all about the areas they are located. These are the Gates. The gates have been known throughout ancient civilizations and tribes. One man named Mel Waters has brought focus to them. The two he has found have been dubbed \"Mel's Hole(s)\" Mel asserts that, for years, locals had known about the \"bottomless\" nature of the hole, dumping garbage down it such as dead cattle, truckloads of ol",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on April 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Beings",
+      "Reality"
+    ]
+  },
+  {
+    "name": "The Melancholy of Herbert Solomon",
+    "url": "https://creepypasta.fandom.com/wiki/The_Melancholy_of_Herbert_Solomon",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9d/Stickfigure2.jpeg/revision/latest/scale-to-width-down/180?cb=20121125033228",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9d/Stickfigure2.jpeg/revision/latest/scale-to-width-down/180?cb=20121125033228"
+    ],
+    "author": "Michael Whitehouse Originally uploaded on November 25th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Michael_Whitehouse"
+    ]
+  },
+  {
+    "name": "Melting Away",
+    "url": "https://creepypasta.fandom.com/wiki/Melting_Away",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/76/Inside_factory_01.jpg/revision/latest/scale-to-width-down/250?cb=20121027185356",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/76/Inside_factory_01.jpg/revision/latest/scale-to-width-down/250?cb=20121027185356"
+    ],
+    "author": "Zoro the Gallade Originally uploaded on October 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Memetic Symbol",
+    "url": "https://creepypasta.fandom.com/wiki/The_Memetic_Symbol",
+    "description": "Even as I come to the realization that nothing in this world can pierce the hopelessness that ruins every stimulus I can still come upon, I find a reliable sense of wonder when imagining how patient it has been. Its origins and its creation, its nature and its effects. This always makes me shudder with a palpable sense of despair mixed with awe at my strange fate – I have regressed into sympathizing with it, into turning to its titanic lack of mercy and all-encompassing designs in order to feel ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Memes",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "A Memory",
+    "url": "https://creepypasta.fandom.com/wiki/A_Memory",
+    "description": "When thinking back to my earliest memories, nothing is concrete. A string of hazy images come to mind like random snapshots out of time, each one associated with certain feelings and emotions. They are imbued with a mystical dreamlike quality, a gift born of childhood naivety. The magic of every Christmas when Santa was still real, for example, is an experience of pure joy that is lost with maturity. Many of these snapshots are impossible to place in any sort of context. They’re just… there, sun",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "Mereana Mordegard Glesgorv",
+    "url": "https://creepypasta.fandom.com/wiki/Mereana_Mordegard_Glesgorv",
+    "description": "There is a video on YouTube named Mereana Mordegard Glesgorv . If you search this, you will find a video of a man staring intently at you, expressionless, then grinning for the last two seconds. The background is undefined. This is only part of the actual video. The full video lasts two minutes, and was removed by YouTube after 153 people who viewed it gouged out their eyes and mailed them to YouTube’s main office in San Bruno. Said people had also committed suicide in various ways. It is not ye",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Memes",
+      "Computers_and_Internet",
+      "Videos",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Message",
+    "url": "https://creepypasta.fandom.com/wiki/The_Message",
+    "description": "Don't dismiss this outright as the work of some raving lunatic. There's some sense to this story, if you'll just hear me out... Look, we all wonder if time travel is possible, right? Well let me tell you something... it is. I'm from the future, actually. I know you probably don't believe that, but seriously, I'm from the future. It's a really great thing; getting to see the past, watching events unfold... stuff like that. We know more now than we ever would. Behind all the fun, though, there is ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Meteor",
+    "url": "https://creepypasta.fandom.com/wiki/Meteor",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/cf/Meteor.jpg/revision/latest?cb=20101128173822",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/cf/Meteor.jpg/revision/latest?cb=20101128173822"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Space",
+      "Science",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Mewtwo",
+    "url": "https://creepypasta.fandom.com/wiki/Mewtwo",
+    "description": "Originally found on fyeahpokemoncreepypasta.tumblr.com Let me tell you a story. I lost my Blue cartridge and I felt nostalgic, but I didn't want to consult an emulator since the experience wouldn't be the same. Lucky for me, my video game store had a Blue to spare. It looked like any other cartridge, with the label and everything. So I popped the sucker in and was ready to reunite with Squirtle for some old time ass-kicking. The game went as normal; named my rival after a detested Anime characte",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/90/Sugimori-mewtwo.png/revision/latest/scale-to-width-down/280?cb=20120229132203",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/90/Sugimori-mewtwo.png/revision/latest/scale-to-width-down/280?cb=20120229132203"
+    ],
+    "author": "unknown Originally uploaded on November 12",
+    "date": "November 12, 2012",
+    "categories": [
+      "Historical_Archive",
+      "PokéMon"
+    ]
+  },
+  {
+    "name": "Miasma",
+    "url": "https://creepypasta.fandom.com/wiki/Miasma",
+    "description": "“Oh fuck, what was that?!” The ground’s gone out from under you. No, wait, there it is—explosive acquaintance with your tailbone. You splay out your hands behind you, feet scrabbling at the grass, trying to scramble away. Where’d it go? Shit — it could be — A noise like a blender full of once-live things and a carrion finger dragged down your face. Your head is immersed in a blinding, nauseating greenish cloud, the color of everything dead and rotting. “Oh fuck!” And it’s gone. You couldn't have",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/02/Death.jpg/revision/latest/scale-to-width-down/180?cb=20181120182705",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/02/Death.jpg/revision/latest/scale-to-width-down/180?cb=20181120182705"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Beings",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Midget Mansion",
+    "url": "https://creepypasta.fandom.com/wiki/Midget_Mansion",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f7/450px-Tiny_house_.jpg/revision/latest/scale-to-width-down/250?cb=20120225041629",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f7/450px-Tiny_house_.jpg/revision/latest/scale-to-width-down/250?cb=20120225041629"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "History",
+      "Places",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "Midnight Game",
+    "url": "https://creepypasta.fandom.com/wiki/Midnight_Game",
+    "description": "The \"Midnight Game\" is an old Pagan ritual, typically performed as punishment for those who had broken the laws of the Pagan religion in question. While it was also used as a scare tactic to not disobey the gods, there is still a very existent chance of death to those who play the Midnight Game. There is an even higher chance of permanent mental scarring.It is highly recommended that you DO NOT PLAY THE MIDNIGHT GAME. However, for those few thrill seekers searching for a rush, or for those delvi",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/4b/Candle.jpg/revision/latest/scale-to-width-down/250?cb=20120421191903",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4b/Candle.jpg/revision/latest/scale-to-width-down/250?cb=20120421191903"
+    ],
+    "author": "unknown Originally uploaded on January 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Ritual",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Midnight Train",
+    "url": "https://creepypasta.fandom.com/wiki/Midnight_Train",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Danarcher Content is available under CC BY-SA",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "NSFW",
+      "Suggested_Reading",
+      "Beings",
+      "Vehicles",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Midwest",
+    "url": "https://creepypasta.fandom.com/wiki/Midwest",
+    "description": "Having spent my life in a buzzing metropolis, driving through the Midwest states was a hypnotic and sobering experience. Anyone who has seen the bread-basket of America will know what I'm talking about. Fields. Billions of acres of crops covering the land in waves of undulating leaves; the tame wilderness organized into rows, blocks, and circles, continuing on for hours and hours and days and days. That's one of the strangest things about driving through the Midwest. The endless ocean of cornfie",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/35/Midwest.jpg/revision/latest/scale-to-width-down/296?cb=20120329003022",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/35/Midwest.jpg/revision/latest/scale-to-width-down/296?cb=20120329003022"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Monsters",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "The Mind Tomb",
+    "url": "https://creepypasta.fandom.com/wiki/The_Mind_Tomb",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/97/Mindtomb.gif/revision/latest/scale-to-width-down/267?cb=20120721025630",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/97/Mindtomb.gif/revision/latest/scale-to-width-down/267?cb=20120721025630"
+    ],
+    "author": "Trickster88 Originally uploaded on July 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Mirror Avenue",
+    "url": "https://creepypasta.fandom.com/wiki/Mirror_Avenue",
+    "description": "I live in a pretty small, relatively unknown town. This is the internet, so I won't divulge too much information but I will tell you it's in southern Wisconsin. I live on the corner of Lawn and Elm Street, and pretty near to my house is a stretch of road that most people called \"Mirror Avenue\". Of course it's not really technically an avenue, just an extension of Lawn Street, and it's not the whole road, just a short stretch within the block adjacent to the one my house is on. I've lived here my",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Beings",
+      "Places",
+      "Reality",
+      "Mirrors",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Mirror Box",
+    "url": "https://creepypasta.fandom.com/wiki/Mirror_Box",
+    "description": "Though written about in fiction occasionally, the mirror box is quite an old invention. Being inside of one can be enlightening or traumatizing for the witness who bears its burden. The procedure is simple, though finding and preparing the materials required might take some time. The materials to construct the box are: -Six square metal sheets, slightly taller than the witness. The length should never exceed the height of a witness with raised hands. One of them should be larger than the rest by",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Ritual",
+      "Mirrors",
+      "Historical_Archive",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "Misfortune.gb",
+    "url": "https://creepypasta.fandom.com/wiki/Misfortune.gb",
+    "description": "Misfortune is an obscure game for the original Game Boy. Since no known hard copies or ROMs exist, all known information on the game is derived from personal accounts and a scant assemblage of screenshots. The game does not contain any credits; whoever created it has yet to be discovered to this day. The few people who have experienced it consider it to be one of the scariest video games ever made. Given its age and cult following among rare horror game enthusiasts, it's entirely possible that a",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/5f/MisfortuneStill2.png/revision/latest?cb=20121203082243",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/5f/MisfortuneStill2.png/revision/latest?cb=20121203082243",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b6/MisfortuneStill4.png/revision/latest?cb=20121203082401",
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a9/MisfortuneStill6.png/revision/latest?cb=20121203082509",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/17/MisfortuneStill3.png/revision/latest?cb=20121203082620",
+      "https://static.wikia.nocookie.net/creepypasta/images/4/44/MisfortuneStill5.png/revision/latest?cb=20121203082737"
+    ],
+    "author": "unknown Originally uploaded on December 3rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Video_Games",
+      "Videos"
+    ]
+  },
+  {
+    "name": "Missing",
+    "url": "https://creepypasta.fandom.com/wiki/Missing",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "ThatCreepyGirl Originally uploaded on February 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Memes"
+    ]
+  },
+  {
+    "name": "The Missing Step",
+    "url": "https://creepypasta.fandom.com/wiki/The_Missing_Step",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/fb/Stairs2.jpg/revision/latest?cb=20111204130129",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/fb/Stairs2.jpg/revision/latest?cb=20111204130129"
+    ],
+    "author": "The Silicon Lemming Originally uploaded on December 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "The_Silicon_Lemming",
+      "Ritual",
+      "Reality",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Modern Essenes",
+    "url": "https://creepypasta.fandom.com/wiki/The_Modern_Essenes",
+    "description": "There were giants on the Earth in olden days, and Methuselah lived to be 969 years old. Is it accurate to dismiss these accounts as fantasy or allegory? Years ago in my freight-hopping days, I climbed into an open boxcar on a rural siding out in the middle of nowhere, and was surprised to see a very old man sitting in a dark corner. We got to talking, and he told me that the perception of time passing was just an artifact of consciousness, and that everything was indeed happening at once. He sai",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on April 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Vehicles",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "A Moment's Clarity",
+    "url": "https://creepypasta.fandom.com/wiki/A_Moment's_Clarity",
+    "description": "When Anita found him, her immediate reaction was to put him in the foyer next to the stairwell so he could be decorative. Not everyone would have one, and the way his arms stuck out just so would make him a suitable hat rack. She realized, almost too late, that this might have been in bad taste. But what, she thought, was a woman supposed to do when her husband went and turned into a glass statue overnight? She had heard of this happening, of course. It just seemed to happen to other people; one",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Moonlight Films",
+    "url": "https://creepypasta.fandom.com/wiki/Moonlight_Films",
+    "description": "In many stores and establishments that provide videos of a less than savory manner, a business card is kept. Some stores keep it well hidden, locked in a safe, and will deny its existence. Others will show you if you ask for it by name. None will have it displayed in the open. On this card is a name, \"Moonlight Films\", and a contact number. It is always a local number. Go to any payphone in your city and dial the number. The answer will be prompt but all you will hear is silence. Wait thirty sec",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Dismemberment",
+      "Television"
+    ]
+  },
+  {
+    "name": "Morbus.avi",
+    "url": "https://creepypasta.fandom.com/wiki/Morbus.avi",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b2/Doctor.jpg/revision/latest/scale-to-width-down/250?cb=20121108224627",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b2/Doctor.jpg/revision/latest/scale-to-width-down/250?cb=20121108224627"
+    ],
+    "author": "SkeletonWolves Originally uploaded on November 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Dreams/Sleep",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Morning Coffee",
+    "url": "https://creepypasta.fandom.com/wiki/Morning_Coffee",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/20/Large_Hot_Black_Coffee_Wallpaper_80595.jpg/revision/latest?cb=20120530014744",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/20/Large_Hot_Black_Coffee_Wallpaper_80595.jpg/revision/latest?cb=20120530014744"
+    ],
+    "author": "ClericofMadness Originally uploaded on March 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Gods",
+      "Reality",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Morph",
+    "url": "https://creepypasta.fandom.com/wiki/Morph",
+    "description": "Brad enjoyed taking walks at night. He did so every evening on the weekend, standing on his porch, admiring the waning light of the evening sun. He took a deep breath of the cool, late summer air. Nothing was more perfect than that moment he spent relishing the silent solitude and the smell of the earth. He stepped off the porch and started down the forest path with a confident stride. The path was a well worn dirt trail that started behind his house in the countryside and lead through the dense",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Mother",
+    "url": "https://creepypasta.fandom.com/wiki/Mother",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/32/Fetus-54299594875.jpeg/revision/latest/scale-to-width-down/266?cb=20120422010436",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/32/Fetus-54299594875.jpeg/revision/latest/scale-to-width-down/266?cb=20120422010436"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Mother's Call",
+    "url": "https://creepypasta.fandom.com/wiki/Mother's_Call",
+    "description": "A young girl is playing in her bedroom when she hears her mother call to her from the kitchen, so she runs downstairs to meet her. As she's running through the hallway, the door to the cupboard under the stairs opens, and a hand reaches out and pulls her in. It's her mother. She whispers to her child, \"Don't go in the kitchen. I heard it too.\" Original author unknown Originally uploaded on August 28th, 2010",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Memes",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Mothman",
+    "url": "https://creepypasta.fandom.com/wiki/Mothman",
+    "description": "The Mothman of Point Pleasant, West Virginia is an infamous cryptid whose origins date back to the mid '60s, when reports of a mysterious bird-like monster made headlines. Commonly depicted as a large, dark, winged creature with piercing red eyes, the prevalence of the Mothman in popular culture can be traced back to the 1975 book \"The Mothman Prophecies\" by John Keel. The book, which received a motion picture adaptation in 2002, alleged that the Mothman functioned as a harbinger of doom, being ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/eb/Mothman.jpeg/revision/latest/scale-to-width-down/180?cb=20120108173218",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/eb/Mothman.jpeg/revision/latest/scale-to-width-down/180?cb=20120108173218",
+      "https://static.wikia.nocookie.net/creepypasta/images/3/31/The_bridge.jpeg/revision/latest?cb=20120108173848"
+    ],
+    "author": "unknown Originally uploaded on January 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Cryptids",
+      "Contextual",
+      "History",
+      "Photography",
+      "Places",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Mount Pleasant",
+    "url": "https://creepypasta.fandom.com/wiki/Mount_Pleasant",
+    "description": "Mount Pleasant is one of those little suburban communities that seem to have spilled out across the rural Ontario countryside in recent years. Like many of its breed, it contains an endless procession of tidy, reasonably sized houses neatly lined up by the sides of streets with names like Sunnyview Road, Grovewood Drive, and Orange Tree Gate. Even the name of the community itself is unspectacular. As a matter of fact, there are eight different \"Mount Pleasants\" in Ontario alone. However, on the ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/37/Mountpleasant.jpg/revision/latest?cb=20120308011632",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/37/Mountpleasant.jpg/revision/latest?cb=20120308011632"
+    ],
+    "author": "unknown Originally uploaded on September 18th",
+    "date": "March 12, 2008",
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Disappearances",
+      "Animals",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Mouth of Truth",
+    "url": "https://creepypasta.fandom.com/wiki/The_Mouth_of_Truth",
+    "description": "Somewhere near the center of Palermo, in Sicily, there is an old amusement park. Should you wander around, just aside a shooting gallery, there is an old, funny-looking statue of a grotesque face. Don't try to get close to it yet. As soon as you're about to touch it, no matter how hard you try, you'll change your mind. Go to the shooting gallery and pay the clerk for three games. It will cost you the equivalent of $10 in total. It doesn't matter how much you score. As soon as you finish the seco",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/6b/Face.png/revision/latest/scale-to-width-down/231?cb=20110703021232",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6b/Face.png/revision/latest/scale-to-width-down/231?cb=20110703021232"
+    ],
+    "author": "unknown Originally uploaded on April 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Places",
+      "Dismemberment",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "Movie Buff",
+    "url": "https://creepypasta.fandom.com/wiki/Movie_Buff",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/cd/Scream-mask-425x500.jpg/revision/latest/scale-to-width-down/280?cb=20110811023505",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/cd/Scream-mask-425x500.jpg/revision/latest/scale-to-width-down/280?cb=20110811023505"
+    ],
+    "author": "Lordfudgington Originally uploaded on August 11th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Halloween",
+      "Mental_Illness",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Mr. Bones' Wild Ride",
+    "url": "https://creepypasta.fandom.com/wiki/Mr._Bones'_Wild_Ride",
+    "description": "So anyone who's been on the /v/ board at 4chan probably knows about Mr. Bones' Wild Ride. For those who don't, it was a ride someone made for Roller Coaster Tycoon . It was one of those really slow motor car rides, but with a twist. It had 30,696 feet of track and a ride time of 70 real life minutes, around four years in game time. In addition, there were props of a skeleton holding out his top hat scattered around here and there, as if to mock the customers. Needless to say, there were a lot of",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e3/Mrbones.png/revision/latest/scale-to-width-down/180?cb=20120805211242",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e3/Mrbones.png/revision/latest/scale-to-width-down/180?cb=20120805211242"
+    ],
+    "author": "unknown Originally uploaded on August 5th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Video_Games",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Mr. Mix",
+    "url": "https://creepypasta.fandom.com/wiki/Mr._Mix",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/ac/Mr_mix_by_felixlyons-d4ux8pb.png/revision/latest/scale-to-width-down/230?cb=20120719035505",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/ac/Mr_mix_by_felixlyons-d4ux8pb.png/revision/latest/scale-to-width-down/230?cb=20120719035505"
+    ],
+    "author": "Ingx24 Originally uploaded on November 17th",
+    "date": null,
+    "categories": [
+      "Video_Games",
+      "Historical_Archive",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Mr. Smother",
+    "url": "https://creepypasta.fandom.com/wiki/Mr._Smother",
+    "description": "I don’t remember where exactly I was driving, if anywhere at all. I believe I was going down some lonely, barren road; why I had chosen to go there, I can’t recall. Every once in a while, I’d see a farm in the distance, or a couple cows grazing on some tall grass. But for the most part, I was coasting down an empty road in an empty place. It was about three in the morning, I think. A little bit of sunlight peeked over the horizon, but it was dark enough for me to keep my headlights on. I can’t h",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/fe/Abandoned-farm.jpg/revision/latest/scale-to-width-down/220?cb=20120323182356",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/fe/Abandoned-farm.jpg/revision/latest/scale-to-width-down/220?cb=20120323182356"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Mr. Widemouth",
+    "url": "https://creepypasta.fandom.com/wiki/Mr._Widemouth",
+    "description": "During my childhood, my family was like a drop of water in a vast river, never remaining in one location for long. We settled in Rhode Island when I was eight, and there we remained until I went to college in Colorado Springs. Most of my memories are rooted in Rhode Island, but there are fragments in the attic of my brain which belong to the various homes we lived in when I was much younger. Most of these memories are unclear and pointless – chasing after another boy in the back yard of a house ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Beings",
+      "Places",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Mudhouse Mansion",
+    "url": "https://creepypasta.fandom.com/wiki/Mudhouse_Mansion",
+    "description": "Mudhouse Mansion is a house located outside Lancaster, Ohio. Some claim that it is haunted. According to locals in Lancaster, the house was built in the early 1800s by a government official who lived there after the Civil War. The man kept slaves in Mudhouse Mansion, even though it was illegal, locked up in an outbuilding at night. He treated them very poorly. The conditions were so bad that one slave started building a tunnel underneath the wall of the outbuilding. He dug a little every night a",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/11/Mhm-ghostball.jpg/revision/latest/scale-to-width-down/250?cb=20120304103851",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/11/Mhm-ghostball.jpg/revision/latest/scale-to-width-down/250?cb=20120304103851"
+    ],
+    "author": "unknown Originally uploaded on March 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Places",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "Murmurs",
+    "url": "https://creepypasta.fandom.com/wiki/Murmurs",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/6b/Rockingchair0.jpg/revision/latest/scale-to-width-down/163?cb=20121022004456",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6b/Rockingchair0.jpg/revision/latest/scale-to-width-down/163?cb=20121022004456"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Muse",
+    "url": "https://creepypasta.fandom.com/wiki/Muse",
+    "description": "The Maestro​ I met the maestro in late April 1999. You see, my name is Eleanor Finley. I reside in Apartment 507, and I absolutely adore the place. It’s very peaceful and well-maintained. The landowner, Mr. Grouse, is a wonderful old man who keeps a garden behind the building. His wonderful landscaping draws new tenants to this apartment building like prospectors to a gold mine. Everyone here generally keeps to themselves, and everyone is happy. The maestro showed up March 25 th . He was a curio",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Music"
+    ]
+  },
+  {
+    "name": "A Music Box",
+    "url": "https://creepypasta.fandom.com/wiki/A_Music_Box",
+    "description": "The attic was extremely dusty and smelled of some form of mold, but at the very least, it had a window at the end which illuminated the area enough to see. Unfortunately, all Cam saw was boxes upon boxes, undoubtedly full of the most useless plethora of ancient items in existence. She sighed to herself, thankful that she hadn’t inherited her mother’s pack-rat ways. She picked a box at random and opened it, releasing a cloud of dust. After a short sneezing fit, she began sorting through it. As sh",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/c9/Ballerina%2Cmusic%2Cbox%2Cjewellery%2Cbox%2Cjewelry%2Cbox%2Cart%2Cbox-78f79538b3d95a8947a667bbda3cb89f_h.jpg/revision/latest/scale-to-width-down/180?cb=20130414234851",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c9/Ballerina%2Cmusic%2Cbox%2Cjewellery%2Cbox%2Cjewelry%2Cbox%2Cart%2Cbox-78f79538b3d95a8947a667bbda3cb89f_h.jpg/revision/latest/scale-to-width-down/180?cb=20130414234851"
+    ],
+    "author": null,
+    "date": "June 27, 1921",
+    "categories": [
+      "Historical_Archive",
+      "Music",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "The Music Box",
+    "url": "https://creepypasta.fandom.com/wiki/The_Music_Box",
+    "description": "Not too long ago, there was a very poor man named Sebastian who lived in an old abandoned building. One night, after he came home from an evening stroll, he went into the kitchen to have a snack. He most often would make ham and cheese sandwiches, since he had nothing else to eat. As he took a bite of his sandwich, he felt a sharp pain in the back of his teeth. He went into the bathroom and looked into a mirror. His hair was a mess, his eyes were bloodshot, his clothes were dirty, there were blo",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/62/Hguhuehuhfbvd.jpg/revision/latest/scale-to-width-down/180?cb=20130904110221",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/62/Hguhuehuhfbvd.jpg/revision/latest/scale-to-width-down/180?cb=20130904110221"
+    ],
+    "author": "unknown Originally uploaded on January 6th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Items/Objects",
+      "Disappearances",
+      "Music"
+    ]
+  },
+  {
+    "name": "Musings from the Bunker",
+    "url": "https://creepypasta.fandom.com/wiki/Musings_from_the_Bunker",
+    "description": "In the year 2013, Microminiatures, the small computer company from Stone, Staffordshire responsible for the creation of ice cream chimes and their various motors and parts goes under. Their file for bankruptcy cites economic pressures as well as the increasing social pressures relating to the misuse of their devices, particularly the ‘Any old scrap iron’ sound loop and the Grampian Horn. Due to the distinct analogue nature of the sound these devices produced they have of course in the time since",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Vehicles",
+      "Micropasta",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Mutant Future",
+    "url": "https://creepypasta.fandom.com/wiki/Mutant_Future",
+    "description": "January 22, 2027: Dr. Hagiru Sato and his team of scientists from Japan, America, Canada, and Britain begin work on a matter-energy transference machine. February 11, 2033: First machine is tested successfully after over a hundred failed tests. Controversy over the destructive nature of the technology ignites. July 18, 2033: A catastrophic incident with an energy-matter machine destroys the city of Hiroshima, in devastation not seen since the atomic bombs were dropped nearly ninety years prior. ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/fe/Thefuture.jpg/revision/latest/scale-to-width-down/180?cb=20130914105905",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/fe/Thefuture.jpg/revision/latest/scale-to-width-down/180?cb=20130914105905"
+    ],
+    "author": null,
+    "date": "January 22, 2027",
+    "categories": [
+      "PokéMon",
+      "Theory",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "The Mute Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Mute_Man",
+    "description": "You awaken with a high-pitched ringing in your ears. Gradually, the sound becomes softer, like the humming from your refrigerator, and eventually, it stops completely. Even after a peaceful night's rest, your eyes are not ready to open. Your instincts urge you to KEEP THEM CLOSED, but you find no reason not to open them. The fluorescent lights blind you as your eyes are adjusting to the brightness. You are in a perfectly square, white room with one door. One door. There is nothing strange about ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e0/Shhhhhh.jpg/revision/latest/scale-to-width-down/275?cb=20130829170903",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e0/Shhhhhh.jpg/revision/latest/scale-to-width-down/275?cb=20130829170903"
+    ],
+    "author": "hand",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Ritual",
+      "Beings"
+    ]
+  },
+  {
+    "name": "My Favorite Part",
+    "url": "https://creepypasta.fandom.com/wiki/My_Favorite_Part",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/66/Pocket_watch.jpg/revision/latest/scale-to-width-down/180?cb=20131113003147",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/66/Pocket_watch.jpg/revision/latest/scale-to-width-down/180?cb=20131113003147"
+    ],
+    "author": "ClericofMadness Originally uploaded on August 14th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Demon/Devil"
+    ]
+  },
+  {
+    "name": "My First Friend",
+    "url": "https://creepypasta.fandom.com/wiki/My_First_Friend",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/3f/Leaving_Yerevan....jpg/revision/latest/scale-to-width-down/180?cb=20140306221437",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/3f/Leaving_Yerevan....jpg/revision/latest/scale-to-width-down/180?cb=20140306221437"
+    ],
+    "author": "Shinigami",
+    "date": "April 3, 1981",
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "My Perfect World, Shattered",
+    "url": "https://creepypasta.fandom.com/wiki/My_Perfect_World,_Shattered",
+    "description": "DAY 0 It’s only a few weeks since I left the mainland. Good riddance. It’s been years since I got my doctorate. I was attempting to follow in my grandfather’s footsteps, becoming a scientist to try and better the world. In the mainland, however, I’d unfortunately experienced nothing but setbacks in concern to my peers and government. Using the knowledge I’d gained through years of studying engineering and robotics, I built my own craft in secret. It’s taken a while, but I finally completed it. I",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games",
+      "Diary/Journal"
+    ]
+  },
+  {
+    "name": "My Wife",
+    "url": "https://creepypasta.fandom.com/wiki/My_Wife",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Mysterious Caller",
+    "url": "https://creepypasta.fandom.com/wiki/Mysterious_Caller",
+    "description": "It was Tuesday, and when I arrived at my cubicle, as I had done nearly every work day for the past seven years, I hung my satchel over the chair, booted up my PC, and slumped to my station. The air smelled like re-circulated coffee grinds, old paper, and a hint of chemical cleaner. I moved my hands to the keyboard and almost knocked off a small silver flip phone sitting upon it. I paused, brow furrowed slightly in confusion. This wasn't my cell-phone. I picked it up and turned it around. It look",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on September 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Memes"
+    ]
+  },
+  {
+    "name": "The Mystery of Bertshine, Iowa",
+    "url": "https://creepypasta.fandom.com/wiki/The_Mystery_of_Bertshine,_Iowa",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/19/Bertshine_2.jpg/revision/latest/scale-to-width-down/236?cb=20120225032103",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/19/Bertshine_2.jpg/revision/latest/scale-to-width-down/236?cb=20120225032103",
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ec/Jamesdrawing.png/revision/latest/scale-to-width-down/206?cb=20120225033433"
+    ],
+    "author": "Indigoice Originally uploaded on February 25th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Disappearances",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "Nana",
+    "url": "https://creepypasta.fandom.com/wiki/Nana",
+    "description": "Nana’s hard, wooden fingers wrap around me as she lifts me up. She inserts the brass syringe into my mouth and slowly pushes the bittersweet mush down the back of my throat. She then lowers me into my bed and gently drapes the sweaty, fleshy blanket over my moist, raw form. I’m not sure how long she’s had me. I can’t remember much of my life before Nana. I know I had a wife, or at least a girlfriend. No, she was my wife; I keep letting myself forget that. I think we had a child, maybe more than ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Micropasta",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Necrosis",
+    "url": "https://creepypasta.fandom.com/wiki/Necrosis",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f2/Re1_8690.jpg/revision/latest/scale-to-width-down/289?cb=20110823031500",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f2/Re1_8690.jpg/revision/latest/scale-to-width-down/289?cb=20110823031500"
+    ],
+    "author": "TheNicholasParkusComplex Originally uploaded on August 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Diary/Journal",
+      "Science",
+      "Mental_Illness",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "NES Godzilla Creepypasta",
+    "url": "https://creepypasta.fandom.com/wiki/NES_Godzilla_Creepypasta",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/29/Gezoraglitch-1.png/revision/latest?cb=20130411221350",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/29/Gezoraglitch-1.png/revision/latest?cb=20130411221350"
+    ],
+    "author": "Cosbydaf on Bogleech",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games",
+      "Demon/Devil",
+      "Suggested_Reading",
+      "Longpasta",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "The Never-Ending Road",
+    "url": "https://creepypasta.fandom.com/wiki/The_Never-Ending_Road",
+    "description": "In Corona, California, there once was a place known by most locals as the Never-Ending Road. Specifically, its true name was Lester Road. Now, over twenty years later, the landscape of Corona has changed, and the Never-Ending Road is no more. However, years ago, Lester Road was an unlit pathway that people claimed became a never ending road when driven at night. The people who made such a drive were never seen or heard from again. The legend became so well-known that people refused to drive on L",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/16/Never_ending_road.jpg/revision/latest?cb=20101010061200",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/16/Never_ending_road.jpg/revision/latest?cb=20101010061200"
+    ],
+    "author": "unknown Originally uploaded on August 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Vehicles",
+      "Disappearances",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "New Cell Phone",
+    "url": "https://creepypasta.fandom.com/wiki/New_Cell_Phone",
+    "description": "A couple of months ago, my friend's cousin (a single mother) bought a new cell phone. After a long day of work, she came home, placed her phone on the counter, and went to watch TV. Her son came to her and asked if he could play with her new phone. She told him not to call anyone or mess with text messages, and he agreed. At around 11:20, she was drowsy, so she decided to tuck her son in and go to bed. She walked to his room and saw that he wasn't there. She then ran over to her room to find him",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/ff/Newcellphonepic.jpg/revision/latest?cb=20101202062209",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/ff/Newcellphonepic.jpg/revision/latest?cb=20101202062209"
+    ],
+    "author": "unknown Originally uploaded on December 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Photography",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "New Eden",
+    "url": "https://creepypasta.fandom.com/wiki/New_Eden",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/73/Creepypasta7.jpeg/revision/latest/scale-to-width-down/200?cb=20120316181441",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/73/Creepypasta7.jpeg/revision/latest/scale-to-width-down/200?cb=20120316181441"
+    ],
+    "author": "LogsOnAndPosts Originally uploaded on January 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Space",
+      "Science"
+    ]
+  },
+  {
+    "name": "New Messages",
+    "url": "https://creepypasta.fandom.com/wiki/New_Messages",
+    "description": "It's early morning. The sun won't be up for another couple of hours. You're fast asleep in bed, lost in a dream, when the phone rings. Rather than waking up, you roll over and cover your head with a pillow. Hours pass. The sun rises. The phone is ringing. When you wake up, your alarm clock is blaring and the phone is ringing. By the time you will yourself to turn the alarm off, the phone has stopped ringing. You realize that it's been ringing all morning. You slide out of bed and press the blink",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/0c/Answering-machines1---message-screen.s600x600.jpg/revision/latest/scale-to-width-down/250?cb=20120322201854",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0c/Answering-machines1---message-screen.s600x600.jpg/revision/latest/scale-to-width-down/250?cb=20120322201854"
+    ],
+    "author": "unknown Originally uploaded on August 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Items/Objects",
+      "Demon/Devil",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Nice Guy",
+    "url": "https://creepypasta.fandom.com/wiki/The_Nice_Guy",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Murphy1976 Originally uploaded on July 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "No Gifts This Year",
+    "url": "https://creepypasta.fandom.com/wiki/No_Gifts_This_Year",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d8/Nogifts.jpg/revision/latest/scale-to-width-down/180?cb=20111225153852",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d8/Nogifts.jpg/revision/latest/scale-to-width-down/180?cb=20111225153852"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "CPWX11",
+      "Contest_Winner",
+      "Historical_Archive",
+      "PotM",
+      "Christmas",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "No Man's Land",
+    "url": "https://creepypasta.fandom.com/wiki/No_Man's_Land",
+    "description": "Unteroffizier Erich Lang awakes long after the dawn to the distant sound of artillery. The gunmetal sky ripples with threatening black clouds, and the dusty smell of rain hangs in the chill air. He is slumped back against the earthen wall, his left arm crooked and folded behind him. It comes awake in a flare of pinpricks and fire, and he winces as he works it free and shakes. His slender frame is wrapped in his thick woollen coat, sodden and heavy with mud, and he feels cold water seeping in thr",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Josef_K.",
+      "History",
+      "Military"
+    ]
+  },
+  {
+    "name": "No Through Road",
+    "url": "https://creepypasta.fandom.com/wiki/No_Through_Road",
+    "description": "On December 15, 2008, four seventeen-year-old boys from Stevenage, Hertfordshire were reported missing by their families. Two days later, their bodies were found at Broomhall Farm, ten miles away from Stevenage, in the car they had been driving. The farm was thought to have been abandoned, yet further investigation showed signs of recent inhabitance. A digital camcorder was also found in the car. This video is unedited footage taken straight from it, which has been released with the family's con",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e1/Http_jux-user-files-prod.s3.amazonaws.com_2012_08_01_02_34_43_867_7687958068_5dca9208a4_o.jpg/revision/latest/scale-to-width-down/250?cb=20121223144955",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e1/Http_jux-user-files-prod.s3.amazonaws.com_2012_08_01_02_34_43_867_7687958068_5dca9208a4_o.jpg/revision/latest/scale-to-width-down/250?cb=20121223144955",
+      "https://static.wikia.nocookie.net/creepypasta/images/d/db/8256.png/revision/latest/scale-to-width-down/225?cb=20120108224306"
+    ],
+    "author": null,
+    "date": "December 15, 2008",
+    "categories": [
+      "Historical_Archive",
+      "Disappearances",
+      "Vehicles",
+      "Videos",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "No Will",
+    "url": "https://creepypasta.fandom.com/wiki/No_Will",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "ClericofMadness Originally uploaded on March 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "No Wolves in the Stillwood",
+    "url": "https://creepypasta.fandom.com/wiki/No_Wolves_in_the_Stillwood",
+    "description": "File:Image:Wolf.gif There are no wolves in the Stillwood. The gray wolves of Virginia were made extinct over a hundred years ago. According to the regular surveys by the National Forestry service, no sign of any such animal has been found since 1900. The occasional reports of large predators, just after dusk or late at night - usually by the occasional hiker or party of campers in the Stillwood (residents of Lower Alethia, nearest the woods like myself, know better than to try) - receive the sam",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": "September 6, 2011",
+    "categories": [
+      "Pages_with_broken_file_links",
+      "Historical_Archive",
+      "Beings",
+      "Disappearances",
+      "Nature"
+    ]
+  },
+  {
+    "name": "NoEnd House",
+    "url": "https://creepypasta.fandom.com/wiki/NoEnd_House",
+    "description": "Let me start by saying that Peter Terry was addicted to heroin. We were friends in college and continued to be after I graduated. Notice that I said \"I\". He dropped out after two years of barely cutting it. After I moved out of the dorms and into a small apartment, I didn't see Peter as much. We would talk online every now and then (AIM was king in pre-Facebook years). There was a period where he wasn't online for about five weeks straight. I wasn't worried. He was a pretty notorious flake and d",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/0b/20090227001613_2008-08-17_0542-1-.jpg/revision/latest?cb=20121104230637",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0b/20090227001613_2008-08-17_0542-1-.jpg/revision/latest?cb=20121104230637"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "PotM",
+      "Suggested_Reading",
+      "Historical_Archive",
+      "Places",
+      "Mental_Illness",
+      "Weird",
+      "Beings",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Noises",
+    "url": "https://creepypasta.fandom.com/wiki/Noises",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b6/Resurrection.jpg/revision/latest/scale-to-width-down/300?cb=20110809191918",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b6/Resurrection.jpg/revision/latest/scale-to-width-down/300?cb=20110809191918"
+    ],
+    "author": "Azure-Clarity Originally uploaded on August 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Normal Porn for Normal People",
+    "url": "https://creepypasta.fandom.com/wiki/Normal_Porn_for_Normal_People",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/20/Angry_chimpanzee.jpg/revision/latest/scale-to-width-down/250?cb=20120305154102",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/20/Angry_chimpanzee.jpg/revision/latest/scale-to-width-down/250?cb=20120305154102"
+    ],
+    "author": "Cosbydaf Originally uploaded on March 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "NSFW",
+      "PotM",
+      "Computers_and_Internet",
+      "Dismemberment",
+      "Memes",
+      "Animals",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Noseybonk Lost Episode",
+    "url": "https://creepypasta.fandom.com/wiki/Noseybonk_Lost_Episode",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/de/Noseybonk1.jpg/revision/latest/scale-to-width-down/200?cb=20240501223803",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/de/Noseybonk1.jpg/revision/latest/scale-to-width-down/200?cb=20240501223803",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2f/Noseybonk2.png/revision/latest/scale-to-width-down/200?cb=20240501224022",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/62/Jigsaw1.jpg/revision/latest/scale-to-width-down/238?cb=20121217012955"
+    ],
+    "author": "Alfred White",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes"
+    ]
+  },
+  {
+    "name": "Not Anymore",
+    "url": "https://creepypasta.fandom.com/wiki/Not_Anymore",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "41488p-fduser Originally uploaded on December 6th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "41488p-fduser",
+      "Space",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Not Chocolate",
+    "url": "https://creepypasta.fandom.com/wiki/Not_Chocolate",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Chemiisan Originally uploaded on October 19th",
+    "date": null,
+    "categories": [
+      "CPWH11",
+      "Historical_Archive",
+      "Television",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "Not So Funny When It Happened",
+    "url": "https://creepypasta.fandom.com/wiki/Not_So_Funny_When_It_Happened",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/70/Gift_from_a_friend.jpg/revision/latest/scale-to-width-down/180?cb=20130106192643",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/70/Gift_from_a_friend.jpg/revision/latest/scale-to-width-down/180?cb=20130106192643"
+    ],
+    "author": "MJTR Originally uploaded on December 5th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "MJTR",
+      "Memes"
+    ]
+  },
+  {
+    "name": "The Note and the Toolbox",
+    "url": "https://creepypasta.fandom.com/wiki/The_Note_and_the_Toolbox",
+    "description": "You wake up one morning to find a note taped to your mirror: \"Don't worry, I took care of everything.\" Your clothes have been freshly laundered, the bathroom is spotless, and your garage has been organized. Even your faithful old toolbox has been replaced. Later that week, there's another note on your mirror: \"GET OUT OF TOWN.\" Paper-clipped to this message are several grainy photos of police in a taped-off section of a field. One of them is carrying your old toolbox in his latex-gloved hand. Or",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9a/Toolbox.jpg/revision/latest/scale-to-width-down/250?cb=20110613125120",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9a/Toolbox.jpg/revision/latest/scale-to-width-down/250?cb=20110613125120"
+    ],
+    "author": "unknown Originally uploaded on June 13th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Notebooks",
+    "url": "https://creepypasta.fandom.com/wiki/Notebooks",
+    "description": "Somewhere in the world, there is a collection of books. Maybe it's in a dusty, unpainted shelf in the back corner of someone's attic; maybe it's in a set of musty boxes in the basement of some tiny, obscure library. It contains a few hundred volumes, all handwritten, ranging from leather-bound volumes with two hundred year-old yellowed pages to modern, spiral-bound notebooks. All of these are diaries, some by famous people, some by not-so famous people, but all by the most horrific madmen and mu",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on January 10th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Diary/Journal",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Notes",
+    "url": "https://creepypasta.fandom.com/wiki/Notes",
+    "description": "All this shit started when I found that little note. On a square piece of paper I found at the bottom of a box I was moving out of my basement, it read, \"HELLO? PLEASE RESPOND.\" I had no idea how long the paper had been there; those boxes had sat in my basement since I moved in. I ignored it until the next morning, when I opened my coffee maker to throw out the grounds, and inside was a sopping wet piece of paper that read, \"PLEASE RESPOND PLEASE HELP.\" I figured it must have been put inside my ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on November 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Items/Objects",
+      "Reality",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Nuckelavee",
+    "url": "https://creepypasta.fandom.com/wiki/Nuckelavee",
+    "description": "The Nuckelavee is a monstrous type of fairy found in the folklore of Scotland and the Orkney Islands. It is as far removed from our modern conception of a fairy as possible, and its name is still considered unlucky in some parts of the Scottish Isles. A demon of the seas, Nuckelavee was a godlike horror that was intangible and invisible while in the sea, taking corporeal form only once it reached land. The form it took was akin to a living nightmare, described as either a horse, man, or fusion o",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/6f/Nuckelavee.jpg.jpg/revision/latest/scale-to-width-down/250?cb=20260112222021",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6f/Nuckelavee.jpg.jpg/revision/latest/scale-to-width-down/250?cb=20260112222021"
+    ],
+    "author": "unknown Originally uploaded on August 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Cryptids",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "The Null Desert Soundfile",
+    "url": "https://creepypasta.fandom.com/wiki/The_Null_Desert_Soundfile",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "RiboZurai Originally uploaded on November 9",
+    "date": "November 9, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Diary/Journal",
+      "Videos"
+    ]
+  },
+  {
+    "name": "Off the Beaten Path",
+    "url": "https://creepypasta.fandom.com/wiki/Off_the_Beaten_Path",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Michael Whitehouse Originally uploaded on November 27th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Places",
+      "Items/Objects",
+      "Michael_Whitehouse"
+    ]
+  },
+  {
+    "name": "The Old Hospital",
+    "url": "https://creepypasta.fandom.com/wiki/The_Old_Hospital",
+    "description": "A man, bleeding from a gunshot wound, walks into a tall, brick building. He screams for help, and two nurses rush out from a pair of swinging doors. “Relax, sir,” one of them tells him. “We will take care of you right away.” They lift him onto a stretcher and wheel him down a long hallway, full of typical-looking waiting rooms. However, from the rooms, he can hear the sounds of muffled moans and the soft crunching of bones. “What is going on in here?” he asks, panicking. “We’re taking you to be ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/18/Hospital.jpg/revision/latest/scale-to-width-down/196?cb=20141108213804",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/18/Hospital.jpg/revision/latest/scale-to-width-down/196?cb=20141108213804"
+    ],
+    "author": "unknown Originally uploaded on September 26th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Hospitals",
+      "Weird",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Old Lady",
+    "url": "https://creepypasta.fandom.com/wiki/The_Old_Lady",
+    "description": "NOTE: Taken from Creepypasta.com . One day, a woman was exiting a mall after a shopping spree, in a happy mood. She got to her car and began loading in the stuff that she'd bought. When she was done, she shut the door of her trunk and saw an old lady standing by the passenger side of her car. “Would you be a darling and give me a lift home? I don’t have a car and I was walking all day,” the old woman said. “I’d be happy to,” the woman said, unlocking the door for the old woman. As the shopper ma",
+    "image": null,
+    "images": [],
+    "author": "unknown",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Old News",
+    "url": "https://creepypasta.fandom.com/wiki/Old_News",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/27/Zombies_in_Graveyard.jpg/revision/latest?cb=20120406213011",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/27/Zombies_in_Graveyard.jpg/revision/latest?cb=20120406213011"
+    ],
+    "author": "ClericofMadness Originally uploaded on March 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Animals",
+      "Mental_Illness",
+      "Halloween",
+      "Troll_Pasta"
+    ]
+  },
+  {
+    "name": "On My Short Time at Miskatonic University",
+    "url": "https://creepypasta.fandom.com/wiki/On_My_Short_Time_at_Miskatonic_University",
+    "description": "Author's note: Other title: \"The Good Life Today\" I intend to dispel all rumors relating to my short time at Miskatonic University. Yes, it is true that I gave a series of lectures on classical art during the spring of 1925. So too did I come into acquaintance with one Richard Pickman. Despite what many tabloids and penny newspapers would have you believe, no overly strange occurrence happened involving Mr. Pickman and myself. It is true that I saw his studio, his works. He struck me as a brilli",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": "September 3, 1960",
+    "categories": [
+      "Lovecraftian",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "On My Shoulder",
+    "url": "https://creepypasta.fandom.com/wiki/On_My_Shoulder",
+    "description": "You know the concept of an angel and a devil on each shoulder? Cartoons used it a lot when I was a kid, so I guess the idea just got imprinted in my brain. Anyway, in my room, I have a wall mirror to my immediate left and a window to my right. At night, the light in the room makes the window a sort of dusky, blurry mirror which is what made me first think of the cartoon cliché. I have two copies of myself, one on each shoulder. Since the window-copy is shaded and murky, I decided that was the de",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Mirrors"
+    ]
+  },
+  {
+    "name": "On the Bus",
+    "url": "https://creepypasta.fandom.com/wiki/On_the_Bus",
+    "description": "The streets, roads and dusty lanes of Colombia have been fertile territory for myths and legends since before the arrival of the Spaniards. Tales of 'La Patasola', a one-legged wailing banshee that forever sought her child, and of 'El Duende', a backwards-footed goblin that led travelers to their doom, nibbled at the corners of journeymen's ease for centuries. Although these stories mainly troubled those living in or passing through rural areas, the growth of cities brought with it a new breed o",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/54/Oldbus.jpg/revision/latest?cb=20130930183641",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/54/Oldbus.jpg/revision/latest?cb=20130930183641"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Spotlighted_Pastas",
+      "Vehicles",
+      "Weird"
+    ]
+  },
+  {
+    "name": "One for the Baron",
+    "url": "https://creepypasta.fandom.com/wiki/One_for_the_Baron",
+    "description": "An odd occurrence has been rumored to happen in a certain pub at night in southwest Germany. If you sit in the stool farthest from the door while one beside it is empty, order a round for yourself and offer to \"buy one for the Baron\". The bartender will, without question or expression, pour two beers from tap. He'll place one beside you, and the moment the other one hits the table, the room will go dark and silent, save for the sound of footsteps as a man in uniform sits beside you. It is believ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/11/Manfred_von_Richthofen.jpg/revision/latest/scale-to-width-down/180?cb=20111218164724",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/11/Manfred_von_Richthofen.jpg/revision/latest/scale-to-width-down/180?cb=20111218164724"
+    ],
+    "author": "unknown Originally uploaded on January 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "History",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "One-Man Hide and Seek",
+    "url": "https://creepypasta.fandom.com/wiki/One-Man_Hide_and_Seek",
+    "description": "Introduction One-Man Hide and Seek,aka \"One-Man Tag,\" is a ritual for contacting the dead. Spirits, which are wandering restless on the Earth, are always looking for bodies to possess. In this ritual, you will summon such a spirit, by offering it a doll instead of a human body. Warning: if you have psychic abilities, you may feel unwell or be prone to accidents during the ritual. Things You Need One stuffed doll. It must have limbs. Rice, enough to stuff the doll full. One needle, and one crimso",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Items/Objects",
+      "Ghosts",
+      "Videos"
+    ]
+  },
+  {
+    "name": "Oneirophobia",
+    "url": "https://creepypasta.fandom.com/wiki/Oneirophobia",
+    "description": "Oneirophobia: An intense fear of dreaming or of what dreams might mean. The Photo No, I don'tknow how it happened. I don't want to know. I saw enough. Wherever It is, It's coming for me. My time left here is short. Someone has to know. They need to know answers cannot be found. There is no reason for why these things happened. I must let THEM know. It started a month ago. These strange dreams. I thought nothing of them at the time, until it happened. It was a dream, unlike the others. I awoke in",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/09/The_Photo.png/revision/latest/scale-to-width-down/180?cb=20121126171035",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/09/The_Photo.png/revision/latest/scale-to-width-down/180?cb=20121126171035"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Beings",
+      "Dreams/Sleep",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Onriyo",
+    "url": "https://creepypasta.fandom.com/wiki/Onriyo",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dr._Malpractice",
+      "Beings",
+      "Science",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "Opal",
+    "url": "https://creepypasta.fandom.com/wiki/Opal",
+    "description": "A first hand report of the story originally reported in The Montréal Mirror in 1964: A mother and father decided they needed a break, not having much alone time in the almost a year since their young son, Toby, was born. They wanted to have a night out, dinner, maybe a movie, and the honeymoon suite at a local hotel to possibly give Toby a little brother or sister. They called their most trusted babysitter, who unfortunately was already engaged for the evening. But she did refer a good friend of",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Beings",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Opossum",
+    "url": "https://creepypasta.fandom.com/wiki/Opossum",
+    "description": "The strangest thing about the situation, Andrew reflected, probably wasn't the geometry. Though that itself was certainly noteworthy; any cubical room where it's possible to roll a ball from the floor to the ceiling without crossing any of the walls has something going wrong. It wasn't the bicycle, either. Azathoth knew, he'd seen stranger modes of transportation around the city. Spheroid wheels that squished too much for comfort were really quite commonplace. Even the sight of Great Cthulhu, st",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e4/Oh_shit.jpg/revision/latest/scale-to-width-down/180?cb=20110214171048",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e4/Oh_shit.jpg/revision/latest/scale-to-width-down/180?cb=20110214171048"
+    ],
+    "author": "unknown Originally uploaded on February 14th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lovecraftian",
+      "Gods",
+      "Animals"
+    ]
+  },
+  {
+    "name": "Orange Tabby",
+    "url": "https://creepypasta.fandom.com/wiki/Orange_Tabby",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/8a/Tabby_Cat.jpg/revision/latest/scale-to-width-down/180?cb=20110804122054",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8a/Tabby_Cat.jpg/revision/latest/scale-to-width-down/180?cb=20110804122054"
+    ],
+    "author": "ClericofMadness Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Ghosts",
+      "Animals",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Orwin",
+    "url": "https://creepypasta.fandom.com/wiki/Orwin",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e2/Orwin.jpg/revision/latest/scale-to-width-down/180?cb=20120411203133",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e2/Orwin.jpg/revision/latest/scale-to-width-down/180?cb=20120411203133"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dr._Malpractice",
+      "Places",
+      "Beings",
+      "Ritual"
+    ]
+  },
+  {
+    "name": "Out with a Bang",
+    "url": "https://creepypasta.fandom.com/wiki/Out_with_a_Bang",
+    "description": "I’ve decided to kill myself. I think it's important someone understands why, so I’m making this video before I blow my head off. The first time I remember it happening I was nine. Johnny Weller and I were playing in his backyard. The sun was setting over his back fence, warm oranges and reds shining through the bone-white slats like a creamsicle against pearly white teeth. Johnny was the cowboy and I was the dirty redskin, stealing his horse. We ran around the swingset, him laughing and me whoop",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment",
+      "Weird"
+    ]
+  },
+  {
+    "name": "A Painted Christmas",
+    "url": "https://creepypasta.fandom.com/wiki/A_Painted_Christmas",
+    "description": "Patrick Finn arrived home from his Christmas conquests, beating out the snowstorm by mere miles, mere minutes. He felt not only the foreboding presence of a hazardous blizzard, but also that of something else. Something darker. It felt as if it resonated not only within his soul, but also within the souls of those around him, within the very ground itself. Patrick had never bothered to check, but he was sure that beneath the grass and soil of Winter Harbor, Maine, there hungered a gaping mouth o",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on November 7th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Christmas",
+      "Beings",
+      "Weird"
+    ]
+  },
+  {
+    "name": "A Painter From Queens",
+    "url": "https://creepypasta.fandom.com/wiki/A_Painter_From_Queens",
+    "description": "There's a bum that lives in our neighborhood in Queens. He used to beg for change, but one day he started painting. He went to a recycling center or some place like that and collected old paint cans. Most of them still had a little paint left in them. God knows where he got the brush. He started painting on whatever garbage he could find: cardboard, paper, or whatever provided a flat surface. And he was really good, too. It was weird. He did landscapes, paintings of the places in the neighborhoo",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b2/Homelessartist.jpg/revision/latest/scale-to-width-down/250?cb=20120117153533",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b2/Homelessartist.jpg/revision/latest/scale-to-width-down/250?cb=20120117153533"
+    ],
+    "author": "unknown Originally uploaded on January 17",
+    "date": "January 17, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Pale Luna",
+    "url": "https://creepypasta.fandom.com/wiki/Pale_Luna",
+    "description": "In the last decade and a half, it's become infinitely easier to obtain exactly what you're looking for by way of a couple of keystrokes. The Internet has made it all too simple to use a computer to change reality. An abundance of information is merely a search engine away, to the point where it's hard to imagine life as any different. Yet, a generation ago, when the words 'streaming' and 'torrent' were meaningless save for conversations about water, people met face-to-face to conduct software sw",
+    "image": null,
+    "images": [],
+    "author": "Lassen Volcanic Park",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Computers_and_Internet"
+    ]
+  },
+  {
+    "name": "Parasite",
+    "url": "https://creepypasta.fandom.com/wiki/Parasite",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on July 1st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "A Parent's Love",
+    "url": "https://creepypasta.fandom.com/wiki/A_Parent's_Love",
+    "description": "We were all there that day. It was the day they released him. Kent and I, Bonnie and Simon, Nora and Anthony, Dustin and Patrick, and Darlene – We were all there. We didn't bring the kids. I think it was Nora’s idea to leave them at home. And it was Patrick’s idea to go watch the release. Chad Lamb strode forth from the prison, wearing the smirk that had won us over six long years ago. He stopped at the gate, spotting us. Dustin waved. Darlene raised a finger to her throat and slowly dragged it ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/6b/Zombie-girl_1450817i.jpg/revision/latest/scale-to-width-down/238?cb=20121017134229",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6b/Zombie-girl_1450817i.jpg/revision/latest/scale-to-width-down/238?cb=20121017134229"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil",
+      "Ritual"
+    ]
+  },
+  {
+    "name": "The Parrot",
+    "url": "https://creepypasta.fandom.com/wiki/The_Parrot",
+    "description": "The image on the right, (colloquially \"The Parrot,\" as it bears the resemblance even when viewed safely) is a reconstruction of Berriman and Turner's original \"Logical Imaging Technique\" image produced by Cambridge Computing Lab IV (now, obviously, defunct) at some point in 1983. This image, along with several others inadvertently produced - most infamously 'Langford's Basilisk' and the imagery produced by a typographical error in Your Sinclair #23's \"Fun with Fractals\" feature. - generates patt",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/05/Parrot.jpg/revision/latest?cb=20110422231128",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/05/Parrot.jpg/revision/latest?cb=20110422231128"
+    ],
+    "author": "unknown Originally uploaded on April 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Science",
+      "Reality",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Patient No. 0017983",
+    "url": "https://creepypasta.fandom.com/wiki/Patient_No._0017983",
+    "description": "1.) ADMISSION FORM, PATIENT #0017983 - 11/18/05 15:12 Involuntary admittance requested by patient’s relatives in response to apparent self-destructive behavior cycle. Self-harm evident in physical exam: signs of past abrasions on head and neck, apparently due to self-inflicted scratching, and both fresh and partially closed surface lacerations on arms and legs. Signs of extreme fatigue also evident - in examination, patient admitted insomnia for, as quoted, “longer than you’d believe.” Patient u",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/28/ImagesCAFQK6YJ.jpg/revision/latest?cb=20101105180527",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/28/ImagesCAFQK6YJ.jpg/revision/latest?cb=20101105180527"
+    ],
+    "author": "unknown Originally uploaded on August 17th",
+    "date": "11/18/05",
+    "categories": [
+      "Historical_Archive",
+      "Science",
+      "Beings",
+      "Mental_Illness",
+      "Diary/Journal",
+      "Hospitals"
+    ]
+  },
+  {
+    "name": "The Patron Saint of the Good-Looking Corpse",
+    "url": "https://creepypasta.fandom.com/wiki/The_Patron_Saint_of_the_Good-Looking_Corpse",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e7/Shot-glass.jpg/revision/latest/scale-to-width-down/250?cb=20111207200940",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e7/Shot-glass.jpg/revision/latest/scale-to-width-down/250?cb=20111207200940"
+    ],
+    "author": "The Silicon Lemming Originally uploaded on December 7th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil",
+      "Music",
+      "The_Silicon_Lemming"
+    ]
+  },
+  {
+    "name": "Pendulum",
+    "url": "https://creepypasta.fandom.com/wiki/Pendulum",
+    "description": "Ever since I was young, I remember hearing the sound at Grandma's old farmhouse. Mom would put me to sleep in the upstairs room and slip downstairs to sleep with my father, leavingmy brother and Ialone in the upstairs room. An hour or so after we'd been put to bed, a scratching noise could be heard above our heads in the attic every night. It was slow... like a pendulum. Back and forth, it'd sweep across the ceiling, at times skittering faster before fading back to a slow scratch. At first we we",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Perfect Child",
+    "url": "https://creepypasta.fandom.com/wiki/The_Perfect_Child",
+    "description": "Such a precious baby... He was the sweetest child in the world, there was no doubt about it. The moment he was born, people gathered around the nursery, pointing at his sleeping form and crooning. What gorgeous hair! What beautiful lips! What adorable chubby cheeks! Fathers ignored their own newborn children in favor of that tiny, perfect baby. Mothers toddled to the glass and pressed tired faces against it, crying for their poor fortune. How much better a life would be if that was their child! ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/36/Beautiful_baby.png/revision/latest/scale-to-width-down/340?cb=20131008175539",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/36/Beautiful_baby.png/revision/latest/scale-to-width-down/340?cb=20131008175539"
+    ],
+    "author": "unknown Originally uploaded on December 3rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "NSFW"
+    ]
+  },
+  {
+    "name": "Perfect Circle",
+    "url": "https://creepypasta.fandom.com/wiki/Perfect_Circle",
+    "description": "In the heart of the Rockies lies a grove of trees growing in a perfect circle. It is a grove that, aside from this geometric oddity, appears perfectly innocuous from the outside. If one should step foot into this grove, however, the inside will be as dark as any moonless night in those mountainous woods, even on the brightest summer’s day. Those who have mistakenly wandered into the grove are rarely in any condition to say what happens inside. Many simply never come out. However, if you're very ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on April 22nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Ritual",
+      "Nature",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "A Perfect Routine",
+    "url": "https://creepypasta.fandom.com/wiki/A_Perfect_Routine",
+    "description": "Joseph Marigold had never been a man for wasted words. He knew of many likeminded colleagues who tried to get to know their clients whilst doing business, but he preferred precision. Indeed, Joseph Marigold was a very precise man: he awoke at 6 AM every morning, allowed himself ten minutes for his morning sanitation ritual, five minutes for breakfast (the same high-fiber cereal every day), and then a thirty minute jog. The next hour was designated for 'recreation', but at 7:45 exactly, he left t",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on December 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "The Perfect Video Game",
+    "url": "https://creepypasta.fandom.com/wiki/The_Perfect_Video_Game",
+    "description": "I heard rumors about a video game console, released in the early 90s, that promised the most immersive games imaginable. It bore a strong resemblance to the Super Nintendo, except it had no cartridge slot, no reset button, and only one controller port. It was released in an extremely low quantity; it's possible that less than fifty were ever available. People I talked to who remembered it from their childhood only mentioned the first game in the list. Other games were included on the console, bu",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on September 15th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games"
+    ]
+  },
+  {
+    "name": "Perfectown",
+    "url": "https://creepypasta.fandom.com/wiki/Perfectown",
+    "description": "I was exhausted. I had just gotten home from another day of forced monotony that we call a job. I wanted nothing more than to kick back with a cold beer and watch the hockey game. I walked to the fridge and grabbed a beer before shambling to the entertainment room. Still warm. Damn. I sat down in my comfiest recliner. The footrest sprung up, and I pushed the back down far enough so I could just see the TV. I grabbed the remote and hit the power button. The TV flickered on, filling the room with ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Mental_Illness",
+      "Diary/Journal",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Peripheral Vision",
+    "url": "https://creepypasta.fandom.com/wiki/Peripheral_Vision",
+    "description": "Have you ever gotten a glimpse of something out of the corner of your eye? A simple movement caught inyour peripheral vision, perhaps. Most will simply dismiss these occurrences as shadows brought about by a flickering candle, or a pet jumping down from a piece of furniture. But then there's that one elusive sight. It can easily be explained by the above conditions or another mundane rationale, but something feels wrong about it. It causes a chill down your spine, a slight pain in your side, may",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/df/Shadow.jpg/revision/latest/scale-to-width-down/200?cb=20141119200005",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/df/Shadow.jpg/revision/latest/scale-to-width-down/200?cb=20141119200005"
+    ],
+    "author": "unknown Originally uploaded on August 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Reality",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Persuaded",
+    "url": "https://creepypasta.fandom.com/wiki/Persuaded",
+    "description": "It's been two weeks since this whole thing started. It began with a tanker accident. It was all over the news. Everyone thought it was just another oil spill. There were plenty of volunteers - kind people wanting to help the poor, defenseless animals. Lots of victims. Within hours of the accident, it started happening. The animals had gone crazy; they were scratching and biting the clean-up volunteers. People said it was an adverse effect to whatever was in the tanker. Rescue workers were still ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "The Photographs",
+    "url": "https://creepypasta.fandom.com/wiki/The_Photographs",
+    "description": "One of the photos the woman made. A few months ago, a friend of mine (who is a nature photographer) decided to spend a day and night alone in the woods outside of our town. She wanted to get snaps of the woods and wildlife as naturally as she could for her portfolio. She wasn't afraid of being alone, as she had camped by herself many times before. She set up a tent in the middle of a small clearing and spent the day taking pictures. She filled up four rolls of film on that trip, but when she wen",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a5/2196017173_0752f22dbc.jpg/revision/latest/scale-to-width-down/250?cb=20100816194410",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a5/2196017173_0752f22dbc.jpg/revision/latest/scale-to-width-down/250?cb=20100816194410"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Photography",
+      "Nature",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Photoslash",
+    "url": "https://creepypasta.fandom.com/wiki/Photoslash",
+    "description": "Sean’s house was covered from head to toe in family photographs. Some from family retreats to Ireland, others showing lost family relatives. Most of these photographs would include Sean in them, so it was only natural that he would look at them from time to time. However, one day he noticed something rather strange about the pictures: His mother seemed to have a red face in all of the photos. Rather shocked by this, he immediately ran downstairs to ask if anyone had done something to the picture",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Photography",
+      "Disappearances",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Picha Mlaji",
+    "url": "https://creepypasta.fandom.com/wiki/Picha_Mlaji",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/ed/Picha_mlaji_picture.jpg/revision/latest/scale-to-width-down/306?cb=20120511142404",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ed/Picha_mlaji_picture.jpg/revision/latest/scale-to-width-down/306?cb=20120511142404"
+    ],
+    "author": "Bearded Hoplite Originally uploaded on May 7th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "History",
+      "Disappearances",
+      "Photography"
+    ]
+  },
+  {
+    "name": "Picking Up Courtney",
+    "url": "https://creepypasta.fandom.com/wiki/Picking_Up_Courtney",
+    "description": "NOTE: Written by Tim Waggoner . \"On the q.t. - was I staring at you when the incident occurred?\" Brent looked at the old woman for a moment, trying to decide if he'd heard her right. He chose to play it safe and shook his head. She smiled, relieved. \"Good.\" They stood on the sidewalk in front of Haven Falls Elementary. Cars zipped by only a few feet from where they stood, drivers ignoring the SLOW: SCHOOL ZONE signs. For the thousandth time, Brent wondered what genius had decided to build a scho",
+    "image": null,
+    "images": [],
+    "author": "Tim Waggoner",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Weird"
+    ]
+  },
+  {
+    "name": "A Pile of Photographs",
+    "url": "https://creepypasta.fandom.com/wiki/A_Pile_of_Photographs",
+    "description": "A young girl walking home from school found a small pile of Polaroid photos lying in the gutter. There were twenty in all, neatly wrapped in a rubber band. She picked them up, and as she walked, she started to browse. The first photo was that of a ghostly white man on a black background, standing just far enough away from the camera that she couldn’t make out his features. The girl slid the photo to the back of the stack and looked at the next one. It was of the same man, now standing a bit clos",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Photography",
+      "Disappearances",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Pill",
+    "url": "https://creepypasta.fandom.com/wiki/The_Pill",
+    "description": "Don't take it. It's a miracle and a glory and the greatest thing to ever happen, so they say, and it'll probably become the law soon that you have to take it. They'll have you swallow a little capsule when you're still a baby; probably at the same time you're getting your inoculations. The piece of the thing in there weighs only a few grams and will be plucked out of a little pool that will probably be installed in every hospital soon. Those couple grams are more than enough for it to happen. Su",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/2e/Smartpill.jpg/revision/latest/scale-to-width-down/251?cb=20111108005436",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2e/Smartpill.jpg/revision/latest/scale-to-width-down/251?cb=20111108005436"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "PotM",
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Monsters",
+      "Items/Objects",
+      "Science"
+    ]
+  },
+  {
+    "name": "Play It Again",
+    "url": "https://creepypasta.fandom.com/wiki/Play_It_Again",
+    "description": "It likes music. It's especially fond of the piano. It was late one night. Around 2:00 AM. I was up surfing the internet and listening to music. It was a normal night; I was just getting tired when I happened across an interesting YouTube video called, \"Easiest Song to Play on the Piano! Learn tonight!\" I'm not much of a piano player, but I've been trying to learn, especially since I inherited my grandmother's old piano. It was built in 1928, but it's still in fine condition. I decided to watch t",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/0f/320589090_6f97c2da5c.jpg/revision/latest/scale-to-width-down/200?cb=20110709000755",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0f/320589090_6f97c2da5c.jpg/revision/latest/scale-to-width-down/200?cb=20110709000755"
+    ],
+    "author": "unknown Originally uploaded on March 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Items/Objects",
+      "Music"
+    ]
+  },
+  {
+    "name": "Play Something",
+    "url": "https://creepypasta.fandom.com/wiki/Play_Something",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "CPWH11",
+      "Contest_Winner",
+      "Historical_Archive",
+      "PotM",
+      "Music",
+      "Demon/Devil",
+      "Dreams/Sleep",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Please Come",
+    "url": "https://creepypasta.fandom.com/wiki/Please_Come",
+    "description": "A fifteen-year-old boy in a small town in Maryland sat down at his computer after getting home from school one day. He turned it on and logged into an instant messaging program, and was then surprised to receive a message from a classmate of his, who had been absent that day. It consisted of two words; \"please come.\" Confused, the boy sent a reply, asking why he'd been absent that day. After two more messages and fifteen minutes with no response, he decided to get on his bike and head over to hi",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Dismemberment",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Please Cry",
+    "url": "https://creepypasta.fandom.com/wiki/Please_Cry",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Suprememessage Originally uploaded on September 2nd",
+    "date": null,
+    "categories": [
+      "CPWH11",
+      "Historical_Archive",
+      "Beings",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Pokémon Black",
+    "url": "https://creepypasta.fandom.com/wiki/Pokémon_Black",
+    "description": "I’m what you could call a collector of bootleg Pokémon games. Pokémon Diamond & Jade, Chaos Black, etc. It’s amazing the frequency with which you can find them at pawnshops, Goodwill, flea markets, and such. They’re generally fun; even if they are unplayable (which they often are), the mistranslations and poor quality make them unintentionally humorous. I’ve been able to find most of the ones that I’ve played online, but there’s one that I haven’t seen any mention of. I bought it at a flea marke",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/53/Pokemon-black-cartride-gameboy-image.jpg/revision/latest/scale-to-width-down/200?cb=20121122060603",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/53/Pokemon-black-cartride-gameboy-image.jpg/revision/latest/scale-to-width-down/200?cb=20121122060603"
+    ],
+    "author": "unknown Originally uploaded on August 8th",
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Historical_Archive",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Pokémon Blue",
+    "url": "https://creepypasta.fandom.com/wiki/Pokémon_Blue",
+    "description": "I love Pokémon; It was the first game I ever really got into when I was young - maybe sixteen or seventeen - and it stayed with me as I grew up. I always thought I'd play Pokémon all my life, because I could never put it down. It just has that effect on you. You already probably know what I mean, right? I guess I was a bit older than the average Pokémon fan when I got my hands on my first game, which I remember being a copy of Pokémon Blue . Like a million other kids that year, I received it as ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f5/Pokemonblue.jpg/revision/latest/scale-to-width-down/250?cb=20120330034932",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f5/Pokemonblue.jpg/revision/latest/scale-to-width-down/250?cb=20120330034932"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Pokémon Lost Silver",
+    "url": "https://creepypasta.fandom.com/wiki/Pokémon_Lost_Silver",
+    "description": "You see, I am a simple college student living alone in an apartment. I was very enthusiastic about the release of Pokémon HeartGold/SoulSilver here in the states. I have purposely locked myself out of all media and the Internet aside for school purposes. That means no 4chan, no /v/, no Bulbapedia, etc. As I was busy with the school year and being poor at the time, I wasn't able to buy SoulSilver on its launch date. After my school year ended, I ordered SoulSilver on Amazon. However, it would tak",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on October 15th",
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Videos",
+      "Memes",
+      "Historical_Archive",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Pokémon War Theory",
+    "url": "https://creepypasta.fandom.com/wiki/Pokémon_War_Theory",
+    "description": "\"Hey kid! What do you think you're doing here? You won't live long in combat! That's for sure! I tell you what kid, electric Pokèmon saved me during the war!\" You have no father, and your best friend is an orphan. Children are going on a journey around the world. Your mother accepts you as the man of the house, making your own decisions. Old men warn you of dangers around each corner. Most people you meet are children and/or gym leaders. Most adult men are either very old, or have a job related ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/51/Lt_Surge.png/revision/latest?cb=20150812011245",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/51/Lt_Surge.png/revision/latest?cb=20150812011245"
+    ],
+    "author": "unknown Originally uploaded on March 5th",
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Historical_Archive",
+      "Theory",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Polly the Staring Dolly",
+    "url": "https://creepypasta.fandom.com/wiki/Polly_the_Staring_Dolly",
+    "description": "On my eighth birthday, I got a present that would change my life forever. It was a beautiful doll that looked a lot like me. That is why my grandmother bought it for me. I named her Polly. However, days after I got the doll, things began to get weird, but I didn’t notice. I slowly became unsocial, never having friends over. All I needed was Polly to make me happy. She was my best and only friend. All I would do was go to school, and come home to play with Polly. I never bothered to make friends,",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Items/Objects",
+      "Ghosts",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Polybius",
+    "url": "https://creepypasta.fandom.com/wiki/Polybius",
+    "description": "An alleged Polybius cabinet. Polybius is an urban legend about a rare arcade game released in 1981. The game was created by a mysterious company called Sinneslöschen (German for \"Sense Deletion\") and was a puzzle/shoot-'em-up somewhat like Tempest. It was only released in a few suburbs of Portland, Oregon. It was supposedly very popular, with people forming long lines to play it. However, players reported strange things about the game, such as hearing a woman crying and seeing grotesque faces ou",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/27/Polybius_cabinet.jpg/revision/latest/scale-to-width-down/150?cb=20110219072442",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/27/Polybius_cabinet.jpg/revision/latest/scale-to-width-down/150?cb=20110219072442"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games",
+      "Memes",
+      "Contextual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Poor Rival",
+    "url": "https://creepypasta.fandom.com/wiki/Poor_Rival",
+    "description": "In the original Pokémon Red/Blue, when you encounter your rival in Lavender Town, he asks whether or not you know what it's like to have one of your Pokémon die. At this point in the game, he no longer has his Raticate that he used in previous battles. Your rival battle before this took place aboard the S.S. Anne. Your rival's Raticate sustained serious injuries from the battle…but, because of crowding and confusion on the luxury liner, he was unable to make it to a Pokémon Center in time, and t",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on July 26th",
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Historical_Archive",
+      "Theory",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Pop Ups",
+    "url": "https://creepypasta.fandom.com/wiki/Pop_Ups",
+    "description": "You're sitting at your computer desk, scanning through the /x/ stories on 4chan. You feel your eyes beginning to grow very heavy. Suddenly you notice a pop up in the task bar. You open it, staring for a minute. It's a black background, with nothing in it beside the scary ambience. You close the window, thinking nothing of it. You begin reading the stories, and it pops up again. Irritated, you close it once again. It comes up again. Frustrated, you open it up reach your mouse for the small exit s",
+    "image": null,
+    "images": [],
+    "author": "unknown",
+    "date": null,
+    "categories": [
+      "Computers_and_Internet",
+      "Beings",
+      "Historical_Archive",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Portraits",
+    "url": "https://creepypasta.fandom.com/wiki/The_Portraits",
+    "description": "There was a hunter in the woods, who, after a long day hunting, found himself in the middle of an immense forest. It was getting dark, and having lost his bearings, he decided to head in one direction until he was clear of the increasingly oppressive foliage. After what seemed like hours, he came across a cabin in a small clearing. Realizing how dark it had grown, he decided to see if he could stay there for the night. He approached, and found the door ajar. Nobody was inside. The hunter flopped",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e1/171045011_24078b191e.jpg/revision/latest?cb=20110309031234",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e1/171045011_24078b191e.jpg/revision/latest?cb=20110309031234"
+    ],
+    "author": "unknown Originally uploaded on August 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Micropasta",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Post Office",
+    "url": "https://creepypasta.fandom.com/wiki/The_Post_Office",
+    "description": "In the panhandle of Oklahoma, along the interstate, there is a lone brick building marked, “Post Office No.56”. A strip of tape at the door reads, “Closed”. The building has no windows, looking from a distance like a small box made of bricks. The door is always locked and refuses to open. On the 7th of July, if you are positioned to the west of the building with the door opposite to where you stand, your nose will begin to bleed. If you drink some of the blood, one of your teeth will fall out. T",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Beings",
+      "Places"
+    ]
+  },
+  {
+    "name": "Post-Mortem Photography",
+    "url": "https://creepypasta.fandom.com/wiki/Post-Mortem_Photography",
+    "description": "In Victorian times, it was a common practice to photograph the dead, particularly at the end of the 19th century. Post-mortem photography was an inexpensive way for the lower classes to immortalize lost loved ones, especially children and infants. Childhood mortality rates were significantly high during the period, and post-mortem portraits were usually the only portraits a child would have. The corpses were usually posed into natural positions such as sitting in a chair or on a couch, and the e",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b8/Standgirl.jpg/revision/latest/scale-to-width-down/300?cb=20250515044519",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b8/Standgirl.jpg/revision/latest/scale-to-width-down/300?cb=20250515044519"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Photography",
+      "History",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Prey",
+    "url": "https://creepypasta.fandom.com/wiki/Prey",
+    "description": "My story takes place in a town you’ve probably never heard of in south-eastern rural Kentucky. It’s a small town with its people sparsely peppering the mountainsides to and fro. It’s the type of town where it isn’t exactly unusual to find neighbors bartering for goods with livestock, living off what the land provides, and making do with what they’ve got. It is here that my father was raised. It is here that my father raised his family. My father was a proud man; short, barely 5’ 7”, but stout. H",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Places",
+      "Nature"
+    ]
+  },
+  {
+    "name": "Private James Masterson",
+    "url": "https://creepypasta.fandom.com/wiki/Private_James_Masterson",
+    "description": "During times of strife and war, there are always tales of horrible, nightmarish things lurking just out of sight and driving good men mad. Perhaps it is the unfathomable cruelty of war that makes humans project these fantasies as a way of shutting out the terrible things men do to one another. Still, it is strange to consider how prevalent and enduring these stories can be, spreading through army lines like wildfire, igniting the imagination and multiplying fear upon fear. One such story is said",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/de/James_masterson.jpg/revision/latest/scale-to-width-down/185?cb=20120330041515",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/de/James_masterson.jpg/revision/latest/scale-to-width-down/185?cb=20120330041515"
+    ],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "History",
+      "Dreams/Sleep",
+      "Military",
+      "Places"
+    ]
+  },
+  {
+    "name": "The Prophecy of Zarah",
+    "url": "https://creepypasta.fandom.com/wiki/The_Prophecy_of_Zarah",
+    "description": "The discovery of the Dead Sea Scrolls in the early part of the 20th century is one of the most important episodes in the field of Bible scholarship. They have been studied and transcribed for decades, so it was quite a shock when an unnoticed Hebrew text was found in the collection. The theology of this text, apart from references to Sheol (the abode of the dead) and the primordial chaos monster Leviathan, is quite unlike anything found in the Qu’mran community, the Bible or the Ancient Near Eas",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "History",
+      "Historical_Archive",
+      "Lovecraftian",
+      "Books",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "The Prophetic Monolith",
+    "url": "https://creepypasta.fandom.com/wiki/The_Prophetic_Monolith",
+    "description": "Somewhere in the Pacific Ocean is an island surrounded by a swamp, filled with the carcasses of fish and other, less recognizable things poking out of the mud. The mire extends as far as you can see. Every so often, the mud will be dry enough to walk on. About a day's travel from shore is a large mound, at the top of which is an immense canyon. The bottom of it cannot usually be seen, but if the moon is large enough, you will be able to view the slope of the canyon and eventually the bottom, whi",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/2b/Monolith-no-4-cole-thompson.jpg/revision/latest/scale-to-width-down/250?cb=20110709002247",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2b/Monolith-no-4-cole-thompson.jpg/revision/latest/scale-to-width-down/250?cb=20110709002247"
+    ],
+    "author": "unknown Originally uploaded on March 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Ritual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Psychosis",
+    "url": "https://creepypasta.fandom.com/wiki/Psychosis",
+    "description": "NOTE: This story was originally removed from the wiki in November 2019 following licensing concerns. It has been reuploaded in April 2024 after permission was granted by Matt Dymerski, the original author. Enjoy. Sunday I'm not sure why I'm writing this down on paper and not on my computer. I guess I've just noticed some odd things. It's not that I don't trust the computer... I just... need to organize my thoughts. I need to get down all the details somewhere objective, somewhere I know that wha",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/97/Biomarkers-psychosis.jpg/revision/latest/scale-to-width-down/200?cb=20110518051631",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/97/Biomarkers-psychosis.jpg/revision/latest/scale-to-width-down/200?cb=20110518051631"
+    ],
+    "author": "Matt Dymerski",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Diary/Journal",
+      "Mental_Illness",
+      "Reality"
+    ]
+  },
+  {
+    "name": "The Puppet",
+    "url": "https://creepypasta.fandom.com/wiki/The_Puppet",
+    "description": "It was a marionette, I think. It had a big head, and the face was made of wrinkly, flesh-colored rubber. The eyes were gigantic, bulging white orbs with red pupils. The hair was black, made of some hard substance that didn’t mesh with the rubbery skin. The teeth were huge, pure white, and capable of moving up and down. The body and limbs were wooden, painted to resemble clothes, but the paint was faded; you could see the wood’s natural brown in some places. Each arm and leg was a different lengt",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/40/Creepy-Marionette-Puppet-Costume.jpg/revision/latest/scale-to-width-down/180?cb=20101105191252",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/40/Creepy-Marionette-Puppet-Costume.jpg/revision/latest/scale-to-width-down/180?cb=20101105191252"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Reality",
+      "Beings",
+      "KI_Simpson"
+    ]
+  },
+  {
+    "name": "The Puppetmaster's Regime",
+    "url": "https://creepypasta.fandom.com/wiki/The_Puppetmaster's_Regime",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b1/Playbill.jpg/revision/latest/scale-to-width-down/190?cb=20120401225625",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b1/Playbill.jpg/revision/latest/scale-to-width-down/190?cb=20120401225625"
+    ],
+    "author": "Hagenisnotacat Originally uploaded on April 1st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "History",
+      "Music",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Quantum Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Quantum_Man",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/78/Leonardo_%281%29.jpg/revision/latest?cb=20111211112753",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/78/Leonardo_%281%29.jpg/revision/latest?cb=20111211112753"
+    ],
+    "author": "The Silicon Lemming Originally uploaded on December 11th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Science",
+      "Reality",
+      "The_Silicon_Lemming"
+    ]
+  },
+  {
+    "name": "Quiet",
+    "url": "https://creepypasta.fandom.com/wiki/Quiet",
+    "description": "I never saw the ocean till I was nineteen, and if I ever see it again it will be too goddamn soon. I was a child, coming out of the train, fresh from Amarillo, into San Diego and all her glory. The sight of it, all that water and the blind crushing power of the surf, filled me with dread. I’d seen water before, lakes, plenty big, but that was nothing like this. I don’t think I can describe what it was like that first time, and further more, I’m not sure I care too. You can imagine the state I wa",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/8b/Atombombbikiniatoll6331.jpg/revision/latest/scale-to-width-down/264?cb=20100823002315",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8b/Atombombbikiniatoll6331.jpg/revision/latest/scale-to-width-down/264?cb=20100823002315",
+      "https://static.wikia.nocookie.net/creepypasta/images/a/ae/Cat1.jpg/revision/latest/scale-to-width-down/1?cb=20140629201628"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "Places",
+      "Military",
+      "Lovecraftian"
+    ]
+  },
+  {
+    "name": "The Ragged Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Ragged_Man",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "NecroticLasceration Originally uploaded on March 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings"
+    ]
+  },
+  {
+    "name": "The Railroad",
+    "url": "https://creepypasta.fandom.com/wiki/The_Railroad",
+    "description": "My cousin and I had gone to San Antonio, and we'd heard rumors of some haunted railroad tracks. The story was that a school bus full of children had stalled on these tracks with a train coming. The train was going too fast for there to be time to get the children off. So they all died. When we finally found the tracks, we stopped the car, parking it right on them. We were both a little nervous and scared, waiting for something to happen. Just when we were about to leave, the car started rolling.",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Ghosts",
+      "Vehicles",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Rainbow Factory",
+    "url": "https://creepypasta.fandom.com/wiki/Rainbow_Factory",
+    "description": "Rainbow Factory is a My Little Pony: Friendship is Magic fanfiction written by Aurora Dawn . The Story [ ] Dash... “Now a rainbow's tale isn't quite as nice as the story we knew of sugar and spice.” There’s long been rumors as to how exactly rainbows are made in Equestria. While a great amount of Pegasi ponies are employed in the Rainbow department of the weather factory, almost all of them do the low-end work. What’s known is that great streams of Spectra, the individual colors of the rainbow, ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/86/Imhere.jpg/revision/latest/scale-to-width-down/180?cb=20121226103856",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/86/Imhere.jpg/revision/latest/scale-to-width-down/180?cb=20121226103856"
+    ],
+    "author": "Aurora Dawn",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment",
+      "Memes"
+    ]
+  },
+  {
+    "name": "The Rake",
+    "url": "https://creepypasta.fandom.com/wiki/The_Rake",
+    "description": "During the summer of 2003, events in the northeastern United States involving a strange, human-like creature sparked brief local media interest before an apparent blackout was enacted. Little or no information was left intact, as most online and written accounts of the creature were mysteriously destroyed. Primarily focused in rural New York state and once found in Idaho, self proclaimed witnesses told stories of their encounters with a creature of unknown origin. Emotions ranged from extremely ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/04/The_Rake.jpg/revision/latest/scale-to-width-down/250?cb=20130731220054",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/04/The_Rake.jpg/revision/latest/scale-to-width-down/250?cb=20130731220054"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Cryptids",
+      "Diary/Journal",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Rap Rat",
+    "url": "https://creepypasta.fandom.com/wiki/Rap_Rat",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f8/Foundfootagefest-RapRat602.png/revision/latest/scale-to-width-down/312?cb=20121017224951",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f8/Foundfootagefest-RapRat602.png/revision/latest/scale-to-width-down/312?cb=20121017224951"
+    ],
+    "author": "CanadianCowboy Originally uploaded on January 25th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil",
+      "Mental_Illness",
+      "Items/Objects",
+      "Dreams/Sleep",
+      "Television"
+    ]
+  },
+  {
+    "name": "Rasp",
+    "url": "https://creepypasta.fandom.com/wiki/Rasp",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Raquaable Originally uploaded on December 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Raw Head and Bloody Bones",
+    "url": "https://creepypasta.fandom.com/wiki/Raw_Head_and_Bloody_Bones",
+    "description": "NOTE: Written by S.E. Schlosser . Way back in the deep woods there lived a scrawny old woman who had a reputation for being the best conjuring woman in the Ozarks. With her bedraggled black-and-gray hair, funny eyes - one yellow and one green - and her crooked nose, Old Betty was not a pretty picture, but she was the best there was at fixing what ailed a man, and that was all that counted. Old Betty's house was full of herbs and roots and bottles filled with conjuring medicine. The walls were li",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "The Real Nosferatu",
+    "url": "https://creepypasta.fandom.com/wiki/The_Real_Nosferatu",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/45/Orlok.jpg/revision/latest/scale-to-width-down/250?cb=20121221154532",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/45/Orlok.jpg/revision/latest/scale-to-width-down/250?cb=20121221154532",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/09/Batman.jpg/revision/latest/scale-to-width-down/178?cb=20121226123353",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/71/Youredoomed.jpg/revision/latest/scale-to-width-down/208?cb=20121226123619",
+      "https://static.wikia.nocookie.net/creepypasta/images/5/58/Orlokus.jpg/revision/latest/scale-to-width-down/209?cb=20121226185656",
+      "https://static.wikia.nocookie.net/creepypasta/images/5/51/Yetanotherposter.jpg/revision/latest/scale-to-width-down/216?cb=20121226185743"
+    ],
+    "author": "SuperShepherd52 Originally uploaded on December 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes"
+    ]
+  },
+  {
+    "name": "The Red Eyes in the Dark",
+    "url": "https://creepypasta.fandom.com/wiki/The_Red_Eyes_in_the_Dark",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "UndeadGoblin Originally uploaded on September 13th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil"
+    ]
+  },
+  {
+    "name": "Red Man",
+    "url": "https://creepypasta.fandom.com/wiki/Red_Man",
+    "description": "Ireland is a nation filled with fairytales and mythology, much of which has since spread across the world in some form or other. Yet there are still many lesser known legends that haunt the land, which are worthy of note for those with an interest in the macabre. One of the more disturbing is the legend of the Far Darrig. Far Darrig (also known as Fear Dearg) translates roughly into \"Red Man\", and is believed to be a type of fairy not unlike the more famous leprechaun. Unlike the innocent beings",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/84/Fardarrig.jpg/revision/latest?cb=20250612074032",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/84/Fardarrig.jpg/revision/latest?cb=20250612074032"
+    ],
+    "author": "unknown Originally uploaded on September 1st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Micropasta",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Red Moon",
+    "url": "https://creepypasta.fandom.com/wiki/Red_Moon",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/61/Rockalien.jpg/revision/latest?cb=20120917003547",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/61/Rockalien.jpg/revision/latest?cb=20120917003547"
+    ],
+    "author": "Avenging Angel Originally uploaded on September 17th",
+    "date": "SEPT 16 2020",
+    "categories": [
+      "Historical_Archive",
+      "Space",
+      "Science",
+      "Monsters",
+      "Dismemberment",
+      "Photography",
+      "Avenging_Angel"
+    ]
+  },
+  {
+    "name": "The Red Room",
+    "url": "https://creepypasta.fandom.com/wiki/The_Red_Room",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/58/Redroom.png/revision/latest/scale-to-width-down/370?cb=20110602034949",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/58/Redroom.png/revision/latest/scale-to-width-down/370?cb=20110602034949"
+    ],
+    "author": "PenkoBell Originally uploaded on June 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet"
+    ]
+  },
+  {
+    "name": "Red with White",
+    "url": "https://creepypasta.fandom.com/wiki/Red_with_White",
+    "description": "NOTE: This pasta was written by Bulbasaur, !MuteSwan!, and an Anonymous known as Derp. This is a prelude to White with Red . Read that first if you haven't. It was a gray, cloudy night. My newly married husband and I were leaving for our honeymoon location. Originally we planned on Hawaii, but that was too expensive so we decided to go to Las Vegas instead. There was a storm coming in and he hates driving in terrible weather. Luckily for us there was a hotel in the distance, and I persuaded him ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/da/Cloudysky.jpg/revision/latest/scale-to-width-down/180?cb=20140714161645",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/da/Cloudysky.jpg/revision/latest/scale-to-width-down/180?cb=20140714161645"
+    ],
+    "author": "Bulbasaur",
+    "date": null,
+    "categories": [
+      "Mental_Illness",
+      "Places",
+      "Historical_Archive",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "Reflections",
+    "url": "https://creepypasta.fandom.com/wiki/Reflections",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/55/Bathroom2_Mirror_LowRes-de-50954751.jpg/revision/latest/scale-to-width-down/234?cb=20110717022618",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/55/Bathroom2_Mirror_LowRes-de-50954751.jpg/revision/latest/scale-to-width-down/234?cb=20110717022618"
+    ],
+    "author": "JrvUnleashed Originally uploaded on July 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mirrors",
+      "Beings",
+      "Disappearances",
+      "Diary/Journal",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Remedies",
+    "url": "https://creepypasta.fandom.com/wiki/Remedies",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/0e/Egg.jpg/revision/latest/scale-to-width-down/250?cb=20111127191204",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0e/Egg.jpg/revision/latest/scale-to-width-down/250?cb=20111127191204"
+    ],
+    "author": "MooseJuice Originally uploaded on November 27",
+    "date": "November 27, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Mirrors",
+      "Ritual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Repercussions of Evil",
+    "url": "https://creepypasta.fandom.com/wiki/Repercussions_of_Evil",
+    "description": "Context This story is a horrible piece of DOOM fanfiction that became widespread on the internet before /x/'s existence. It was originally posted on a message board by legendary troll author Peter Chimaera . Pasta John Stalvern waited. The lights above him blinked and sparked out of the air. There were demons in the base. He didn't see them, but had expected them now for years. His warnings to Cernel Joson were not listenend to and now it was too late. Far too late for now, anyway. John was a Sp",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/81/Doom.gif/revision/latest?cb=20120321205224",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/81/Doom.gif/revision/latest?cb=20120321205224",
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ef/AndThen.jpg/revision/latest?cb=20240223211725"
+    ],
+    "author": "Peter Chimaera",
+    "date": null,
+    "categories": [
+      "Troll_Pasta",
+      "Historical_Archive",
+      "Memes",
+      "Video_Games",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Richard Pryor",
+    "url": "https://creepypasta.fandom.com/wiki/Richard_Pryor",
+    "description": "\"...a few sets where there weren't even any jokes, just him yelling at the crowd...\" Richard Pryor has been hailed as the greatest comedian of all time, doing stand-up until about 1984, give or take a small amount of time... or at least that's what I thought. According to witness accounts, there have been reports of Pryor continuing to do stand-up until as late as 2001, until the MS made it too difficult for him to continue performing. But why haven't you heard of him doing this? Simple; he was ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/bb/Richard_Pryor_%281986%29_%28cropped%29.jpg/revision/latest/scale-to-width-down/296?cb=20100816000803",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bb/Richard_Pryor_%281986%29_%28cropped%29.jpg/revision/latest/scale-to-width-down/296?cb=20100816000803"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes",
+      "PotM"
+    ]
+  },
+  {
+    "name": "Right Through Me",
+    "url": "https://creepypasta.fandom.com/wiki/Right_Through_Me",
+    "description": "Sirens blared through the still night sky. In a haze of flashing red lights, I slowly opened my eyes, thoroughly confused about what was going on. I was in my car, the windscreen in front of me shattered to bits, my head throbbing something awful. I looked beside me and there she was, knocked unconscious, or worse... dead. It all came back to me in a flash. The mis-steer, the car smashing into the side of the building. I tried to remember what I'd attempted to avoid which caused the fateful swer",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Roadwork",
+    "url": "https://creepypasta.fandom.com/wiki/Roadwork",
+    "description": "File:File:RoadWork.jpg When Conner arrived at the gas station, he exited the car with a speed that surprised even him. He took a few quick steps, almost at a run, before turning back towards the car. Under the garish sodium lights of the service station, the little blue sedan looked a sickly greenish gray. It looked squat and malign in its stillness. The little throbbing headache at the base of his skull seemed to diminish with every step and he began to catch his breath. He took the phone from ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Pages_with_broken_file_links",
+      "Historical_Archive",
+      "Beings",
+      "Suggested_Reading",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "Robert the Doll",
+    "url": "https://creepypasta.fandom.com/wiki/Robert_the_Doll",
+    "description": "In the late 1800s, Thomas Otto and his family moved into a mansion at the corner of Eaton and Simonton streets in Key West, Florida, now known as the Artist House. The Ottos were known to be stern with their servants, sometimes even mistreating them. It was the treatment of one such Haitian servant that provides the twist in this story. This woman was hired to take care of their son, Robert. One day, Mrs. Otto supposedly witnessed her practicing black magic in their backyard and fired her. Befor",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/c9/Robertthedoll.jpg/revision/latest?cb=20110730192126",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c9/Robertthedoll.jpg/revision/latest?cb=20110730192126",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/08/Goodolrobbie.jpg/revision/latest/scale-to-width-down/260?cb=20241109061344"
+    ],
+    "author": "unknown Originally uploaded on July 30th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Items/Objects",
+      "Beings",
+      "History"
+    ]
+  },
+  {
+    "name": "Rocking Motion",
+    "url": "https://creepypasta.fandom.com/wiki/Rocking_Motion",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "ClericofMadness Originally uploaded on March 31st",
+    "date": null,
+    "categories": [
+      "ClericofMadness",
+      "Historical_Archive",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "A Room",
+    "url": "https://creepypasta.fandom.com/wiki/A_Room",
+    "description": "\"Am I going to die in here, Herbert?\" \"Yes, John, you're going to die in here.\" \"Why though?\" \"Go back to sleep, John.\" The loud speaker made the usual cracking noise, before the room fell into a deathly silence. John shivered under the thin blankets provided for him, he was dying. It had been ninety days since he had eaten regular food, six since he was given a pill, and one hundred and sixteen since he last saw a human being. The world felt lonely. John tried to force his body to sleep but the",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on July 15th",
+    "date": null,
+    "categories": [
+      "PotM",
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Places",
+      "Beings",
+      "Mental_Illness",
+      "Longpasta"
+    ]
+  },
+  {
+    "name": "The Rugrats Theory",
+    "url": "https://creepypasta.fandom.com/wiki/The_Rugrats_Theory",
+    "description": "The Rugrats were really just a figment of Angelica's imagination. Chuckie died in 1986 along with his mother; that's why Chaz is a nervous wreck all the time. Tommy was born in 1988, but he was a stillborn. That's why Stu is constantly in the basement, making toys for the son who never had a chance to live. The DeVilles had an abortion in 1990. Angelica couldn't figure whether the child would've been a boy or a girl, thus creating the twins. As for \"All Grown Up\", the teenage Angelica became add",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/96/Therugratstheoryimage.gif/revision/latest/scale-to-width-down/180?cb=20111031040253",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/96/Therugratstheoryimage.gif/revision/latest/scale-to-width-down/180?cb=20111031040253"
+    ],
+    "author": "unknown Originally uploaded on October 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Theory",
+      "Mental_Illness",
+      "Television",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Ruins of Alph",
+    "url": "https://creepypasta.fandom.com/wiki/Ruins_of_Alph",
+    "description": "Defying my belief that this should be kept confidential, I will share this in the sole interest of two individuals. My name is Ruben. I have always been interested in subliminal techniques, regardless of the media or way in which they are conveyed. However, I did not go looking for this particular example. No, it found its way to me. It's certainly no coincidence that the move \"Curse\" was introduced in Generation II with the release of Pokémon Gold, Silver, and Crystal versions. Often heard that",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a8/Ruins_of_alph.png/revision/latest/scale-to-width-down/150?cb=20120320141714",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a8/Ruins_of_alph.png/revision/latest/scale-to-width-down/150?cb=20120320141714"
+    ],
+    "author": "unknown Originally uploaded on March 23rd",
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Historical_Archive",
+      "Videos"
+    ]
+  },
+  {
+    "name": "Ruins of an Urban Jungle",
+    "url": "https://creepypasta.fandom.com/wiki/Ruins_of_an_Urban_Jungle",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/ea/Lucas-1.jpg/revision/latest/scale-to-width-down/200?cb=20120922072530",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ea/Lucas-1.jpg/revision/latest/scale-to-width-down/200?cb=20120922072530"
+    ],
+    "author": "Sadofreedomist Originally uploaded on December 3rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Science"
+    ]
+  },
+  {
+    "name": "The Runner",
+    "url": "https://creepypasta.fandom.com/wiki/The_Runner",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/62/GhostRunner.jpg/revision/latest?cb=20101208195309",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/62/GhostRunner.jpg/revision/latest?cb=20101208195309"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Places",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "The Russian Sleep Experiment",
+    "url": "https://creepypasta.fandom.com/wiki/The_Russian_Sleep_Experiment",
+    "description": "Russian researchers in the late 1940s kept five people awake for fifteen days using an experimental gas-based stimulant. They were kept in a sealed environment to carefully monitor their oxygen intake so the gas didn't kill them, since it was toxic in high concentrations. This was before closed circuit cameras, so they had only microphones and five-inch-thick glass porthole-sized windows into the chamber to monitor them. The chamber was stocked with books and cots to sleep on (but no bedding), a",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/8b/Cccp_rust.jpg/revision/latest?cb=20100908203303",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8b/Cccp_rust.jpg/revision/latest?cb=20100908203303",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7c/Spazm.png/revision/latest/scale-to-width-down/190?cb=20240213035015"
+    ],
+    "author": "unknown Source",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Science",
+      "History",
+      "Military",
+      "Memes",
+      "PotM",
+      "Beings",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "The Rusted Engine",
+    "url": "https://creepypasta.fandom.com/wiki/The_Rusted_Engine",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/c7/I_think_you_need_a_bit_of_windex.png/revision/latest/scale-to-width-down/250?cb=20120528011749",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c7/I_think_you_need_a_bit_of_windex.png/revision/latest/scale-to-width-down/250?cb=20120528011749"
+    ],
+    "author": "Chudovishche Originally uploaded on May 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Vehicles",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Sabotage",
+    "url": "https://creepypasta.fandom.com/wiki/Sabotage",
+    "description": "The expression “wrench in the gears” comes from the Luddite movement in Britain in the early 19th century. Ever larger, more complicated looms were being built, putting skilled artisans out of a job in favor of cheaper, unskilled labor. The machines did all the work a human had once done, only faster. Protests began. English Industry was not sympathetic. Desperate, some of the Luddites took to sabotaging the machines, breaking their frames or throwing wrenches into the looms’ inner workings. Rio",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/e6/Luddites.jpg/revision/latest/scale-to-width-down/180?cb=20110720011659",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e6/Luddites.jpg/revision/latest/scale-to-width-down/180?cb=20110720011659"
+    ],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "History",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Sadness Is Sickening",
+    "url": "https://creepypasta.fandom.com/wiki/The_Sadness_Is_Sickening",
+    "description": "Author's note: I finally finished it! Any edits done by someone else other than spelling corrections will be deleted by the author. The story has elements of writings from Shakespeare, Cradle of Filth, Dante Alighieri, and a bit of my own. I hope you enjoy this. She was always beautiful. Even in death, her cold touch was soothing to my soul. Whenever I felt the urge to take the blade and end my life with it, I heard her gentle voice asking me to stop. I've been sitting in this palace of the dead",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/97/Bloody-knife.jpg/revision/latest/scale-to-width-down/180?cb=20120516080615",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/97/Bloody-knife.jpg/revision/latest/scale-to-width-down/180?cb=20120516080615"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "History"
+    ]
+  },
+  {
+    "name": "Sarah O'Bannon",
+    "url": "https://creepypasta.fandom.com/wiki/Sarah_O'Bannon",
+    "description": "Coffins used to be built with holes in them, attached to six feet of copper tubing and a bell. The tubing would allow air for victims buried under the mistaken impression they were dead. In a certain small town, Harold, the local gravedigger, upon hearing a bell one night, went to go see if it was children pretending to be spirits. Sometimes it was also the wind. This time, it wasn't either. A voice from below begged and pleaded to be unburied. \"Are you Sarah O'Bannon?\" Harold asked. \"Yes!\" the ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 16th",
+    "date": "September 17, 1827",
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Sawney's Cave",
+    "url": "https://creepypasta.fandom.com/wiki/Sawney's_Cave",
+    "description": "The legend of Sawney Bean is perhaps one of Scotland's most memorable ghost stories, one that whilst being dismissed as fantasy by historians, is very much a part of the nation's folklore and has spread across the world as a dark and disturbing tale of the depravity some humans are capable of. Many places in Britain claim to be connected to Sawney Bean, often to try and lure in tourists. But the cave where the clan were said to reside is Bannane Head. This cave in of itself is a haunting place, ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/0f/Sbc.png/revision/latest/scale-to-width-down/180?cb=20120702230055",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0f/Sbc.png/revision/latest/scale-to-width-down/180?cb=20120702230055"
+    ],
+    "author": "unknown Originally uploaded on July 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "History",
+      "Places",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "The Scarecrow",
+    "url": "https://creepypasta.fandom.com/wiki/The_Scarecrow",
+    "description": "As Jake trudged through the cornfield, he recalled the argument he’d had that morning with his Pa. “But they’ve only been up a month – they don’t need changin’!” he had yelled. “Yes they do, Jake, every one! And I want that first scarecrow replaced by sundown!” He shifted the heavy bag slung over his shoulder and cursed at himself for not thinking of something more clever to say. He clutched the stepladder in his other arm like a lance, and fantasized about different endings to the fight. “I do ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/98/Scarecrow.jpg/revision/latest/scale-to-width-down/183?cb=20150610102407",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/98/Scarecrow.jpg/revision/latest/scale-to-width-down/183?cb=20150610102407"
+    ],
+    "author": "unknown Originally uploaded on November 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Scariest Video Game Ever",
+    "url": "https://creepypasta.fandom.com/wiki/The_Scariest_Video_Game_Ever",
+    "description": "I just finished playing one of the SCARIEST video games ever. Now, hear me out before saying, \"Oh, he's probably just a dork that gets scared of everything.\" I don't get scared of video games or movies. I've played many survival horror games and have seen many horror movies in my day. The only thing that made me just a tiny bit scared were some parts of Penumbra and Condemned. Amnesia was pretty good. Everything else was just boring. This game was different. VERY different. You aren't given any ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games",
+      "Troll_Pasta"
+    ]
+  },
+  {
+    "name": "The SCP Foundation",
+    "url": "https://creepypasta.fandom.com/wiki/The_SCP_Foundation",
+    "description": "Context and Setting The SCP Foundation is a powerful shadow government that seeks to Secure, Contain, and Protect (as per the designation of their institution) various objects, entities, and extranormal phenomena that go bump in the night. Secrecy and detailed analyses are their modus operandi for all their work. From classically supernatural creatures to scientific oddities that violate all known laws of physics, there is not a single instance of anomalous happenings that this cold, clinical or",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/8f/SCP_Logo_%28secure%2C_contain%2C_protect%29.png/revision/latest/scale-to-width-down/280?cb=20240213024359",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8f/SCP_Logo_%28secure%2C_contain%2C_protect%29.png/revision/latest/scale-to-width-down/280?cb=20240213024359",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/cf/Original_SCP-173_v2.png/revision/latest/scale-to-width-down/810?cb=20240209022842",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2d/SCP_173_modern.png/revision/latest?cb=20240209023412",
+      "https://static.wikia.nocookie.net/creepypasta/images/d/da/Document_173.jpg/revision/latest/scale-to-width-down/500?cb=20251103015244"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Memes",
+      "Science",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Scratchy Scratchy",
+    "url": "https://creepypasta.fandom.com/wiki/Scratchy_Scratchy",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b8/Scratchesonthewall.jpg/revision/latest/scale-to-width-down/258?cb=20131003200727",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b8/Scratchesonthewall.jpg/revision/latest/scale-to-width-down/258?cb=20131003200727"
+    ],
+    "author": "ClericofMadness Originally uploaded on September 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Scribblings in the Well",
+    "url": "https://creepypasta.fandom.com/wiki/Scribblings_in_the_Well",
+    "description": "These bizarre instructions were found etched into the wall at the bottom of an old well, somewhere in rural Germany. They have been translated to the best of my abilities: Somewhere in Europe, there is an empty field of grass. Among the long, unkempt grass is a wooden hatch in the ground. The hatch guards an old storm shelter, but this is not your destination. In order to gain access to the alternate opening, you must spill your own blood over the doors. You will awaken at the edge of a field; t",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Ritual",
+      "Dreams/Sleep",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Second Sight",
+    "url": "https://creepypasta.fandom.com/wiki/Second_Sight",
+    "description": "Monday, August 3, 2009 Times are hard, and I work in a business that is slowly becoming obsolete. People are steering away from glasses and contact lenses to Lasik surgery and more permanent, feasible choices in the field of eye care. I’ve never been the type to collect my thoughts and put them down, and yet these have been the toughest months to endure as of late. My wife left me, along with alimony and a good chunk of everything I’ve struggled to build since I was in my early twenties. I don’t",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": "August 3, 2009",
+    "categories": [
+      "Reality",
+      "Beings",
+      "Diary/Journal",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "The Secret",
+    "url": "https://creepypasta.fandom.com/wiki/The_Secret",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a0/Ghostship1.jpg/revision/latest/scale-to-width-down/180?cb=20120126003634",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a0/Ghostship1.jpg/revision/latest/scale-to-width-down/180?cb=20120126003634"
+    ],
+    "author": "Carousel Gizmologist Originally uploaded on January 26th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Disappearances",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "Seen, but Not Heard",
+    "url": "https://creepypasta.fandom.com/wiki/Seen,_but_Not_Heard",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "ClericofMadness Originally uploaded on January 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Selena",
+    "url": "https://creepypasta.fandom.com/wiki/Selena",
+    "description": "Fuller Road; never again will I think of it as just a road on my way to school. It was only four short weeks ago that I had the strangest experience of my life. On my first day of my sophomore year in high school, you couldn't beat the smile off my face with a baseball bat. I had been texting girls, working out, and had finally built up enough confidence to talk to the most popular girl in my grade, possibly the whole school. And that's not even the best part. I had turned sixteen during the sum",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Ghosts",
+      "Places",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Self Preservation",
+    "url": "https://creepypasta.fandom.com/wiki/Self_Preservation",
+    "description": "If you’re reading this, then I am hopefully long gone. It’s been… two months now since the meteor struck Mississippi. There was a lot of public interest in it, astrologers and the like all gathering around for a look. They took samples of the rock and shipped them all over the world to museums in every country. Hell, I almost made a trip to have a look myself, but I had an interview with a potential employer. If he hadn’t called me up the previous day, I’d be dead now. Three days later, after th",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Science",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "The Sermon",
+    "url": "https://creepypasta.fandom.com/wiki/The_Sermon",
+    "description": "You got used to the shouts and hollers and keening . You got used to the pleading and imploring and begging . Eventually, you got used to the watching , and there was but one more step to the doing . So said our Guide . This much I have to confess - Hear me now! When the Miracle happened I was a nobody. Even then, It was beautiful . I saw... I grip my rifle . Not a proper grip , but an embrace . Oh, how cold steel reminds me and cautions me on those times of blasphemy. Yes! Even I was once obses",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Gods",
+      "Lovecraftian"
+    ]
+  },
+  {
+    "name": "Seven Gables",
+    "url": "https://creepypasta.fandom.com/wiki/Seven_Gables",
+    "description": "I've never walked through the woods at night before. The slightest idea of it makes me incredibly uncomfortable. As for my friend, Charlie, he was quite the opposite. He loved walking at night, may it be through the woods or elsewhere. On one particular night, he asked me to come through these supposedly haunted woods with him. I absolutely refused to go until he offered weed, which I myself had been dry for a solid month now. In March of Michigan, weed usually comes in higher prices... or at le",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/94/Scary_house.jpg/revision/latest/scale-to-width-down/180?cb=20121210124459",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/94/Scary_house.jpg/revision/latest/scale-to-width-down/180?cb=20121210124459"
+    ],
+    "author": "unknown Originally uploaded on August 24",
+    "date": "August 24, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Disappearances",
+      "Places"
+    ]
+  },
+  {
+    "name": "Sever the Cord",
+    "url": "https://creepypasta.fandom.com/wiki/Sever_the_Cord",
+    "description": "Many have speculated that the plane in which we live is not the only plane in existence. Those who say this will usually then go on to ponder realms of mystery and wonder. The truth is, there is a second plane, but it is not filled with the euphoric images that most people conjure up. However, it is not filled with horrors either, rather, it is a perfect emulation of our world. There is no difference at all. Whatever exists in our plane also exists on the Second Plane. Even you exist on the Seco",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Ritual",
+      "Mirrors",
+      "Reality",
+      "Demon/Devil",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Shadow of My Shadow",
+    "url": "https://creepypasta.fandom.com/wiki/Shadow_of_My_Shadow",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/74/Night_Terrors_The_Man.jpg/revision/latest/scale-to-width-down/180?cb=20120516041015",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/74/Night_Terrors_The_Man.jpg/revision/latest/scale-to-width-down/180?cb=20120516041015"
+    ],
+    "author": "Zach Zeman Originally uploaded on May 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Beings",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Shadow People",
+    "url": "https://creepypasta.fandom.com/wiki/Shadow_People",
+    "description": "Origins Shadow people - also known as shadow men, shadow folk, or shadow beings - are said to be shadow-like creatures of (usually) supernatural or extraterrestrial origin. They appear as dark forms in the peripheries of people's vision and disintegrate, or move between walls when noticed. Reports of shadow people are similar to ghost sightings, but differ in that shadow people are not reported as having human features, wearing modern/period clothing, or attempting to communicate. Some individua",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/95/Shadows.jpg/revision/latest/scale-to-width-down/250?cb=20110421193738",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/95/Shadows.jpg/revision/latest/scale-to-width-down/250?cb=20110421193738"
+    ],
+    "author": "unknown Originally uploaded on April 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Beings",
+      "Mental_Illness",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Shakkzcar Sheivirre.avi",
+    "url": "https://creepypasta.fandom.com/wiki/Shakkzcar_Sheivirre.avi",
+    "description": "A concept image of what the room may have looked like. Shakkzcar Sheivierre.avi is a video of unknown origin found by user 1CDTO on Metacafe. Both the video and audio are very unclear, but it is thought to depict an old house in which a figure is seen briefly at the 25 second mark. The poor quality is attributed to the used camera being broken, perhaps from being dropped. Supposedly, the man filming was found dead on the floor of the downstairs bathroom an estimated 5 weeks after the video was m",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9b/Bloodsmearedwall.jpg/revision/latest/scale-to-width-down/268?cb=20110216210433",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9b/Bloodsmearedwall.jpg/revision/latest/scale-to-width-down/268?cb=20110216210433",
+      "https://static.wikia.nocookie.net/creepypasta/images/e/e2/Screen_shot_2011-02-24_at_5.00.52_PM.png/revision/latest/scale-to-width-down/268?cb=20110224220516"
+    ],
+    "author": "unknown Originally uploaded on February 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Videos",
+      "Computers_and_Internet",
+      "Disappearances",
+      "Micropasta",
+      "Television"
+    ]
+  },
+  {
+    "name": "The Shaman",
+    "url": "https://creepypasta.fandom.com/wiki/The_Shaman",
+    "description": "Many many years ago, there lived a very powerful shaman. People went to see him because he was able to summon the spirits of their dead relations from beyond the grave. These spirits would then possess him and converse with their living relations through him. At the same time, there was a very eminent doctor in the region who had great ambitions, not only in the medical field but also in politics. He sought to be a community leader, and wanted to unite the people through the knowledge and wisdom",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on February 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Ritual"
+    ]
+  },
+  {
+    "name": "The Shelter",
+    "url": "https://creepypasta.fandom.com/wiki/The_Shelter",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Rundevil Originally uploaded on August 3",
+    "date": "August 3, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Demon/Devil",
+      "Diary/Journal",
+      "Places",
+      "Longpasta"
+    ]
+  },
+  {
+    "name": "The Shift",
+    "url": "https://creepypasta.fandom.com/wiki/The_Shift",
+    "description": "It started on August 20, 1990. Police raided a small warehouse in NY City, under the suspicion of drug-trafficking centered around that building. No evidence was found in the warehouse, except for a floppy disk labeled \"WE CANNOT STOP IT\". Officer Charles F. was assigned the task of reviewing the contents of the floppy disk. Four days later, he and the material disappeared. Charles was never seen again, and the investigation was eventually closed due to a lack of evidence. On February 28, 1994, ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on November 9th",
+    "date": "August 20, 1990",
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Reality",
+      "Disappearances",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "The Shoe Tree",
+    "url": "https://creepypasta.fandom.com/wiki/The_Shoe_Tree",
+    "description": "\"Are we there yet?\" The words every father expects to hear. Invariably, at every ten-minute interval, my eight-year-old daughter Cynthia, would peel her face from the car window and ask the same question. And dutifully, I would respond, \"Almost, sweetie.\" We had been driving for almost two hours (which should give you an idea of how much I'd had to put up with) to drop Cynthia off at her mother's. Lisa and I had been divorced for about three years, and doggedly, she still demanded to see Cynthia",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on December 7th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Monsters",
+      "Nature"
+    ]
+  },
+  {
+    "name": "The Showers",
+    "url": "https://creepypasta.fandom.com/wiki/The_Showers",
+    "description": "Part 1 [ ] Every area in all parts of the world has those area-specific urban legends that just refuse to die. Whether the stories are about a haunted asylum on the outskirts of the city, a creature that lives in the nearby woods, or a ghost that haunts a lonely stretch of road outside of town, there is always a common thread within the tales; no one has ever been to these places, seen the creatures, or witnessed any hauntings with their own eyes. There are members of every generation who will p",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f8/3267467973_2238c0fbb6.jpg/revision/latest?cb=20130822132622",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f8/3267467973_2238c0fbb6.jpg/revision/latest?cb=20130822132622"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Suggested_Reading",
+      "Places",
+      "Longpasta"
+    ]
+  },
+  {
+    "name": "Sibling Rivalry",
+    "url": "https://creepypasta.fandom.com/wiki/Sibling_Rivalry",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a7/Goggles.jpg/revision/latest/scale-to-width-down/224?cb=20121217161914",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a7/Goggles.jpg/revision/latest/scale-to-width-down/224?cb=20121217161914",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0a/Beach.jpg/revision/latest/scale-to-width-down/262?cb=20121217163338"
+    ],
+    "author": "TheShadyNerd Originally uploaded on December 17",
+    "date": "December 17, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Sick",
+    "url": "https://creepypasta.fandom.com/wiki/Sick",
+    "description": "I slept fine last night. Didn't sleep so well Sunday though. It was my own fault, really. I did tell him he was welcome in if he pleased. My dream began like one of those horror games you might see, like Silent Hill or Alone in the Dark. It was night out, and almost pitch black. I was holed up in some building, hiding from something. Or waiting. I peeked out; the door was glass and had some rule stickers on it. I suppose I was in a corner store. Upon looking out, I saw a deserted street, lit by ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Dreams/Sleep",
+      "Mental_Illness",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Silent Nightmare",
+    "url": "https://creepypasta.fandom.com/wiki/Silent_Nightmare",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/af/122.jpg/revision/latest/scale-to-width-down/218?cb=20120817163739",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/af/122.jpg/revision/latest/scale-to-width-down/218?cb=20120817163739"
+    ],
+    "author": "ClericofMadness Originally uploaded on February 15th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Christmas",
+      "ClericofMadness",
+      "Beings",
+      "Theory",
+      "Reality",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Simple Game",
+    "url": "https://creepypasta.fandom.com/wiki/Simple_Game",
+    "description": "It was a nice day outside, especially just after a week-long storm. I had spent almost every Saturday in my local game shop, Slackers. The place was just local, I think; I hadn’t seen any other stores. The shelves always had new weekly stock to check out. They even had music sections that I would occasionally browse. The owner of the store was pretty nice, at least 30 or so, pretty laid back. I had just gotten a Game Boy Color which was a bit after its release (2000) so I went, as usual, to the ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/44/Dscn2848v.jpg/revision/latest/scale-to-width-down/300?cb=20121112163621",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/44/Dscn2848v.jpg/revision/latest/scale-to-width-down/300?cb=20121112163621"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Video_Games",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Siren",
+    "url": "https://creepypasta.fandom.com/wiki/Siren",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Diary/Journal",
+      "Mirrors",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "The Siren Is Mine",
+    "url": "https://creepypasta.fandom.com/wiki/The_Siren_Is_Mine",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/78/Scary-Halloween-Decorations-and-Unique-Gift-Ideas-halloween-shower-curtain-psycho-shower-curtain-unique-shower-curtain.jpg/revision/latest/scale-to-width-down/180?cb=20120201163834",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/78/Scary-Halloween-Decorations-and-Unique-Gift-Ideas-halloween-shower-curtain-psycho-shower-curtain-unique-shower-curtain.jpg/revision/latest/scale-to-width-down/180?cb=20120201163834"
+    ],
+    "author": "MrsMcDowell Originally uploaded on June 14th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "The Six-Legged Rape Centaur",
+    "url": "https://creepypasta.fandom.com/wiki/The_Six-Legged_Rape_Centaur",
+    "description": "\"Six-legged rape centaur\" is a name given to a bizarre-looking unidentified creature that somewhat resembles a centaur from Greek mythology. It appeared in the following eye-witness account posted by an anonymous user on 4chan on November 2008. I'd like to start off by saying that I don't have a fucking clue why I'm posting this on /x/, or, really, at all. Maybe I'm afraid of dying, or something. The events described in this story happened a month and a half ago, in Shanondale (Shannondale?), We",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/bc/Centaur.png/revision/latest/scale-to-width-down/250?cb=20130126050418",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bc/Centaur.png/revision/latest/scale-to-width-down/250?cb=20130126050418"
+    ],
+    "author": "unknown Originally uploaded on January 26th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "NSFW",
+      "Cryptids"
+    ]
+  },
+  {
+    "name": "Skinwalker",
+    "url": "https://creepypasta.fandom.com/wiki/Skinwalker",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Max Minton Originally uploaded on August 19",
+    "date": "August 19, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Cryptids",
+      "Disappearances",
+      "Dismemberment",
+      "Memes",
+      "Nature"
+    ]
+  },
+  {
+    "name": "Skipper's Bin",
+    "url": "https://creepypasta.fandom.com/wiki/Skipper's_Bin",
+    "description": "Let's talk about Youtube. The site was founded in February of 2005 by three former PayPal employees by the names of Steve Chen, Chad Hurley, and Jawed Karim. The three were inspired to create a user-friendly and intuitive video file-sharing site when they were having difficulty sharing a video of a dinner party at Chen's apartment. The first video to ever be uploaded to the site was put up on April 23rd, 2005 at 8:27 PM under the name \"Me at the zoo\". It is 19 seconds long and features Karim tal",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Computers_and_Internet",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Sky Burial",
+    "url": "https://creepypasta.fandom.com/wiki/Sky_Burial",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/46/2712592098_26f49fabba.jpeg/revision/latest/scale-to-width-down/192?cb=20110516200250",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/46/2712592098_26f49fabba.jpeg/revision/latest/scale-to-width-down/192?cb=20110516200250"
+    ],
+    "author": "EYEBEAMS Originally uploaded on May 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Reality",
+      "Ritual",
+      "Dismemberment",
+      "Micropasta",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Skype",
+    "url": "https://creepypasta.fandom.com/wiki/Skype",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/da/Goat.jpg/revision/latest/scale-to-width-down/240?cb=20140429024143",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/da/Goat.jpg/revision/latest/scale-to-width-down/240?cb=20140429024143"
+    ],
+    "author": "Steven Shorter Originally uploaded on May 10th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Spotlighted_Pastas",
+      "Computers_and_Internet",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Sleep Easy",
+    "url": "https://creepypasta.fandom.com/wiki/Sleep_Easy",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Sliding Ghost Originally uploaded on October 12th",
+    "date": null,
+    "categories": [
+      "CPWH11",
+      "Historical_Archive",
+      "Ritual",
+      "Beings",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Slender Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Slender_Man",
+    "description": "1983. Photographer presumed dead. 1 Appearance 2 Behavior 3 Historical References 3.1 Brazilian Cave Paintings 3.2 Egyptian Hieroglyphs 3.3 German Woodcuts 3.4 Romanian Mythology 3.5 English Mythology 4 Pastas Involving the Slender Man 5 More Information 6 Gallery The Slender Man is an alleged paranormal figure purported to have been in existence for centuries, covering a large geographic area. Believers in the Slender Man connect his appearances with many other legends around the world, includi",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/fa/Slender_playground.jpg/revision/latest/scale-to-width-down/180?cb=20100817180404",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/fa/Slender_playground.jpg/revision/latest/scale-to-width-down/180?cb=20100817180404",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1f/The_Slender_Man_by_Pirate_Cashoo.jpg/revision/latest/scale-to-width-down/180?cb=20110427232011",
+      "https://static.wikia.nocookie.net/creepypasta/images/5/5d/IMG_7176_copy.jpg/revision/latest/scale-to-width-down/325?cb=20120320011030",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1e/Slender_man_cave_painting.jpg/revision/latest/scale-to-width-down/180?cb=20120601150738",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c5/Derritter1.jpg/revision/latest/scale-to-width-down/250?cb=20120116222409",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bd/Slender_in_background.jpg/revision/latest/scale-to-width-down/230?cb=20110428131924",
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c0/Slenderwithgirl.png/revision/latest/scale-to-width-down/170?cb=20250820212242",
+      "https://static.wikia.nocookie.net/creepypasta/images/8/82/Slendersight.png/revision/latest/scale-to-width-down/230?cb=20110927180332",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/27/297870_255111971176133_100000319976336_897230_924860_n.jpg/revision/latest/scale-to-width-down/230?cb=20120213184943",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f8/Slenderman6.jpg/revision/latest/scale-to-width-down/230?cb=20110816010801",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/65/The_slender_man_by_lolhoracio12d49yepy.jpg/revision/latest/scale-to-width-down/230?cb=20120213185041",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2a/Slender_forest.jpg/revision/latest/scale-to-width-down/230?cb=20110428131948",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/62/Slender_forest_2.jpg/revision/latest/scale-to-width-down/200?cb=20110627210312",
+      "https://static.wikia.nocookie.net/creepypasta/images/3/30/Slender_forest_3.jpg/revision/latest/scale-to-width-down/230?cb=20110922223834",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1f/Slender_forest.png/revision/latest/scale-to-width-down/230?cb=20110922170804",
+      "https://static.wikia.nocookie.net/creepypasta/images/3/38/Slender_forest_2.png/revision/latest/scale-to-width-down/230?cb=20110923131209",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/15/Slender_forest_5.jpg/revision/latest/scale-to-width-down/230?cb=20110923133829",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/ba/Slender_forest_4.png/revision/latest/scale-to-width-down/230?cb=20110922231324",
+      "https://static.wikia.nocookie.net/creepypasta/images/3/35/Cnv000058_jpg_by_z4t0d3a1c19.jpg/revision/latest/scale-to-width-down/230?cb=20120213185110",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0a/Theoperator.png/revision/latest/scale-to-width-down/230?cb=20250823041642",
+      "https://static.wikia.nocookie.net/creepypasta/images/0/02/Slender-Man.jpg/revision/latest/scale-to-width-down/230?cb=20110422021205",
+      "https://static.wikia.nocookie.net/creepypasta/images/8/82/S.png/revision/latest/scale-to-width-down/230?cb=20120107012637",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/fd/1291684799719.jpg/revision/latest/scale-to-width-down/230?cb=20111112135123"
+    ],
+    "author": "Der Gro",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Beings",
+      "Memes",
+      "Contextual",
+      "Disappearances",
+      "Photography",
+      "History"
+    ]
+  },
+  {
+    "name": "The Slenderman Cometh",
+    "url": "https://creepypasta.fandom.com/wiki/The_Slenderman_Cometh",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Livingshadows17 Originally uploaded on April 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Memes"
+    ]
+  },
+  {
+    "name": "The Slumber Party Chronicles",
+    "url": "https://creepypasta.fandom.com/wiki/The_Slumber_Party_Chronicles",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/06/Ouija-board.jpg/revision/latest/scale-to-width-down/318?cb=20121106022732",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/06/Ouija-board.jpg/revision/latest/scale-to-width-down/318?cb=20121106022732"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Ritual",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Small Businesses",
+    "url": "https://creepypasta.fandom.com/wiki/Small_Businesses",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/97/Bishopville%2C_Maryland.jpg/revision/latest/scale-to-width-down/300?cb=20120725070054",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/97/Bishopville%2C_Maryland.jpg/revision/latest/scale-to-width-down/300?cb=20120725070054",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f7/My_teal_eye.jpg/revision/latest/scale-to-width-down/180?cb=20120725070645"
+    ],
+    "author": "LeifSummers Originally uploaded on July 25th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Smile Dog",
+    "url": "https://creepypasta.fandom.com/wiki/Smile_Dog",
+    "description": "I first met in person with Mary E. in the summer of 2007. I had arranged with her husband of fifteen years, Terence, to see her for an interview. Mary had initially agreed, since I was not a newsman, but rather, an amateur writer gathering information for a few early college assignments and, if all went according to plan, some pieces of fiction. We scheduled the interview for a particular weekend when I was in Chicago on unrelated business, but at the last moment, Mary changed her mind and locke",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/1b/Smile.jpg/revision/latest?cb=20111010204357",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1b/Smile.jpg/revision/latest?cb=20111010204357"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Suggested_Reading",
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Photography",
+      "Animals",
+      "Memes"
+    ]
+  },
+  {
+    "name": "The Smiling Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Smiling_Man",
+    "description": "About five years ago, I lived downtown in a major city in the US. I've always been a night person, so I would often find myself bored after my roommate, who was decidedly not a night person, went to sleep. To pass the time, I used to go for long walks and spend the time thinking. I spent four years like that, walking alone at night, and never once had a reason to feel afraid. I always used to joke with my roommate that even the drug dealers in the city were polite. But all of that changed in jus",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/96/The_smiling_man.jpg/revision/latest/scale-to-width-down/300?cb=20121226210053",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/96/The_smiling_man.jpg/revision/latest/scale-to-width-down/300?cb=20121226210053"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Memes",
+      "Reddit_Pastas"
+    ]
+  },
+  {
+    "name": "Snowscape",
+    "url": "https://creepypasta.fandom.com/wiki/Snowscape",
+    "description": "It’s been a while since I had anything like human contact, so I’ll attempt to be as brief as I can. At least the sound of typing is noise, and the echoes it produces are the nearest thing to a reply I’ve had in months. I lost my job back in August. The dollar’s dropping, the economy’s poor, and son, you just aren’t a competitive investment anymore. I’m young and I don’t have bills, so I took it in stride. The days of day zero closure notices and no parachutes were stories I’d only heard from my ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Nature"
+    ]
+  },
+  {
+    "name": "Snuff Film",
+    "url": "https://creepypasta.fandom.com/wiki/Snuff_Film",
+    "description": "You ever seen someone die on camera? A snuff film is a recording of the actual murder of a human being that is subsequently passed around for entertainment purposes. Suicides and accidents don’t count. According to the MPAA, the FCC, the FBI, and the ever-lovin’ Snopes.com, there’s no such thing as a real snuff film (yes, this includes Faces of Death). Anything you think might count is faked, falsified, or not made for that purpose, such as those tasteless videos you find on shock sites. This is",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/7a/148043160-1.jpg/revision/latest?cb=20121125161840",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7a/148043160-1.jpg/revision/latest?cb=20121125161840"
+    ],
+    "author": "unknown Originally uploaded on November 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "NSFW",
+      "Dismemberment",
+      "Reality",
+      "Television"
+    ]
+  },
+  {
+    "name": "So Much for My Complexion!",
+    "url": "https://creepypasta.fandom.com/wiki/So_Much_for_My_Complexion!",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/67/400px-Creepy-Couch2-1024x768.jpg/revision/latest/scale-to-width-down/180?cb=20120821050346",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/67/400px-Creepy-Couch2-1024x768.jpg/revision/latest/scale-to-width-down/180?cb=20120821050346"
+    ],
+    "author": "Deehizzle Originally uploaded on August 12th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Spotlighted_Pastas",
+      "Demon/Devil",
+      "Mental_Illness",
+      "Places",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Sokushinbutsu",
+    "url": "https://creepypasta.fandom.com/wiki/Sokushinbutsu",
+    "description": "Scattered throughout Northern Japan are two dozen mummified Japanese monks known as Sokushinbutsu. Followers of Shugendô, an ancient form of Buddhism, the monks died in the ultimate act of self-denial. For three years, the priests would eat a special diet consisting only of nuts and seeds, while taking part in a regimen of rigorous physical activity that stripped them of their body fat. They then ate only bark and roots for another three years and began drinking a poisonous tea made from the sap",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/bf/Sokushinbutsu.jpg/revision/latest/scale-to-width-down/200?cb=20250613111504",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bf/Sokushinbutsu.jpg/revision/latest/scale-to-width-down/200?cb=20250613111504"
+    ],
+    "author": "unknown Originally uploaded on March 21st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "History",
+      "Weird",
+      "Contextual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Something Pale and Silent",
+    "url": "https://creepypasta.fandom.com/wiki/Something_Pale_and_Silent",
+    "description": "I recently moved into a new apartment, and having very little money had to settle for the only habitable place in a row of almost derelict buildings. The street was all but abandoned, but I'm almost certain that there were squatters two doors down. My building was the only one not boarded up and, compared to the others, it had potential. There was no electricity when I moved in, no curtains and, no carpets - but at least the water was running. It was a particularly tough time in my life (which I",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on December 1",
+    "date": "December 1, 2010",
+    "categories": [
+      "Historical_Archive",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Something Very Old",
+    "url": "https://creepypasta.fandom.com/wiki/Something_Very_Old",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a6/3_47884764201.jpg/revision/latest/scale-to-width-down/290?cb=20130218181558",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a6/3_47884764201.jpg/revision/latest/scale-to-width-down/290?cb=20130218181558"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dr._Malpractice",
+      "Beings",
+      "Science",
+      "History"
+    ]
+  },
+  {
+    "name": "The Song and Dance Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Song_and_Dance_Man",
+    "description": "There are few left alive who remember the Song and Dance Man . Time has claimed the ones that survived the long night and I’m sure they went willing to meet their maker. Life takes on a strange tint after a night like that. The ones still left—Bill Parker, Sarah Carter, and Sam Tannen—don’t talk about it. Sam is lucky. His brain started to turn to porridge a few years back and now he has trouble figuring out how to put on his pants. He got an early reprieve from his memories. He doesn’t wake up ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Disappearances",
+      "Beings",
+      "Music",
+      "Historical_Archive",
+      "Suggested_Reading"
+    ]
+  },
+  {
+    "name": "Sox",
+    "url": "https://creepypasta.fandom.com/wiki/Sox",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/fa/0419101324.jpg/revision/latest/scale-to-width-down/306?cb=20121223055208",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/fa/0419101324.jpg/revision/latest/scale-to-width-down/306?cb=20121223055208"
+    ],
+    "author": "Shinigami",
+    "date": "January 14, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Ghosts",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Special",
+    "url": "https://creepypasta.fandom.com/wiki/Special",
+    "description": "I awake, as always, to the click and whir of a thousand hidden cameras, and the rising glow of the ambient lights. Over the next 30 minutes, the curtains on my bedroom will slowly part, gliding on mechanized tracks, and the yellow sunlight of dawn will stream into the wide circular room. Like all mornings, I entertain for the briefest moments the thought of hurling myself at the windows and plunging the half mile to the ground. I hold on to the little fantasy of wind and sky and falling for as l",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "Reality",
+      "Mental_Illness",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Spectacular Creation",
+    "url": "https://creepypasta.fandom.com/wiki/Spectacular_Creation",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "LogsOnAndPosts Originally uploaded on January 12th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Science"
+    ]
+  },
+  {
+    "name": "Spending the Night",
+    "url": "https://creepypasta.fandom.com/wiki/Spending_the_Night",
+    "description": "A lamp just sat there in the middle of the room, covered in dust atop a rusty, round table. It sat near a single window which shone dull blue light in from the sunless day. We stumbled upon this room while exploring an apartment that was said to have always been empty. The apartment felt heavy with dust and dead with quietness. We couldn't explain how quiet it was, as the building's residents were anything but; living here had always been robust with energy. No one seemed to bother with the room",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Spirit of the Swamp",
+    "url": "https://creepypasta.fandom.com/wiki/Spirit_of_the_Swamp",
+    "description": "With new eyes, I gaze up at the night sky. These eyes are young, sharp. Much better than the festering doe eyes I wore previously. It’s been ages since a man wandered into my swamp; I will take much from him. Old roots and sinew creak as I pick though the remains, choosing the best parts to replace what I have lost. Again, I was too gluttonous. So many good parts ruined by my claws or devoured in a frenzy. I really need to practice more self control. This new brain meat should help with that. He",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/93/2221247988_a8a7793d85_z.jpg/revision/latest/scale-to-width-down/274?cb=20120514141332",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/93/2221247988_a8a7793d85_z.jpg/revision/latest/scale-to-width-down/274?cb=20120514141332"
+    ],
+    "author": null,
+    "date": "March 4, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "History",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Squidward's Suicide",
+    "url": "https://creepypasta.fandom.com/wiki/Squidward's_Suicide",
+    "description": "I just want to start off by saying that if you want an answer at the end, prepare to be disappointed. There isn't one. I was an intern at Nickelodeon Studios for a year in 2005 for my degree in animation. It wasn't paid, of course; most internships aren't, but it did have a perk beyond education. To adults, it might not seem like a big one, but most kids at the time would go crazy over it. Since I worked directly with the editors and animators, I got to view new episodes days before they aired. ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/ef/Squidward%27s_Suicide_Title_Card.jpg/revision/latest/scale-to-width-down/310?cb=20110919073156",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ef/Squidward%27s_Suicide_Title_Card.jpg/revision/latest/scale-to-width-down/310?cb=20110919073156"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes",
+      "Videos",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Stairs",
+    "url": "https://creepypasta.fandom.com/wiki/Stairs",
+    "description": "In 1984, an old widowed lady lived by herself in a two story house. She was completely immobile and bound to her wheelchair. Ever since the mysterious death of her husband, she required the aid of a caretaker, who would visit her daily to help her with everyday tasks. What made it so difficult was the fact that the two floors of the house were only connected by an old and decrepit staircase. When the old lady needed to move between the two floors, the caretaker would have to carry her frail body",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/60/NeGfm.jpg/revision/latest/scale-to-width-down/180?cb=20120909164956",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/60/NeGfm.jpg/revision/latest/scale-to-width-down/180?cb=20120909164956"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Crime",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Stairs and the Doorway",
+    "url": "https://creepypasta.fandom.com/wiki/The_Stairs_and_the_Doorway",
+    "description": "I've never considered myself a nosy person. No more nosy than the next guy. I just have what my Ma would call an unhealthy amount of curiosity. I was the kid who climbed to the top of the big oak in the back yard, just to see what was in the crows' nest. I was the kid who dug a hole in the back yard so deep that I hit groundwater because I was convinced there was a cave under our house, and I wanted to see it. To see. My folks aren't dirt poor, but they're pretty close. They're part of that miss",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Spotlighted_Pastas",
+      "Places",
+      "Beings",
+      "Eric_Dodd"
+    ]
+  },
+  {
+    "name": "The Stalker",
+    "url": "https://creepypasta.fandom.com/wiki/The_Stalker",
+    "description": "Leslie sat on the barstool, sipping a margarita. She’d hit a run of bad luck in the past few months. First her boyfriend Ricky left her, then she lost her job. She got a new job, but not as well paying, of course. So she had to move out of her house and into a cramped apartment. Her cat, Muffin, had died. Her mother was ill, and needed her support, even though she couldn’t support herself. With all that bad luck, its little wonder that she let that guy sit next to her, buy her a drink, the same ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/66/Stalker.jpg/revision/latest?cb=20150714153034",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/66/Stalker.jpg/revision/latest?cb=20150714153034"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Star-Crossed Night",
+    "url": "https://creepypasta.fandom.com/wiki/Star-Crossed_Night",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/ca/Images-1394722643.jpg/revision/latest/scale-to-width-down/220?cb=20140313145723",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/ca/Images-1394722643.jpg/revision/latest/scale-to-width-down/220?cb=20140313145723",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7b/Night-sky-over-church-800.jpg/revision/latest/scale-to-width-down/338?cb=20120329194505",
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bb/1340000395.jpg/revision/latest/scale-to-width-down/250?cb=20120606130933"
+    ],
+    "author": "ClericofMadness Originally uploaded on September 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Places",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "Staring",
+    "url": "https://creepypasta.fandom.com/wiki/Staring",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "AndNowYouRun Originally uploaded on April 8th",
+    "date": null,
+    "categories": [
+      "Pages_with_broken_file_links",
+      "Historical_Archive",
+      "Mirrors",
+      "Ritual"
+    ]
+  },
+  {
+    "name": "The Statue",
+    "url": "https://creepypasta.fandom.com/wiki/The_Statue",
+    "description": "A few years ago, a mother and father decided they needed a break. They wanted to head out for a night on the town, so they called their most trusted babysitter. When the babysitter arrived, the two children were already fast asleep in bed. So the babysitter had to just sit around and make sure everything was okay with them. Later that night, the babysitter got bored and went to watch TV, but she couldn't watch it downstairs because they did not have cable there; the parents didn't want children ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 10th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Stick Stickly",
+    "url": "https://creepypasta.fandom.com/wiki/Stick_Stickly",
+    "description": "Stick Stickly may be one of the least creative characters ever made, but he still holds a very special place in the hearts of 90s children for his several years of hosting Nick in the Afternoon. Most information on Stick Stickly says he hosted Nickelodeon's summer afternoon block from 1995-1998, but I always swore that I remembered seeing him on TV earlier than that. I thought I was crazy for quite a while, but recently, I found a small fan site for Stick Stickly that mentioned him hosting a 199",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes",
+      "Memes",
+      "KI_Simpson"
+    ]
+  },
+  {
+    "name": "Stop! Go!",
+    "url": "https://creepypasta.fandom.com/wiki/Stop!_Go!",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Cosbydaf Content is available under CC BY-SA",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "The Strange Death of Mary Reeser",
+    "url": "https://creepypasta.fandom.com/wiki/The_Strange_Death_of_Mary_Reeser",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b0/Mary_reeser.jpg/revision/latest?cb=20120520182210",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b0/Mary_reeser.jpg/revision/latest?cb=20120520182210"
+    ],
+    "author": "Zork Master Originally uploaded on May 20th",
+    "date": "July 2, 1951",
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Crime",
+      "History"
+    ]
+  },
+  {
+    "name": "A Strange Night in the City of Angels",
+    "url": "https://creepypasta.fandom.com/wiki/A_Strange_Night_in_the_City_of_Angels",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/8e/B5965aa820622cc0dfb2a3588dd547cb.jpg/revision/latest?cb=20120417165312",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8e/B5965aa820622cc0dfb2a3588dd547cb.jpg/revision/latest?cb=20120417165312"
+    ],
+    "author": "JR22 Originally uploaded on April 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Ghosts",
+      "History",
+      "Military",
+      "Diary/Journal"
+    ]
+  },
+  {
+    "name": "Stranger",
+    "url": "https://creepypasta.fandom.com/wiki/Stranger",
+    "description": "If you are the type who eats out regularly, a stranger might join you at the table one day. This stranger will always appear to be of your age and sex, and he/she will only appear if you are alone. No matter what style of restaurant it is, they will always be carrying their own plate of food. After a few seconds, they will look directly at you and say, \"You seem like an interesting person. May I know you better?\" Say yes and they will begin to ask you questions about yourself in-between bites. T",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ritual",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Strangers",
+    "url": "https://creepypasta.fandom.com/wiki/The_Strangers",
+    "description": "My name is Andrew Erics. I lived, once, in a city called New York. My mother is Terrie Erics. She's in the phone book. If you know the city, and you read this, find her. Don't show her this, but tell her I love her, and that I'm trying to come home. Please. It all started when I decided, around the time that I turned twenty-five, that it was time for me to give up taking my backpack in to work. It would make me look more mature, I thought, if I weren't lugging around a book bag everywhere like a",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b7/Images4.jpeg/revision/latest?cb=20101107193340",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b7/Images4.jpeg/revision/latest?cb=20101107193340"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Beings",
+      "Suggested_Reading",
+      "Historical_Archive",
+      "Disappearances"
+    ]
+  },
+  {
+    "name": "The Strangest Security Tape I've Ever Seen",
+    "url": "https://creepypasta.fandom.com/wiki/The_Strangest_Security_Tape_I've_Ever_Seen",
+    "description": "I work at a gas station in rural Pennsylvania. It's a boring job, but it's pretty easy and it pays alright. A few weeks ago, this new guy started; I'll call him Jeremy. Jeremy is weird. He's about 25 or 26, and he hardly speaks, but he's got the creepiest laugh I've ever heard. My boss and I have both noticed this, but it's never been a problem, so there's not much we can do about it. Customers have never complained about him, and he's always done his job fairly well. Up until a few weeks ago, a",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/63/Securitywatch.jpg/revision/latest?cb=20130802043508",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/63/Securitywatch.jpg/revision/latest?cb=20130802043508"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "PotM",
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Reddit_Pastas",
+      "Reality",
+      "Diary/Journal",
+      "Computers_and_Internet",
+      "Beings"
+    ]
+  },
+  {
+    "name": "String Theory",
+    "url": "https://creepypasta.fandom.com/wiki/String_Theory",
+    "description": "Have you ever had an experience that suggested someone else was in your house, and just thought, \"I don’t wanna know,\" and left it? Sometimes, the fear of the unknown is preferable to facing a real, concrete danger. Normally it's nothing, though. One time, the beeper function of my wireless house phone went off when I was the only one home. It could only be called from the living room. Another time, I swear someone took some change from my desk. They're all probably only slightly disconcerting t",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9f/Stringtheorynickkaurfanart.jpg/revision/latest/scale-to-width-down/150?cb=20240312010430",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9f/Stringtheorynickkaurfanart.jpg/revision/latest/scale-to-width-down/150?cb=20240312010430"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Theory",
+      "Reality",
+      "Beings"
+    ]
+  },
+  {
+    "name": "Stuffy",
+    "url": "https://creepypasta.fandom.com/wiki/Stuffy",
+    "description": "The man in the baseball cap walked through the hardware section of Home Depot. Something was wrong. He had to fix it when he got home. It was a little stuffy in there; might feel good to let some air in. He thought for awhile. The hacksaw would probably take too long, and it would be a weird angle for the Phillips head screwdriver. He had tried the hammer, but couldn’t get it to work, even with the four inch hot-dip galvanized nails he’d bought yesterday. It was an old place. Solid construction,",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on February 28th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Subway Effect",
+    "url": "https://creepypasta.fandom.com/wiki/The_Subway_Effect",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Ramdomjoe Originally uploaded on December 15",
+    "date": "December 15, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "The Suicide King",
+    "url": "https://creepypasta.fandom.com/wiki/The_Suicide_King",
+    "description": "Modern playing cards are filled with layers of meaning and symbols that can be traced back centuries. The four kings, for example, are based on real rulers: the king of diamonds represents the wealthy Julius Caesar; the king of clubs is the brutal Alexander the Great; the king of spades is the strong but kind David of Israel; and the king of Hearts is the emotionally disturbed Charles VII of France. It is this king that we will be dealing with today. It should also be noted that Charles was the ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f0/20232_king-of-hearts.jpeg/revision/latest/scale-to-width-down/180?cb=20110308015702",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f0/20232_king-of-hearts.jpeg/revision/latest/scale-to-width-down/180?cb=20110308015702"
+    ],
+    "author": null,
+    "date": "7/6/1462",
+    "categories": [
+      "Historical_Archive",
+      "History",
+      "Items/Objects",
+      "Theory"
+    ]
+  },
+  {
+    "name": "Suicidemouse.avi",
+    "url": "https://creepypasta.fandom.com/wiki/Suicidemouse.avi",
+    "description": "So do any of you remember those Mickey Mouse cartoons from the 1930s? The ones that were just put on DVD a few years ago? Well, I hear there's one that was unreleased to even the most avid classic Disney fans. According to sources, it's nothing special, just a continuous loop (like The Flintstones) of Mickey walking past six buildings that goes on for two or three minutes before fading out. Unlike the cutesy tunes usually put in, though, the song in this cartoon was not a song at all, just const",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/54/SuicideMouse.jpg/revision/latest?cb=20110116235126",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/54/SuicideMouse.jpg/revision/latest?cb=20110116235126"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes",
+      "Memes",
+      "Videos"
+    ]
+  },
+  {
+    "name": "Suit",
+    "url": "https://creepypasta.fandom.com/wiki/Suit",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/eb/Suit.jpeg/revision/latest?cb=20110524195545",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/eb/Suit.jpeg/revision/latest?cb=20110524195545"
+    ],
+    "author": "Infear Originally uploaded on May 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Memes",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Sunken Statues",
+    "url": "https://creepypasta.fandom.com/wiki/Sunken_Statues",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/1c/ChildStatueA.jpg/revision/latest/scale-to-width-down/186?cb=20111201155230",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1c/ChildStatueA.jpg/revision/latest/scale-to-width-down/186?cb=20111201155230"
+    ],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Sunlit Nightmare",
+    "url": "https://creepypasta.fandom.com/wiki/Sunlit_Nightmare",
+    "description": "Image taken from Lee Hardcastle 's \"Hamster Hell\". John Weldon isn't one of the better-known names in animation, but those who saw his rather dark animated shorts tended to remember them. A Canadian, Weldon is best known in the United States for his cartoons that aired on Cartoon Network's compilation show O Canada . His best known short is the disturbing To Be , a cartoon dealing with the ethics of cloning and individual existence. Other examples of his work are The Lump , a bizarre story about",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/2a/Creepyclaymation.jpg/revision/latest?cb=20110628183122",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2a/Creepyclaymation.jpg/revision/latest?cb=20110628183122"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes",
+      "KI_Simpson"
+    ]
+  },
+  {
+    "name": "Super Mario 128",
+    "url": "https://creepypasta.fandom.com/wiki/Super_Mario_128",
+    "description": "Mario has been a gaming icon for decades, present in countless titles. Although no year in recent memory has gone past without some type of Mario game being released, series fans will remember the nearly decade-long drought of original Mario platformers. From 1997-2005, there was only a single new one released: Super Mario Sunshine. During the second part of this drought (after Sunshine's release), the mysterious Super Mario 128 was the main focus of the fanbase. No concrete information was give",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/eb/270px-SuperMario128.jpg/revision/latest?cb=20120921125942",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/eb/270px-SuperMario128.jpg/revision/latest?cb=20120921125942"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games",
+      "KI_Simpson"
+    ]
+  },
+  {
+    "name": "Super Mario 64",
+    "url": "https://creepypasta.fandom.com/wiki/Super_Mario_64",
+    "description": "Mario. I always liked Super Mario 64 when I was a kid. I remember playing it at my aunt's house all the time. Well, one day a pop-up appeared out of nowhere as I was watching gameplay footage on YouTube. I was a little startled, and was about to close the window, until I realized that it was a website showing a mint condition copy of Super Mario 64 for sale. There was a picture and everything. I usually don't trust these things, but the feeling of nostalgia overpowered me, and I wanted to buy it",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d4/Mario.jpeg/revision/latest?cb=20110529201339",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d4/Mario.jpeg/revision/latest?cb=20110529201339"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Video_Games",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Supernova",
+    "url": "https://creepypasta.fandom.com/wiki/Supernova",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/ea/Bhbubh.jpeg/revision/latest?cb=20120419165910",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ea/Bhbubh.jpeg/revision/latest?cb=20120419165910"
+    ],
+    "author": "Wolfenmaus Originally uploaded on April 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Space",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Survival Guide",
+    "url": "https://creepypasta.fandom.com/wiki/Survival_Guide",
+    "description": "The cover. We've all been there. You have just gone to a certain place at a certain time on a certain date, done a special thing, and the thing you suspected would happen has just fucking happened. Not to mention the fact that you've just seen whatever the fuck it is that lives in your mirror, been told in detail how you're going to die, and the highly demonic and invincible thing you summoned is heading towards you. Also, your family are all dead, your friends are all missing, and you're being ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/72/Creepypasta_survival_guide.jpg/revision/latest/scale-to-width-down/162?cb=20120320150653",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/72/Creepypasta_survival_guide.jpg/revision/latest/scale-to-width-down/162?cb=20120320150653"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Memes",
+      "Troll_Pasta"
+    ]
+  },
+  {
+    "name": "Survival Instinct",
+    "url": "https://creepypasta.fandom.com/wiki/Survival_Instinct",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/4c/Sanddune.jpg/revision/latest/scale-to-width-down/332?cb=20111205115717",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4c/Sanddune.jpg/revision/latest/scale-to-width-down/332?cb=20111205115717"
+    ],
+    "author": "The Silicon Lemming Originally uploaded on December 5th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Nature",
+      "The_Silicon_Lemming"
+    ]
+  },
+  {
+    "name": "Survivor Type",
+    "url": "https://creepypasta.fandom.com/wiki/Survivor_Type",
+    "description": "Original short story by Stephen King, first published in the collection \"Skeleton Crew\" Sooner or later the question comes up in every medical student's career. How much shock-trauma can the patient stand? Different instructors answer the question, in different ways, but cut to its base level, the answer is always another question: How badly does the patient want to survive? January 26 Two days since the storm washed me up. I paced the island off just this morning. Some island! It is 190 paces w",
+    "image": null,
+    "images": [],
+    "author": "Stephen King",
+    "date": "August 8, 1970",
+    "categories": [
+      "Historical_Archive",
+      "Diary/Journal",
+      "Dismemberment",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Systematic Risk",
+    "url": "https://creepypasta.fandom.com/wiki/Systematic_Risk",
+    "description": "In the early eighties, around the time the internet was being developed, the military funded a massive experiment to see if similar technology could be used to design an artificial neural network. This was intended to be the foundation for a functioning AI. Predictably, the project went nowhere. Try as they might, the programmers and scientists involved in the project could produce no more than a screen of meaningless 1's and 0's. Eventually, the entire endeavor was defunded. However, one of the",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Science",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Tadpole Story",
+    "url": "https://creepypasta.fandom.com/wiki/The_Tadpole_Story",
+    "description": "This story begins, like all bad stories do, with thoughts of suicide. The spring that would see a tadpole hatch from the head of my penis began with me being sent home three times for what my guidance counselor called \"deliberately neglecting hygiene to the point of being misanthropic\". I folded the counselor’s note into the pocket of my jean shorts with the delicate formality of one who knows that there is only one possible recourse. Constantly ridiculed by my classmates, ignored by my parents,",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/58/Tadpolestory.jpg/revision/latest/scale-to-width-down/338?cb=20121126025349",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/58/Tadpolestory.jpg/revision/latest/scale-to-width-down/338?cb=20121126025349"
+    ],
+    "author": "unknown Originally uploaded on April 2",
+    "date": "April 2, 2012",
+    "categories": [
+      "Historical_Archive",
+      "NSFW",
+      "Animals",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Takotsubo Cardiomyopathy",
+    "url": "https://creepypasta.fandom.com/wiki/Takotsubo_Cardiomyopathy",
+    "description": "When someone you love dies, you are immersed in mourning. So much so that you may feel that you are dying a slow, painful death yourself. It might feel as though your heart is falling apart at the seams. The truth is, you very well might be. There exists a condition known as Takotsubo Cardiomyopathy, wherein the brain releases certain chemicals, mainly adrenaline, which in the released dosage will quickly erode the walls and lining of your heart. This can lead to heart irregularities, failure, a",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/4a/Brokenheart.jpg/revision/latest/scale-to-width-down/200?cb=20250616004716",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4a/Brokenheart.jpg/revision/latest/scale-to-width-down/200?cb=20250616004716"
+    ],
+    "author": "unknown Originally uploaded on September 7th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Science",
+      "Reality",
+      "Contextual",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Tale of Robert Elm",
+    "url": "https://creepypasta.fandom.com/wiki/The_Tale_of_Robert_Elm",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/36/Ispay.jpg/revision/latest/scale-to-width-down/250?cb=20120416200508",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/36/Ispay.jpg/revision/latest/scale-to-width-down/250?cb=20120416200508"
+    ],
+    "author": "G1pringle Originally uploaded on April 16th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Spotlighted_Pastas",
+      "Dismemberment",
+      "Gods",
+      "Lovecraftian",
+      "Ritual"
+    ]
+  },
+  {
+    "name": "The Tall Man",
+    "url": "https://creepypasta.fandom.com/wiki/The_Tall_Man",
+    "description": "I know of an old Romanian fairy tale, highly unpopular even in its earliest iterations. It might be based on a particular event, or perhaps it is an extrapolation from existing Slender Man stories. The translation I'm most familiar with goes a bit like this: Once upon a time, there were twin girls, Stela and Sorina. They were brave little girls and had no fear of the dark, nor of spiders and other crawling things. Where other young ladies and even young boys would cower, Stela and Sorina would w",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/67/Images_%2821%29.jpg/revision/latest/scale-to-width-down/180?cb=20130728225941",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/67/Images_%2821%29.jpg/revision/latest/scale-to-width-down/180?cb=20130728225941"
+    ],
+    "author": "unknown Originally uploaded on December 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Dismemberment",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Tall, Thin and Faceless",
+    "url": "https://creepypasta.fandom.com/wiki/Tall,_Thin_and_Faceless",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/0/0c/Padded_room.png/revision/latest?cb=20131020163916",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/0/0c/Padded_room.png/revision/latest?cb=20131020163916"
+    ],
+    "author": "HarbleMornets Originally uploaded on September 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Beings",
+      "Memes"
+    ]
+  },
+  {
+    "name": "Ted the Caver",
+    "url": "https://creepypasta.fandom.com/wiki/Ted_the_Caver",
+    "description": "Welcome to the Page of Ted Updated 5/19/01",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/26/Ted_the_cave_front_page.jpg/revision/latest?cb=20200627103733",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/26/Ted_the_cave_front_page.jpg/revision/latest?cb=20200627103733"
+    ],
+    "author": null,
+    "date": "5/19/01",
+    "categories": [
+      "Diary/Journal",
+      "Historical_Archive",
+      "Monsters",
+      "Nature",
+      "Places",
+      "PotM",
+      "Suggested_Reading"
+    ]
+  },
+  {
+    "name": "Teddy",
+    "url": "https://creepypasta.fandom.com/wiki/Teddy",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/8/8b/Teddy.jpg/revision/latest/scale-to-width-down/180?cb=20100809201639",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/8/8b/Teddy.jpg/revision/latest/scale-to-width-down/180?cb=20100809201639"
+    ],
+    "author": "Raidenist Originally uploaded on January 14th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "Televisions",
+    "url": "https://creepypasta.fandom.com/wiki/Televisions",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Television",
+      "Beings",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Tenebrous Guardian",
+    "url": "https://creepypasta.fandom.com/wiki/Tenebrous_Guardian",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Text-Based Hell",
+    "url": "https://creepypasta.fandom.com/wiki/Text-Based_Hell",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/fe/Gameover.jpeg/revision/latest?cb=20121124185502",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/fe/Gameover.jpeg/revision/latest?cb=20121124185502"
+    ],
+    "author": "LittleLeeHere Originally uploaded on November 24",
+    "date": "November 24, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Video_Games"
+    ]
+  },
+  {
+    "name": "Thailand - An Allegedly True Story",
+    "url": "https://creepypasta.fandom.com/wiki/Thailand_-_An_Allegedly_True_Story",
+    "description": "This is a story told by an anonymous poster on /x/ on May 26, 2009. The Story [ ] Hey guys, I got a nice story that might perk your interest. When I was in Grade 9, I went to school in Hong Kong. For our annual trip, we went over to Thailand, to some rural little campground with dorms. Every year, my school went to this particular camp, because it was conveniently located for the activities that the school annually planned. However, those students in higher grades always said that the dorm 4-D w",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9f/Room.png/revision/latest/scale-to-width-down/225?cb=20100817061050",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9f/Room.png/revision/latest/scale-to-width-down/225?cb=20100817061050"
+    ],
+    "author": "unknown Originally uploaded on August 17th",
+    "date": "May 26, 2009",
+    "categories": [
+      "Historical_Archive",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "The Dawn Is Your Enemy",
+    "url": "https://creepypasta.fandom.com/wiki/The_Dawn_Is_Your_Enemy",
+    "description": "You guys all know that Adult Swim sign-off bumper \"THE DAWN IS YOUR ENEMY\"? There's a reason they don't show it anymore. The last day the bump was used as a sign-off, instead of the normal running time of nine seconds (estimated), it ran for an extended period of time until the automated services were overtaken by manual operation. We all know the sound that shook our childhoods (or teen years). The resonating metal, the rumbles, the sound of metal scraping against metal. Feel free to look it up",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/63/The_Dawn_Is_Your_Enemy_.webp/revision/latest/scale-to-width-down/290?cb=20221217151509",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/63/The_Dawn_Is_Your_Enemy_.webp/revision/latest/scale-to-width-down/290?cb=20221217151509"
+    ],
+    "author": "unknown",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Television"
+    ]
+  },
+  {
+    "name": "The Theater",
+    "url": "https://creepypasta.fandom.com/wiki/The_Theater",
+    "description": "Have you ever heard of an old game called “The Theater”? Yeah, didn’t think so. Probably because many say it doesn’t even exist. You see, The Theater was released around the same time as Doom. Today, if you ever find it, it’s only available on crappy bootleg CD-ROMs, which, more often than not, don’t even actually contain the game. The actual legitimate copies that were apparently released back in the day feature a blank cover, with nothing but the sprite of what has since been named 'the Ticket",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on October 10th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games",
+      "Memes"
+    ]
+  },
+  {
+    "name": "They Come Home to Roost",
+    "url": "https://creepypasta.fandom.com/wiki/They_Come_Home_to_Roost",
+    "description": "This farm has been in my family for two generations. I’ve always enjoyed the peace and solitude since I was a boy, just me and my folks. Now, there’s just me. They died a few years back, leaving the place to me, and I’ve been doing my best to keep enough cash coming in to pay the taxes on the land (though why anybody’d want this place but me these days is beyond me). My grandpa was kind of a recluse and wanted a \"fair piece o’ distance\" between us and the \"city slickers\", as he called them. It’s",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/23/ZombieChicken.jpg/revision/latest/scale-to-width-down/180?cb=20120722214131",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/23/ZombieChicken.jpg/revision/latest/scale-to-width-down/180?cb=20120722214131"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "They're Everywhere",
+    "url": "https://creepypasta.fandom.com/wiki/They're_Everywhere",
+    "description": "\"I can't help it, doctor. They're fucking everywhere. Nobody knows but me.\" \"Knows what, Larry?\" \"About the demons! They're everywhere!\" \"Tell me about the demons, Larry. What do they look like?\" \"Leathery, shiny black skin. Spindly limbs with single claws for feet. Wings like reaper's cloth. And the eyes!\" The man on the couch shudders. \"What's wrong with their eyes, Larry?\" \"They're huge. They take up half of the face. They don't even look like eyes, they're like a million eyes clumped togethe",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "PotM",
+      "Mental_Illness",
+      "Reality"
+    ]
+  },
+  {
+    "name": "The Thing in the Fields",
+    "url": "https://creepypasta.fandom.com/wiki/The_Thing_in_the_Fields",
+    "description": "When I was young, I lived on a farm in rural Oregon with my parents. I was an only child. We weren’t a big commercial farm. Just a family-type thing. We had five cows, three horses, a small herd of goats, two dogs, and one chicken coop. We also had some Indian Runner ducks we kept mostly as pets. We didn’t really make any money off the place, just enough to sustain the animals and a little extra for ourselves. Money enough to take a decent vacation every couple of years. Dad had his other job in",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/45/Creepy_farm_house.jpg/revision/latest/scale-to-width-down/350?cb=20110702170857",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/45/Creepy_farm_house.jpg/revision/latest/scale-to-width-down/350?cb=20110702170857"
+    ],
+    "author": "unknown Originally uploaded on July 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Animals",
+      "Nature",
+      "Diary/Journal"
+    ]
+  },
+  {
+    "name": "The Thing That Stalks the Fields",
+    "url": "https://creepypasta.fandom.com/wiki/The_Thing_That_Stalks_the_Fields",
+    "description": "It was a few weeks ago that the hay bales started creeping slowly away from the house. Every morning when I woke up, each had moved a few hundred feet from where it was before. I assumed it was pranksters with nothing better to do, so I ignored it. Within a few days, though, the bales began to approach the boundaries of the farm. I was tired of the whole game by then, and decided to move them back. It took a tedious hour to bring them all from where they were to over near the house again, and by",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/aa/Hay.png/revision/latest?cb=20121219035327",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/aa/Hay.png/revision/latest?cb=20121219035327"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Monsters",
+      "Suggested_Reading",
+      "Historical_Archive",
+      "Nature",
+      "Places"
+    ]
+  },
+  {
+    "name": "Think Not of the Morrow",
+    "url": "https://creepypasta.fandom.com/wiki/Think_Not_of_the_Morrow",
+    "description": "It’s been nearly twenty years since I had a conversation that would change my life. Twenty years since that boy came into my office and told me perhaps the most fantastical story I would hear all my life. A story that’s stuck in my mind so clearly all of these years. Of course, I didn't believe it then; but now, after so many years, after the life that I’ve lived since that conversation, I cannot help but think back on that day with guilt and regret, and now finally fear. I was a headmaster then",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": "July 21, 2017",
+    "categories": [
+      "Historical_Archive",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Thomas's Reflection",
+    "url": "https://creepypasta.fandom.com/wiki/Thomas's_Reflection",
+    "description": "I am Thomas's reflection. Every morning, he rises from sleep and walks into the bathroom. ...and he makes faces. I am so tired of the faces. He makes them for at least half an hour. Mocking, ridiculous faces. I have no choice but to mimic his every action, although inside, I am seething with anger. He does this every day... well, USED to. One morning he awoke as usual, and entered the bathroom. On this particular morning, against his will, he picked up a pair of scissors. On this particular morn",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mirrors",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "A Thousand Words",
+    "url": "https://creepypasta.fandom.com/wiki/A_Thousand_Words",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects",
+      "Disappearances",
+      "History",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "Through the Scope",
+    "url": "https://creepypasta.fandom.com/wiki/Through_the_Scope",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/16/Flat%2C135x135%2C075%2Ct.jpg/revision/latest?cb=20120818212017",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/16/Flat%2C135x135%2C075%2Ct.jpg/revision/latest?cb=20120818212017"
+    ],
+    "author": "Hannah Mades-Alabiso Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Thug Aim",
+    "url": "https://creepypasta.fandom.com/wiki/Thug_Aim",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "ClericofMadness Originally uploaded on March 31st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "ClericofMadness",
+      "Memes",
+      "Troll_Pasta",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Thumbs Out",
+    "url": "https://creepypasta.fandom.com/wiki/Thumbs_Out",
+    "description": "I was driving home with my girlfriend. It was late and we had just come from the movies. I don’t have a radio in my car; it was stolen. However, my girlfriend can play music just fine on her phone. As we drove home in the dark, I started to notice that it was getting foggy. Suddenly, her phone started to ring. She looked down angrily at it, since her favorite song was interrupted. When she answered it though, all she got was static. Meanwhile, I cursed and drove around a piece of road kill. It l",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Animals",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "The Thump",
+    "url": "https://creepypasta.fandom.com/wiki/The_Thump",
+    "description": "I sat up in the darkness of my room, frightened. Some noise from the land of the waking had jolted me out of unconsciousness. Groggy, I reached across to the nightstand, turning my alarm clock toward my face. The dim numbers read 3 AM, and I groaned. So much for a good night's sleep. Forgetting what had awoken me, I rolled over and settled back into bed... but there it was again. It was a thump from the attic above me, loud and deliberate. There was another. It sounded as though someone (for sur",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on July 1st",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings"
+    ]
+  },
+  {
+    "name": "To Fix You",
+    "url": "https://creepypasta.fandom.com/wiki/To_Fix_You",
+    "description": "It's cold. I don't know where I am. Why am I so cold? I should open my eyes. I need to open my eyes. Are these my eyes? I bring up a hand and I touch my face. It's smooth. I have a nose. And eyes. I open my eyes. I look around. Do I live here? Where exactly is here? The walls are old. I must not be a very good homeowner because even I can see the walls are slowly rotting away. Why did I let my home decay like this? Is this my home? I sit up. My body feels strange, almost like I don't belong in t",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 23",
+    "date": "March 23, 2011",
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "Tom and Jerry Lost Cartoon",
+    "url": "https://creepypasta.fandom.com/wiki/Tom_and_Jerry_Lost_Cartoon",
+    "description": "The thirteen Tom and Jerry shorts made by the Czechoslovakian director Gene Deitch are infamous for their poor quality and rather disturbing nature, featuring badly done sound effects and animation that gave the violence a more realistic feel. Some have speculated that Deitch didn't like the concept behind Tom and Jerry and was pressured into making them, and wanted to make the people who watched his take on it feel bad for liking the concept. What many people don't know is that Deitch was origi",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes",
+      "KI_Simpson"
+    ]
+  },
+  {
+    "name": "Tom and Jerry VHS",
+    "url": "https://creepypasta.fandom.com/wiki/Tom_and_Jerry_VHS",
+    "description": "I would like to say that as a kid, I enjoyed watching Tom and Jerry. However, the channel it was available on only showed it during the daytime, when I was in school. I kept asking my mother for DVDs of the show, but she refused my requests, given its violent nature. Over time, my house had gotten pretty messy. We had too many items of clothing and boxes of stuff that we mostly didn’t need. My mom finally decided to clean the place out, having me help her. We got through the majority of the room",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on December 6th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Lost_Episodes"
+    ]
+  },
+  {
+    "name": "Tomato Soup",
+    "url": "https://creepypasta.fandom.com/wiki/Tomato_Soup",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b5/Tomato_soup.jpg/revision/latest/scale-to-width-down/235?cb=20120407234939",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b5/Tomato_soup.jpg/revision/latest/scale-to-width-down/235?cb=20120407234939"
+    ],
+    "author": "LogsOnAndPosts Originally uploaded on April 7th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Food",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "Tomino's Hell",
+    "url": "https://creepypasta.fandom.com/wiki/Tomino's_Hell",
+    "description": "\"Tomino's Hell\" (トミノの地獄) was written by Saijō Yaso (西條八十) for his 27th collection of poems 'Sakin' (or, 'Gold Dust' in English) in 1919. There is a Japanese legend surrounding it which states it should only be read with the mind, and never out loud. It's uncertain how this rumor started, but it goes on to say that \"tragic things (凶事) will happen\" if you do. The story used to be very popular on 2ch . Many users said that nothing happened after reading it and uploaded pictures and videos as proof,",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f2/Tominos_Hell.jpg/revision/latest/scale-to-width-down/220?cb=20230924024211",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f2/Tominos_Hell.jpg/revision/latest/scale-to-width-down/220?cb=20230924024211",
+      "https://static.wikia.nocookie.net/creepypasta/images/4/4e/I_Can_No_Longer_Be_a_Bride.jpg/revision/latest/scale-to-width-down/133?cb=20240408002037"
+    ],
+    "author": "Saijō Yaso (西條八十) for his 27th collection of poems 'Sakin' (or",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "AltLang",
+      "Poetry",
+      "Ritual",
+      "Weird",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Top Percentage",
+    "url": "https://creepypasta.fandom.com/wiki/Top_Percentage",
+    "description": "When I first bought it, I played SoulSilver obsessively for weeks. I loved everything; the Pokemon, the people, and the storyline. My beloved team consisted of Meganium, Espeon, Misdreavus, Ampharos, Vulpix, and Poliwhirl. I loved them all dearly, and thanks to my Pokewalker, I leveled them all up easily. Another source of amusement for me was the Pokegear. I loved that people you had met could ring you up and request a battle, or just rattle on about nothing. My favorite of the regular callers ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "A Touch of Love",
+    "url": "https://creepypasta.fandom.com/wiki/A_Touch_of_Love",
+    "description": "She watches over the steaming pot as the refugees file in, dirty and weary. Filling their bowls with hot stew, they speak to the cook as they smell the aroma. They say the food is incredible, the food that keeps them warm on these cold nights, and they ask what’s in it. The cook shrugs and says, “Potatoes, carrots, and just a touch of love.” They smile and move on. A woman steps up. Haggard and red-eyed, she shuffles slowly up to the pot with her bowl in hand. With bags underneath her eyes the s",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Disappearances",
+      "Food",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Trapped",
+    "url": "https://creepypasta.fandom.com/wiki/Trapped",
+    "description": "I am trapped. I am trapped and alone in this cold, dark pit. My life has come to its metaphorical end, for slavery is all that the future holds for me. As I have nothing to write with or upon in here, I can only speak these words and hope that perhaps somewhere, maybe in some other universe or reality completely, my voice will be heard, and my story remembered. I tried my hardest to fight them, but there was nothing I could do. Their power was far too great for my meager skills. I gave it my all",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on November 27",
+    "date": "November 27, 2010",
+    "categories": [
+      "Historical_Archive",
+      "PokéMon"
+    ]
+  },
+  {
+    "name": "Trick or Treat",
+    "url": "https://creepypasta.fandom.com/wiki/Trick_or_Treat",
+    "description": "Don’t bother looking for it. You won’t find anything about the name of the town or what happened there. This manuscript will be discovered long after the events that transpired in that place, and I hope against everything else that you’re someone in a position of power. I pray to God himself that you can prevent this from ever happening again, but I don’t want to give you too much credit. You're only human, after all. Like me. They are not, but they’ve been around for a very, very long time. Fat",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Halloween",
+      "Beings",
+      "Places",
+      "History"
+    ]
+  },
+  {
+    "name": "Trows",
+    "url": "https://creepypasta.fandom.com/wiki/Trows",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Orangesodaz Originally uploaded on April 9th",
+    "date": null,
+    "categories": [
+      "Pages_with_broken_file_links",
+      "Historical_Archive",
+      "Monsters"
+    ]
+  },
+  {
+    "name": "The True Story of the Theater",
+    "url": "https://creepypasta.fandom.com/wiki/The_True_Story_of_the_Theater",
+    "description": "NOTE: This is a sequel to/spinoff of The Theater . It’s not something whispered about in certain circles, it’s not something that comes in a plain-looking jewel case, it’s not by a nameless untraceable developer… and it’s certainly not supernatural. The game in question is indeed called The Theatre (r before e), and was developed by a company called Salida Software. I’m fairly certain it’s an English company, despite the Spanish name. As far as I know, all they made was learning software (I have",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/bd/Gergel.jpg/revision/latest/scale-to-width-down/302?cb=20120410215746",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/bd/Gergel.jpg/revision/latest/scale-to-width-down/302?cb=20120410215746"
+    ],
+    "author": "must have downloaded it somewhere themselves and wrote based off their own experience",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games",
+      "Theory"
+    ]
+  },
+  {
+    "name": "Truth",
+    "url": "https://creepypasta.fandom.com/wiki/Truth",
+    "description": "It's late at night. Very late. Your eyes are a little sore, but you aren't ready to go to bed yet. The thread you're reading on /x/ is interesting enough to keep you awake...and to tell the truth, it has you a little too creeped out to close your eyes just yet. You know they're just stories, written by people just like you, and in the beginning these creepy stories served to give you a good chill before bed. But the more you read them, the more you wonder if some of them might be based on realit",
+    "image": null,
+    "images": [],
+    "author": "people just like you",
+    "date": null,
+    "categories": [
+      "Reality",
+      "Computers_and_Internet",
+      "Historical_Archive",
+      "Dreams/Sleep"
+    ]
+  },
+  {
+    "name": "Tug Tug Tug",
+    "url": "https://creepypasta.fandom.com/wiki/Tug_Tug_Tug",
+    "description": "You could kick yourself. It's the middle of the night – or early in the morning, depending on how you look at it – and freezing cold because you, like an idiot, kicked off your blanket in the night. Nearly entirely off the bed, in fact, with only one lonely corner clinging to the edge of it. Sitting up, you take it in your hands, feeling that familiar fear from your childhood: that if you don’t find something to cover yourself up with, you are leaving yourself open to all sorts of supernatural h",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Beings",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Tulpa",
+    "url": "https://creepypasta.fandom.com/wiki/Tulpa",
+    "description": "Last year, I spent six months participating in what I was told was a psychological experiment. I found an ad in my local paper looking for imaginative people wanting to make good money. Since it was the only ad that week that I was remotely qualified for, I gave them a call and we arranged an interview. They told me that all I would have to do is stay in a room, alone, with sensors attached to my head to read my brain activity. While I was there, I would visualize a double of myself. They called",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Mental_Illness",
+      "Science"
+    ]
+  },
+  {
+    "name": "Tunnel",
+    "url": "https://creepypasta.fandom.com/wiki/Tunnel",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/76/725972_dark_tunnel.jpg/revision/latest/scale-to-width-down/264?cb=20120620233039",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/76/725972_dark_tunnel.jpg/revision/latest/scale-to-width-down/264?cb=20120620233039"
+    ],
+    "author": "D011B0Y Originally uploaded on January 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Weird"
+    ]
+  },
+  {
+    "name": "The Tunnel",
+    "url": "https://creepypasta.fandom.com/wiki/The_Tunnel",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Orange",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Disappearances"
+    ]
+  },
+  {
+    "name": "Turn Me On, Dead Man",
+    "url": "https://creepypasta.fandom.com/wiki/Turn_Me_On,_Dead_Man",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/97/Paul_McCartney_-_William_Campbell.png/revision/latest/scale-to-width-down/280?cb=20240212052906",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/97/Paul_McCartney_-_William_Campbell.png/revision/latest/scale-to-width-down/280?cb=20240212052906",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f7/Abbey_Road.png/revision/latest/scale-to-width-down/280?cb=20240212053045",
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a0/Abbey_Road_Back_Cover.png/revision/latest/scale-to-width-down/190?cb=20240212053355",
+      "https://static.wikia.nocookie.net/creepypasta/images/9/90/Sgt._Pepper%27s_Lonely_Hearts_Club_Band.png/revision/latest/scale-to-width-down/200?cb=20240212053819",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/17/Magical_Mystery_Tour.png/revision/latest/scale-to-width-down/200?cb=20240212060452"
+    ],
+    "author": "CaptainCutler'sGhost Originally uploaded on April 19th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "History",
+      "Music",
+      "Reality",
+      "Theory",
+      "Videos"
+    ]
+  },
+  {
+    "name": "Unit 232",
+    "url": "https://creepypasta.fandom.com/wiki/Unit_232",
+    "description": "In a nondescript rural corner of the American Midwest, in a long row of units at one of the many dilapidated mini storage businesses that dot that dreary landscape, is a unit, Unit 232, with barely-noticeable scratches in the concrete in front of the sliding door. Upon closer inspection of Unit 232, the careful observer will note a few things: the frame around the door to the unit is dinged and bent up along its entire length, to the point that the door cannot be slid open even an inch; the door",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Items/Objects"
+    ]
+  },
+  {
+    "name": "Up",
+    "url": "https://creepypasta.fandom.com/wiki/Up",
+    "description": "Do you know what a Cordyceps is? I didn't either until 20 minutes ago. It's a family of thousands of different types of fungus, grows all around the world in various rainforests and jungles. The awful thing about them is they're parasitic, they grow on other animals. An ant happens to run into some spores, and then it starts to colonize his insides, starting with his brain. At some point, the ant starts to act visibly ill; standing in place and shivering, or walking in circles. If a fellow colon",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/eb/Cordycepsonant.jpg/revision/latest/scale-to-width-down/250?cb=20120305175739",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/eb/Cordycepsonant.jpg/revision/latest/scale-to-width-down/250?cb=20120305175739"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "Nature",
+      "Reality"
+    ]
+  },
+  {
+    "name": "Upward Staring Eyes",
+    "url": "https://creepypasta.fandom.com/wiki/Upward_Staring_Eyes",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/7/7d/Star_Gazing.jpg/revision/latest/scale-to-width-down/150?cb=20120402042436",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7d/Star_Gazing.jpg/revision/latest/scale-to-width-down/150?cb=20120402042436"
+    ],
+    "author": "ClericofMadness Originally uploaded on September 21st",
+    "date": null,
+    "categories": [
+      "ClericofMadness",
+      "Historical_Archive",
+      "Dreams/Sleep",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Username: 666",
+    "url": "https://creepypasta.fandom.com/wiki/Username:_666",
+    "description": "A frame from the original video. Username: 666 (also known as sm666 or Nico Nico Douga) is a video posted by Japanese YouTube channel nana825763 in 2008. It shows what apparently happens when one searches for the username \"666\" on YouTube and then refreshes the page multiple times. The video has gained notoriety since its release and is generally regarded as one of the internet's first urban legends. Much discussion has taken place regarding its content and authenticity, leading to many rumors a",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a1/Username666img.png/revision/latest/scale-to-width-down/300?cb=20240320135023",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a1/Username666img.png/revision/latest/scale-to-width-down/300?cb=20240320135023"
+    ],
+    "author": "Japanese You",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Demon/Devil",
+      "Memes",
+      "Reality",
+      "Videos",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Valentich's Last Flight",
+    "url": "https://creepypasta.fandom.com/wiki/Valentich's_Last_Flight",
+    "description": "On October 21, 1978, pilot, Frederick Valentich took off from Moorabbin airport, heading for King Island in his Cessna 182. Heading over Bass Strait, Valentich began radioing the flight tower with messages. These would fuel speculation of UFO involvement in his disappearance to this day. No trace of Valentich or the plane has ever been found. The following is a transcript of Valentich's final radio dispatches from Aircraft Accident Investigation report: 1906 hours Valentich: Melbourne, this is D",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/d/d8/Fredrick.jpg/revision/latest/scale-to-width-down/150?cb=20140630185440",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d8/Fredrick.jpg/revision/latest/scale-to-width-down/150?cb=20140630185440"
+    ],
+    "author": "unknown Originally uploaded on August 9th",
+    "date": "October 21, 1978",
+    "categories": [
+      "Historical_Archive",
+      "History",
+      "Contextual",
+      "Disappearances",
+      "Vehicles"
+    ]
+  },
+  {
+    "name": "The Valley of the Shadow of Death",
+    "url": "https://creepypasta.fandom.com/wiki/The_Valley_of_the_Shadow_of_Death",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b7/GEDC0155.jpg/revision/latest/scale-to-width-down/330?cb=20121106005221",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b7/GEDC0155.jpg/revision/latest/scale-to-width-down/330?cb=20121106005221"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Dr._Malpractice",
+      "Places",
+      "Monsters",
+      "Lovecraftian",
+      "Nature"
+    ]
+  },
+  {
+    "name": "The Vanity",
+    "url": "https://creepypasta.fandom.com/wiki/The_Vanity",
+    "description": "I’m a senior at a high school in a small town out in a pretty isolated place. I haven’t many friends, only a few close ones that hang out with me on occasion. I live in a poor family as an only child—causing my parents to fight a lot—and we are just trying to get by. I enjoy gaming (to what limited things I can afford) and have recently started an interest with computers. I was very familiar with the online website YouTube, where users can submit any videos (no matter how outrageous or creepy) a",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Mental_Illness",
+      "Computers_and_Internet",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Vermilion City Construction Project",
+    "url": "https://creepypasta.fandom.com/wiki/Vermilion_City_Construction_Project",
+    "description": "Remember that old man on the construction site in Vermilion City? He and his faithful Machop were flattening ground for some mysterious construction project. They had apparently been at it for years. There's more to this tale. The story begins in Lavender Town. The Lavender Town chapter of Pokemon Red and Blue was short but left a profound impact on the player. Team Rocket was at it again, stealing the skulls of the Cubones in the Tower. Local celebrity Mr. Fuji attempted to stop them but was ea",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/3a/Machop.jpg/revision/latest?cb=20111130074411",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/3a/Machop.jpg/revision/latest?cb=20111130074411"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Theory",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "The Vials",
+    "url": "https://creepypasta.fandom.com/wiki/The_Vials",
+    "description": "You come into possession of an old box. Inside are several glass vials filled with dirt, dust and tiny bits of gravel or cement. The vials are labeled with places and dates such as, \"Port Chicago 7/17/44\", \"Halifax 7/6/17\", and, \"Guernica 7/17/36\". A trip to the library confirms that all are dates of massive loss of life in explosions. A few days later, a package arrives with no return address. Inside is an empty vial labeled with your hometown and next week's date. Original author unknown Origi",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 16th",
+    "date": "7/17/44",
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Places",
+      "Items/Objects",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Vile Designs",
+    "url": "https://creepypasta.fandom.com/wiki/Vile_Designs",
+    "description": "Greetings, reader. It’s a strange fact about the modern age, that in order for a thing’s existence to be confirmed, you cannot trust to your own five senses anymore. In order for reality to be ‘real’, it must be confirmed so by the greater populace. Television, and the internet, have changed our way of life whether for good or ill. Events in my life over the past few weeks seem…so odd, even now, that the act of writing them down and… ’publish’ it online may be the only way for it all too feel li",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Items/Objects",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Visions",
+    "url": "https://creepypasta.fandom.com/wiki/Visions",
+    "description": "It’s a cool, calm night. You worked hard that day, and you feel ready for a good night’s sleep. You climb into your bed and turn off the light. You notice that, considering you live alone, it’s unusually quiet tonight. Ever since the death of your next-door neighbor, the loud rap music that woke you up in the middle of the night plays no more. The police were quite reliable in these parts, but you can’t help but feel a little disturbed that, for all the blood that was spilled and mess that was c",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Dreams/Sleep",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Volcanic Winter",
+    "url": "https://creepypasta.fandom.com/wiki/Volcanic_Winter",
+    "description": "Have you ever heard of a volcanic winter? It is a situation in which heavy volcanic ash obscures the sun, causing temperatures around the world to drop considerably. Volcanic winters usually last for a few years and can potentially cause worldwide destruction, making them one of the more realistic threats to the world as we know it. There are several times in history this has happened. The most recent volcanic winter occurred in 1991, along with the eruption of Mt. Pinatubo in the Philippines. I",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/62/Volcanicwinter.jpg/revision/latest/scale-to-width-down/200?cb=20250617180343",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/62/Volcanicwinter.jpg/revision/latest/scale-to-width-down/200?cb=20250617180343"
+    ],
+    "author": "unknown Originally uploaded on December 13th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Reality",
+      "History",
+      "Nature",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Vox and King Beau",
+    "url": "https://creepypasta.fandom.com/wiki/Vox_and_King_Beau",
+    "description": "1 A note from DollParts and Anonymous 2 Introduction 3 The Quiet Place 4 King Beau and the Dark Place 5 Vox' Plan 6 Our Adventure Continues 7 How Beau Fell in Love With The Moon 8 What Mom Thinks She Saw And Why I Might Have Started Crying Back Then 9 Fuzzy 10 Noise In The Kitchen 11 Things Have Gotten Strange 12 Beau And The Dream King 13 Q and A 14 Vox and the Seekers 15 It Must Be Now 16 Vox Updates Again 17 You Are No Hunter 18 The Good, the Bad, and the Strange 19 Beau and the Child Snatche",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/c/c4/83721e093ca1e59ac1f578789cf0a08f.jpg/revision/latest/scale-to-width-down/180?cb=20110622061540",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/c/c4/83721e093ca1e59ac1f578789cf0a08f.jpg/revision/latest/scale-to-width-down/180?cb=20110622061540",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1a/The_Vox_Lands_by_aelur.jpg/revision/latest/scale-to-width-down/180?cb=20110622054522",
+      "https://static.wikia.nocookie.net/creepypasta/images/d/d8/Como_ayer_otra_vez_by_aelur-d37seed.jpg/revision/latest/scale-to-width-down/180?cb=20110622061915",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/13/Beau_watching_a_sleeping_Vox_by_aelur.jpg/revision/latest/scale-to-width-down/180?cb=20110622062223"
+    ],
+    "author": null,
+    "date": "06/02/12",
+    "categories": [
+      "Beings",
+      "Dreams/Sleep",
+      "Historical_Archive",
+      "Longpasta"
+    ]
+  },
+  {
+    "name": "Wagon Man",
+    "url": "https://creepypasta.fandom.com/wiki/Wagon_Man",
+    "description": "File:File:Rusty red wagon.jpg His bare feet blistered and calloused against the concrete. Concrete for as far as the eye can see. They just needed something to eat and their last meal was four days ago. He long ago got used to the pain of walking constantly. He shivered; the wind was strong and biting and he could smell a distinctive odor in the air. \"The sea!\" he shouted, \"the sea!\" She opened her eyes and smiled which quickly changed into a look of surprise. \"Well go on!\" she ordered. She was ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on January 27th",
+    "date": null,
+    "categories": [
+      "Pages_with_broken_file_links",
+      "Historical_Archive",
+      "Beings",
+      "Places",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Wake Up",
+    "url": "https://creepypasta.fandom.com/wiki/Wake_Up",
+    "description": "It has been reported that some victims of torture, during the act, would retreat into a fantasy world from which they could not wake up . In this catatonic state, the victim lived in a world just like their normal one, except they weren’t being tortured. The only way that they realized they needed to wake up was a note found in their fantasy world which would tell them about their condition. Even then, it would often take months before they were ready to discard their fantasy world and please wa",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b1/Wake_Up.jpg/revision/latest/scale-to-width-down/330?cb=20110416035039",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b1/Wake_Up.jpg/revision/latest/scale-to-width-down/330?cb=20110416035039"
+    ],
+    "author": "unknown Originally uploaded on August 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Reality",
+      "Dreams/Sleep",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "The Wanderer",
+    "url": "https://creepypasta.fandom.com/wiki/The_Wanderer",
+    "description": "Back in the 1990s, a girl committed suicide after viewing an image posted in an old newsgroup. The image is of a figure which some identified as a woman standing in the middle of a lonely road. The figure is transparent to the point that its legs are barely visible, and it is illuminated by an unknown light source coming from the direction of the camera. Whether it's headlights, a handheld flashlight, or the light of the camera itself isn't known for sure, as the actual source of the image has n",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a7/TheWandererImage.jpg/revision/latest/scale-to-width-down/300?cb=20101126081853",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a7/TheWandererImage.jpg/revision/latest/scale-to-width-down/300?cb=20101126081853"
+    ],
+    "author": "unknown Originally uploaded on November 26th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Photography",
+      "Beings",
+      "Dreams/Sleep",
+      "Mental_Illness"
+    ]
+  },
+  {
+    "name": "War of the Dead",
+    "url": "https://creepypasta.fandom.com/wiki/War_of_the_Dead",
+    "description": "The power does it to everyone. It corrupts us all, or at least those of us who embrace it. Although we dive right in to be swept away by the black waters of necromancy, it’s not easy for us to stay afloat. Our humanity is the coastline, the palm trees, the dry land itself. You put your humanity side by side with the fact that you’re a wizard of hell, coastline next to infinite expanse of ocean, and you decide being a wizard is more fun. It appeals to you. You can’t get away from it, so you dive ",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Beings",
+      "Places",
+      "Lovecraftian",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "War on the Gods",
+    "url": "https://creepypasta.fandom.com/wiki/War_on_the_Gods",
+    "description": "There was once a happier time, a time when we loved our gods, and in return for our love, they blessed us with good harvests and prosperity. That was many years ago. Now there is only famine, sickness and death. To make matters worse, what little resources we have are being stretched thin by our great war. A war to end tyranny and bring back those prosperous times before the black fog descended upon our cities. A war against the very gods we sang our praises to only a few short years before. No ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/15/Bfp.jpg/revision/latest?cb=20130225035118",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/15/Bfp.jpg/revision/latest?cb=20130225035118"
+    ],
+    "author": null,
+    "date": "February 23, 2012",
+    "categories": [
+      "Historical_Archive",
+      "Gods",
+      "Nature"
+    ]
+  },
+  {
+    "name": "A Warning",
+    "url": "https://creepypasta.fandom.com/wiki/A_Warning",
+    "description": "I'm doing this for you. And for Mike, too, I guess, though I don’t think there’s much I can do to help him at this point. I suppose I should provide some background information first. I’m a sophomore in a fairly good university in Boston-- no, not MIT or Harvard, but still one that’s a bit of a chore to get into. My freshman year, I had the option to live in honors housing and decided to roll with it; after all, at least the people would be interesting. Whatever arcane algorithm they use to proc",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Computers_and_Internet",
+      "Reality",
+      "Disappearances",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Watch Your Step",
+    "url": "https://creepypasta.fandom.com/wiki/Watch_Your_Step",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/99/Stairs.jpg/revision/latest/scale-to-width-down/300?cb=20110601042331",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/99/Stairs.jpg/revision/latest/scale-to-width-down/300?cb=20110601042331"
+    ],
+    "author": "Spikesterino Originally uploaded on May 24th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "Water",
+    "url": "https://creepypasta.fandom.com/wiki/Water",
+    "description": "I’ve always had a terrible fear of being submerged completely in water. Not that I can’t swim or anything. My dad made me learn; he said I almost drowned when I was really young. I was afraid of it because, for as long as I can remember, whenever I am underwater and look up at the surface, I see a woman reaching down to me with a warm smile, glowing golden hair, and dark blue eyes. Even if it's just in a bathtub. It always happened — it was just normal for me, but I never got used to it. It was ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 9th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Mental_Illness",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "A Way Out",
+    "url": "https://creepypasta.fandom.com/wiki/A_Way_Out",
+    "description": "An abandoned TB hospital. A few years ago I got trapped falling into a portion of an abandoned TB hospital. The sun was starting to go down when my friend and I realized we couldn't get out the same way we came in. \"It's too high, there's no way we can jump,\" I said as I pounded my fist on the windowsill from the second floor of the building. I yelped like a helpless dog. I frantically looked around the room to see if there was anything that could make my fall a little less hard. I pushed myself",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/28/Abandoned_tb_hospital.jpg/revision/latest/scale-to-width-down/200?cb=20120321233145",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/28/Abandoned_tb_hospital.jpg/revision/latest/scale-to-width-down/200?cb=20120321233145"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Places",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "We Danced",
+    "url": "https://creepypasta.fandom.com/wiki/We_Danced",
+    "description": "Footsteps aren't an uncommon thing to hear when you're sitting in a basement, so I think nothing of it when I hear quiet thuds coming from my upstairs hallway. I just assume it's my brother, and continue doing whatever pointless little thing I was doing at the time. They go on for another couple minutes, and I’m starting to get pissed off. They keep getting louder and louder, and I sigh, wondering what the hell my brother's doing this late at night. I sit there, because it's impossible to focus ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/47/Reading_Well.jpg/revision/latest/scale-to-width-down/180?cb=20131116045744",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/47/Reading_Well.jpg/revision/latest/scale-to-width-down/180?cb=20131116045744"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Monsters",
+      "Music",
+      "Weird"
+    ]
+  },
+  {
+    "name": "We Know What You've Done",
+    "url": "https://creepypasta.fandom.com/wiki/We_Know_What_You've_Done",
+    "description": "NOTE: Credit goes to an /x/ user whom has asked to remain anonymous, and for me to keep the real context behind this a secret. We know what you have done. You may lie to yourself that we are simply a thought that will fade away from within you, as everything that has happened hardly seems real to you. You do not believe you have committed any wrong. I assure you that everything we are doing to you is happening as I speak, and that we are not done with you. We have seen everything in your past. W",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on June 30th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Mental_Illness",
+      "Beings",
+      "Weird"
+    ]
+  },
+  {
+    "name": "We Know You Are Out There",
+    "url": "https://creepypasta.fandom.com/wiki/We_Know_You_Are_Out_There",
+    "description": "!MESSAGE BEGINS We made a mistake. That is the simple, undeniable truth of the matter, however painful it might be. The flaw was not in our Observatories, for those machines were as perfect as we could make, and they showed us only the unfiltered light of truth, The flaw was not in the Predictor, for it is a device of pure, infalliable logic, turning raw data into meaningful information without the taint of emotion or bias. No, the flaw was within us, the Orchestrators of this disaster, the sent",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Science",
+      "Beings",
+      "Space",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "The Weird Part of YouTube",
+    "url": "https://creepypasta.fandom.com/wiki/The_Weird_Part_of_YouTube",
+    "description": "Everyone has been to the \"weird part\" of YouTube. If you haven't, then I suggest you pay a visit. It's a very simple process. In fact, to make it even easier, I'll lay it out in step by step form. Step #1. Find any video you want. Literally absolutely anything. It can be a cat video, a music video, whatever. Something from Japan will work best, though. Step #2. Click on the strangest related video you can see. Whichever has the absolute most mind-blowing thumbnail or title. Step #3. Repeat step ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/6/6e/Indexhvhjv.jpg/revision/latest?cb=20131009164230",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6e/Indexhvhjv.jpg/revision/latest?cb=20131009164230"
+    ],
+    "author": "unknown Originally uploaded on October 29th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Computers_and_Internet",
+      "Television",
+      "Ritual",
+      "Videos",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "The Well to Hell",
+    "url": "https://creepypasta.fandom.com/wiki/The_Well_to_Hell",
+    "description": "Newspapers in Finland were the first to report this story as an actual event. From there, it has spread around the world. Engineers working on the Kola Peninsula in Siberia were drilling a well, searching for oil or natural gas. In addition, they found rare geological formations and even gold. Eager to discover what else the well would yield, they kept drilling. After more than a year, the well was about 1,800 miles deep. Then one day, the drill bit suddenly began to rotate wildly. The geologist",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/1/11/Drilled_well.jpg/revision/latest/scale-to-width-down/318?cb=20120415140455",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/1/11/Drilled_well.jpg/revision/latest/scale-to-width-down/318?cb=20120415140455"
+    ],
+    "author": "unknown Originally uploaded on March 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Demon/Devil"
+    ]
+  },
+  {
+    "name": "The Well...",
+    "url": "https://creepypasta.fandom.com/wiki/The_Well...",
+    "description": "We were told to stay clear of the well. Most of the time, we did. No one knew why, and no one cared. Down Innsmote Road, the long abandoned row of crumbling houses on the way to school, it lay beneath the shade of a droopy branched willow, in front of the old Leibowitz house. The house itself had fallen down years ago. The expansive section was now consumed in thick weeds and wild flowers, but we seldom played there. We didn't like being amongst the derelict homes and the decaying foundations, a",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on September 30th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Places",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "West",
+    "url": "https://creepypasta.fandom.com/wiki/West",
+    "description": "September 2nd 1868 Arrived in Cheyenne in the new Wyoming Territory early this morning on the new Union Pacific line. Has been three years since I rode the locomotive. Did not realize it would remind me so strongly of Atlanta. Spent the last day of the journey with the phantom smell of blood and iron in my nostrils, and the bile rising at the back of my throat, but it is over. God willing, I will never have to ride the train again. Cheyenne is new born and mewling like a babe. Immigrants from th",
+    "image": null,
+    "images": [],
+    "author": "Grand Hotel Cheyenne",
+    "date": null,
+    "categories": [
+      "Josef_K.",
+      "Historical_Archive",
+      "Beings",
+      "History",
+      "Diary/Journal",
+      "Military",
+      "Places",
+      "Nature",
+      "Dismemberment",
+      "Disappearances"
+    ]
+  },
+  {
+    "name": "What Happened to Agent Small?",
+    "url": "https://creepypasta.fandom.com/wiki/What_Happened_to_Agent_Small?",
+    "description": "In 1984, a small Czech company was formed, named for the town in which an uncertain but significant number of its founders were born: Karvina. A year later they released their first game, delivered by an amazingly complex process to Western distributors, as cross-border traffic in travel or trade was not easy at the time. Throughout its lifetime, Karvina products would be all but smuggled out of the blasted coal town that served as their corporate base, passed hand to hand, envelope to envelope,",
+    "image": null,
+    "images": [],
+    "author": "Agent Mire",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games",
+      "Weird"
+    ]
+  },
+  {
+    "name": "What If I Told You...",
+    "url": "https://creepypasta.fandom.com/wiki/What_If_I_Told_You...",
+    "description": "Dear Skull Kid, What if I told you Clock Town is home to the most sinister beings ever to roam the Earth. Sheltered by the invisible cloak of malevolence, Demons. Each individual - or should I say \"creature\" - has their own little dark secret to add to the poison that ruins Clock Town altogether. I won't let another poor soul be fooled by this false image of a peaceful town anymore and I want to do something to stop this. What if I told you Anju, the innocent innkeeper, isn't such a sinless bein",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/9a/Postman-dilemma-450x281.jpg/revision/latest/scale-to-width-down/340?cb=20120714161834",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/9a/Postman-dilemma-450x281.jpg/revision/latest/scale-to-width-down/340?cb=20120714161834"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Zelda",
+      "Theory",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "What Is in a Name?",
+    "url": "https://creepypasta.fandom.com/wiki/What_Is_in_a_Name?",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b7/Spray-can.jpg/revision/latest/scale-to-width-down/360?cb=20111204184450",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b7/Spray-can.jpg/revision/latest/scale-to-width-down/360?cb=20111204184450"
+    ],
+    "author": "The Silicon Lemming Originally uploaded on December 4th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Disappearances",
+      "Beings",
+      "The_Silicon_Lemming"
+    ]
+  },
+  {
+    "name": "What My Eyes Have Seen",
+    "url": "https://creepypasta.fandom.com/wiki/What_My_Eyes_Have_Seen",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "Shinigami",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Ghosts",
+      "Shinigami.Eyes"
+    ]
+  },
+  {
+    "name": "What the Animals See",
+    "url": "https://creepypasta.fandom.com/wiki/What_the_Animals_See",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/3/32/IMG_00000014.jpg/revision/latest/scale-to-width-down/338?cb=20140211120704",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/3/32/IMG_00000014.jpg/revision/latest/scale-to-width-down/338?cb=20140211120704"
+    ],
+    "author": "Matoro66 Originally uploaded on January 2nd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Animals",
+      "Ghosts",
+      "Reality",
+      "Theory",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Where Bad Kids Go",
+    "url": "https://creepypasta.fandom.com/wiki/Where_Bad_Kids_Go",
+    "description": "I must have been six or seven when I lived in Lebanon. The country was ravaged by war at the time, and murders were common and frequent. I remember during a particularly vicious era, when the bombings rarely stopped, I would stay at home sitting in front of my television watching a very, very strange show. It was a kids' show that lasted about 30 minutes and contained strange and sinister images. To this day, I believe it was a thinly veiled attempt on the part of the media to use scare tactics ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on March 23rd",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Television",
+      "Places",
+      "Dismemberment"
+    ]
+  },
+  {
+    "name": "White Hand Sprite",
+    "url": "https://creepypasta.fandom.com/wiki/White_Hand_Sprite",
+    "description": "Artwork by QueenKami Known as \"WhitHand.gif\", this sprite was scripted to appear as a Pokémon on the third floor of the Pokémon Tower in Lavender Town. It's divided into four separate animations: an introduction (the Pokémon \"cry\"), an idle, and two attacks. These attacks are unknown, but they are listed as \"Fist\" and \"Brutal\". The animation is proven to be hazardous, but viewing the frames of the model has no adverse effects. The white hand in question is shriveled and decayed, with much attent",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/be/D2xybvg-ff523abd-0a2a-410b-8bec-8661c5b2ae99.png/revision/latest?cb=20190528010705",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/be/D2xybvg-ff523abd-0a2a-410b-8bec-8661c5b2ae99.png/revision/latest?cb=20190528010705"
+    ],
+    "author": "unknown Originally uploaded on April 28th",
+    "date": null,
+    "categories": [
+      "PokéMon",
+      "Historical_Archive",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "White with Red",
+    "url": "https://creepypasta.fandom.com/wiki/White_with_Red",
+    "description": "A man went to a hotel and walked up to the front desk to check in. The woman at the desk gave him his key and told him that on the way to his room, there was a door with no number that was locked, and no one was allowed in there. She explained that it was a storeroom, and that it was out of bounds. She reminded him of this several times before allowing him upstairs. The man followed the instructions of the woman, going straight to bed in his room. However, her insistence had piqued his curiosity",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/a/a4/RustyKeyhole.jpg/revision/latest?cb=20240219025937",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/a/a4/RustyKeyhole.jpg/revision/latest?cb=20240219025937"
+    ],
+    "author": "unknown Originally uploaded on April 18th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Suggested_Reading",
+      "Ghosts"
+    ]
+  },
+  {
+    "name": "Who Are You Running From?",
+    "url": "https://creepypasta.fandom.com/wiki/Who_Are_You_Running_From?",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/2/2a/Whoareyourunningfrom1.jpg/revision/latest/scale-to-width-down/175?cb=20120503063133",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/2/2a/Whoareyourunningfrom1.jpg/revision/latest/scale-to-width-down/175?cb=20120503063133",
+      "https://static.wikia.nocookie.net/creepypasta/images/7/7c/Whoareyourunningfrom2.png/revision/latest/scale-to-width-down/175?cb=20240905180557",
+      "https://static.wikia.nocookie.net/creepypasta/images/f/fc/Whoareyourunningfrom3.png/revision/latest/scale-to-width-down/175?cb=20240905180654",
+      "https://static.wikia.nocookie.net/creepypasta/images/1/1e/Whoareyourunningfrom4.png/revision/latest/scale-to-width-down/175?cb=20240905180834",
+      "https://static.wikia.nocookie.net/creepypasta/images/e/eb/Whoareyourunningfrom5.png/revision/latest/scale-to-width-down/175?cb=20240905180855"
+    ],
+    "author": "WalkingDitto Originally uploaded on December 15th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Contextual",
+      "Video_Games",
+      "Photography",
+      "Theory"
+    ]
+  },
+  {
+    "name": "WHO WAS PHONE?",
+    "url": "https://creepypasta.fandom.com/wiki/WHO_WAS_PHONE?",
+    "description": "A so-horrible-it's-amazing creepypasta which became a staple of /x/ and inspired countless variations. The phrase \"who was phone\" remains a favorite joke among the creepypasta community. It is also a dedicated category on the Trollpasta Wiki . The Pasta Transcript: So ur with ur honey and yur making out wen the phone rigns. U anser it n the vioce is \"wut r u doing wit my daughter?\" U tell ur girl n she say \"my dad is ded\". THEN WHO WAS PHONE? Original Version Far less known, but it apparently pr",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/b/b6/Whowasphone4chan.png/revision/latest/scale-to-width-down/350?cb=20250131154415",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/b/b6/Whowasphone4chan.png/revision/latest/scale-to-width-down/350?cb=20250131154415",
+      "https://static.wikia.nocookie.net/creepypasta/images/6/6f/Whowasphone.png/revision/latest?cb=20130410222407"
+    ],
+    "author": "unknown Originally uploaded on August 11th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Troll_Pasta",
+      "PotM",
+      "Memes",
+      "Micropasta",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "Winds of Regret/Stigmata/Mizu",
+    "url": "https://creepypasta.fandom.com/wiki/Winds_of_Regret/Stigmata/Mizu",
+    "description": "Taken from an archived 4chan thread. Other than being combined, the three stories have not been altered. Kenji Eno was one of the more interesting men to hit the video game industry, as enthusiasts know. His horror title \"D\" made a splash in America for getting by on a Teen rating despite dealing rather nonchalantly with cannibalism. (The sequel, \"D2\", would have an infamous nigh-tentacle rape cinematic.) He locked himself in a hotel room with composer Michael Nyman until, six hours later, he ag",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/5a/Real-sound-kaze-no-regret-saturn-rom-front.jpg/revision/latest/scale-to-width-down/180?cb=20120718162230",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/5a/Real-sound-kaze-no-regret-saturn-rom-front.jpg/revision/latest/scale-to-width-down/180?cb=20120718162230"
+    ],
+    "author": "unknown Originally uploaded on August 14th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games"
+    ]
+  },
+  {
+    "name": "The Woman in the Oven",
+    "url": "https://creepypasta.fandom.com/wiki/The_Woman_in_the_Oven",
+    "description": "During the summer of 1983, in a quiet town near Minneapolis, Minnesota, the charred body of a woman was found inside the kitchen stove of a small farmhouse. A video camera was also found at the scene, standing on a tripod, pointing at the oven. No tape was found inside the camera at the time. Although the scene was originally labeled a homicide by police, an unmarked VHS tape was later discovered at the bottom of the farm's well, which had apparently dried up earlier that year. Despite its worn ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on August 8th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Crime",
+      "Weird",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Wristbands",
+    "url": "https://creepypasta.fandom.com/wiki/Wristbands",
+    "description": "When you are admitted to a hospital, they place on your wrist a white wristband with your name on it. But there are other different colored wristbands which symbolize other things. The red wristbands are placed on dead people. There was a surgeon who worked on night shift in a school hospital. He had just finished an operation, and was on his way down to the basement. He entered the elevator and there was just one other person there. He casually chatted with the woman while the elevator descende",
+    "image": null,
+    "images": [],
+    "author": "unknown",
+    "date": null,
+    "categories": [
+      "Ghosts",
+      "Historical_Archive",
+      "Hospitals"
+    ]
+  },
+  {
+    "name": "The Wyoming Incident",
+    "url": "https://creepypasta.fandom.com/wiki/The_Wyoming_Incident",
+    "description": "The Wyoming Incident is a lesser known case of television broadcast hijacking. A hacker managed to interrupt broadcasts from a local programming channel (believed to serve several smaller communities in the county of Niobrara) and aired his/her own video. The video contained numerous clips of disembodied human heads displaying various emotions and \"poses\". The camera position changed regularly (usually every ten-to-fifteen seconds) and the video was often interrupted by a \"SPECIAL PRESENTATION\" ",
+    "image": null,
+    "images": [],
+    "author": "unknown Originally uploaded on December 6th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Television",
+      "Videos",
+      "Micropasta"
+    ]
+  },
+  {
+    "name": "Xbox Live",
+    "url": "https://creepypasta.fandom.com/wiki/Xbox_Live",
+    "description": "",
+    "image": null,
+    "images": [],
+    "author": "The Silicon Lemming Originally uploaded on December 17th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Video_Games",
+      "The_Silicon_Lemming"
+    ]
+  },
+  {
+    "name": "XoRax",
+    "url": "https://creepypasta.fandom.com/wiki/XoRax",
+    "description": "This pasta was posted on /x/ on Jan 29th, 2012. It is quite interesting and worth the lengthy read. My parents were the first to fall violently ill from the sickness we now know as XoRax. I can vividly recall my father lying on his bed while his muscles spasmed and he choked on his own vomit. I stood as his side, frozen in place and refusing to leave as I held back sobs, his pupils dilating until his entire eye was like an inky blackness. He tried to speak, turning his head toward me, but openin",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/e/ed/Xorax.png/revision/latest/scale-to-width-down/180?cb=20120130001357",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/e/ed/Xorax.png/revision/latest/scale-to-width-down/180?cb=20120130001357"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Zelda",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "You Never Know Who You Might Meet",
+    "url": "https://creepypasta.fandom.com/wiki/You_Never_Know_Who_You_Might_Meet",
+    "description": "“Good evening, Sacramento.” The newscaster’s serious voice filled the silence of my living room. “There are currently still no leads in the murder cases of three young girls that occurred in the area. Emilia Lasader, Jessica Grayson, and Ariana Sturn were all found raped and brutally murdered in the past month. All three of the bodies were found in a similar position, lying in an empty bathtub, with one leg over the other. Surprisingly, no blood was found at any of the scenes. It is believed tha",
+    "image": null,
+    "images": [],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Mental_Illness",
+      "Historical_Archive"
+    ]
+  },
+  {
+    "name": "Zalgo",
+    "url": "https://creepypasta.fandom.com/wiki/Zalgo",
+    "description": "An example of a \"Zalgofied\" comic. Zalgo is a meme where a popular picture/comic is edited in a way that \"corrupts\" it, producing scary results. The term \"Zalgo\" refers to the being apparently responsible for the corruption, whose name is uttered by its victims in an eldritch manner. Zalgo can be recognized by the two words often repeated when he is near... \"He comes.\" NOTE: Do NOT post Zalgo text in the discussion area or anywhere else on the wiki. Doing so will subject you to a ban. The Creatu",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/4/47/Zalgogarfield-1.png/revision/latest/scale-to-width-down/300?cb=20120825220651",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/4/47/Zalgogarfield-1.png/revision/latest/scale-to-width-down/300?cb=20120825220651",
+      "https://static.wikia.nocookie.net/creepypasta/images/2/25/Cadzalgocomic.png/revision/latest/scale-to-width-down/150?cb=20240324231329",
+      "https://static.wikia.nocookie.net/creepypasta/images/9/98/Zalgo-origin1.png/revision/latest/scale-to-width-down/274?cb=20120825200841"
+    ],
+    "author": null,
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Beings",
+      "Memes",
+      "Photography",
+      "Videos",
+      "Contextual"
+    ]
+  },
+  {
+    "name": "The Zapata Letters",
+    "url": "https://creepypasta.fandom.com/wiki/The_Zapata_Letters",
+    "description": "The original picture posted with this pasta is unavailable. The Zapata Letters are a series of short, handwritten correspondence from an unknown “benefactor” to one Richard Zapata, a relatively unknown photographer living in Greenwich Village, New York. Zapata’s photographs were never particularly famous, or even popular among the “indie” crowd, with one clear exception. A great deal of photography is, unsurprisingly, luck; one must be in the right place at the right time. Zapata had one photo t",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/f/f7/Photo5_red_ribbon.jpg/revision/latest/scale-to-width-down/300?cb=20110708100232",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/f/f7/Photo5_red_ribbon.jpg/revision/latest/scale-to-width-down/300?cb=20110708100232"
+    ],
+    "author": "unknown Originally uploaded on July 8th",
+    "date": "September 25, 2001",
+    "categories": [
+      "Historical_Archive",
+      "Photography",
+      "History",
+      "Weird"
+    ]
+  },
+  {
+    "name": "Zelda 64 Beta",
+    "url": "https://creepypasta.fandom.com/wiki/Zelda_64_Beta",
+    "description": "When I was a child, one of my favorite games was the Legend of Zelda: Ocarina of Time. Anyone who's played it can probably figure out why, even if they don't particularly find it their favorite. Naturally, as a very popular game, it spawned a lot of rumors and legends, especially back in the day when communication through the Internet wasn't as common. Most of these legends are false, but sometimes a surprising amount of truth can be found in them. A while ago, I had read an article about early ",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/9/93/StrollingInTheDesert.jpg/revision/latest?cb=20150828045029",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/9/93/StrollingInTheDesert.jpg/revision/latest?cb=20150828045029"
+    ],
+    "author": "unknown Originally uploaded on November 30",
+    "date": "November 30, 2010",
+    "categories": [
+      "Historical_Archive",
+      "Zelda"
+    ]
+  },
+  {
+    "name": "Zit",
+    "url": "https://creepypasta.fandom.com/wiki/Zit",
+    "description": "",
+    "image": "https://static.wikia.nocookie.net/creepypasta/images/5/58/Whitehead-zit.jpg/revision/latest/scale-to-width-down/308?cb=20120420182611",
+    "images": [
+      "https://static.wikia.nocookie.net/creepypasta/images/5/58/Whitehead-zit.jpg/revision/latest/scale-to-width-down/308?cb=20120420182611"
+    ],
+    "author": "JoyStands Originally uploaded on April 20th",
+    "date": null,
+    "categories": [
+      "Historical_Archive",
+      "Weird"
+    ]
+  }
+]
   },
 
   suggestedReading: {
@@ -817,8 +13011,7 @@ const HM_WIKI_ARCHIVE = {
     description: 'Recommended stories that are certified quality.',
     icon: '📖',
     totalItems: 96,
-    entries: [
-{
+    entries: [{
     "name": "12 Minutes",
     "url": "https://creepypasta.fandom.com/wiki/12_Minutes",
     "description": "In the fall of 1987, local news channel WSB-TV 2 of Atlanta, Georgia was attempting to fill a scheduling gap in their Sunday morning line-up. After a few solicitations by local business owners, they decided to allow the young Reverend Marly Sachs to take the available hour block to do a religiously themed show. It premiered October 18th with little promotion. The show was standard religious fare and consisted of the reverend sitting in a simple chair reading passages from the Bible to the camera",
@@ -2670,8 +14863,7 @@ const HM_WIKI_ARCHIVE = {
       "Historical_Archive/PD",
       "Suggested_Reading"
     ]
-  }
-    ]
+  }]
   },
 
   potm: {
@@ -2680,8 +14872,7 @@ const HM_WIKI_ARCHIVE = {
     description: 'Monthly featured creepypastas chosen by community vote.',
     icon: '🏆',
     totalItems: 134,
-    entries: [
-{
+    entries: [{
     "name": "09/17/10",
     "url": "https://creepypasta.fandom.com/wiki/09%2F17%2F10",
     "description": "A couple of months ago, I began my classes at Chico State University. As I was preparing for my freshman year, I was able to find everything that I needed, except for a laptop. I’m not exactly very good at letting a dollar go for something, especially when I could get that something for less, so I scoured the internet for good deals on laptops, finding none that suited my frugal habits. Classes were only two weeks away, and I was becoming desperate for a computer.",
@@ -5008,8 +17199,7 @@ const HM_WIKI_ARCHIVE = {
       "Dreams/Sleep",
       "PotM"
     ]
-  }
-    ]
+  }]
   },
 
   spotlighted: {
@@ -5018,8 +17208,7 @@ const HM_WIKI_ARCHIVE = {
     description: 'Spotlighted creepypastas highlighting exceptional horror writing.',
     icon: '🔦',
     totalItems: 73,
-    entries: [
-{
+    entries: [{
     "name": "Aesthetically Pleasing",
     "url": "https://creepypasta.fandom.com/wiki/Aesthetically_Pleasing",
     "description": "I'm not a fan of altering my appearance, but it's what I have to do to blend in with society. Most males claim they dislike the charade most women allude to. They claim they want a natural beauty, but drool over the over-processed and over-done celebrities that aren't any different from the girls walking around within their own town. Because of this standard, because we are told we must resemble the unrealistic beauty of the women of Hollywood, girls lather on the makeup, blurring out their impe",
@@ -6231,8 +18420,7 @@ const HM_WIKI_ARCHIVE = {
       "Disappearances",
       "Weird"
     ]
-  }
-    ]
+  }]
   },
 
   contestWinner: {
@@ -6241,8 +18429,7 @@ const HM_WIKI_ARCHIVE = {
     description: 'Winners of official Creepypasta Wiki writing contests.',
     icon: '🏅',
     totalItems: 35,
-    entries: [
-{ name: "A Figure in the Fog", url: "https://creepypasta.fandom.com/wiki/A_Figure_in_the_Fog", description: "Author\'s note: This story was submitted as a part of SnakeTongue237\'s Title Writing Contest, winning 1st place. Contents 1 Narrations The town of Arthur\'s Wake was dying. At least, that\'s what Jamie\'s dad always said. The man tended to wax philosophical when he was drunk, which was often. Jamie would silently sit at the dinner table and listen to the man ramble on about how things had been different when he had been growing up, how back then an honest day\'s work actually got you something. Jamie", image: "https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_in_the_Fog%22_Creepypasta_Let's_Read!", images: ["https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_in_the_Fog%22_Creepypasta_Let's_Read!", "https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_In_The_Fog%22_narrated_by_MajesticProduction", "https://creepypasta.fandom.com/wiki/Special:FilePath/Halloween_Scary_Stories_%2B_Creepypastas_-_Chilling_Tales_for_Dark_Nights-0", "https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_in_the_Fog%22_by_Shadowswimmer77_-_The_Wicker_Saga_-_Creepypasta", "https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_in_the_Fog%22_Creepypasta"], author: null, date: null, categories: ["STTWC15", "Contest_Winner", "PotM", "Suggested_Reading", "Beings", "Places", "Shadowswimmer77", "Videos", "Longpasta"] },
+    entries: [{ name: "A Figure in the Fog", url: "https://creepypasta.fandom.com/wiki/A_Figure_in_the_Fog", description: "Author\'s note: This story was submitted as a part of SnakeTongue237\'s Title Writing Contest, winning 1st place. Contents 1 Narrations The town of Arthur\'s Wake was dying. At least, that\'s what Jamie\'s dad always said. The man tended to wax philosophical when he was drunk, which was often. Jamie would silently sit at the dinner table and listen to the man ramble on about how things had been different when he had been growing up, how back then an honest day\'s work actually got you something. Jamie", image: "https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_in_the_Fog%22_Creepypasta_Let's_Read!", images: ["https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_in_the_Fog%22_Creepypasta_Let's_Read!", "https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_In_The_Fog%22_narrated_by_MajesticProduction", "https://creepypasta.fandom.com/wiki/Special:FilePath/Halloween_Scary_Stories_%2B_Creepypastas_-_Chilling_Tales_for_Dark_Nights-0", "https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_in_the_Fog%22_by_Shadowswimmer77_-_The_Wicker_Saga_-_Creepypasta", "https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_in_the_Fog%22_Creepypasta"], author: null, date: null, categories: ["STTWC15", "Contest_Winner", "PotM", "Suggested_Reading", "Beings", "Places", "Shadowswimmer77", "Videos", "Longpasta"] },
   { name: "Hunt in the Gulag", url: "https://creepypasta.fandom.com/wiki/Hunt_in_the_Gulag", description: "They were horribly wretched things. My days usually begin and end with seeing them. The Dokhodyaga, or the “Goners”, were located on the other side of the barbed wire as I walk by. Almost all of these people had large sores on their bodies, missing teeth, glossy eyes, and a strange and inhuman appearance to their faces. They all stank worse than the normal prisoner, as they had no control over their own bowels and bladders, their rotted clothes were drenched with excrement. Some of them were rav", image: null, images: [], author: null, date: null, categories: ["Summer_Creative_Writing_2016", "Contest_Winner", "Crime", "History", "Weird"] },
   { name: "Banshee\'s Cry", url: "https://creepypasta.fandom.com/wiki/Banshee's_Cry", description: "Author\'s note: This was my entrance to Helel\'s Metal contest, where it won the first place. My song prompt was \"Cry of the Banshee\" by Brocas Helm. I felt the presence of the woman in white before I heard her call, my body suddenly plagued by shudders and a sense of dark foreboding. The fear, the lament and the pain ached through my ragged body, telling me she will be with us soon, to sing to us, the song of the damned. Short, shallow breaths escaped my broken lungs as I felt her move closer to ", image: "https://creepypasta.fandom.com/wiki/Special:FilePath/''The_Banshee%E2%80%99s_Cry''_-_AWARD_WINNING_CREEPYPASTA_MARCH_2018", images: ["https://creepypasta.fandom.com/wiki/Special:FilePath/''The_Banshee%E2%80%99s_Cry''_-_AWARD_WINNING_CREEPYPASTA_MARCH_2018"], author: null, date: null, categories: ["B4MV18", "Monsters", "Dismemberment", "Contest_Winner", "Videos"] },
   { name: "The Charlatan", url: "https://creepypasta.fandom.com/wiki/The_Charlatan", description: "The headlights of the police car illuminated the scene. The man lying before her was clearly dead. The woman knelt down, examining the body, being careful not to touch it and contaminate the scene. She pulled a flashlight from her belt. Multiple stab wounds were visible. Judging by the trail of blood leading to the body, odds were that the man had been trying to get away from someone. What surprised her was that nobody had come to finish the job. The man had bled to death. She examined the body ", image: null, images: [], author: null, date: null, categories: ["Contest_Winner", "Dreams/Sleep", "Spotlighted_Pastas", "Weird", "RQMystery2015", "Longpasta", "The_Damn_Batman"] },
@@ -6276,18 +18463,16 @@ const HM_WIKI_ARCHIVE = {
   { name: "Goetia", url: "https://creepypasta.fandom.com/wiki/Goetia", description: "Author\'s note: The following story is an entry for Helel\'s \"Nativity in Black\" Christmas Contest. Dear Lord, last night I told my soon-to-be husband I was carrying the son of God. To be clear, I told him that I was pregnant. Gabriel told him that we were blessed with this holy gift. Joseph was not pleased with the news of his intended having lost her virtue somehow and to someone else. He and I have never lain together. At first, he did not believe I was with child at all, and said I was silly a", image: "https://creepypasta.fandom.com/wiki/Special:FilePath/Princes_of_Hell.jpg", images: ["https://creepypasta.fandom.com/wiki/Special:FilePath/Princes_of_Hell.jpg", "https://creepypasta.fandom.com/wiki/Special:FilePath/%22Goetia%22_--_A_Creepypasta_Read_-Contest_Winner-"], author: null, date: null, categories: ["Dgrady237", "Hel's_NIB_Christmas_2018", "Contest_Winner", "History", "Demon/Devil", "Videos"] },
   { name: "In Your Nightmares I Will Live", url: "https://creepypasta.fandom.com/wiki/In_Your_Nightmares_I_Will_Live", description: "Author\'s note: This story is an entry for Helel\'s \"Bible Black\" Metal Contest. It was inspired by the song, \"Hallowed Be Thy Name,\" by Iron Maiden. The idea for the story is also inspired by Johnny Frank Garrett, who was executed in Huntsville, Texas in 1992. James Anderson III stared down at a stainless-steel table smudged with greasy fingerprints from God knows how many doomed inmates before him. Sitting unceremoniously on top of the table was a grayish-white plastic plate filled to its edges ", image: "https://creepypasta.fandom.com/wiki/Special:FilePath/%22In_Your_Nightmares_I_Will_Live%22_--_A_Creepypasta_Read_-Contest_Winner-", images: ["https://creepypasta.fandom.com/wiki/Special:FilePath/%22In_Your_Nightmares_I_Will_Live%22_--_A_Creepypasta_Read_-Contest_Winner-"], author: null, date: null, categories: ["Dgrady237", "Hel's_Bible_Black_2019", "Contest_Winner", "Demon/Devil", "Reality", "Videos"] },
   { name: "Ghosts of Nutty Putty", url: "https://creepypasta.fandom.com/wiki/Ghosts_of_Nutty_Putty", description: "Author\'s note: This is my entry for Tewahway\'s Wheel of Misfortune 2022 story contest. My challenges were (Thematic) Write a story based on a real-life piece of music. (\"I Will Fail You\" by Demon Hunter) and (Technical) Write a story where the ending is the beginning. All Jasper could see of the boy by the narrow beam of his helmet light was a pair of low-cut boots and maybe two inches of ankle. “Ben?” Jasper asked the protruding feet. He felt a thrill of fear at how very still the young man was", image: "https://creepypasta.fandom.com/wiki/Special:FilePath/%22Ghosts_Of_Nutty_Putty%22_A_Search_and_Rescue_Tale_Creepypasta_Scary_Story-3", images: ["https://creepypasta.fandom.com/wiki/Special:FilePath/%22Ghosts_Of_Nutty_Putty%22_A_Search_and_Rescue_Tale_Creepypasta_Scary_Story-3", "https://creepypasta.fandom.com/wiki/Special:FilePath/%22Ghosts_of_Nutty_Putty%22_-_CAVE_ENCOUNTER_CREEPYPASTA-3", "https://creepypasta.fandom.com/wiki/Special:FilePath/Nutty_Putty.jpg"], author: null, date: null, categories: ["Shadowswimmer77", "Contest_Winner", "Wheel_of_Misfortune_2022", "Ghosts", "Nature", "Places", "Mental_Illness", "Videos"] },
-  { name: "Sever", url: "https://creepypasta.fandom.com/wiki/Sever", description: "Between my first and second semesters at college, I transferred from the University of Miami to a teeny, tiny little private college right up on the US-Canada border. It’s small and recognizable enough that I won’t share the name; the people I knew there have had enough to deal with already. It was tight-knit, offered almost no extracurriculars besides winter sports and a few sparse academic clubs, and it was exactly what I was looking for at 19. I wanted to get out of Miami. I wanted relief fro", image: null, images: [], author: null, date: null, categories: ["SftSS18", "Contest_Winner", "Suggested_Reading", "Dismemberment", "Monsters", "Nature"] },
-    ]
+  { name: "Sever", url: "https://creepypasta.fandom.com/wiki/Sever", description: "Between my first and second semesters at college, I transferred from the University of Miami to a teeny, tiny little private college right up on the US-Canada border. It’s small and recognizable enough that I won’t share the name; the people I knew there have had enough to deal with already. It was tight-knit, offered almost no extracurriculars besides winter sports and a few sparse academic clubs, and it was exactly what I was looking for at 19. I wanted to get out of Miami. I wanted relief fro", image: null, images: [], author: null, date: null, categories: ["SftSS18", "Contest_Winner", "Suggested_Reading", "Dismemberment", "Monsters", "Nature"] },]
   },
 
   userStories: {
     id: 'user-stories',
     name: 'User Stories',
     description: 'Stories submitted by community members organized by author.',
-    icon: '✏️',
+    icon: '✏',
     totalItems: 1770,
-    entries: [
-{"name":"Deer","url":"https://creepypasta.fandom.com/wiki/Deer","description":"\"... can't really trace it. It's not like I can point to something and go, 'Hey, here's when it started, here's when it ended, here's the middle, here's the climax, here's the twist.'\" \"Why not?\" \"Because it's not a story. That's what I found out after I got out of college. I had my degrees, I was ready to go.\" \"What happened?\" \"I ended up in some little deli just a few blocks from my apartment. I got a job as a cook there. I wanted to tell them that I had all these fancy degrees. To tell them...","image":null,"images":[],"author":"41488p-fduser","date":null,"categories":["41488p-fduser","Mental_Illness"]},
+    entries: [{"name":"Deer","url":"https://creepypasta.fandom.com/wiki/Deer","description":"\"... can't really trace it. It's not like I can point to something and go, 'Hey, here's when it started, here's when it ended, here's the middle, here's the climax, here's the twist.'\" \"Why not?\" \"Because it's not a story. That's what I found out after I got out of college. I had my degrees, I was ready to go.\" \"What happened?\" \"I ended up in some little deli just a few blocks from my apartment. I got a job as a cook there. I wanted to tell them that I had all these fancy degrees. To tell them...","image":null,"images":[],"author":"41488p-fduser","date":null,"categories":["41488p-fduser","Mental_Illness"]},
   {"name":"Don't Look Down","url":"https://creepypasta.fandom.com/wiki/Don't_Look_Down","description":"The Void opened a few years ago. It's just this great, big mass of... well, space. Burst through Russia. We saw Moscow fall into the hole, building by building, the whites of the concrete slowly vanishing into the abyss below. Via a news chopper. Strange thing is, the news chopper seemed to be 'attracted' to that big damn hole. I mean, isn't the pilot classified as 'mad' if he tries to fly a freaking helicopter into a giant hole? I'm getting too far off the point. Anyways, the chopper didn't...","image":null,"images":[],"author":"41488p-fduser","date":null,"categories":["Historical_Archive","CPWX11","41488p-fduser","Beings","Mental_Illness"]},
   {"name":"A Moment","url":"https://creepypasta.fandom.com/wiki/A_Moment","description":"The people of the small town had found it very peculiar that the Baron announced a few days after the siege began that he would cook a magnificent feast for them in a week's time. All he had asked for were the town's strongest young men to aid him in his cooking. After a week had gone by, the Baron invited the most prestigious of the town's citizens to join him in a tasting session of the feast. The citizens came out of the castle, their bellies full, and assured the town that there was enough...","image":null,"images":[],"author":"41488p-fduser","date":null,"categories":["41488p-fduser","Animals"]},
   {"name":"Not Anymore","url":"https://creepypasta.fandom.com/wiki/Not_Anymore","description":"Far, far into the future, in an undefined year, prisons didn't exist. Well, not really. Instead of pushing you into a cell for five years, they'd knock you into a coma, place you into a casket, put a tracking beacon on the casket, and shoot you off to who-knows-where. After your sentence, they'd just see where your tracking beacon is and send a ship or two off to the destination at which you arrived. Sometimes, your casket was hit by an asteroid or some junk, but hey, that's the punishment for...","image":null,"images":[],"author":"41488p-fduser","date":null,"categories":["Historical_Archive","41488p-fduser","Space","Beings"]},
@@ -8056,8 +20241,7 @@ const HM_WIKI_ARCHIVE = {
   {"name":"Shower Thoughts","url":"https://creepypasta.fandom.com/wiki/Shower_Thoughts","description":"I open my eyes. Blinding, yellow lights. Soft hum of water. Porcelain tiles, white with the purity of this room. The shower head faces my nude body, prone in the tub. It rushes from that metallic outlet, flowing, cascading, diving. I feel the tantalising sensation of heat rushing over me. the droplets permeate my skin, the warmth encasing me. It's marvelous. The flesh is a vessel for warmth, a capsule, and I am over-saturated. Warmth numbs me from head to toe, the individual spits of water...","image":"https://static.wikia.nocookie.net/creepypasta/images/2/26/InShot_20211113_122510146.jpg/revision/latest/scale-to-width-down/300?cb=20211116170502","images":["https://creepypasta.fandom.com/wiki/Special:FilePath/InShot_20211113_122510146.jpg"],"author":"ZugZuwang","date":null,"categories":["Mental_Illness","ZugZuwang"]},
   {"name":"Tainted Water","url":"https://creepypasta.fandom.com/wiki/Tainted_Water","description":"There is a monster in my bathroom. A creature. It has been there for a while now. I don't know why it's there, but I know that I can barely stand to look at it. It stands in the bathtub; an unwavering presence in my life. I see the way it shakes and twitches, head bowed and back, hunched as it makes hoarse utterances across from me as I feverishly attempt to wash myself. It is a fleshy mass, superficially resembling a human being, but twisted and corrupted into something else entirely. Arms,...","image":"https://static.wikia.nocookie.net/creepypasta/images/5/54/%22I%27m_Scared_To_Take_A_Shower_Because_Of_The_Tainted_Water%22_Creepypasta_-_Nosleep_Horror_Story-2/revision/latest/scale-to-width-down/446?cb=20220312011341","images":["https://creepypasta.fandom.com/wiki/Special:FilePath/%22I'm_Scared_To_Take_A_Shower_Because_Of_The_Tainted_Water%22_Creepypasta_-_Nosleep_Horror_Story-2"],"author":"ZugZuwang","date":null,"categories":["Mental_Illness","Weird","ZugZuwang","Reality","Videos"]},
   {"name":"Under the Street Lights","url":"https://creepypasta.fandom.com/wiki/Under_the_Street_Lights","description":"Most of us have a solid grasp of reality. We have the basic, innate idea of what is real and what isn't. We can look in front of ourselves and note that the tarmac on the road next to us is tangible. We can touch it, walk over it; we know that it's unquestionably there, plain as day. Similarly, we understand rules and regulations for the reality we live in: the concept of time, how one in the afternoon is different to one in the morning, and the idea that the laws of physics dictate that I...","image":"https://static.wikia.nocookie.net/creepypasta/images/3/35/%22I_Have_Seen_Some_Bizarre_Things_Under_The_Street_Lights%22_Creepypasta_Scary_Story-2/revision/latest/scale-to-width-down/442?cb=20220121212844","images":["https://creepypasta.fandom.com/wiki/Special:FilePath/%22I_Have_Seen_Some_Bizarre_Things_Under_The_Street_Lights%22_Creepypasta_Scary_Story-2","https://creepypasta.fandom.com/wiki/Special:FilePath/%22Under_The_Streetlights%22_Creepypasta_-_Psychological_Horror_Story-2","https://creepypasta.fandom.com/wiki/Special:FilePath/Real.jpeg","https://creepypasta.fandom.com/wiki/Special:FilePath/Real2.JPG"],"author":"ZugZuwang","date":null,"categories":["Weird","Mental_Illness","ZugZuwang","Videos"]},
-  {"name":"Videophile","url":"https://creepypasta.fandom.com/wiki/Videophile","description":"The round red button starts it all. A lens; an all-seeing eye. A flashing light blinks as the display shows the souls of the innocent, the guilty and the deceptive. One can see all the little movements, the subtle muscle impressions made by the face that we don't always see; the tiniest hint of discomfort, joy or perplexion. One is omniscient behind the eye of a lens, always watching; hidden in plain sight. The hilarity and ironic value of these facts is realized when the wider perspective is...","image":"https://static.wikia.nocookie.net/creepypasta/images/e/eb/Videophile_by_ZugZuwang-2/revision/latest/scale-to-width-down/405?cb=20211203173245","images":["https://creepypasta.fandom.com/wiki/Special:FilePath/Videophile_by_ZugZuwang-2","https://creepypasta.fandom.com/wiki/Special:FilePath/%22Videophile%22_By_ZugZuwang-2","https://creepypasta.fandom.com/wiki/Special:FilePath/Videophile_by_ZugZuwang_-_Creepypasta-2","https://creepypasta.fandom.com/wiki/Special:FilePath/%22I'm_A_Wedding_Photographer_And_I_Ruin_People's_Lives%22_Creepypasta_-_Nosleep_Horror_Story-2"],"author":"ZugZuwang","date":null,"categories":["Weird","Videos","ZugZuwang","PotM"]}
-    ]
+  {"name":"Videophile","url":"https://creepypasta.fandom.com/wiki/Videophile","description":"The round red button starts it all. A lens; an all-seeing eye. A flashing light blinks as the display shows the souls of the innocent, the guilty and the deceptive. One can see all the little movements, the subtle muscle impressions made by the face that we don't always see; the tiniest hint of discomfort, joy or perplexion. One is omniscient behind the eye of a lens, always watching; hidden in plain sight. The hilarity and ironic value of these facts is realized when the wider perspective is...","image":"https://static.wikia.nocookie.net/creepypasta/images/e/eb/Videophile_by_ZugZuwang-2/revision/latest/scale-to-width-down/405?cb=20211203173245","images":["https://creepypasta.fandom.com/wiki/Special:FilePath/Videophile_by_ZugZuwang-2","https://creepypasta.fandom.com/wiki/Special:FilePath/%22Videophile%22_By_ZugZuwang-2","https://creepypasta.fandom.com/wiki/Special:FilePath/Videophile_by_ZugZuwang_-_Creepypasta-2","https://creepypasta.fandom.com/wiki/Special:FilePath/%22I'm_A_Wedding_Photographer_And_I_Ruin_People's_Lives%22_Creepypasta_-_Nosleep_Horror_Story-2"],"author":"ZugZuwang","date":null,"categories":["Weird","Videos","ZugZuwang","PotM"]}]
   },
 
   memes: {
@@ -8066,8 +20250,7 @@ const HM_WIKI_ARCHIVE = {
     description: 'Humorous and meme-style creepypastas that have become internet legends.',
     icon: '😂',
     totalItems: 344,
-    entries: [
-{
+    entries: [{
     "name": "The .GIF",
     "url": "https://creepypasta.fandom.com/wiki/The_.GIF",
     "description": "One of the alleged pictures of the .GIF. On March 12, 2007, on the /b/ board of 4chan, an anonymous user posted a .GIF image. At first glance, strangely, the .GIF image wasn't animated. It was titled \"IM_HAPPY.GIF\", and showed what appeared to be a drawing of a smiley face, only with a realistic-looking eyes and mouth. People who clicked on it saw the face's smile slowly turn into a frown, the eyes taking on an angrier appearance. It would then scream loudly - loud enough to burst eardrums - and",
@@ -12883,8 +25066,7 @@ const HM_WIKI_ARCHIVE = {
     "categories": [
       "Holders"
     ]
-  }
-    ]
+  }]
   },
 
   trollpasta: {
@@ -12893,8 +25075,7 @@ const HM_WIKI_ARCHIVE = {
     description: 'Intentionally absurd or humorous creepypastas designed to troll readers.',
     icon: '🤡',
     totalItems: 24,
-    entries: [
-{
+    entries: [{
     "name": "AND THEN A SKELETON POPPED OUT",
     "url": "https://creepypasta.fandom.com/wiki/AND_THEN_A_SKELETON_POPPED_OUT",
     "description": "Like other classics such as WHO WAS PHONE? and TEH DAY OF ALL TEH BLOD , this is a legendary troll pasta, an all-caps jewel in the community. The phrase \"AND THEN A SKELETON POPPED OUT\" is often used to point out that the ending of a creepypasta is predictable or just downright shitty. It is also a dedicated category on the Trollpasta Wiki . The Terrifying Pasta This is the skeleton that popped out. WARNING: IF YOU HAVE A HEART CONDITION, DO NOT READ THIS. YOU WILL DROP TO THE FLOOR, FLOPPING LI",
@@ -13292,7 +25473,6 @@ const HM_WIKI_ARCHIVE = {
       "Micropasta",
       "Contextual"
     ]
-  }
-    ]
+  }]
   }
 };
