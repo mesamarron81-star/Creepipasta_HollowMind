@@ -8,8 +8,8 @@ const HM_WIKI_ARCHIVE = {
   historical: {
     id: 'historical-archive',
     name: 'Historical Archive',
-    description: 'Older pastas from December 31, 2012 or earlier. Many are reposts from 4chan''s /x/ board.',
-    icon: 'old_face',
+    description: "Older pastas from December 31, 2012 or earlier. Many are reposts from 4chan's /x/ board.",
+    icon: '🏚️',
     totalItems: 797,
     entries: [
 { name: "09/17/10", image: null, description: "" },
@@ -815,7 +815,7 @@ const HM_WIKI_ARCHIVE = {
     id: 'suggested-reading',
     name: 'Suggested Reading',
     description: 'Recommended stories that are certified quality.',
-    icon: 'books',
+    icon: '📖',
     totalItems: 96,
     entries: [
 {
@@ -2678,7 +2678,7 @@ const HM_WIKI_ARCHIVE = {
     id: 'pasta-of-the-month',
     name: 'Pasta of the Month',
     description: 'Monthly featured creepypastas chosen by community vote.',
-    icon: 'trophy',
+    icon: '🏆',
     totalItems: 134,
     entries: [
 {
@@ -5016,7 +5016,7 @@ const HM_WIKI_ARCHIVE = {
     id: 'spotlighted-pastas',
     name: 'Spotlighted Pastas',
     description: 'Spotlighted creepypastas highlighting exceptional horror writing.',
-    icon: 'flashlight',
+    icon: '🔦',
     totalItems: 73,
     entries: [
 {
@@ -6239,7 +6239,7 @@ const HM_WIKI_ARCHIVE = {
     id: 'contest-winners',
     name: 'Contest Winners',
     description: 'Winners of official Creepypasta Wiki writing contests.',
-    icon: 'medal',
+    icon: '🏅',
     totalItems: 35,
     entries: [
 { name: "A Figure in the Fog", url: "https://creepypasta.fandom.com/wiki/A_Figure_in_the_Fog", description: "Author\'s note: This story was submitted as a part of SnakeTongue237\'s Title Writing Contest, winning 1st place. Contents 1 Narrations The town of Arthur\'s Wake was dying. At least, that\'s what Jamie\'s dad always said. The man tended to wax philosophical when he was drunk, which was often. Jamie would silently sit at the dinner table and listen to the man ramble on about how things had been different when he had been growing up, how back then an honest day\'s work actually got you something. Jamie", image: "https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_in_the_Fog%22_Creepypasta_Let's_Read!", images: ["https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_in_the_Fog%22_Creepypasta_Let's_Read!", "https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_In_The_Fog%22_narrated_by_MajesticProduction", "https://creepypasta.fandom.com/wiki/Special:FilePath/Halloween_Scary_Stories_%2B_Creepypastas_-_Chilling_Tales_for_Dark_Nights-0", "https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_in_the_Fog%22_by_Shadowswimmer77_-_The_Wicker_Saga_-_Creepypasta", "https://creepypasta.fandom.com/wiki/Special:FilePath/%22A_Figure_in_the_Fog%22_Creepypasta"], author: null, date: null, categories: ["STTWC15", "Contest_Winner", "PotM", "Suggested_Reading", "Beings", "Places", "Shadowswimmer77", "Videos", "Longpasta"] },
@@ -6284,7 +6284,7 @@ const HM_WIKI_ARCHIVE = {
     id: 'user-stories',
     name: 'User Stories',
     description: 'Stories submitted by community members organized by author.',
-    icon: 'pencil',
+    icon: '✏️',
     totalItems: 1770,
     entries: [
 {"name":"Deer","url":"https://creepypasta.fandom.com/wiki/Deer","description":"\"... can't really trace it. It's not like I can point to something and go, 'Hey, here's when it started, here's when it ended, here's the middle, here's the climax, here's the twist.'\" \"Why not?\" \"Because it's not a story. That's what I found out after I got out of college. I had my degrees, I was ready to go.\" \"What happened?\" \"I ended up in some little deli just a few blocks from my apartment. I got a job as a cook there. I wanted to tell them that I had all these fancy degrees. To tell them...","image":null,"images":[],"author":"41488p-fduser","date":null,"categories":["41488p-fduser","Mental_Illness"]},
@@ -8064,7 +8064,7 @@ const HM_WIKI_ARCHIVE = {
     id: 'memes',
     name: 'Creepypasta Memes',
     description: 'Humorous and meme-style creepypastas that have become internet legends.',
-    icon: 'laugh',
+    icon: '😂',
     totalItems: 344,
     entries: [
 {
@@ -12891,7 +12891,7 @@ const HM_WIKI_ARCHIVE = {
     id: 'trollpasta',
     name: 'Trollpasta',
     description: 'Intentionally absurd or humorous creepypastas designed to troll readers.',
-    icon: 'troll',
+    icon: '🤡',
     totalItems: 24,
     entries: [
 {
