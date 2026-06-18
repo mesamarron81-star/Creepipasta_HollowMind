@@ -142,9 +142,57 @@ const HMApp = {
       if (readLog.length > 50) readLog.shift();
       localStorage.setItem('hm-read-log', JSON.stringify(readLog));
     });
+  },
+
+  /* === SCROLL REVEAL ANIMATIONS === */
+  initScrollReveal() {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Add reveal animation to elements
+    const revealElements = document.querySelectorAll(
+      '.character-card, .trending-card, .win95-panel, .category-group, .wiki-sidebar-widget'
+    );
+
+    revealElements.forEach((el, index) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+      observer.observe(el);
+    });
+  },
+
+  /* === SMOOTH SCROLL === */
+  initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
   }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
   HMApp.init();
+  HMApp.initScrollReveal();
+  HMApp.initSmoothScroll();
 });

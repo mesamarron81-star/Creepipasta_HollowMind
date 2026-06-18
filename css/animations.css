@@ -334,3 +334,106 @@
   0%, 100% { opacity: 1; }
   50% { opacity: 0.7; }
 }
+
+/* === NEW ANIMATIONS === */
+
+/* === SMOOTH REVEAL FROM BOTTOM === */
+@keyframes reveal-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === SMOOTH REVEAL FROM LEFT === */
+@keyframes reveal-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* === SMOOTH REVEAL FROM RIGHT === */
+@keyframes reveal-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* === SCALE UP REVEAL === */
+@keyframes scale-reveal {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* === GLOW PULSE === */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(0,255,0,0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0,255,0,0.4), 0 0 30px rgba(0,255,0,0.2);
+  }
+}
+
+/* === BLOOD PULSE === */
+@keyframes blood-pulse {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(122,32,32,0.2);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(122,32,32,0.5), 0 0 25px rgba(122,32,32,0.3);
+  }
+}
+
+/* === FLOAT ANIMATION === */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* === SHAKE SUBTLE === */
+@keyframes shake-subtle {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  75% { transform: translateX(2px); }
+}
+
+/* === ROTATE SUBTLE === */
+@keyframes rotate-subtle {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(1deg); }
+}
+
+/* === BORDER GLOW === */
+@keyframes border-glow {
+  0%, 100% {
+    border-color: var(--win95-dark);
+  }
+  50% {
+    border-color: var(--sick-green-text);
+  }
+}

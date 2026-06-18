@@ -5,24 +5,25 @@
 
 /* === WINDOWS 95 PANEL === */
 .win95-panel {
-  background: var(--win95-bg);
+  background: linear-gradient(180deg, #d0d0d0 0%, #c0c0c0 100%);
   border: 2px solid;
   border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
   box-shadow: 
     inset 1px 1px 0 var(--win95-light),
     inset -1px -1px 0 var(--win95-dark),
-    4px 4px 8px rgba(0,0,0,0.5);
+    4px 4px 10px rgba(0,0,0,0.4);
   font-family: var(--font-pixel);
   font-size: 12px;
   color: #000;
-  transition: box-shadow 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .win95-panel:hover {
   box-shadow: 
     inset 1px 1px 0 var(--win95-light),
     inset -1px -1px 0 var(--win95-dark),
-    6px 6px 12px rgba(0,0,0,0.6);
+    6px 6px 15px rgba(0,0,0,0.5);
+  transform: translateY(-2px);
 }
 
 .win95-titlebar {
@@ -105,10 +106,13 @@
 
 /* === WIN95 BUTTON === */
 .win95-button {
-  background: var(--win95-bg);
+  background: linear-gradient(180deg, #e0e0e0 0%, #c0c0c0 100%);
   border: 2px solid;
   border-color: var(--win95-white) var(--win95-darker) var(--win95-darker) var(--win95-white);
-  box-shadow: inset 1px 1px 0 var(--win95-light), inset -1px -1px 0 var(--win95-dark);
+  box-shadow: 
+    inset 1px 1px 0 var(--win95-light),
+    inset -1px -1px 0 var(--win95-dark),
+    2px 2px 4px rgba(0,0,0,0.2);
   font-family: var(--font-pixel);
   font-size: 12px;
   color: #000;
@@ -116,12 +120,22 @@
   cursor: pointer;
   text-align: center;
   min-width: 75px;
+  transition: all 0.15s ease;
+}
+
+.win95-button:hover {
+  background: linear-gradient(180deg, #e8e8e8 0%, #d0d0d0 100%);
+  box-shadow: 
+    inset 1px 1px 0 var(--win95-light),
+    inset -1px -1px 0 var(--win95-dark),
+    3px 3px 6px rgba(0,0,0,0.3);
 }
 
 .win95-button:active {
   border-color: var(--win95-darker) var(--win95-white) var(--win95-white) var(--win95-darker);
   box-shadow: inset 1px 1px 0 var(--win95-dark), inset -1px -1px 0 var(--win95-light);
   padding: 5px 15px 3px 17px;
+  background: linear-gradient(180deg, #b0b0b0 0%, #c0c0c0 100%);
 }
 
 .win95-button:focus {
