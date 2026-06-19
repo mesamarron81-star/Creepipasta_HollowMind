@@ -34,10 +34,10 @@
               <a href="categories.html" class="nav-link">Categorías ▾</a>
               <div class="mega-menu-panel" id="mega-menu-container">
                 <div class="mega-menu-grid">
-                  <div class="mega-column"><h4>Genre Categories</h4><ul><li><a href="section.html?tag=beings">Beings</a></li><li><a href="section.html?tag=cryptids">Cryptids</a></li><li><a href="section.html?tag=monsters">Monsters</a></li><li><a href="section.html?tag=ghosts">Ghosts</a></li><li><a href="section.html?tag=demon-devil">Demon/Devil</a></li></ul></div>
-                  <div class="mega-column"><h4>Temáticas</h4><ul><li><a href="section.html?tag=video-games">Video Games</a></li><li><a href="section.html?tag=computers-and-internet">Computers & Internet</a></li><li><a href="section.html?tag=crime">Crime</a></li><li><a href="section.html?tag=hospitals">Hospitals</a></li><li><a href="section.html?tag=dreams-sleep">Dreams/Sleep</a></li></ul></div>
-                  <div class="mega-column"><h4>Formatos</h4><ul><li><a href="section.html?tag=longpasta">Longpasta</a></li><li><a href="section.html?tag=micropasta">Micropasta</a></li><li><a href="section.html?tag=diary-journal">Diary/Journal</a></li><li><a href="section.html?tag=poetry">Poetry</a></li></ul></div>
-                  <div class="mega-column"><h4>Other</h4><ul><li><a href="section.html?tag=lost-episodes">Lost Episodes</a></li><li><a href="section.html?tag=ritual">Ritual</a></li><li><a href="section.html?tag=lovecraftian">Lovecraftian</a></li><li><a href="categories.html" style="color:var(--blood-fresh); font-weight:bold;">> Ver todos</a></li></ul></div>
+                  <div class="mega-column"><h4>Genre Categories</h4><ul><li><a href="section.html?gcat=beings">Beings</a></li><li><a href="section.html?gcat=cryptids">Cryptids</a></li><li><a href="section.html?gcat=monsters">Monsters</a></li><li><a href="section.html?gcat=ghosts">Ghosts</a></li><li><a href="section.html?gcat=demon-devil">Demon/Devil</a></li></ul></div>
+                  <div class="mega-column"><h4>Temáticas</h4><ul><li><a href="section.html?gcat=video-games">Video Games</a></li><li><a href="section.html?gcat=computers-internet">Computers & Internet</a></li><li><a href="section.html?gcat=crime">Crime</a></li><li><a href="section.html?gcat=hospitals">Hospitals</a></li><li><a href="section.html?gcat=dreams-sleep">Dreams/Sleep</a></li></ul></div>
+                  <div class="mega-column"><h4>Formatos</h4><ul><li><a href="section.html?gcat=longpasta">Longpasta</a></li><li><a href="section.html?gcat=micropasta">Micropasta</a></li><li><a href="section.html?gcat=diary-journal">Diary/Journal</a></li><li><a href="section.html?gcat=poetry">Poetry</a></li></ul></div>
+                  <div class="mega-column"><h4>Other</h4><ul><li><a href="section.html?gcat=weird">Lost Episodes</a></li><li><a href="section.html?gcat=ritual">Ritual</a></li><li><a href="section.html?gcat=lovecraftian">Lovecraftian</a></li><li><a href="categories.html" style="color:var(--blood-fresh); font-weight:bold;">> Ver todos</a></li></ul></div>
                 </div>
               </div>
             </li>
@@ -67,7 +67,9 @@
   </div>
 
   <script src="js/story-data.js"></script>
+  <script src="js/genre-data.js"></script>
   <script src="js/wiki-archive-data.js"></script>
+  <script src="js/genre-wiki-data.js"></script>
   <script src="js/effects.js"></script>
   <script src="js/hollow-sound.js"></script>
   <script src="js/typewriter.js"></script>
@@ -100,6 +102,12 @@
         story.tags.forEach(tag => { allTags[tag] = (allTags[tag] || 0) + 1; });
         story.categories.forEach(cat => { allTags[cat] = (allTags[cat] || 0) + 1; });
       });
+
+      // Build name→id map from HM_GENRES for correct slug lookup
+      const genreNameToId = {};
+      if (typeof HM_GENRES !== 'undefined' && HM_GENRES.genres) {
+        HM_GENRES.genres.forEach(g => { genreNameToId[g.name] = g.id; });
+      }
 
       const wikiCategoryMap = {
         'Historical Archive': 'historical-archive',
@@ -151,15 +159,17 @@
           [col1, col2].forEach(col => {
             html += `<div class="category-list">`;
             col.forEach(item => {
-              const slug = item.toLowerCase()
+              const slug = genreNameToId[item] || item.toLowerCase()
                 .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
                 .replace(/[^a-z0-9]+/g, '-')
                 .replace(/^-|-$/g, '');
-              const count = allTags[slug] || 0;
+              const genreCount = (typeof HM_GENRE_WIKI !== 'undefined' && HM_GENRE_WIKI[slug]) ? HM_GENRE_WIKI[slug].entries.length : 0;
+              const hasGenreWiki = genreCount > 0;
+              const count = hasGenreWiki ? genreCount : (allTags[slug] || 0);
               html += `
-                <a href="section.html?tag=${slug}" class="category-item" style="text-decoration:none;">
+                <a href="section.html?gcat=${slug}" class="category-item" style="text-decoration:none;${hasGenreWiki ? 'border-left:3px solid var(--sick-green);padding-left:8px;' : ''}">
                   <span>${item}</span>
-                  <span class="count">${count}</span>
+                  <span class="count" style="${hasGenreWiki ? 'color:var(--sick-green);' : ''}">${count}</span>
                 </a>`;
             });
             html += `</div>`;

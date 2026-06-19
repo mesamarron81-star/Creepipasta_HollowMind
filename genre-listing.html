@@ -286,7 +286,7 @@
         if (genre) {
           showToast(`${genre.icon} ${genre.name}: ${genre.count.toLocaleString()} registros — Redirigiendo a section.html?tag=${genre.id}`);
           setTimeout(() => {
-            window.location.href = `section.html?tag=${genre.id}`;
+            window.location.href = `section.html?gcat=${genre.id}`;
           }, 1200);
         }
       });
